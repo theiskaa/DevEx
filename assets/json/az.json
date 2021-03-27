@@ -1,0 +1,3021 @@
+[
+  {
+    "1": "'Yol verin' tələbi nəyi bildirir?",
+    "2": "Bu yolda neçə hərəkət hissəsi vardır?",
+    "3": "Bu yolda neçə hərəkət hissəsi vardır?",
+    "4": "Hansı şəkildə ayırıcı zolağı olan yol göstərilib?",
+    "5": "Bu yolda neçə hərəkət zolağı vardır?",
+    "6": "Bu yolun hərəkət hissəsində vardır?",
+    "7": "'Məhdudiyyətli görünmə' termini nə bildirir?",
+    "8": "Siz hansı halda məcburi dayanma əməliyyatını yerinə yetirirsiniz?",
+    "9": "Hansı şəkildə ötmə əməliyyatı göstərilib?",
+    "10": "Yolayrıcında hansı yol baş yol hesab olunur?",
+    "11": "Şəkildə neçə yolayrıcı göstərilmişdir?",
+    "12": "Həyətlərdən və ya yola bitişik ərazilərdən yola çıxış yeri:",
+    "13": "Hansı şəkildə yolayrıcı göstərilib?",
+    "14": "Şəkildəki yolayrıcında hərəkət hissələrinin neçə kəsişməsi göstərilib?",
+    "15": "'Ötmə' dedikdə nə başa düşülür?",
+    "16": "Yolun ortası ilə hərəkət etməklə sürücü Qaydaları pozur?",
+    "17": "Qaydalara görə hansı nəqliyyat vasitələri 'ümumi istifadədə olan nəqliyyat vasitələrinə' aiddirlər?",
+    "18": "Torpaq yoldan çıxaraq Siz daxil olursunuz:",
+    "19": "Hansı şəkillərdə baş yol göstərilib?",
+    "20": "Hansı şəkildəki asfalt-beton örtüklü yol kəsişdiyi yollara nisbətən baş yol sayılır?",
+    "21": "Sürücü kimin tələbi ilə sənədlərini yoxlanılmaq üçün təqdim etməlidir?",
+    "22": "Avtomobili ən azı hansı yaş həddinə çatmış şəxs idarə hüququnu ala bilər?",
+    "23": "Kimin tələbi ilə sürücü sərxoşluq vəziyyətinin yoxlanılması üçün tibbi müayinədən keçməlidir?",
+    "24": "Siz sahibi olduğunuz motosikleti özünüz yanında olmaqla digər şəxsə idarə etmək üçün verə bilərsiniz?",
+    "25": "Yaşayış məntəqələrindən kənarda hərəkət zamanı təhlükəsizlik kəmərini bağlamalıdırlar:",
+    "26": "Yük avtomobilinin bort platformasında hərəkət edən sərnişinlərə ayaq üstə durmağa, bortun və ya bortdan yuxarı səviyyədə olan yükün üzərində oturmağa icazə verilir?",
+    "27": "Hansı nəqliyyat vasitələrinin sürücüləri və sərnişinləri hərəkət vaxtı təhlükəsizlik kəmərlərini bağlamalıdırlar?",
+    "28": "Əgər yol-nəqliyyat hadisəsi (YNH) nəticesində heç kim xəsarət almamışdırsa, sürücülər hadisəni sənədləşdirmək üçün yaxınlıqda olan DYP-ə gələ bilərlər?",
+    "29": "Sürücüdə hansı kateqoriyalı sürücülük vəsiqəsi olmalıdır ki, o, icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobilini icazə verilən maksimum kütləsi 750 kq-dan artıq olan qoşqu ilə idarə etsin?",
+    "30": "'C' kateqoriyalı sürücülük vəsiqəsl hansı nəqliyyat vasitələrini idarə etməyə icazə verir?",
+    "31": "Sürücüyə hərəkət vaxtı telefonla danışmağa icazə verilir?",
+    "32": "Yaşayış məntəqəsində hərəkət zamanı kimlərə təhlükəsizlik kəmərini bağlamamağa icazə verilir?",
+    "33": "Minik avtomobilinin sürücüsünə yolda hərəkətdə olan mütəşəkkil avtomobil dəstəsində yer tutmağa icazə verilir?",
+    "34": "Sürücü polis əməkdaşının tələbi ilə təcili tibbi yardıma ehtiyacı olan şəxsləri yaxında olan xəstəxanalara aparmaq üçün öz nəqliyyat vasitəsini təqdim etməyə borcludur?",
+    "35": "Sürücülük vəsiqəsində hansı kateqoriyanın olması kifayətdir ki, sürücü minik avtomobilini icazə verilən maksimum kütləsi 750 kq qədər olan qoşqu ilə idarə etsin?",
+    "36": "Yol-nəqliyyat hadisəsi törətmiş sürücü, ilk növbədə, nə etməlidir?",
+    "37": "Siz sahibi olduğunuz icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobilini özünüz yanında olmaqla digər şəxsə idarə etmək üçün verə bilərsiniz?",
+    "38": "Hərəkət hissəsində zolaqların sayı necə təyin olunmalıdır?",
+    "39": "Hansı hallarda sürücü avtomobili (motosikleti) polis işçilərinin sərəncamına verməlidir?",
+    "40": "Bu yol nişanı:",
+    "41": "Bu nişan Sizi xəbərdar edir:",
+    "42": "Bu yol nişanları Sizi xəbərdar edir ki:",
+    "43": "Torpaq örtüklü yola dönməyə icazə verilir?",
+    "44": "Bu yol nişanı Sizi tunelə yaxınlaşma haqqında xəbərdar edir və bildirir ki:",
+    "45": "Bu nişanlar Sizi xəbərdar edir:",
+    "46": "Bu yol nişanları Sizi xəbərdar edir:",
+    "47": "Bu nişanlar Sizi hara yaxınlaşmağınız barədə xəbərdar edir?",
+    "48": "Bu yol nişanları Sizi xəbərdar edir ki:",
+    "49": "Bu yol nişanı Sizi xəbərdar edir:",
+    "50": "Bu yol nişanı:",
+    "51": "Bu nişan yaşayış məntəqəsinin kənarında nahamar yolun başlanğıcı qarşısında hansı məsafədə quraşdırılır?",
+    "52": "Bu nişan yaşayış məntəqəsində yolun sürüşkən yerinin başlanğıcından hansı məsafədə quraşdırılır?",
+    "53": "Bu nişan hansı nəqliyyat vasitələrinin hərəkətini qadağan edir?",
+    "54": "Hansı nişanlar bilavasitə dəmir yol keçidinin qarşısında quraşdırılır?",
+    "55": "Hansı nişanlar nizamlanmayan yolayrıclarını keçərkən Sizə üstünlük verir?",
+    "56": "Siz hansı yerdə dayanmalısınız?",
+    "57": "Bu yol nişanları Sizi nə haqqında məlumatlandırırlar?",
+    "58": "Siz körpüdən birinci keçə bilərsiniz?",
+    "59": "Bu nişan hansı nəqliyyat vasitələrinin hərəkətini qadağan edir?",
+    "60": "Əgər Siz motosikletin hərəkətini çətinləşdirməyəcəksinizsə, onunla eyni vaxtda körpüyə daxil ola bilərsiniz?",
+    "61": "Avtomobili idarə etdiyiniz zaman hansı nişanlar sizə yaşadığınız yerə keçməyə icazə verir?",
+    "62": "Hansı nişan bütün nəqliyyat vasitələrinin hərəkətini qadağan edir?",
+    "63": "Minik avtomobili ilə qoşqu apardığınız halda düzünə hərəkət etməyə icazə verilir?",
+    "64": "Qoşqu aparan yük avtomobilinə hərəkəti düzünə davam etdirməyə icazə verilir?",
+    "65": "Yedəyə alan nəqliyyat vasitəsinə hansı istiqamətlərdə hərəkəti davam etdirmək olar?",
+    "66": "Bu yol nişanı:",
+    "67": "Bu yol nişanlarının tələbləri nədən ibarətdir?",
+    "68": "İri qabaritli yükləri daşıyarkən hansı hallarda hərəkətin düzünə istiqamətdə davam etdirilməsi qadağandır?",
+    "69": "Bu nişanın təsir sahəsində hansı hallarda səs siqnalından istifadə etməyə icazə verilir?",
+    "70": "Yolayrıcında hansı istiqamətlərdə hərəkəti davam etdirmək olar?",
+    "71": "Yolayrıcında hansı istiqamətlərdə hərəkəti davam etdirmək olar?",
+    "72": "Bir dəfəyə üç ədəd nəqliyyat vasitəsini ötməyə icazə verilir?",
+    "73": "Əger icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobilini idarə edirsinizsə, bu halda Sizə ötməyə icazə verilir?",
+    "74": "Hansı nişanların tələbi onların bilavasitə quraşdırıldığı yerdən qüvvədə olur?",
+    "75": "İcazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobilinə hərəkəti düzünə davam etdirməyə icazə verilir?",
+    "76": "Bu yol nişanı:",
+    "77": "Hansı nəqliyyat vasitələrinə bu nişanların təsir sahəsində durmaq qadağandır?",
+    "78": "Siz icazə verilən maksimum kütləsi 3,5 t-dan artıq olmayan yük avtomobilində hansı maksimal sürətlə hərəkət edə bilərsiniz?",
+    "79": "Bu nişanlar bildirir ki, Siz ara məsafəni saxlamalısınız:",
+    "80": "Bu yol nişanı hansı nəqliyyat vasitəsinin hərəkətini qadağan edir?",
+    "81": "Bu nişanın təsir sahəsində hansı nəqliyyat vasitələrinə dayanmağa icazə verilir?",
+    "82": "Göstərilən yerdə dayanmaq olar?",
+    "83": "Göstərilən yerdə durmağa icazə verilir?",
+    "84": "Göstərilən yerdə avtomobilin durmasına icazə verilir?",
+    "85": "Körpünü keçdikdən sonra avtomobilin durmasına icazə verilir?",
+    "86": "Bu göstərilən yerlərin hansında durmağa icazə verilir?",
+    "87": "Sərnişinləri mindirmək məqsədi ilə Sizə dayanmağa icazə verilir?",
+    "88": "Hansı nişanlar I və II qrup əlillərin idarə etdikləri avtomobillərə şamil edilmir?",
+    "89": "Hansı nişanlar qadağan nişanları ilə qoyulmuş bütün məhdudiyyətlər zonasının qurtardığını bildirir?",
+    "90": "Əgər Sizə geriyə dönmək lazımdırsa, bu halda nə etməlisiniz?",
+    "91": "Yolayrıcında hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "92": "Siz hansı trayektoriya ilə geriyə dönə bilərsiniz?",
+    "93": "Yolayrıcında hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "94": "Növbəti yolayrıcında hansı istiqamətlərdə hərəkəti davam etdirə bilərsiniz?",
+    "95": "Sizə hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "96": "Yolun bu sahəsində sürət rejiminin xüsusiyyəti nədən ibarətdir?",
+    "97": "Siz bu şəraitdə hansı həyətə girə bilərsiniz?",
+    "98": "Sizə minik avtomobilində hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "99": "Sizə hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "100": "Siz kənar sol zolaqda hərəkət etdiyiniz halda hansı istiqamətlərdə hərəkəti davam etdirə bilərsiniz?",
+    "101": "Siz minik avtomobilində orta zolaqda hərəkət etdiyiniz halda hansı istiqamətlərdə hərəkəti davam etdirə bilərsiniz?",
+    "102": "Siz kənar sol zolaqda hərəkət etdiyiniz halda hansı istiqamətlərdə hərəkəti davam etdirə bilərsiniz?",
+    "103": "Sizə hansı trayektoriyalarla hərəkəti davam etdirməyə icazə verilir?",
+    "104": "Hansı nişanlar hərəkət etdiyiniz yolda yaşayış məntəqələrinə aid olan qaydaların qüvvədə olmadığı barədə məlumat verir?",
+    "105": "Yolayrıcında sağa dönməyə icazə verilirmi?",
+    "106": "Hansı nişan reversiv hərəkətli yolun başlanğıcı barədə məlumat verir?",
+    "107": "Sarı fonda olan bu nişan Sizə nə barədə məlumat verir?",
+    "108": "Hansı lövhələrlə quraşdırılmış nişanların təsiri icazə verilən maksimum kütləsi 3,5 tondan az olan yük avtomobillərinə tətbiq olunur?",
+    "109": "Hansı lövhələr onlarla birgə quraşdırılmış nişanın təsir zonasının qüvvədə olduğu məsafəni göstərir?",
+    "110": "Nişandan sonra dayanmaga icazə verilir?",
+    "111": "Siz hansı hallarda saatda 40 kilometrdən aşağı sürətlə hərəkət etməlisiniz?",
+    "112": "Hansı nişanlar saatda 60 kilometr sürətlə hərəkət etməyə icazə verir?",
+    "113": "Hansı nişan ancaq üzərində quraşdırıldığı hərəkət zolağında təsir qüvvəsində olur?",
+    "114": "Hansı nişanlar hərəkəti dayanmadan davam etdirməyi qadağan edir?",
+    "115": "Motosikleti ən azı hansı yaş həddinə çatmış şəxs idarə hüququnu ala bilər (A kateqoriya)?",
+    "116": "Hansı nişanlar ayın cüt günlərində olan iş günlərində dayanmanı qadağan edir?",
+    "117": "Bu yerlərdə dayanma məqsədi ilə hansı sürücüyə bütöv nişanlanma xəttini kəsib keçməyə icazə verilir?",
+    "118": "Bu yerlərin hansında Siz nişanlanma xəttini keçib dayana bilərsiniz?",
+    "119": "Hərəkət zolağının üzərinə çəkilmiş bu nişanlanma nə bildirir?",
+    "120": "Bu yerdə dayana bilərsiniz?",
+    "121": "Bu nişanlanma xətti hansı manevrləri qadağan edir?", 
+    "122": "Yolayrıcındakı qırıq xətli nişanlanma cizgiləri nəyi göstərir?",
+    "123": "Bu vəziyyətdə Sizə reversiv hərəkət zolağına keçməyə icazə verilir?",
+    "124": "Əgər reversiv svetoforlar sönmüşdürsə, Siz nə etməlisiniz?",
+    "125": "Ötməyə icazə verilir?",
+    "126": "Reversiv svetoforların işləmədiyi vəziyətdə Sizə belə manevr etməyə icazə verilir?",
+    "127": "Göstərilən yerdə Sizə dayanmağa icazə verilir?",
+    "128": "Bu nişanlanma xətti ötməyə icazə verir?",
+    "129": "Bu nişanlanma xətti ötməyə icazə verir?",
+    "130": "Göstərilən yerdə Sizə durmağa icazə verilir?",
+    "131": "Hansı avtomobilin sürücüsü Qaydaları pozmur?",
+    "132": "Siz bu vəziyətdə nə etməlisiniz?",
+    "133": "Siz sola dönmək fikrindəsiniz. Harada dayanmalısınız ki, digər nəqliyyat vasitələrinə yol verəsiniz?",
+    "134": "Yolun bu şəkildə nişanlanması nəyi bildirir?",
+    "135": "Hansı nişanlanma xətləri neqliyyat vasitələrinin durması qadağan edildiyi yerləri işarələmək üçün tətbiq edilir?",
+    "136": "Hansı nişanlanma xəttini istənilən tərəfdən kəsib keçməyə icazə verilir?",
+    "137": "Siz bu yerdə sərnişinləri mindirmək və ya düşürtmək məqsədi ilə dayana bilərsiniz?",
+    "138": "Hərəkət zolağına çəkilən bu nişanlanma nə bildirir?",
+    "139": "Hərəkət zolağı üzərində üçbucaq formasında çəkilmiş nişanlanma nəyi bildirir?",
+    "140": "Hərəkət hissəsinə çəkilmiş bu nişanlanma nəyi bildirir?",
+    "141": "'A' hərfi formasında olan nişanlanma nəyi blldlrir?",
+    "142": "Belə şaquli nişanlanma xətləri nəyi göstərir?",
+    "143": "'A' hərfi formasında olan nişanlanma ilə işarələnmiş zolaqda hansı nəqliyyat vasitələri hərəkət edə bilərlər?",
+    "144": "Əgər müvəqqəti quraşdırılan yol nişanının tələbi ilə yoldakı nişanlanma xətlərinin tələbləri uyğun gəlmirsə, sürücü nəyi rəhbər tutmalıdır?",
+    "145": "Siz maneəni hansı trayektoriya ilə keçməlisiniz?",
+    "146": "Belə şaquli nişanlanma xətləri nəyi göstərir?",
+    "147": "Yolun hərəkət hissəsində 'STOP' nişanlanma yazısı nəyi bildirir?",
+    "148": "Yol sədlərindəki belə şaquli nişanlanma xətti nə barədə xəbardarlıq edir?",
+    "149": "Belə şaquli nişanlanma xətti nəyi göstərir?",
+    "150": "Bu şaquli nişanlanma:",
+    "151": "Əks istiqamətli nəqliyyat axınlarını ayıran bütöv qoşa xətti kəsib keçməyə icazə verilir?",
+    "152": "Əgər reversiv svetoforlar sönmüş, vəziyyətdədirsə, Sizə ötməyə icazə verilir?",
+    "153": "Qırıq xətlərin uzunluqlarının artması Sizi nə haqqında xəbərdar edir?",
+    "154": "Bu xətt nəyi bildirir?",
+    "155": "Bu şəraitdə operativ nəqliyyat vasitəsi yaxınlaşdıqda minik avtomobilinin sürücüsü nə etməlidir?",
+    "156": "Sayrışan işıq siqnalını qoşmuş avtomobil hansı istiqamətlərdə hərəkəti davam etdirə bilər?",
+    "157": "Bu şəraitdə kolonu müşayiət edən operativ nəqliyyat vasitəsi yaxınlaşdıqda minik avtomobilinin sürücüsü nə etməlidir?",
+    "158": "Bu şəraitdə operativ nəqliyyat vasitəsi yaxınlaşdıqda minik avtomobilinin sürücüsü nə etməlidir?",
+    "159": "Sürücü hansı hallarda digər yol hərəkət iştirakçıları qarşısında üstünlüyə malikdir?",
+    "160": "'Təcili tibbi yardım' avtomobili sayrışan işıq siqnalını söndürübsə, Siz ona yol verməlisiniz?",
+    "161": "Bu şəraitdə operativ nəqliyyat vasitəsi yaxınlaşdıqda minik avtomobilinin sürücüsü nə etməlidir?",
+    "162": "Sağa dönərkən nə etməlisiniz?",
+    "163": "Siz bu vəziyyətdə nə etməlisiniz?",
+    "164": "Hansı nəqliyyat vasitələrinə düzünə hərəkət etməyə icazə verilir?",
+    "165": "Svetoforun yaşıl rəngli işığının yanıb-sönməsi nəyi bildirir?",
+    "166": "Svetoforun ox şəklində qırmızı işığı nə haqqında məlumat verır?",
+    "167": "Svetoforun sarı rəngli işığının yanıb-sönməsi nəyi bildirir?",
+    "168": "Dəmir yol keçidində quraşdırılmış svetoforun qırmızı rəngli işığının yanıb-sönməsi və ya növbə ilə iki yanıb-sönən qırmızı işıq nəyi bildirir?",
+    "169": "Svetoforun yaşıl işığı üzərindəki oxlar nə haqqında məlumat verir?",
+    "170": "Hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "171": "Hansı istiqamətlərdə hərəkəti davam etdirməyə icazə verilir?",
+    "172": "Sürücü nəqliyyat vasitəsini hansı yerdə dayandırmalıdır?",
+    "173": "Siz yolayrıcını düzünə keçmək istəyirsiniz. Əgər əvvəlcədən sol zolağa keçə bilməmisinizsə, bu şəraitdə nə etməlisiniz?",
+    "174": "Sürücü nəqliyyat vasitəsini hansı yerdə dayandırmalıdır?",
+    "175": "Yolayrıcından sonra reversiv hərəkət zolağına keçməyə icazə verilir?",
+    "176": "Bu svetoforun siqnalları hansı nəqliyyat vasitelərinə şamil edilir?",
+    "177": "Siz bu şəraitdə nə etməlisiniz?",
+    "178": "Nizamlayıcı Sizə hansı istiqamətlərdə hərəkət etməyə icazə verir?",
+    "179": "Siz hansı istiqamətlərdə hərəkət edə bilərsiniz?",
+    "180": "Sizə hansı istiqamətlərdə hərəkət etməyə icazə verilir?",
+    "181": "Nizamlayıcının fitlə verdiyi siqnalların mənası nədir?",
+    "182": "Sizə hansı istiqamətlərdə hərəkət etməyə icazə verilir?",
+    "183": "Hansı sürücü hərəkəti davam etdirə bilər?",
+    "184": "Sizə hərəkət etməyə icazə verilirmi?",
+    "185": "Sizə hərəkət etməyə icazə verilir?",
+    "186": "Hansı nəqliyyat vasitələri hərəkəti göstərilən istiqamətlərdə davam etdirə bilər?",
+    "187": "Siz bu vəziyyətdə nə etməlisiniz?",
+    "188": "Nizamlayıcının tələbi ilə göstərilən yerdə dayana bilərsiniz?",
+    "189": "Sizə hansı istiqamətlərdə hərəkət etməyə icazə verilir?",
+    "190": "Hansı nəqliyyat vasitələri hərəkəti göstərilən istiqamətdə davam etdirə bilər?",
+    "191": "Texniki nasazlıq səbəbindən dayanan avtomobilin sürücüsü bu vəziyyətdə qəza dayanma nişanını quraşdırmalıdır?",
+    "192": "Bu şəraitdə qəza dayanma nişanı nəqliyyat vasitəsindən hansı məsafədə quraşdırılmalıdır?",
+    "193": "Yaşayış məntəqələrindən kənarda hərəkət zamanı kimlərə təhlükəsizlik kəmərini bağlamamağa icazə verilir?",
+    "194": "Sürücü yol-nəqliyyat hadisəsi zamanı öz nəqliyyat vasitəsini necə işarələməlidir?",
+    "195": "Bu şəraitdə qəza dayanma nişanı nəqliyyat vasitəsindən hansı məsafədə quraşdırılmalıdır?",
+    "196": "Görünmə şəraiti pis olan yerdə məcburi dayanma zamanı avtomobili işarələmək üçün bu nişanlardan hansı tətbiq olunmalıdır?",
+    "197": "Yedəkdə olan mexaniki nəqliyyat vasitəsində xarici işıq cihazları işləmirsə və ya onlar yoxdursa, göstərilən hansı nişan onun arxa bortuna bərkidilməlidir?",
+    "198": "Məcburi dayanma zamanı avtomobili işarələmək üçün bu qurğulardan hansı tətbiq olunmalıdır, əgər bu yerdə görmə şəraitinə görə digər sürücülər onu vaxtında görmürlərsə?",
+    "199": "Hansı hallarda xəbərdarlıq dönmə göstərici siqnalları verilməməlidir?",
+    "200": "Yaşayış zonalarında hərəkətə başlama zamanı dönmə göstərici siqnalları verməlisiniz?",
+    "201": "Siz baş yolda hərəkəti davam etdirmək fikrindəsiniz. Bu halda sola dönmə siqnalını verməlisiniz?",
+    "202": "Avtodayanacaqlarda və ya YDM-də manevrlər zamanı dönmə göstərici siqnalları verməlisiniz?",
+    "203": "Siz baş yolda hərəkəti davam etdirmək fikrindəsiniz. Bu halda sola dönmə siqnalını qoşmalısınız?",
+    "204": "Dönmə göstəricisini nə vaxt qoşmalısınız?",
+    "205": "Bu vəziyyətdə sağa dönmə siqnalını qoşmalısınız?",
+    "206": "Dönmə göstərici siqnalının verilməsi nə vaxt kəsilməlidir?",
+    "207": "Yolayrıcından sonra dərhal dayanmaq qərarına gəlmisinizsə, bu şəraitdə sağa dönmə siqnalını nə zaman qoşmalısınız?",
+    "208": "Dönmə siqnalının verilməsi sürücüyə üstünlük verir?",
+    "209": "Bu vəziyyətdə sağa dönmə siqnalını qoşmalısınız?",
+    "210": "Bu vəziyyətdə dönmə siqnalını qoşmalısınız?",
+    "211": "Bu yolayrıcına daxil olarkən sağa dönmə siqnalını qoşmalısınız?",
+    "212": "Həyətə girməkdə olan sürücü hansı səhvlərə yol verir?",
+    "213": "Siz yolun sol kənarında dayanmaq istəyirsiniz. Bu vəziyyətdə dönmə siqnalını qoşmalısınız?",
+    "214": "Bu maneəni keçmək məqsədi ilə sola dönmə göstəricisini qoşmalısınız?",
+    "215": "Bu vəziyyətdə sola dönmə göstəricisini qoşmalısınız?",
+    "216": "Minik avtomobilinin sürücüsü sola dönmə göstəricisini söndürməlidir:",
+    "217": "Bu trayektoriya ilə geriyə dönmə zamanı hansı dönmə göstəricilərini qoşmalısınız?",
+    "218": "Bu yolayrıcında sola dönmək istəyirsiniz. Siz hansı anda sola dönmə işığını qoşmalısınız?",
+    "219": "Sola və ya geriyə dönmək istədiyiniz halda Siz nə etməlisiniz?",
+    "220": "Ötmə manevri zamanı nə vaxt sola dönmə siqnalını söndürməlisiniz?",
+    "221": "Minik avtomobilinin sürücüsünün sol qolunun yana uzadılması nəyi bildirir?",
+    "222": "Minik avtomobilinin sürücüsünün əl işarəsi ilə verdiyi siqnal Sizə nə barədə məlumat verir?",
+    "223": "İkinci zolaqda hərəkət edən motosikletçinin əl işarəsi ilə verdiyi siqnal Sizə nə barədə məlumat verir?",
+    "224": "Dönməni göstərən əl ilə verilmiş siqnal nə vaxt kəsilə bilər?",
+    "225": "Minik avtomobilinin sürücüsünün sol qolunun dirsəkdən bükülməsi ilə verdiyi siqnal Sizə nə barədə məlumat verir?",
+    "226": "Motosikletçinin əl işarəsi ilə verdiyi siqnal Sizə nə barədə məlumat verir?",
+    "227": "Bitişik ərazidən yola çıxarkən Siz yol verməlisiniz:",
+    "228": "Minik avtomobilinin sürücüsü bu vəziyyətdə hərəkətə başlaya bilər?",
+    "229": "Siz yolun sağ qırağından hərəkətə başlamaq istəyirsiniz. Bu zaman qarşıdakı geriyə dönən avtomobilə yol verməlisiniz?",
+    "230": "Kim yol verməlidir?",
+    "231": "Bu vəziyyətdə yük avtomobilinə yol verməlisiniz?",
+    "232": "Sağdakı yola keçmək üçün sürücü nə etməlidir?",
+    "233": "Eyni vaxtda yerdəyişən sürücülərdən kim yol verməlidir?",
+    "234": "Həyətə dönərkən kimə yol verməlisiniz?",
+    "235": "Sağ zolaqdan Sizin tutduğunuz sol zolağa keçmək istəyən avtomobilə yol verməyə borclusunuz?",
+    "236": "Kim yol verməlidir?",
+    "237": "Hansı yerlərdə yolun sağ kənarından (yolun sağ qırağından) geriyə dönməyə icazə verilir?",
+    "238": "Minik avtomobilinin sürücüsü bu vəziyyətdə:",
+    "239": "Sağa dönməni hansı trayektoriya ilə yerinə yetirə bilərsiniz?",
+    "240": "Bu vəziyyətdə sağ zolağa keçmək istəyən sürücü:",
+    "241": "Siz yoldan kənara çıxarkən:",
+    "242": "Eyni vaxtda yerdəyişmə edən sürücülərdən kim yol verməlidir?",
+    "243": "Kim hərəkət üstünlüyünə malikdir?",
+    "244": "Kim yol verməyə borcludur?",
+    "245": "Eyni vaxtda geriyə dönən sürücülərdən kim yol verməlidir?",
+    "246": "Əgər nəqliyyat vasitələrinin hərəkət trayektoriyaları kəsişirsə və bu hal üçün keçid növbəliyi Qaydalarla təyin olunmamışdırsa, Siz nə etməlisiniz?",
+    "247": "Siz duracaqdan eyni vaxtda digər avtomobil ilə çıxırsınızsa, bu vəziyyətdə ona yol verməlisiniz?",
+    "248": "Siz sağ zolağa keçərkən:",
+    "249": "Hansı trayektoriyalarda hərəkəti davam etdirə bilərsiniz?",
+    "250": "Hansı trayektoriyalarda hərəkəti davam etdirə bilərsiniz?",
+    "251": "Bu vəziyyətdə sağa dönməyə icazə verilir?",
+    "252": "Bu vəziyyətdə göstərilən trayektoriya ilə sağa dönməyə icazə verilir?",
+    "253": "Yolayrıcında sağa dönmək fikrindəsiniz. Siz nə etməlisiniz?",
+    "254": "Yolayrıcında sağa dönmək fikrindəsiniz. Siz nə etməlisiniz?",
+    "255": "Minik avtomobilində ikinci zolaqla hərəkəti hansı istiqamətlərdə davam etdirə bilərsiniz?",
+    "256": "Hansı zolaqdan yolayrıcına daxil ola bilərsiniz?",
+    "257": "Hansı sürücü Qaydaları pozur?",
+    "258": "İkinci zolaqda hərəkəti hansı istiqamətlərdə davam etdirə bilərsiniz?",
+    "259": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "260": "Bu yolayrıcında geriyə dönməyə icazə verilir?",
+    "261": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "262": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "263": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "264": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "265": "Hansı trayektoriya ilə geriyə dönə bllərsiniz?",
+    "266": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "267": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "268": "Hansı trayektoriyalarda sola dönməyə icazə verilir?",
+    "269": "Bu yolayrıcında geriyə dönməyə icazə verilir?",
+    "270": "Hansı trayektoriya ilə geriyə dönməyə icazə verilir?",
+    "271": "Yolayrıcında dönmə qaydasını kim pozur?",
+    "272": "Bu trayektoriyalarla geriyə dönməyə icazə verilir?",
+    "273": "Uzun ölçülü avtoqatarı idarə edərkən Siz geriyə dönməni hansı trayektoriya ilə yerinə yetirə bilərsiniz?",
+    "274": "Göstərilən qaydada geriyə dönməyə icazə verilir?",
+    "275": "Hansı trayektoriyalarda geriyə dönməyə icazə verilir?",
+    "276": "Hansı sürücü Qaydaları pozmur?",
+    "277": "Hansı trayektoriyalarda geriyə dönməyə icazə verilir?",
+    "278": "Bu yerdə geriyə dönməyə icazə verilir?",
+    "279": "Çıxış yeri məhdud görmə şəraitinə malik olan duracaqdan geriyə hərəkətlə çıxarkən təhlükəsizliyi təmin etmək üçün lazımdır:",
+    "280": "Bu yerdə geriyə dönməyə icazə verilir?",
+    "281": "Hansı şəkildə göstərilmiş yol sahəsində geriyə dönmək qadağandır?",
+    "282": "Hansı trayektoriya ilə geriyə dönməyə icazə verilir?",
+    "283": "Dairəvi hərəkət təşkil olunmuş yolayrıcına daxil olan sürücü dairədə hərəkət edən avtomobillərə yol verməlidir?",
+    "284": "Yolun bu sahəsində piyadaya yaxınlaşmaq üçün geriyə hərəkət etməyə icazə verilir?",
+    "285": "Hansı yerlərdə sürücüyə geriyə hərəkət etməyə icazə verilir?",
+    "286": "Körpüdə hansı manevr icazə verilir?",
+    "287": "Hansı trayektoriyalarda geriyə dönməyə icazə verilir?",
+    "288": "Minik avtomobilinin sürücüsünə avtobus dayanacağında duran piyadaya yaxınlaşmaq üçün geriyə hərəkət etməyə icazə verilir?",
+    "289": "Yolayrıcında göstərilən qaydada geriyə dönməyə icazə verilir?",
+    "290": "Minik avtomobilinin sürücüsünə tuneldə yolun sağ kənarında duran piyadaya yaxınlaşmaq üçün geriyə hərəkət etməyə icazə verilir?",
+    "291": "Hərəkət zolağında hansı motosikletçi düzgün mövqe tutub?",
+    "292": "Hərəkət hissəsində zolaqların sayı necə təyin olunmalıdır?",
+    "293": "Hərəkət zolağında hansı motosikietçi düzgün mövqe tutub?",
+    "294": "Nişanlanma xətlərinin və nişanların olmadığı halda hərəkət hissəsində olan zolaqların sayını təyin etmək üçün sürücü nəyi nəzərə almalıdır?",
+    "295": "Orta zolaqdan hərəkəti hansı istiqamətlərdə davam etdirmək olar?",
+    "296": "İcazə verilən maksimum kütləsi 10 t-dan artıq olan yük avtomobilinə bu vəziyyətdə üçüncü zolağa keçməyə icazə verilir?",
+    "297": "Sola dönən hansı avtomobil Qaydaları pozmur?",
+    "298": "Bu vəziyyətdə ötmə məqsədi ilə kənar sol zolağa keçə bilərsiniz?",
+    "299": "Qaydalara görə bu yolda Sizə hansı zolaqlarda hərəkət etməyə icazə verilir?",
+    "300": "Yaşayış məntəqəsindən kənarda ötmədən sonra hansı zolaqda hərəkəti davam etdirməyə icazə verilir?",
+    "301": "Yaşayış məntəqəsində yük avtomobilini ötdükdən sonra hansı zolaqda hərəkəti davam etdirməyə icazə verilir?"
+
+  },
+  {
+    "1": {
+      "a": "Siz hökmən dayanmalısınız ki, digər yol hərəkət iştirakçılarını buraxasınız",
+      "b": "Siz hərəkətə başlamamalısınız, hərəkəti davam etdirməməlisiniz və ya digər manevrlər etməməlisiniz - əgər bu hərəkətləriniz Sizə nisbətən üstünlüyə malik olanları qəflətən hərəkətin istiqamətini və ya sürəti dəyişməyə məcbur edəcəksə",
+      "c": "Siz ancaq 'Yol verin' nişanı olduğu halda dayanmalısınız",
+      "des": "'Yol vermək' tələbi yaranmış konkret şəraitdən asılı olaraq müxtəlif formada yerinə yetirilə bilər, ancaq hər dəfə hökmən dayanmağa məcbur etmir. Yol vermək sürücünün hərəkəti davam etdirməsi və ya yenidən hərəkətə başlaması, hər hansı manevr etməsi başqa NV-nin sürücülərini qəflətən hərəkət istiqamətini və ya sürəti dəyişdirməyə məcbur edəcəyi halda onun hərəkəti davam etdirməməsi və ya yenidən hərəkətə başlamaması, manevr etməməsidir. Əsas şərt ondan ibarətdir ki, üstünlüyə malik olan digər NV-nin hərəkəti üçün maneə yaradılmasın (m. 1.41).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Siz hərəkətə başlamamalısınız, hərəkəti davam etdirməməlisiniz və ya digər manevrlər etməməlisiniz - əgər bu hərəkətləriniz Sizə nisbətən üstünlüyə malik olanları qəflətən hərəkətin istiqamətini və ya sürəti dəyişməyə məcbur edəcəksə"
+    },
+    "2": {
+      "a": "Bir",
+      "b": "İki",
+      "c": "Dörd",
+      "des": "Bütöv qoşa üfqi nişanlanma xətti ayırıcı zolaq hesab edilmir. Bu yolda bir hərəkət hissəsi, iki hərəkət istiqaməti və dörd hərəkət zolağı vardır (m.1.14).",
+      "img": "assets/img/1/2.jpeg",
+      "answerByLetter": "a",
+      "answer": "Bir"
+    },
+    "3": {
+      "a": "Dörd",
+      "b": "İki",
+      "c": "Bir",
+      "des": "Bu yolda ayırıcı zolaq vasitəsi ilə biri-birindən ayrılmış iki hərəkət hissəsi vardır və onların da hər birində iki hərəkət zolağı göstərilmişdir (m.1.14.15).",
+      "img": "assets/img/1/3.jpeg",
+      "answerByLetter": "b",
+      "answer": "İki"
+    },
+    "4": {
+      "a": "Ancaq solda",
+      "b": "Ancaq sağda",
+      "c": "Hər ikisində",
+      "des": "Ayırıcı zolaq - yolun ayrılmış elementi olub, yanaşı yerləşən hərəkət hissələrini biri-birindən ayıran, lakin NV-nin, piyadaların hərəkəti və ya dayanması üçün nəzərdə tutulmayan hissədir (m. 1.14). 1.3 bütöv qoşa üfqi nişanlanma xətti ayırıcı zolaq hesab edilmir.",
+      "img": "assets/img/1/4.jpeg",
+      "answerByLetter": "b",
+      "answer": "Ancaq sağda"
+    },
+    "5": {
+      "a": "İki",
+      "b": "Bir",
+      "c": "Dörd",
+      "des": "Bu nişanlanma xətti dörd və daha çox hərəkət zolağı olan yollarda əks istiqamətli nəqliyyat axınlarını ayırır. Bu yolda dörd hərəkət zolağı vardır, belə ki, avtomobillər hər bir hərəkət istiqamətində iki kolonda hərəkət edə bilirlər (m.1.15,9).",
+      "img": "assets/img/1/5.jpeg",
+      "answerByLetter": "c",
+      "answer": "Dörd"
+    },
+    "6": {
+      "a": "Bir hərəkət zolağı",
+      "b": "İki hərəkət zolağı",
+      "c": "Üç hərəkət zolağı",
+      "des": "Yolun hərəkət hissəsi 1.1 bütöv üfqi nişanlanma xətti vasitəsi ilə iki hərəkət zolağına ayrılmışdır. Bu zolaqların hər birinin eni avtomobillərin bir kolonda hərəkəti üçün nəzərdə tutulmuşdur. Motosikletlərin qabarit ölçülərini nəzərə alaraq, onların bir zolaqda iki kolonda hərəkət etməsinə icazə verilir (m.1.15).",
+      "img": "assets/img/1/6.jpeg",
+      "answerByLetter": "b",
+      "answer": "İki hərəkət zolağı"
+    },
+    "7": {
+      "a": "Təhlükəli döngələr və yolun uzununa qabarıq hissələri qarşısında görmə sahəsi 100 m-dən azdır",
+      "b": "Duman, yağış, qar və başqa şəraitdə, habelə toranlıqda yolun 300 m-dən az məsafədə görünməsi",
+      "c": "Gecə vaxtı yolun görünməsi 150 m-dən azdır",
+      "des": "Məhdudiyyətli görünmə duman, yağış, qar və başqa şəraitdə, habelə toranlıqda yolun 300 metrdən az məsafədə görünməsidir (m.1.42). Məhdudiyyətli görünmə yolun həndəsi ölçüləri ilə təyin edilmir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Duman, yağış, qar və başqa şəraitdə, habelə toranlıqda yolun 300 m-dən az məsafədə görünməsi"
+    },
+    "8": {
+      "a": "Piyadalara yol vermək məqsədi ilə piyada keçidinin qarşısında dayandıqda",
+      "b": "Texniki nasazlıq səbəbindən yolun hərəkət hissəsində dayandıqda",
+      "c": "Sadalanan hər iki halda",
+      "des": "Məcburi dayanma dedikdə texniki nasazlıq və ya aparılan yükün, sürücünün (sərnişinlərin) vəziyyətinin və ya yolda maneə yaranmasının (yolun dağılması, yükün yola düşməsi və s.) doğurduğu təhlükə üzündən NV-nin hərəkətinin dayandırılması başa düşülür (m.1.30). Yol hərəkəti qaydalarını yerinə yetirmək məqsədi ilə dayanıb piyadalara və va NV-ə yol vermək məcburi dayanma hesab edilmir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Texniki nasazlıq səbəbindən yolun hərəkət hissəsində dayandıqda"
+    },
+    "9": {
+      "a": "Ancaq sol şəkildə",
+      "b": "Hər ikisində",
+      "c": "Ancaq sağ şəkildə.",
+      "des": "İyul 1 2010 sonra ötmə - hərəkət etdiyi zolağı dəyişməklə hərəkətdə olan bir və ya bir neçə nəqliyyat vasitəsini ötüb keçməkdir (m.1.39). Ötmə hər iki şəkildə göstərilib.",
+      "img": "assets/img/1/9.jpeg",
+      "answerByLetter": "b",
+      "answer": "Hər ikisində"
+    },
+    "10": {
+      "a": "Torpaq yola nisbətən bərk örtüyü olan yol",
+      "b": "İki hərəkət zolağı olan yola nisbətən üç və daha artıq hərəkət zolağı olan yol",
+      "c": "Örtüyü daş düzümündən olan yollara nisbətən asfalt-beton örtüklü yol",
+      "des": "Baş yol kəsişən (bitişən) yola nisbətən müvafiq nişanlarla işarələnmış yol və ya torpaq yola nisbətən bərk örtüyü olan (asfalt və ya sement-beton, daş materialları və s.) yol, yaxud bitişik ərazilərdən çıxışlara nisbətən hər hansı yoldur (m.1.9). Yolların bərk örtüklərinin tipi və zolaqlarının sayı onları digər yollara nisbətən baş yol hesab edilməsində təsnifat əlamətləri sayılmırlar.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Torpaq yola nisbətən bərk örtüyü olan yol"
+    },
+    "11": {
+      "a": "Bir",
+      "b": "İki",
+      "c": "Dörd",
+      "des": "Eyni səviyyədə və eyni yerdə kəsişən hərəkət hissələrinin sayından asılı olmayaraq onlar ancaq bir yolayrıcı əmələ gətirirlər (m.1.9,11).",
+      "img": "assets/img/1/11.jpg",
+      "answerByLetter": "a",
+      "answer": "Bir"
+    },
+    "12": {
+      "a": "Eyni əhəmiyyətli yolların kəsişməsi hesab olunur",
+      "b": "Eyni əhəmiyyətli olmayan yolların kəsişməsi hesab olunur",
+      "c": "Yolayrıcı hesab olunmur",
+      "des": "Bitişik ərazilərdən yola çıxış yerləri yolayrıcı hesab edilmir (m.1.9,11). Belə ərazilərə aiddir: -həyətlərdən, yaşayış zonalarından, avtomobil duracaqlarından, YDM-dən, müəssisə, idarə və bunlara bənzər digər yerlərdən yola çıxış yerləri. Sürücü bu yerlərdən çıxarkən yolda hərəkət edən NV və piyadalara vol verməlidir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Yolayrıcı hesab olunmur"
+    },
+    "13": {
+      "a": "Ancaq solda",
+      "b": "Ancaq sağda",
+      "c": "Hər ikisində",
+      "des": "Yolayrıcı ancaq sol şəkildə göstərilmişdir, çünki burada bərk örtüyə malik olan yol ilə torpaq yolun bitişməsi təsvir olunmuşdur. Bitişik ərazilərdən (həmcinin həyətlərdən) yola çıxış yerləri yolayrıcı hesab edilmir (m. 1.9,11).",
+      "img": "assets/img/1/13.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq solda"
+    },
+    "14": {
+      "a": "Bir",
+      "b": "İki",
+      "c": "Yoxtu",
+      "des": "Yolayrıcında hərəkət hissələrinin iki kəsişməsi göstərilmişdir, çünki kəsişən yolda ayırıcı zolaq vasitəsi ilə biri-birindən ayrılmış iki hərəkət hissəsi vardır (m. 1.11,14).",
+      "img": "assets/img/1/14.jpg",
+      "answerByLetter": "b",
+      "answer": "İki"
+    },
+    "15": {
+      "a": "Hərəkətdə olan nəqliyyat vasitəsini hər hansı üsulla keçmək",
+      "b": "Qarşı hərəkət zolağına çıxmaq və əvvəlki zolağa qayıtmaq üsulu ilə bir və ya bir neçə nəqliyyat vasitəsini keçmək",
+      "c": "Hərəkət etdiyi zolağı dəyişməklə hərəkətdə olan bir və ya bir neçə nəqliyyat vasitəsini ötüb keçməkdir",
+      "des": "İyul 1 2010 sonra ötmə - hərəkət etdiyi zolağı dəyişməklə hərəkətdə olan bir və ya bir neçə nəqliyyat vasitəsini ötüb keçməkdir (m.1.39).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Hərəkət etdiyi zolağı dəyişməklə hərəkətdə olan bir və ya bir neçə nəqliyyat vasitəsini ötüb keçməkdir"
+    },
+    "16": {
+      "a": "Pozmur",
+      "b": "Qarşıdan nəqliyyat vasitəsi gəlmirsə, pozmur",
+      "c": "Pozur",
+      "des": "Bu şəraitdə sürücü Qaydaları pozur, çünki bütün yollarda sağ tərəfli hərəkət qaydası müəyyən edilmişdir (m.49.1). Sürücü yolun sağ tərəfi ilə hərəkət etməlidir.",
+      "img": "assets/img/1/16.jpg",
+      "answerByLetter": "c",
+      "answer": "Pozur"
+    },
+    "17": {
+      "a": "Bütün avtobuslar",
+      "b": "Adamların daşınılması üçün nəzərdə tutulmuş, dayanacaqlarla işarələnmiş və təyin olunmuş marşrutla hərəkət edən avtobuslar, trolleybuslar və tramvaylar",
+      "c": "Sərnişin daşıyan hər hansı bir nəqliyyat vasitəsi",
+      "des": "Dayanacaqlarla təyin edilmiş (işarələnmiş) marşrutlarda sərnişinlərin daşınılması üçün istifadə edilən və müvafiq marşrut nömrələri olan avtobuslar, trolleybuslar və tramvaylar ümumi istifadədə olan NV hesab edilirlər. Taksi avtomobilləri ümumi istifadədə olan NV hesab edilmirlər.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Adamların daşınılması üçün nəzərdə tutulmuş, dayanacaqlarla işarələnmiş və təyin olunmuş marşrutla hərəkət edən avtobuslar, trolleybuslar və tramvaylar"
+    },
+    "18": {
+      "a": "Baş yola",
+      "b": "Eyni əhəmiyyətli yola",
+      "c": "Topraq yoldan çıxabilmərik",
+      "des": "Siz torpaq yoldan bərk örtüyü oian yola çıxırsınız və çıxdığınız bu yol baş yol sayılır (m.1.9).",
+      "img": "assets/img/1/18.jpg",
+      "answerByLetter": "a",
+      "answer": "Baş yola"
+    },
+    "19": {
+      "a": "Ancaq sol şəkildə",
+      "b": "Bütün şəkillərdə",
+      "c": "Ancaq sol və sağ şəkillərdə",
+      "des": "Baş yol sol və sağ şəkillərdə göstərilmişdir, belə ki, onlar müvafiq olaraq Avtomagistral və 'İkinci dərəcəli yolun bitişməsi' nişanları ilə işarələnmişdir (m.1.9). Ortadakı şəkildə göstərilmiş 'Birtərəfli yol' nişanı isə bu yolda ancaq NV-nin hərəkət istiqaməti barəsində məlumat verir.",
+      "img": "assets/img/1/19.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq sol və sağ şəkillərdə"
+    },
+    "20": {
+      "a": "Ancaq A şəklində, belə ki, kəsişən yol torpaq yoldur",
+      "b": "Ancaq B şəklində, belə ki, kəsişən yolun örtüyü daşdandır",
+      "c": "Ancaq C şəklində, belə ki, kəsişən yolun örtüyü beton plitələrdir",
+      "des": "Baş yol kəsişən (bitişən) yola nisbətən müvafiq nişanlarla işarələnmış yol və ya torpaq yola nisbətən bərk örtüyü oian (asfalt və ya sement-beton, daş materialları və s.) yol, yaxud bitişik ərazilərdən çıxışlara nisbətən hər hansı yoldur (m.1.9). Yolların bərk örtüklərinin tipi və zolaqlarının sayı onları digər yollara nisbətən baş yol hesab edilməsində təsnifat əlamətləri sayılmırlar.",
+      "img": "assets/img/1/20.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A şəklində, belə ki, kəsişən yol torpaq yoldur"
+    },
+    "21": {
+      "a": "Polis əməkdaşının",
+      "b": "Hərbi yol müfəttişliyi əməkdaşının",
+      "c": "Nizamlayıcının",
+      "des": "Sürücü ancaq polis əməkdaşının tələbi ilə öz sənədlərini (şəxsiyyət vəsiqəsini, sürüculük vəsiqəsini, NV-nin sənədlərini, daşınan yüklərə aid sənədləri) yoxlamaq üçün ona təqdim etməlidir və zəruri olduqda həmin əməkdaşın tələbi ilə NV-dən çıxmalıdır (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Polis əməkdaşının"
+    },
+    "22": {
+      "a": "16 yaş",
+      "b": "18 yaş",
+      "c": "20 yaş",
+      "des": "Azərbaycan Respublikasının ərazisindəki yollarda oturacaq yerlərinin sayı sürücünün oturacağından əlavə 8-dən artıq olmayan avtomobilləri idarəetmə hüququ 18 yaşdan yaranır (m.33.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "18 yaş"
+    },
+    "23": {
+      "a": "Nizamlayıcının",
+      "b": "Polis əməkdaşının",
+      "c": "Hərbi yol müfəttişliyi əməkdaşının",
+      "des": "Sürücü polis əməkdaşlarının tələbi ilə alkoqol, narkotik vasitələr və ya güclü təsir göstərən digər maddələrin istifadə edilməsi nəticəsində sərxoşluq vəziyyətinin yoxlanılması ücün müayinədən keçməlidir (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Polis əməkdaşının"
+    },
+    "24": {
+      "a": "Bəli, əgər bu şəxsdə 'A' kateqoriyalı nəqliyyat vasitələrini idarə etmək üçün sürücülük vəsiqəsi vardırsa",
+      "b": "Bəli, əgər bu şəxsdə 'B' kateqoriyalı nəqliyyat vasitələrini idarə etmək üçün sürücülük vəsiqəsi vardırsa",
+      "c": "Xeyr",
+      "des": "Siz sahibi olduğunuz motosikleti özünüz yanında olduqda digər şəxsə idarə etmək üçün verə bilərsiniz, əqər bu şəxsdə 'A' kateqoriyalı nəqliyyat vasitələrini idarə etmək üçün sürücülük vəsiqəsi vardırsa (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Bəli, əgər bu şəxsdə 'A' kateqoriyalı nəqliyyat vasitələrini idarə etmək üçün sürücülük vəsiqəsi vardırsa"
+    },
+    "25": {
+      "a": "Ancaq sürücülər",
+      "b": "Ancaq qabaq oturacaqlarda oturan sürücü və sərnişinlər",
+      "c": "Avtomobildə olan bütün şəxslər",
+      "des": "Yaşayış məntəqəsindən kənarda hərəkət zamanı avtomobildə olan bütün şəxslər (sürücülər və sərnişinlər) təhlükəsizlik kəmərini bağlamalıdırlar (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Avtomobildə olan bütün şəxslər"
+    },
+    "26": {
+      "a": "İcazə verilir, ancaq yükü müşayiət edən şəxslərə",
+      "b": "İcazə verilir, əgər yük avtomobilnin sürəti saatda 30 kilometrdən azdırsa",
+      "c": "Qadağandır",
+      "des": "Yük avtomobilinin bort platformasında olan sərnişinlərə ayaq üstə durmaq, bortun və ya bortdan yuxarı səviyyədə olan yükün üzərində oturmaq qadağandır (m.56.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Qadağandır"
+    },
+    "27": {
+      "a": "Ancaq minik avtomobillərinin",
+      "b": "Bütün avtomobillərin",
+      "c": "Təhlükəsizlik kəmərləri ilə təchiz olunan bütün nəqliyyat vasitələrinin",
+      "des": "Konstruksiyasında nəzərdə tutulmuş təhlükəsizlik kəmərləri ilə təchiz olunan bütün nəqliyyat vasitələrinin sürücüləri və sərnişinlər hərəkət vaxtı təhlükəsizlik kəmərlərini bağlamalıdırlar (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Təhlükəsizlik kəmərləri ilə təchiz olunan bütün nəqliyyat vasitələrinin"
+    },
+    "28": {
+      "a": "Bəli, əgər YNH-ini törədənlər bu şəraiti qiymətləndirmədə razılığa gəliblərsə, hadisənin sxemini tərtib edib imzalayıblarsa",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "Əgər yol-nəqliyyat hadisəsi nəticəsində heç kim xəsarət almamışdırsa, maddi zərər cüzidirsə, NV-də onların hərəkət etməsinə mane ola biləcək nasazlıq yoxdursa və yol-nəqliyyat hadisəsini törədənlər bu şəraiti qiymətləndirmədə razılığa gəliblərsə, hadisənin sxemini tərtib edib imzaladıqdan sonra onlar hadisəni sənədləşdirmək üçün yaxınlıqda olan DYP-ə gəlməlidirlər (m.37.4.5).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Bəli, əgər YNH-ini törədənlər bu şəraiti qiymətləndirmədə razılığa gəliblərsə, hadisənin sxemini tərtib edib imzalayıblarsa"
+    },
+    "29": {
+      "a": "'C' və 'D' kateqoriyalı",
+      "b": "'C' kateqoriyalı",
+      "c": "'C' və 'E' kateqoriyalı",
+      "des": "Qüvvədə olan Qaydalara görə sürücüdə 'C' kateqoriyalı sürücülük vəsiqəsi olduqda, o, yük avtomobilini icazə verilən maksimum kütləsi 750 kq-a qədər olan qoşqu ilə də idarə edə bilər. Lakin aparılan qoşqunun icazə verilən maksimum kütləsi 750 kq-dan artıq olduqu halda, sürücülük vəsiqəsində 'C' və 'E' kateqoriyalarının olması lazımdır.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "'C' və 'E' kateqoriyalı"
+    },
+    "30": {
+      "a": "İstənilən yük avtomobilini",
+      "b": "Ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərini",
+      "c": "İstənilən avtomobili",
+      "des": "Yol hərəkəti haqqında qanuna əsasən sürücülük vəsiqəsində 'C' kateqoriyası 'D' kateqoriyasına aid edilməyən, icazə verilən maksimum kütləsi 3500 kq-dan artıq olan avtomobilləri idarə etmək hüququ verir (m.34.4).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərini"
+    },
+    "31": {
+      "a": "Yalnız danışıqları əllərin istifadəsi olmadan aparmağı icazə verən texniki vasitələrin istifadəsi ilə mümkündür (icazə verilir)",
+      "b": "İcazə verilir",
+      "c": "Qadağandır",
+      "des": "Mexaniki nəqliyyat vasitəsinin sürücüsünə nəqliyyat vasitəsinin hərəkəti zamanı telefonu əldə saxlamaqla ondan istifadə etmək telefonla danışmaq qadağandır (m.37.5).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Yalnız danışıqları əllərin istifadəsi olmadan aparmağı icazə verən texniki vasitələrin istifadəsi ilə mümkündür (icazə verilir)"
+    },
+    "32": {
+      "a": "Taksidəki sərnişinlərə",
+      "b": "Minik avtomobilinin arxa oturacağında oturan sərnişinlərə",
+      "c": "Operativ nəqliyyat vasitəsi sürücülərinə və sərnişinlərinə",
+      "des": "Mexaniki NV-nin sürücüləri konstruksiyasında nəzərdə tutulmuş təhlükəsizlik kəmərləri ilə təchiz olunan NV-də hərəkət edərkən, təhlükesizlik kəmərlərini bağlamalı və sərnişinlərin də kəməri bağlamalarını təmin etməlidirlər (12 yaşınadək uşaqların, geriyə hərəkət manevri edən sürücülərin, hamilə qadınların, sürücülüyü öyrənən şəxs NV-ni idarə edərkən onu öyrədənin, yaşayış məntəqələrində isə bunlardan başqa, operativ NV sürücülərinin və sərnişinlərinin kəməri bağlamamasına yol verilir) (m.37.1). Sualda sadalanan şəxslərdən ancaq operativ NV sürücülərinin və sərnişinlərinin kəməri bağlamamasına icazə verilir. Lakin yaşayış məntəqələrindən kənarda bu qayda qüvvədən düşür.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Operativ nəqliyyat vasitəsi sürücülərinə və sərnişinlərinə"
+    },
+    "33": {
+      "a": "Qadağandır",
+      "b": "İcazə verilir, əgər yolda cəmi üç hərəkət zolağı vardırsa",
+      "c": "İcazə verilir, əgər mütəşəkkil avtomobil dəstəsində sürət saatda 30 kilometrdən azdırsa",
+      "des": "Bütün NV-nin sürücülərünə yolda hərəkətdə olan mütəşəkkil avtomobil dəstəsində yer tutmaq qadağandır.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Qadağandır"
+    },
+    "34": {
+      "a": "Bəli, ancaq eyni səmtə getdiyi zaman",
+      "b": "Borclu deyil",
+      "c": "Bəli, hərəkət istiqamətindən asılı olmayaraq",
+      "des": "Polis əməkdaşının tələbi ilə sürücü təcili tibbi yardıma ehtiyacı olan şəxsləri, özünün hərəkət istiqamətindən asılı olmayaraq, xəstəxanaya daşımalıdır (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Bəli, hərəkət istiqamətindən asılı olmayaraq"
+    },
+    "35": {
+      "a": "'B' kateqoriyası",
+      "b": "'C' kateqoriyası",
+      "c": "'B' və 'E' kateqoriyaları.",
+      "des": "Qüvvədə olan Qaydalara görə sürücüdə 'B' kateqoriyalı sürücülük vəsiqəsi olduqda o, minik avtomobilini icazə verilən maksimum kütləsi 750 kq-a qədər olan qoşqu ilə də idarə edə bilər. Lakin aparılan qoşqunun icazə verilən maksimum kütləsi 750 kq-dan artıq olduğu halda sürücülük vəsiqəsində 'E' kateqoriyasının da olması lazımdır.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "'B' kateqoriyası"
+    },
+    "36": {
+      "a": "Hərəkət hissəsini boşaltmalıdır",
+      "b": "Baş verən yol-nəqliyyat hadisəsi barəsində polisə xəbər verməlidir",
+      "c": "Dayanmalıdır, qəza dayanma işığını qoşmalıdır və qəza dayanma nişanını quraşdırmalıdır",
+      "des": "Yol-nəqliyyat hadisəsi törətmiş sürücü ilk növbədə NV-ni dayandırmalıdır, qəza dayanma işığını qoşmalıdır və qəza dayanma nişanını quraşdırmalıdır (m.37.4).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Dayanmalıdır, qəza dayanma işığını qoşmalıdır və qəza dayanma nişanını quraşdırmalıdır"
+    },
+    "37": {
+      "a": "Xeyr",
+      "b": "Bəli, əgər bu şəxsdə nəqliyyat vasitələrini idarə etmək üçün 'C' kateqoriyalı sürücülük vəsiqəsi vardırsa",
+      "c": "Bəli, əgər bu şəxsdə nəqliyyat vasitələrini idarə etmək üçün 'B' kateqoriyalı sürücülük vəsiqəsi vardırsa",
+      "des": "Siz sahibi olduğunuz yük avtomobilini (icazə verilən maksimum kütləsi 3,5 t-dan artıq olan) özünüz yanında olduqda, digər şəxsə idarə etmək üçün verə bilərsiniz, əgər bu şəxsdə 'C' kateqoriyalı nəqliyyat vasitələrini idarə etmək üçün sürücülük vəsiqəsi vardırsa (m.37.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Bəli, əgər bu şəxsdə nəqliyyat vasitələrini idarə etmək üçün 'C' kateqoriyalı sürücülük vəsiqəsi vardırsa"
+    },
+    "38": {
+      "a": "Ancaq nişanlanma xətləri ilə",
+      "b": "Ancaq müvafiq nişanlarla",
+      "c": "Nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda, sürücü özü təyin etməlidir",
+      "des": "Hərəkət hissəsində zolaqların sayı nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda, sürücü özü təyin etməlidir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda, sürücü özü təyin etməlidir"
+    },
+    "39": {
+      "a": "Heç bir halda verməməlidir",
+      "b": "Bütün hallarda",
+      "c": "Təxirəsalınmaz xidməti tapşırıqların yerinə yetirilməsi üçün",
+      "des": "Sürücü idarə etdiyi avtomobili (motosikleti) təxirə salınmaz xidməti tapşırıqların yerinə yetirilməsi üçün polis işçilərinin sərəncamına verməlidir (m.37.3).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Təxirəsalınmaz xidməti tapşırıqların yerinə yetirilməsi üçün"
+    },
+    "40": {
+      "a": "Tramvay xətti ilə kəsişmə yerinə yaxınlaşma haqqında xəbərdar edir",
+      "b": "Tramvay dayanacağı olan yerə yaxınlaşma haqqında xəbərdar edir",
+      "c": "Tramvay xətti ilə kəsişən yerin bilavasitə qarşısında dayanmağı tələb edir",
+      "des": "'Tramvay xətti ilə kəsişmə' nişanı yolayrıclardan kənarda, hərəkət hissəsinin tramvay xətti ilə kəsişdiyi yerlərin qarşısında quraşdırılır. Əgər yolayrıclarından keçən tramvay xəttinin görünməsi 50 metrdən az olarsa, onda 'Tramvay xətti ilə kəsişmə' nişanı yolayrıclarının qarşısında da quraşdırılır. Sadalanan hər iki halda Siz tramvaya yol verməyə hazır olmalısınız, lakin hökmən dayanmaq tələb olunmur (m.48.3, m.76, m.77).",
+      "img": "assets/img/1/40.jpeg",
+      "answerByLetter": "a",
+      "answer": "Tramvay xətti ilə kəsişmə yerinə yaxınlaşma haqqında xəbərdar edir"
+    },
+    "41": {
+      "a": "Sürüşkən yerə yaxınlaşma haqqında",
+      "b": "Yolun yaş və çirkli sahəsinə yaxınlaşma haqqında",
+      "c": "Təkərlərin altından çınqıl sıçrayışının mümkün olacağı sahəyə yaxınlaşma haqqında",
+      "des": "Xəbərdarlıq nişanları hərəkət zamanı şəraitə uyğun tədbirlər görülməsi tələb edilən yolun təhlükəli sahəsinə yaxınlaşma və təhlükənin xarakteri barədə yol hərəkəti iştirakçılarına məlumat verir. Belə nişanlan görən sürücü diqqətini artırmalı və şəraitə uyğun olaraq təhlükəsizlik tədbirləri görməyə hazır olmalıdır. Bu şəraitdə yolda hərəkət edən NV-nin təkərləri altından çınqıl sıçrayışının mümkün olacağı sahəyə yaxınlaşma haqqında xəbərdarlıq olunur (1.17 'Çınqıl sıçrayışı' nişanı). Bunları nəzərə alaraq, sıçrayan daşların avtomobilinizə dəyməməsi məqsədi ilə sürəti azaltmalısınız, distansiyani və intervalı isə maksimum artırmalısınız.",
+      "img": "assets/img/1/41.jpg",
+      "answerByLetter": "c",
+      "answer": "Təkərlərin altından çınqıl sıçrayışının mümkün olacağı sahəyə yaxınlaşma haqqında"
+    },
+    "42": {
+      "a": "Yolda təmir işlərinin aparılması ilə əlaqədar olaraq yolun kənarına çıxmaq təhlükəlidir",
+      "b": "Nəqliyyat vasitələrinin yol qırağında dayanması qadağandır",
+      "c": "Dayanma ancaq yolun hərəkət hissəsində icazə verilir",
+      "des": "'Yol işləri' nişanı Sizi xəbərdar edir ki, yolda təmir işləri aparılır, 'Təhlükəli yol qırağı' nişanı isə təmir işlərinin yolun kənarında aparıldığını dəqiqləşdirir. Bu nişanların birgə mənası ondan ibarətdir ki, yolda təmir işlərinin aparılması ilə əlaqədar olaraq yolun kənarına çıxmaq təhlükəlidir.",
+      "img": "assets/img/1/42.jpg",
+      "answerByLetter": "a",
+      "answer": "Yolda təmir işlərinin aparılması ilə əlaqədar olaraq yolun kənarına çıxmaq təhlükəlidir"
+    },
+    "43": {
+      "a": "Xeyir",
+      "b": "Bəlkədə",
+      "c": "Bəli",
+      "des": "'Təhlükəli döngə' və 'Döngənin istiqaməti' nişanları yolun pis görünən və döngə yerlərində hərəkətin istiqamətini göstərirlər. Bu nişanlar sağ tərəfdən bitişən torpaq yola dönməni qadağan etmirlər.",
+      "img": "assets/img/1/43.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "44": {
+      "a": "Hərəkət növbəliyi svetoforla nizamlanır",
+      "b": "Süni işıqlandırma yoxdur",
+      "c": "Qarşıdan gələn nəqliyyat vasitəsi ilə qarşılıqlı keçid çətinləşəcək",
+      "des": "'Tunel' nişanı Sizi tunelə yaxınlaşma haqqında xəbərdar edir və bildirir ki, tunelin daxilində süni işiqlandırma yoxdur və ya onun giriş yerinin görünüşü məhduddur.",
+      "img": "assets/img/1/44.jpg",
+      "answerByLetter": "b",
+      "answer": "Süni işıqlandırma yoxdur"
+    },
+    "45": {
+      "a": "Üç xətli dəmir yol keçidinə yaxınlaşma haqqında",
+      "b": "50-100 m-dən sonra dəmir yol keçidinin olması haqqında",
+      "c": "150-300 m-dən sonra şlaqbaumsuz dəmir yol keçidinin olması haqqında",
+      "des": "'Şlaqbaumsuz dəmir yol keçidi' və 1.4.1 'Dəmir yol keçidinə yaxınlaşma' nişanları birgə quraşdırılmışdır. 1.4.1 nişanı əlavə xəbərdarlıq nişanıdır. Bu nişanlar yaşayış məntəqələrindən kənarda, dəmir yol keçidinə 150-300 metr qalmış quraşdırılır və şlaqbaumsuz dəmir yol keçidinə yaxınlaşmanı bildirir (m.62.3,4).",
+      "img": "assets/img/1/45.jpg",
+      "answerByLetter": "c",
+      "answer": "150-300 m-dən sonra şlaqbaumsuz dəmir yol keçidinin olması haqqında"
+    },
+    "46": {
+      "a": "500 m-dən sonra təhlükəli döngələrin olması haqqında",
+      "b": "Nişanlar quraşdırıldığı yerdən 150-300 m-dən sonra uzunluğu 500 metr olan təhlükəli döngələr sahəsi başlayır",
+      "c": "Nişanlar quraşdırıldığı yerdən sonra uzunluğu 500 metr olan təhlükəli döngələr sahəsi başlayır",
+      "des": "'Təhlükəli döngələr' nişanı Sizi xəbərdar edir ki, nişanların quraşdırıldığı yerdən 150-300 m sonra, birinci döngə sola olmaqla bir neçə təhlükəli döngələr sahəsi başlayır (m.62.3). 'Qüvvədə olma zonası' nişanı isə dəqiqləşdirir ki, bu təhlükəli döngələr olan yol sahəsinin ümumi uzunluğu 500 metrdir.",
+      "img": "assets/img/1/46.jpg",
+      "answerByLetter": "b",
+      "answer": "Nişanlar quraşdırıldığı yerdən 150-300 m-dən sonra uzunluğu 500 metr olan təhlükəli döngələr sahəsi başlayır"
+    },
+    "47": {
+      "a": "Şlaqbaumlu dəmir yol keçidinə",
+      "b": "Yolda aparılan iş yerinə",
+      "c": "Şlaqbaumsuz dəmir yol keçidinə",
+      "des": "'Şlaqbaumlu dəmir yol keçidi' nişanı yaşayış məntəqələrindən kənarda, dəmir yol keçidinə 150-300 metr qalmış quraşdırılır. Yaşayış məntəqələrindən kənarda, sürücülərin diqqətini cəlb etmək məqsədi ilə bu nişan keçidə 50 metr qalmış təkrarən quraşdırılır. 1.4.1-1.4.3 'Dəmir yol keçidinə yaxınlaşma' nişanları keçidə yaxınlaşmanı bildirən əlavə nişanlardır (m.62.3,4). Bu nişanlar Sizi şlaqbaumlu dəmir yol keçidinə yaxınlaşmağınız barədə xəbərdar edirlər.",
+      "img": "assets/img/1/47.jpg",
+      "answerByLetter": "a",
+      "answer": "Şlaqbaumlu dəmir yol keçidinə"
+    },
+    "48": {
+      "a": "Nişanın qoyulduğu yerdən başlayaraq 150 m məsafədə piyadaların hərəkət hissəsinə çıxmalarına ehtimal vardır",
+      "b": "Nişanın qoyulduğu yerdən başlayaraq 150 m məsafədə piyadaların hərəkət hissəsinə çıxmalarına ehtimal yoxdur",
+      "c": "150 m-dən sonra Sizin yolda nizamlanmayan piyada keçidi olacaq",
+      "des": "'Piyada keçidi' nişanı Sizi 5.16.1 və 5.16.2 nişanları ilə və ya nişanlanma xətləri ilə işarələnmiş piyada keçidinə yaxınlaşmağınız barədə xəbərdar edir. Qaydalara görə xəbərdarlıq nişanları yaşayış məntəqələrində təhlükəli sahələrdən 50-100 m məsafədə quraşdırılır (m.62.3). Bu şəraitdə yolun döngəsi piyada keçidinin görünməsini bağladığından 1.20 nişanı təyin olunan məsafədən daha uzaqda quraşdırılmışdır və bu məsafə 'Obyektə qədər məsafə' lövhəciyində göstərilmişdir.",
+      "img": "assets/img/1/48.jpg",
+      "answerByLetter": "c",
+      "answer": "150 m-dən sonra Sizin yolda nizamlanmayan piyada keçidi olacaq"
+    },
+    "49": {
+      "a": "Velosipedlərin hərəkət üstünlüyünə malik olduqları yerə yaxınlaşma haqqında",
+      "b": "Velosiped zolağı ilə kəsişməyə yaxınlaşma haqqında",
+      "c": "Velosipedlərin hərəkəti ehtimal olunan piyada keçidinə yaxınlaşma haqqında",
+      "des": "'Velosiped zolağı ilə kəsişmə' nişanı velosiped zolağının yolun hərəkət hissəsi ilə kəsişdiyi yerə yaxınlaşma haqqında xəbərdar edir (m.62.3). Yolun belə sahələri həm də 1.15 nişanlanma xətti ilə göstərilir. Belə yerlərdə üstünlük avtomobil yolunda hərəkət edən NV-də olur (m.46.3).",
+      "img": "assets/img/1/49.jpg",
+      "answerByLetter": "b",
+      "answer": "Velosiped zolağı ilə kəsişməyə yaxınlaşma haqqında"
+    },
+    "50": {
+      "a": "Yolayrıcında döngələrin istiqamətini göstərir",
+      "b": "Kəsişən yolda hərəkətin iki zolaqda təşkil olunmasını göstərir",
+      "c": "Yolda təmirin olduğunu bildirir",
+      "des": "'Döngənin istiqaməti' nişanı şaxələnən və ya T-şəkilli yolayrıclarında döngələrin istiqamətini göstərir.",
+      "img": "assets/img/1/50.jpg",
+      "answerByLetter": "a",
+      "answer": "Yolayrıcında döngələrin istiqamətini göstərir"
+    },
+    "51": {
+      "a": "150-300 m",
+      "b": "50-100 m",
+      "c": "Bilavasitə nahamar yolun başlanğıcının qarşısında",
+      "des": "'Nahamar yol' nişanı yaşayış məntəqələrindən kənarda təhlükəli sahənin başlanğıcından 150-300 metr qabaqda quraşdırılır (m.62.3).",
+      "img": "assets/img/1/51.jpg",
+      "answerByLetter": "a",
+      "answer": "150-300 m"
+    },
+    "52": {
+      "a": "150-300 m",
+      "b": "50-100 m",
+      "c": "Bilavasitə sürüşkən yerin qarşısında",
+      "des": "'Sürüşkən yol' nişanı yaşayış məntəqələrində təhlükəli sahənin başlanğıcından 50-100 metr qabaqda quraşdırılır (m.62.3).",
+      "img": "assets/img/1/52.jpg",
+      "answerByLetter": "b",
+      "answer": "50-100 m"
+    },
+    "53": {
+      "a": "Hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan nəqliyyat vasitələrinin",
+      "b": "5 t-dan artıq olmayan bütün nəqliyyat vasitələrinin",
+      "c": "Faktiki kütləsi 5 t-dan artıq olan bütün nəqliyyat vasitələrinin",
+      "des": "'Oxa düşən ağırlığın məhdudlaşdırılması' nişanı hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan nəqliyyat vasitələrinin hərəkətini qadağan edir.",
+      "img": "assets/img/1/53.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan nəqliyyat vasitələrinin"
+    },
+    "54": {
+      "a": "A və B",
+      "b": "Ancaq Б",
+      "c": "Ancaq B",
+      "des": "B nişanı bilavasitə dəmir yol keçidinin qarşısında quraşdırılır ('Çoxxətli dəmir yol'). Bu nişan şlaqbaumsuz dəmir yol keçidinin qarşısında svetoforla bir dirək üzərində quraşdırılır. Svetoforun olmadığı halda isə bu nişan birinci relsə 20 metrdən az yaxınlıqda quraşdırılır. A nişanları ('Şlaqbaumsuz dəmir yol keçidi' və 'Dəmir yol keçidinə yaxınlaşma') yaşayış məntəqələrindən kənarda, dəmir yol keçidinə 50-100 metr qalmış quraşdırılır və keçidə yaxınlaşmanı bildirir (m.62.3,4). Б nişanları ('Şlaqbaumlu dəmir yol keçidi' və 'Dəmir yol keçidinə yaxınlaşma') yaşayış məntəqələrindən kənarda, dəmir yol keçidinə 150-300 metr qalmış quraşdırılır və keçidə yaxınlaşmanı bildirir (m.62.3,4).",
+      "img": "assets/img/1/54.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq B"
+    },
+    "55": {
+      "a": "Ancaq A",
+      "b": "A və B",
+      "c": "Hamısı",
+      "des": "Nizamlanmayan yolayrıclarını keçərkən baş yolu göstərən nişanlar Sizə üstünlük verir: 'Baş yol' nişanı (A), 'İkinci dərəcəli yolun bitişməsi' nişanı (B) (m.1.9,40,41). 'Qarşıdan hərəkətə nisbətən üstünlük' nişanı (Б) isə qarşılıqlı keçidin çətinləşdiyi yolun dar sahələrində quraşdırılır.",
+      "img": "assets/img/1/55.jpg",
+      "answerByLetter": "b",
+      "answer": "A və B"
+    },
+    "56": {
+      "a": "A - nişanın qarşısında",
+      "b": "Б - yolayrıcının sərhəddində",
+      "c": "B - kəsişən hərəkət hissələrinin qırağında",
+      "des": "'Dayanmadan keçmək qadağandır' nişanı kəsişən yolun görünməsi məhdud olduğu şəraitlərdə istifadə olunur və kəsişən yolda NV-nin olub-olmamasına baxmayaraq, hökmən dayanmağı tələb edir. Bu nişanının yanında 1.12 nişanlanma xətti (stop-xətt) olduqda, bu xəttin qarşısında NV-ni dayandırmaq lazımdır. 1.12 nişanlanma xətti (stop-xətt) olmadıqda isə NV-ni hərəkət hissələrinin kəsişdiyi xəttin qarşısında dayandırmaq lazımdır.",
+      "img": "assets/img/1/56.jpg",
+      "answerByLetter": "c",
+      "answer": "B - kəsişən hərəkət hissələrinin qırağında"
+    },
+    "57": {
+      "a": "Qarşısında 'Dayanmadan keçmək qadağandır' nişanı qoyulmuş yolayrıcına yaxınlaşma haqqında",
+      "b": "Qarşısında 'Yol verin' nişani qoyulmuş yolayrıcına yaxınlaşma haqqında",
+      "c": "Gömrük postuna yaxınlaşma haqqında",
+      "des": "'Yol verin' nişanı ilə 'Obyektə qədər məsafə' lövhəciyinin birgə quraşdırılması Sizi məlumatlandırır ki, qarşıda 250 metrdən sonra kəsişən hərəkət hissəsi pis görünən yolayrıcı vardır və onun qarşısında 'Dayanmadan keçmək qadağandır' nişanı quraşdırılmışdır.",
+      "img": "assets/img/1/57.jpg",
+      "answerByLetter": "a",
+      "answer": "Qarşısında 'Dayanmadan keçmək qadağandır' nişanı qoyulmuş yolayrıcına yaxınlaşma haqqında"
+    },
+    "58": {
+      "a": "Ola bilər",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "'Qarşıdan hərəkətə nisbətən üstüniük' nişanı qarşılıqlı keçidin çətinləşdiyi yolun dar sahələrində quraşdırılır və bu nişan Sizə dar körpüyə birinci girmək hüququ verir. Qarşıdan gələn NV körpüyə girən və ya körpüdə hərəkət edən NV-nə yol verməlidir.",
+      "img": "assets/img/1/58.jpg",
+      "answerByLetter": "b",
+      "answer": "Bəli"
+    },
+    "59": {
+      "a": "Qoşqu aparan bütün nəqliyyat vasitələrinin",
+      "b": "Qoşqu aparan yük avtomobillərinin, traktorların ve həm də yedəklə hərəkət edən bütün nəqliyyat vasitələrinin",
+      "c": "Ancaq yedəklə hərəkət edən nəqliyyat vasitələrinin",
+      "des": "'Qoşqu ilə hərəkət qadağandır' nişanı qoşqu aparan yük avtomobillərinin, traktorların və həm də yedəklə hərəkət edən bütün nəqliyyat vasitələrinin hərəkətini qadağan edir.",
+      "img": "assets/img/1/59.jpg",
+      "answerByLetter": "b",
+      "answer": "Qoşqu aparan yük avtomobillərinin, traktorların ve həm də yedəklə hərəkət edən bütün nəqliyyat vasitələrinin"
+    },
+    "60": {
+      "a": "Xeyir",
+      "b": "Ola bilər",
+      "c": "Bəli",
+      "des": "'Qarşıdan hərəkətin üstünlüyü' nişanı yolun dar sahəsinə girişi qadağan edir, əgər bu, körpüyə girən və ya körpüdə hərəkət edən NV-nin hərəkətini çətinləşdirirsə. Bu şəraitdə motosikletin, körpünün və Sizin avtomobilinizin qabarit ölçülərini nəzərə alsaq, onunla eyni vaxtda körpüyə daxil ola bilərsiniz.",
+      "img": "assets/img/1/60.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "61": {
+      "a": "Ancaq A və B",
+      "b": "Hamısı",
+      "c": "Ancaq A",
+      "des": "A ('Hərəkət qadağandır') və B ('Mexaniki NV hərəkəti qadağandır') nişanları öz təsiri sahəsində yaşayan və ya işləyən vətəndaşlara xidmət edən və ya məxsus olan NV-nə şamil edilmirlər. Б ('Giriş qadağandır') nişanı bütün NV-nin hərəkətini qadağan edir (m.64.5).",
+      "img": "assets/img/1/61.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A və B"
+    },
+    "62": {
+      "a": "A",
+      "b": "B",
+      "c": "Б",
+      "des": "'Təhlükə' nişanı (Б) bütün NV-nin (həmçinin operativ və ümumi istifadədə olan NV-nin) hərəkətini qadağan edir. Bu nişan yol-nəqliyyat hadisəsi, qəza, yanğın və digər hadisələr zamanı tətbiq edilə bilər.",
+      "img": "assets/img/1/62.jpg",
+      "answerByLetter": "c",
+      "answer": "Б"
+    },
+    "63": {
+      "a": "Əgər Siz nişanın təsiri sahəsində yaşayırsınızsa, icazə verilir",
+      "b": "İcazə verilir",
+      "c": "Qadağandır",
+      "des": "'Qoşqu ilə hərəkət qadağandır' nişanı ancaq yük avtomobillərinin və traktorların qoşqu ilə hərəkətini qadağan edir. Qoşqu aparan minik avtomobilinə düzünə hərəkət etməyə icazə verilir.",
+      "img": "assets/img/1/63.jpg",
+      "answerByLetter": "b",
+      "answer": "İcazə verilir"
+    },
+    "64": {
+      "a": "İcazə verilir",
+      "b": "Əgər sürücü nişanın təsir sahəsində yerləşən müəssisələrdə xidmət edirsə, icazə verilir",
+      "c": "Qadağandır",
+      "des": "'Qoşqu ilə hərəkət qadağandır' nişanı yük avtomobilinin qoşqu ilə hərəkətini qadağan edir. Əgər Siz nişanın tesir sahəsində yerləşən müəssisələrdə xidmət edirsinizsə, onda bu nişanın təsir sahəsinə keçməyə icazə verilir (m.64.5).",
+      "img": "assets/img/1/64.jpg",
+      "answerByLetter": "b",
+      "answer": "Əgər sürücü nişanın təsir sahəsində yerləşən müəssisələrdə xidmət edirsə, icazə verilir"
+    },
+    "65": {
+      "a": "Hər iki istiqamətdə",
+      "b": "Ancaq B",
+      "c": "Ancaq A",
+      "des": "'Qoşqu ilə hərəkət qadağandır' nişanı Б istiqamətində nəinki yük avtomobillərinin və traktorların qoşqu ilə hərəkətini, həm də yedəkdə NV-nin aparılmasını qadağan edir. Yedəyi hansı avtomobilin aparmasından asılı olmayaraq bu nişanın təsir sahəsinə giriş qadağandır.",
+      "img": "assets/img/1/65.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A"
+    },
+    "66": {
+      "a": "Qarşıdan gələn nəqliyyat vasitəsinə yol verməyinizi bildirir",
+      "b": "Yolun dar sahəsinə yaxınlaşma haqqında xəbərdarlıq edir, lakin hərəkətin növbəliyini təyin etmir",
+      "c": "Körpüdən keçidi qadağan edir",
+      "des": "'Qarşıdan hərəkətin üstünlüyü' nişanı qarşılıqlı keçidin çətinləşdiyi yolun dar sahələrində quraşdırılır və bu nişan Sizdən körpüyə girən və ya körpüdə hərəkət edən NV-nə yol verməyi tələb edir. Siz onları istiqamətlərini dəyişməyə və ya tormoz verməyə məcbur etməməlisiniz.",
+      "img": "assets/img/1/66.jpg",
+      "answerByLetter": "a",
+      "answer": "Qarşıdan gələn nəqliyyat vasitəsinə yol verməyinizi bildirir"
+    },
+    "67": {
+      "a": "Nişanların yanında dayanıb gömrük xidməti işçisini gözləmək lazımdır",
+      "b": "Gömrükxananı keçəndə sürəti azaldın",
+      "c": "100 m-dən sonra gömrükxana qarşısında dayanmaq lazımdır",
+      "des": "'Gömrükxana' və 'Obyektə qədər məsafə' nişanlarının birlikdə tətbiq olunması bildirir ki, 100 metrdən sonra qömrükxana yerləşir və Siz idarə etdiyiniz NV-ni orada dayandırmalısınız.",
+      "img": "assets/img/1/67.jpg",
+      "answerByLetter": "c",
+      "answer": "100 m-dən sonra gömrükxana qarşısında dayanmaq lazımdır"
+    },
+    "68": {
+      "a": "Əgər yüklə birlikdə avtomobilin qabarit hündürlüyü 4 metrdirsə",
+      "b": "Əgər yükün hündürlüyü 4 metrdirsə",
+      "c": "Hər iki halda",
+      "des": "'Hündürlüyün məhdudlaşdırılması' nişanı qabarit hündürlüyü (yük ilə və ya yüksüz) 4 metrdən artıq olan NV-nin hərəkətini qadağan edir. NV-nin qabarit hündürlüyü hərəkət hissəsinin səthindən yükün və ya NV-nin ən yuxarı nöqtəsinə kimi olan məsafə hesab olunur. Yükün hündürlüyü 4 m olduqda onun NV-lə ümumi hündürlüyü nişanda göstəriləndən çox olur. Cavab: əgər yükün hündürlüyü 4 metrdirsə.",
+      "img": "assets/img/1/68.jpg",
+      "answerByLetter": "b",
+      "answer": "Əgər yükün hündürlüyü 4 metrdirsə"
+    },
+    "69": {
+      "a": "Ancaq yol nəqliyyat hadisəsinin qarşısını almaq məqsədi ilə",
+      "b": "Ancaq ötmə haqqında xəbərdarlıq məqsədi ilə",
+      "c": "Sadalanan hər iki halda",
+      "des": "'Səs siqnalı vermək qadağandır' nişanı qüvvədə olduğu sahədə səs siqnalından istifadə etməyə ancaq yol nəqliyyat hadisəsinin qarşısını almaq məqsədi ilə icazə verir. Yaşayış məntəqələrindən kənarda bu nişanın olmadığı yerlərdə ötmə zamanı digər sürücüləri ötmə haqqında xəbərdarlıq məqsədi ilə də səs siqnalından istifadə etməyə icazə verilir.",
+      "img": "assets/img/1/69.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq yol nəqliyyat hadisəsinin qarşısını almaq məqsədi ilə"
+    },
+    "70": {
+      "a": "A və ya B",
+      "b": "Ancaq B",
+      "c": "Г-dən başqa bütün istiqamətlərdə",
+      "des": "Şəkildə göstərilmiş dörd istiqamətdən yalnız A və B üzrə hərəkəti davam etdirmək olar. Sağa dönmə (Г) 'Sağa dönmək qadağandır' nişanı ilə qadağan edilib. Б istiqamətində hərəkət etməklə Siz əks hərəkət istiqaməti üçün nəzərdə tutulmuş hərəkət hissəsinə çıxmış olursunuz və bununla da sağ tərəfli hərəkət prinsipini pozursunuz (m.49).",
+      "img": "assets/img/1/70.jpg",
+      "answerByLetter": "a",
+      "answer": "A və ya B"
+    },
+    "71": {
+      "a": "Ancaq düzünə",
+      "b": "Bütün istiqamətlərdə",
+      "c": "Düzünə və ya geriyə",
+      "des": "'Sola dönmək qadağandır' nişanı ancaq sola dönməyi qadağan edir. Bunu nəzərə alaraq demək olar ki, bu yolayrıcında düzünə və ya geriyə istiqamətlərdə hərəkəti davam etdirmək olar.",
+      "img": "assets/img/1/71.jpeg",
+      "answerByLetter": "c",
+      "answer": "Düzünə və ya geriyə"
+    },
+    "72": {
+      "a": "Qadağandır",
+      "b": "İcazə verilir, o halda ki, bu nəqliyyat vasitələrinin sürəti saatda 30 kilometrdən azdırsa",
+      "c": "İcazə verilir",
+      "des": "'Ötmək qadağandır' nişanı bütün NV-ə ötməni qadağan edir. Bu şəraitdə qarşıda gedən NV-nin sürəti saatda 30 km-dən az olsa belə onları ötmək qadağandır. 'Ötmək qadağandır' nişanının təsir sahəsi müvafiq qaydada bitdikdən sonra, bu NV-ni ötmək olar.",
+      "img": "assets/img/1/72.jpeg",
+      "answerByLetter": "a",
+      "answer": "Qadağandır"
+    },
+    "73": {
+      "a": "İcazə verilir, əgər ötülən avtomobilin sürəti saatda 30 kilometrdən azdırsa",
+      "b": "İcazə verilmir",
+      "c": "İcazə verilir",
+      "des": "'Yük avtomobillərinin ötməsi qadağandır' nişanı icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə bütün NV-ni ötməyi qadağan edir (qarşısında hərəkət edən NV-nin sürətindən asılı olmayaraq).",
+      "img": "assets/img/1/73.jpeg",
+      "answerByLetter": "b",
+      "answer": "İcazə verilmir"
+    },
+    "74": {
+      "a": "A və Б",
+      "b": "Ancaq Б",
+      "c": "Hamısının",
+      "des": "Qadağan nişanlarının qüvvədə olduğu sahə bilavasitə onların qoyulduğu yerdən başlayır. Əgər qadağan nişanı 'Obyektə qədər məsafə' lövhəciyi ilə birgə qoyulmuşdursa, belə olan halda nişanın qüvvədə olduğu sahə lövhəcikdə göstərilən məsafədən sonra başlayır (B).",
+      "img": "assets/img/1/74.jpeg",
+      "answerByLetter": "a",
+      "answer": "A və Б"
+    },
+    "75": {
+      "a": "İcazə verilir",
+      "b": "İcazə verilir, əgər Siz bu nişanın təsir sahəsində yerləşən müəssisədə xidmət edirsinizsə",
+      "c": "İcazə verilmir",
+      "des": "'Yük avtomobillərinin hərəkəti qadağandır' nişanı icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinin hərəkətini qadağan edir. Əgər Siz bu nişanın təsir sahəsində yerləşən müəssisələrə xidmət edirsinizsə, onda nisanın təsir sahəsinə girə bilərsiniz (m.64.5).",
+      "img": "assets/img/1/75.jpeg",
+      "answerByLetter": "b",
+      "answer": "İcazə verilir, əgər Siz bu nişanın təsir sahəsində yerləşən müəssisədə xidmət edirsinizsə"
+    },
+    "76": {
+      "a": "Saatda 40 kilometr sürətlə hərəkət etməyi məsləhət görür",
+      "b": "Saatda 40 kilometrdən artıq sürətlə hərəkət etməyi tələb edir",
+      "c": "Saatda 40 kilometrdən artıq sürətlə hərəkət etməyi qadağan edir",
+      "des": "'Maksimum sürətin məhdudlaşdırılması' nişanı saatda 40 kilometrdən artıq sürətlə hərəkət etməyi qadağan edir.",
+      "img": "assets/img/1/76.jpeg",
+      "answerByLetter": "c",
+      "answer": "Saatda 40 kilometrdən artıq sürətlə hərəkət etməyi qadağan edir"
+    },
+    "77": {
+      "a": "Bütün yük avtomobillərinə",
+      "b": "Ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə",
+      "c": "Yük avtomobillərindən başqa bütün nəqliyyat vasitələrinə",
+      "des": "'Nəqliyyat vasitəsinin növü' lövhəciyi quraşdırıldığı nişanın hansı NV-ə şamil olmasını dəqiqləşdirir. Birgə quraşdırılmış 'Durmaq qadağandır' və 'Nəqliyyat vasitəsinin növü' nişanlarının təsir sahəsində ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinin durması qadağandır.",
+      "img": "assets/img/1/77.jpeg",
+      "answerByLetter": "b",
+      "answer": "Ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə"
+    },
+    "78": {
+      "a": "Saatda 90 kilometrdən artıq olmayan",
+      "b": "Saatda 50 kilometrdən artıq olmayan",
+      "c": "Saatda 75 kilometrdən artıq olmayan",
+      "des": "'Nəqliyyat vasitəsinin növü' lövhəciyi quraşdırıldığı nişanın hansı NV-ə şamil olmasını dəqiqləşdirir. Bu şəraitdə 'Maksimum sürətin məhdudlaşdırılması' nişanı icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə şamil edilir. Siz saatda 90 km-dən artıq olmayan sürətlə hərəkət edə bilərsiniz.",
+      "img": "assets/img/1/78.jpg",
+      "answerByLetter": "a",
+      "answer": "Saatda 90 kilometrdən artıq olmayan"
+    },
+    "79": {
+      "a": "Nişandan sonra yolun 100 metr məsafəsində 70 metrdən çox",
+      "b": "Nişandan sonra yolun 100 metr məsafəsində 70 metrdən az",
+      "c": "Nişandan sonra bütün yol boyu 70-100 metr",
+      "des": "'Minimum ara məsafənin məhdudlaşdırılması' nişanı arasındakı məsafə (distansiya) 70 metrdən az olan NV-nin hərəkətini qadağan edir. Bu nişan adətən buzlu yol şəraitində, dağlardakı yollarda, uzun tunellərdə, kütlə məhdudiyyəti qoyulan uzun körpülərdə və s. quraşdırılır. 'Qüvvədə olma zonası' nişanı isə dəqiqləşdirir ki, NV arasında 70 metr və daha artıq distansiyanı nişan quraşdırıldığı yerdən başlayaraq 100 m məsafədə saxlamaq lazımdır.",
+      "img": "assets/img/1/79.jpeg",
+      "answerByLetter": "a",
+      "answer": "Nişandan sonra yolun 100 metr məsafəsində 70 metrdən çox"
+    },
+    "80": {
+      "a": "Faktiki kütləsi 5 t-dan artıq olan",
+      "b": "İcazə verilən maksimum kütləsi 5 t-dan artıq olan",
+      "c": "Hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan",
+      "des": "'Oxa düşən ağırlığın məhdudlaşdırılması' nişanı hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan nəqliyyat vasitələrinin hərəkətini qadağan edir.",
+      "img": "assets/img/1/80.jpeg",
+      "answerByLetter": "c",
+      "answer": "Hər hansı bir oxuna düşən faktiki ağırlıq 5 t-dan artıq olan"
+    },
+    "81": {
+      "a": "Heç biri",
+      "b": "Ancaq ümumi istifadədə olan nəqliyyat vasitələrinə",
+      "c": "Ancaq taksometri qoşulmuş taksilərə",
+      "des": "'Dayanmaq qadağandır' nişanının təsiri sahəsində heç bir NV-nə dayanmağa icazə verilmir (m.64.5).",
+      "img": "assets/img/1/81.jpeg",
+      "answerByLetter": "a",
+      "answer": "Heç biri"
+    },
+    "82": {
+      "a": "15 dəqiqə dayana bilərik",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "'Dayanmaq qadağandır' nişanının təsir sahəsi hərəkət hissəsinin kənarına çəkilmiş 1.4 nişanlanma xətti ilə göstərilmişdir (m.69.6). Bu sarı xətdən kənarda istənilən yerdə dayanmaq olar.",
+      "img": "assets/img/1/82.jpeg",
+      "answerByLetter": "b",
+      "answer": "Bəli"
+    },
+    "83": {
+      "a": "Xeyr",
+      "b": "Bəli",
+      "c": "15 dəqiqə dayana bilərik",
+      "des": "'Dayanmaq qadağandır' nişanının təsir sahəsi onun qoyulduğu yerdən növbəti yolayrıcına kimidir ( m.64.6 ). Yolun ayırıcı zolağının kəsiyi (geriyə dönmə yeri) yolayrıcı sayılmadığından avtomobilin bu yerdə durması nişanının tələbinə ziddir.",
+      "img": "assets/img/1/83.jpeg",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "84": {
+      "a": "İcazə verilir",
+      "b": "İcazə verilir, əgər Siz yaxında yaşayırsınızsa",
+      "c": "Qadağandır",
+      "des": "'Durmaq qadağandır' nişanı 'Qüvvədə olma zonası' lövhəciyi ilə quraşdırıldığından o, NV-nin durmasını nişanların qoyulduğu yerdən sonra 50 metr məsafədə qadağan edir. Baxmayaraq ki, Siz bu yerın yaxınlığında yaşayırsınız, avtomobili şəkildə göstərilən yerdə duracağa qoymaqla Qaydaları pozmuş olursunuz.",
+      "img": "assets/img/1/84.jpeg",
+      "answerByLetter": "c",
+      "answer": "Qadağandır"
+    },
+    "85": {
+      "a": "15 dəqiqə dayana bilərik",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "'Durmaq qadağandır' nişanının təsir sahəsi bu şəraitdə yaşayış məntəqəsinin sonuna (növbəti yolayrıcına) kimidir (m.64.6). Yolların müxtəlif səviyyələrdə kəsişməsi yolayrıcı sayılmır (m.1.11). Avtomobili körpüdən sonra duracağa qoymaqla Siz bu nişanın tələbini pozursunuz.",
+      "img": "assets/img/1/85.jpeg",
+      "answerByLetter": "c",
+      "answer": "Xeyr"
+    },
+    "86": {
+      "a": "Ancaq Б",
+      "b": "Ancaq A",
+      "c": "Heç birində",
+      "des": "'Dayanmaq qadağandır' nişanının təsir sahəsi onun qoyulduğu yerdən növbəti yolayrıcına kimidir ( m.64). Ona görə də qarşıdakı yolayrıcından sonra, yolun hərəkət hissəsindən sağda avtomobilin durmasına icazə verilir (m.52.1).",
+      "img": "assets/img/1/86.jpeg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б"
+    },
+    "87": {
+      "a": "İcazə verilir",
+      "b": "İcazə verilmir",
+      "c": "İcazə verilir, ancaq ayın cüt günləri",
+      "des": "'Ayın tək günlərində durmaq qadağandır' nişanı ancaq durmanı qadağan edir. Bu nişanının təsir sahəsində istənilən gündə dayanmaq olar.",
+      "img": "assets/img/1/87.jpeg",
+      "answerByLetter": "a",
+      "answer": "İcazə verilir."
+    },
+    "88": {
+      "a": "Ancaq A və Б",
+      "b": "Ancaq Б və Г",
+      "c": "Hamısı",
+      "des": "I və II qrup əllillərin idarə etdikləri NV-nə 'Hərəkət qadağandır', 'Durmaq qadağandır', 'Ayın tək günləri durmaq qadağandır' və 'Ayın cüt günləri durmaq qadağandır' nişanları şamil edilmir (m.64.5). Deməli Б və Г nişanları I və II qrup əllillərin idarə etdikləri NV-nə şamil edilmir.",
+      "img": "assets/img/1/88.jpeg",
+      "answerByLetter": "b",
+      "answer": "Ancaq Б və Г"
+    },
+    "89": {
+      "a": "Ancaq A və Б",
+      "b": "Ancaq Б və Г",
+      "c": "Ancaq B",
+      "des": "Şəkildə göstərilən nişanlardan ancaq 'Bütün məhdudiyyətlər zonasının qurtaracağı' nişanı (B) qadağan nişanları ilə qoyulmuş bütün məhdudiyyətlər zonasının qurtaracağını bildirir.",
+      "img": "assets/img/1/89.jpeg",
+      "answerByLetter": "c",
+      "answer": "Ancaq B"
+    },
+    "90": {
+      "a": "Digər nəqliyyat vasitələri yoxdursa, yolayrıcında geriyə dönməlisiniz",
+      "b": "Düzünə hərəkət etməlisiniz və ancaq növbəti yolayrıcında geriyə dönməlisiniz",
+      "c": "Düzünə hərəkət edib yolayrıcını keçəndən sonra geriyə dönməlisiniz",
+      "des": "Məcburi hərəkət istiqaməti nişanlarının təsiri qarşısında quraşdırıldığı yolun hərəkət hissəsinin kəsişmə yerinə şamil edilir (m.65.4). Şəkildəki yolayrıcında hərəkət hissələrinin bir kəsişməsi vardır. Deməli, 'Düzünə hərəkət' nişanı bu yolayrıcında geriyə dönməni qadağan edir. Bu nişanı yolayrıcından sonrakı yol sahəsində qüvvədə olmadığından düzünə hərəkət edib yolayrıcını keçəndən sonra geriyə dönmək olar.",
+      "img": "assets/img/1/90.jpeg",
+      "answerByLetter": "c",
+      "answer": "Düzünə hərəkət edib yolayrıcını keçəndən sonra geriyə dönməlisiniz"
+    },
+    "91": {
+      "a": "Б və ya B",
+      "b": "A və ya Б",
+      "c": "Ancaq Б",
+      "des": "Şəkildəki yolayrıcında hərəkət hissələrinin iki kəsişməsi vardır. 'Düzünə hərəkət' nişanı bu yolayrıcında hərəkət hissələrinin birinci kəsişmə yerinə şamil edilir (m.65.4). Belə olan halda ancaq B istiqamətində hərəkəti davam etdirmək qadağandır.",
+      "img": "assets/img/1/91.jpg",
+      "answerByLetter": "b",
+      "answer": "A və ya Б"
+    },
+    "92": {
+      "a": "Ancaq A",
+      "b": "Ancaq Б",
+      "c": "Hər biri ilə",
+      "des": "Şəkildəki yolayrıcında hərəkət hissələrinin iki birləşməsi vardır. 'Düzünə hərəkət' nişanı bu yolayrıcında hərəkət hissələrinin birinci birləşmə yerinə şamil edilir (m.65.4), burada dönmə manevrlərini qadağan edir. Belə olan halda ancaq Б trayektoriyası ilə geriyə dönə bilərsiniz.",
+      "img": "assets/img/1/92.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq Б"
+    },
+    "93": {
+      "a": "Ancaq düzünə",
+      "b": "Düzünə və ya sola",
+      "c": "Düzünə və ya geriyə",
+      "des": "'Düzünə hərəkət' nişanı bu yolayrıcında ancaq düzünə istiqamətdə hərəkəti davam etdirməyə icazə verir.",
+      "img": "assets/img/1/93.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq düzünə"
+    },
+    "94": {
+      "a": "Ancaq Б",
+      "b": "A və ya Б",
+      "c": "Bütün istiqamətlərdə",
+      "des": "Yol sahəsinin başlanğıcında qurulmuş 'Düzünə hərəkət' nişanı hərəkət istiqamətində ən yaxın yolayrıcına qədər qüvvədə olur, sola və ya geriyə dönməni qadağan edir. Bu nişan həyətlərə və yola bitişik digər ərazilərə girmək üçün sağa dönməni qadağan etmir (m.65.4). Şəkildəki göstərilən növbəti yolayrıcında Siz istənilən istiqamətdə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/94.jpg",
+      "answerByLetter": "c",
+      "answer": "Bütün istiqamətlərdə"
+    },
+    "95": {
+      "a": "Ancaq Б",
+      "b": "Б və ya B",
+      "c": "A və ya Б",
+      "des": "'Dairəvi hərəkət' nişanı bildirir ki, lazımı döngəyə dönənə kimi dairənin mərkəzi ətrafında saat əqrəbinin əks istiqamətində hərəkət etmək lazımdır. Belə olduğu halda B istiqamətində hərəkət qadağandır. A istiqamətindəki yolda qoyulmuş 'Sağa dönmək qadağandır' nişanı isə sağa dönməni qadaqan edir.",
+      "img": "assets/img/1/95.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б"
+    },
+    "96": {
+      "a": "Bu yolda icazə verilən minimum hərəkət sürəti saatda 50 kilometrdir",
+      "b": "Sol hərəkət zolağında icazə verilən minimum hərəkət sürəti saatda 50 kilometrdir",
+      "c": "Bu yolda məsləhət görülən sürət saatda 50 kilometrdir",
+      "des": "'Hərəkət zolağı' lövhəciyi göstərir ki, 'Minimum sürətin məhdudlaşdırılması' nişanının təsiri ancaq sol hərəkət zolağına şamil edilir və burada NV-nin minimum sürəti saatda 50 km-dən az olmamalıdır, lakin yol yaşayış məntəqəsində yerləşdiyindən maksimum sürət saatda 60 km-dən artıq olmamalıdır (m.50.2).",
+      "img": "assets/img/1/96.jpg",
+      "answerByLetter": "b",
+      "answer": "Sol hərəkət zolağında icazə verilən minimum hərəkət sürəti saatda 50 kilometrdir"
+    },
+    "97": {
+      "a": "Ancaq soldakı həyətə",
+      "b": "Ancaq sağdakı həyətə",
+      "c": "Həyətlərə dönmək qadağandır",
+      "des": "Yol sahəsinin başlanğıcında (yolayrıcından sonra) qurulmuş 'Düzünə hərəkət' nişanı hərəkət istiqamətində ən yaxın yolayrıcına qədər qüvvədə olur, sola və ya geriyə dönməni qadağan edir. Bu nişan həyətlərə və yola bitişik digər ərazilərə girmək üçün sağa dönmənı qadağan etmir (m.65.4). Ona görə də sağda göstərilən həyətə girə bilərsiniz.",
+      "img": "assets/img/1/97.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq sağdakı həyətə"
+    },
+    "98": {
+      "a": "Ancaq sola və ya sağa",
+      "b": "Ancaq düzünə",
+      "c": "Bütün istiqamətlərdə",
+      "des": "'Nəqliyyat vasitəsinin növü' lövhəciyi 'Düzünə hərəkət' nişanının ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə şamil olunduğunu dəqiqləşdirir (m.68.1). Siz hərəkəti istənilən istiqamətdə davam etdirə bilərsiniz.",
+      "img": "assets/img/1/98.jpg",
+      "answerByLetter": "c",
+      "answer": "Bütün istiqamətlərdə"
+    },
+    "99": {
+      "a": "Ancaq Б",
+      "b": "Ancaq A və ya Б",
+      "c": "Bütün istiqamətlərdə",
+      "des": "'Düzünə və ya sağa hərəkət' nişanı ancaq düzünə və sağa hərəkəti davam etdirməyə icazə verir, yəni A və Б istiqamətlərində.",
+      "img": "assets/img/1/99.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq A və ya Б"
+    },
+    "100": {
+      "a": "Düzünə, sola və ya geriyə",
+      "b": "Ancaq düzünə və ya sola",
+      "c": "Ancaq sola",
+      "des": "Əgər sol zolaq üzərində asılmış 'Zolaqlarda hərəkət istiqamətləri' nişanı sola dönməyə icazə verirsə, deməli, bu zolaqdan geriyə dönməyə də icazə verilir (m.42.6). Beləliklə, yolayrıcında hərəkəti düzünə, sola və geriyə davam etdirmək olar.",
+      "img": "assets/img/1/100.jpg",
+      "answerByLetter": "a",
+      "answer": "Düzünə, sola və ya geriyə"
+    },
+    "101": {
+      "a": "Düzünə, sola və ya geriyə",
+      "b": "Ancaq düzünə",
+      "c": "Ancaq düzünə və ya sola",
+      "des": "Orta zolaq üzərində asılmış 'Zolaqlarda hərəkət istiqamətləri' nişanı Sizə hərəkəti düzünə və ya sola davam etdirməyə icazə verir, lakin geriyə dönməyə ancaq sol zolaqdan icazə verilir (m.42.6).",
+      "img": "assets/img/1/101.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq düzünə və ya sola"
+    },
+    "102": {
+      "a": "Sola və ya geriyə",
+      "b": "Ancaq geriyə",
+      "c": "Ancaq sola",
+      "des": "Sol zolaq üzərində asılmış 'Zolaqlarda hərəkət istiqamətləri' nişanı Sizə sola istiqamətindən başqa geriyə dönməyə də icazə verir (m.42.6).",
+      "img": "assets/img/1/102.jpg",
+      "answerByLetter": "a",
+      "answer": "Sola və ya geriyə"
+    },
+    "103": {
+      "a": "Ancaq A",
+      "b": "Bütün istiqamətlərdə",
+      "c": "Б-dən başqa hər biri ilə",
+      "des": "'Geriyə dönmə yeri' nişanı geriyə dönmək üçün yeri göstərir və bu yerdə sola dönmənin qadağan olunduğunu bildirir. Şəkildə göstərilən yolayrıcında Б istiqamətindən başqa hər bir istiqamətdə hərəkəti davam etdirmək olar.",
+      "img": "assets/img/1/103.jpg",
+      "answerByLetter": "c",
+      "answer": "Б-dən başqa hər biri ilə"
+    },
+    "104": {
+      "a": "Hamısı",
+      "b": "Ancaq B və V",
+      "c": "Ancaq B",
+      "des": "'Yaşayış məntəqəsinin qurtaracağı' nişanı (B) bildirir ki, yaşayış məntəqələrində hərəkət qaydalarına qoyulan teləblər nişandan sonra qüvvədən düşürlər. 'Yaşayış məntəqəsinin başlanğıcı' nişanı (V) yaşayış məntəqəsindən keçən bu yolda yaşayış məntəqələrində hərəkət qaydalarına qoyulan tələblərin qüvvədə olmadıqlarını bildirir. 'Yaşayış məntəqəsinin başlanğıcı' nişanı (A) isə, əksinə olaraq, sürücüləri məlumatlandırır ki, onun qoyulduğu yerdən başlayaraq yaşayış məntəqələrində hərəkət qaydalarına qoyulan tələblər yerinə yetirilməlidir.",
+      "img": "assets/img/1/104.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq B və V"
+    },
+    "105": {
+      "a": "Bəli",
+      "b": "Xeyir",
+      "c": "Ola bilər",
+      "des": "'Dalan' nişanı, sadəcə olaraq, sürücüləri xəbərdar edir ki, sağa gedən yol müəyyən məsafədən sonra bitir və bu yola dönmək qadağan deyildir.",
+      "img": "assets/img/1/105.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "106": {
+      "a": "Б",
+      "b": "B",
+      "c": "A",
+      "des": "B ('Qarşılıqlı hərəkət') nişanı bir və ya bir neçə zolağında hərəkət istiqaməti əksinə dəyişə bilən yolların qarşısında quraşdınlır.",
+      "img": "assets/img/1/106.jpg",
+      "answerByLetter": "b",
+      "answer": "B"
+    },
+    "107": {
+      "a": "Hərəkəti ancaq ikinci zolaqda davam etdirmək mümkündür",
+      "b": "Hərəkəti ancaq qarşı hərəkət istiqaməti üçün olan hərəkət hissəsində davam etdirmək mümkündür",
+      "c": "Hərəkəti başqa yolda davam etdirmək mümkündür",
+      "des": "'Başqa işlək sahəyə yerdəyişmənin ilkin göstəricisi' nişanı ayırıcı zolağı olan yollarda təmir işlərinin aparıldığı zaman tətbiq edilir. Bu zaman hərəkət hissələrindən biri tam bağlanılır və orada hərəkət edən NV-nin axını əks hərəkət istiqaməti üçün nəzərdə tutulmuş hərəkət hissəsinə keçirilir. Bu nişan Sizi məlumatlandırır ki, sol hərəkət hissəsinə ayırıcı zolağın kəsiyindən keçməlisiniz",
+      "img": "assets/img/1/107.jpg",
+      "answerByLetter": "b",
+      "answer": "Hərəkəti ancaq qarşı hərəkət istiqaməti üçün olan hərəkət hissəsində davam etdirmək mümkündür"
+    },
+    "108": {
+      "a": "Ancaq B",
+      "b": "Hamısı",
+      "c": "Б və B",
+      "des": "Б lövhəciyi (7.4.3 'Nəqliyyat vasitəsinin növü') ilə quraşdırılan nişanların təsiri minik və icazə verilən maksimum kütləsi 3,5 tondan az olan yük avtomobillərinə tətbiq olunur, B lövhəciyi (7.6.1 'NV-nin duracağa qoyulma üsulu') sürücüləri məlumatlandırır ki, bütün NV duracağa hərəkət hissəsinin sağ kənarında, bordürə parallel şəkildə qoyulmalıdır. Beləliklə, Б və B lövhəcikləri ilə quraşdırılmış nişanlar minik və icazə verilən maksimum kütləsi 3,5 tondan az olan yük avtomobillərinə şamil olunur. A lövhəciyi (7.4.1 'Nəqliyyat vasitəsinin növü') ilə quraşdırılan nişanların təsiri isə icazə verilən maksimum kütləsi 3,5 tondan artıq olan yük avtomobillərinə tətbiq olunur.",
+      "img": "assets/img/1/108.jpg",
+      "answerByLetter": "c",
+      "answer": "Б və B"
+    },
+    "109": {
+      "a": "Б və B",
+      "b": "Ancaq A",
+      "c": "Ancaq Б",
+      "des": "Б və B lövhəcikləri ('Qüvvədə olma zonası') onlarla birgə quraşdırılmış nişanların təsir zonasının qüvvədə olduğu məsafəni göstərir. A lövhəciyi ('Obyektə qədər məsafə') isə nişanın qoyulduğu yerdən təhlükəli sahəyə, məhdudiyyətin qoyulduğu yerə və ya təyin edilmiş obyektə kimi dəqiq məsafəni göstərmək üçün istifadə edilir.",
+      "img": "assets/img/1/109.jpg",
+      "answerByLetter": "a",
+      "answer": "Б və B"
+    },
+    "110": {
+      "a": "Qadağandır",
+      "b": "İcazə verilir, ancaq sərnişinlərin minməsi və ya düşməsi məqsədi ilə",
+      "c": "İcazə verilir",
+      "des": "'Dayanmaq qadağandır' nişanının altında quraşdırılan 'Qüvvədə olma zonası' lövhəciyi sürücüləri məlumatlandırır ki, NV-lərinin dayanması həm nişana qədər, həm də nişandan sonra qadağandır. Nişandan sonra dayanmaqla Siz Qaydaları pozursunuz.",
+      "img": "assets/img/1/110.jpg",
+      "answerByLetter": "a",
+      "answer": "Qadağandır"
+    },
+    "111": {
+      "a": "Asvalt yol ilə",
+      "b": "Bütün hallarda",
+      "c": "Ancaq yolun örtüyü yaş olduğu halda",
+      "des": "'Maksimum sürətin məhdudlaşdırılması' nişanının 'Yaş örtük' lövhəciyi ilə birgə quraşdırılması sürücüləri məlumatlandırır ki, yolun örtüyü yaş olduğu halda (yağış yağanda və ya ondan sonra və s.) saatda 40 kilometrdən artıq sürətlə hərəkət etmək qadağandır.",
+      "img": "assets/img/1/111.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq yolun örtüyü yaş olduğu halda"
+    },
+    "112": {
+      "a": "Heç biri",
+      "b": "Б və B",
+      "c": "Ancaq Б",
+      "des": "Göstərilmiş nişanlardan ancaq A nişanı ('Maksimum sürətin məhdudlaşdırılması') saatda 50 km-dən artıq sürətlə hərəkət etməyi qadağan edir. Б nişanı ('Minimum sürətin məhdudlaşdırılması') nəinki icazə verir, hətta sürücünü nişanda qeyd olunan sürətə bərabər və ya daha artıq sürətlə hərəkət etməyə məcbur edir. B nişanı ('Tövsiyyə edilən sürət') yolun nişanlanmış sahəsində məsləhət edilən hərəkət sürətini göstərir, lakin bundan az və ya artıq sürətlə hərəkət etmək mümkünlüyünü istisna etmir.",
+      "img": "assets/img/1/112.jpg",
+      "answerByLetter": "b",
+      "answer": "Б və B"
+    },
+    "113": {
+      "a": "Б və B",
+      "b": "Ancaq Б",
+      "c": "Ancaq A",
+      "des": "Ancaq 'Hərəkət zolağı' lövhəciyi ilə birgə tətbiq olunan 'Maksimum sürətin məhdudlaşdırılması' nişanı üzərində quraşdırıldığı hərəkət zolağında təsir qüvvəsində olur (A nişanı).",
+      "img": "assets/img/1/113.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A"
+    },
+    "114": {
+      "a": "Ancaq Б və B",
+      "b": "Ancaq A və Г",
+      "c": "Ancaq B və Г",
+      "des": "Б və B ('Gömrükxana', 'Dayanmadan keçmək qadağandır') nişanları hərəkəti dayanmadan davam etdirməyi qadağan edir. A nişanı ('Yol polisinin daimi postu') yolda DYP-nin postunun olması barədə məlumat verir, Г nişanı isə ('Stop-xətt') svetoforun qadağan siqnalında harada dayanmağın tələb edildiyi yeri göstərir.",
+      "img": "assets/img/1/114.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б və B"
+    },
+    "115": {
+      "a": "16 yaş",
+      "b": "18 yaş",
+      "c": "19 yaş",
+      "des": "1 iyul 2010 sonra Azərbaycan Respublikasının ərazisindəki yollarda motosikleti (A kateqoriya) idarəetmə hüququ 18 yaşdan yaranır (m.33.2). A1 kateqoriya motosikleti idarəetmə hüququ 16 yaşdan yaranır.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "18 yaş"
+    },
+    "116": {
+      "a": "Ancaq soldakı",
+      "b": "Ortadakı və sağdakı",
+      "c": "Heç biri",
+      "des": "Şəkildə göstərilən nişanların təsir sahəsində NV-nin durması qadağandır. Lakin bu nişanlar öz təsir sahələrində NV-nin dayanmasını qadağan etmir.",
+      "img": "assets/img/1/116.jpg",
+      "answerByLetter": "c",
+      "answer": "Heç biri"
+    },
+    "117": {
+      "a": "Hər ikisinə qadağandır",
+      "b": "Hər ikisinə icazə verilir",
+      "c": "Ancaq qarşıdan gələn nəqliyyat vasitəsinin sürücüsünə icazə verilir",
+      "des": "Qaydalara görə NV yolun hərəkət hissəsindən kənarda dayanmaq məqsədi ilə 1.1 bütöv nişanlanma xəttini ancaq o halda kəsib keçə bilər ki, bu xətt hərəkət hissəsinin sağ kənarını işarələsin və sürücüdən sağda yerləşmiş olsun. Bu şəraitdə ancaq qarşıdan gələn NV-nin sürücüsü 1.1 nişanlanma xəttini keçməklə Qaydaları pozmur. Siz 1.1 nişanlanma xəttini keçib 1.16.3 nişanlanma ilə göstərilən istiqamətləndirici adacığa girməklə Qaydaları pozursunuz. Belə ki, bu adacıq nə hərəkət etmək üçün, nə də dayanmaq üçün nəzərdə tutulmayıb.",
+      "img": "assets/img/1/117.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq qarşıdan gələn nəqliyyat vasitəsinin sürücüsünə icazə verilir"
+    },
+    "118": {
+      "a": "Ancaq Б",
+      "b": "Heç birində",
+      "c": "Hər ikisində",
+      "des": "Qaydalara görə NV yolun hərəkət hissəsindən kənarda dayanmaq məqsədi ilə bütöv nişanlanma xəttini ancaq o halda kəsib keçə bilər ki, bu xətt hərəkət hissəsinin sağ kənarını işarələsin və sürücüdən sağda yerləşmiş olsun. Siz şəkildə ancaq Б yerində xətti keçib dayana bilərsiniz.",
+      "img": "assets/img/1/118.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б"
+    },
+    "119": {
+      "a": "Sizə ancaq sola dönməyə icazə verir",
+      "b": "Sizə ancaq geriyə dönməyə icazə verir",
+      "c": "Sizə sola və geriyə dönməyə icazə verir",
+      "des": "Ox şəklində olan 1.18 nişanlanması yolayrıcında hərəkətin zolaq üzrə icazə verilmiş istiqamətini göstərir (m.69.6). Bu nişanlanma sola dönməklə yanaşı həm də geriyə dönməyə icazə verir (m.42.6).",
+      "img": "assets/img/1/119.jpg",
+      "answerByLetter": "c",
+      "answer": "Sizə sola və geriyə dönməyə icazə verir"
+    },
+    "120": {
+      "a": "Qadağandır",
+      "b": "Bəli",
+      "c": "Bəli, səkiyə çıxmamaq şərti ilə",
+      "des": "Sarı bütöv nişanlanma xətti dayanma qadağan olunan yerləri bildirir və 3.27 nişani ilə birlikdə tətbiq edilir və hərəkət hissəsinin kənarına və ya bordürün üst hissəsinə çəkilir (m.69.6).",
+      "img": "assets/img/1/120.jpg",
+      "answerByLetter": "a",
+      "answer": "Qadağandır"
+    },
+    "121": {
+      "a": "Ancaq yandan keçməni",
+      "b": "Heç nə qadağan etmir",
+      "c": "Ancaq geriyə dönməni",
+      "des": "Qırıq nişanlanma xətti bu yolda əks istiqamətli nəqliyyat axınını ayırır və hər hansı bir manevrin yerinə yetirilməsini qadağan etmir.",
+      "img": "assets/img/1/121.jpg",
+      "answerByLetter": "b",
+      "answer": "Heç nə qadağan etmir"
+    },
+    "122": {
+      "a": "Yolayrıcında məcburi hərəkət istiqamətlərini",
+      "b": "Yolayrıcının hüdudlarında hərəkət zolaqlarının sərhədlərini",
+      "c": "Heçnəyi",
+      "des": "Cizgiləri qısa və onların aralarındakı məsafə cizginin uzunluğuna bərabər olan qırıq xətlər (1.7 nişanlanma xətti) yolayrıcının hüdudlarında hərəkət zolaqlarını göstərir (m.69.6).",
+      "img": "assets/img/1/122.jpg",
+      "answerByLetter": "b",
+      "answer": "Yolayrıcının hüdudlarında hərəkət zolaqlarının sərhədlərini"
+    },
+    "123": {
+      "a": "İcazə verilir, ancaq sola və geriyə dönmək məqsədi ilə",
+      "b": "Qadağandır",
+      "c": "İcazə verilir",
+      "des": "Reversiv svetoforun yaşıl işığı Sizdən solda olan 1.9 nişanlanma xəttini keçib reversiv zolaqda hərəkət etməyə icazə verir (m.69.6).",
+      "img": "assets/img/1/123.jpg",
+      "answerByLetter": "c",
+      "answer": "İcazə verilir"
+    },
+    "124": {
+      "a": "Dərhal sağ zolağa keçməlisiniz",
+      "b": "Qarşıdan nəqliyyat vasitələri gəlmədiyi halda hərəkəti davam etdirməlisiniz",
+      "c": "Bu zolaqda ancaq növbəti yolayrıcına kimi hərəkəti davam etdirməlisiniz",
+      "des": "Bu nişanlanma xətti ilə işarələnən zolaqda hərəkət edərkən svetofor söndürülərsə, Siz dərhal sağ zolağa keçməlisiniz (m.59.8).",
+      "img": "assets/img/1/124.jpg",
+      "answerByLetter": "a",
+      "answer": "Dərhal sağ zolağa keçməlisiniz"
+    },
+    "125": {
+      "a": "İcazə verilir, əgər yük avtomobilinin sürəti saatda 30 kilometrdirsə",
+      "b": "İcazə verilir",
+      "c": "İcazə verilmir",
+      "des": "Bu nişanlanma xəttini kəsib keçməyə icazə verilir. Lakin reversiv svetoforun qırmızı siqnalı ötməni qadağan edir və bildirir ki, sol zolaqda NV axını əks istiqamətdə təşkil olunmuşdur.",
+      "img": "assets/img/1/125.jpg",
+      "answerByLetter": "c",
+      "answer": "İcazə verilmir"
+    },
+    "126": {
+      "a": "Ancaq ötmə məqsədi ilə icazə verilir",
+      "b": "İcazə verilmir",
+      "c": "Qarşıdan gələn nəqliyyat vasitələri yoxdursa, icazə verilir",
+      "des": "Bu şəraitdə reversiv svetofor siqnalları söndürüldüyündən 1.9 nişanlanma xətti əks istiqamətli nəqliyyat axınlarını ayırır və onları kəsib keçmək qadağandır.",
+      "img": "assets/img/1/126.jpg",
+      "answerByLetter": "b",
+      "answer": "İcazə verilmir"
+    },
+    "127": {
+      "a": "İcazə verilir",
+      "b": "İcazə verilmir",
+      "c": "İcazə verilir, ancaq səkiyə çıxmaq yolu ilə",
+      "des": "Sarı qırıq nişanlanma xətti durma qadağan olunan yerləri bildirir və 3.28 nişanı ilə birlikdə tətbiq edilir və hərəkət hissəsinin kənarına və ya bordürün üst hissəsinə çəkilir (m.69.6). Bu nişanlanma xətti dayanmanı qadağan etmir.",
+      "img": "assets/img/1/127.jpg",
+      "answerByLetter": "a",
+      "answer": "İcazə verilir"
+    },
+    "128": {
+      "a": "Bəli",
+      "b": "Bəli, əgər traktorun sürəti saatda 30 kilometrdən azdırsa",
+      "c": "Xeyir",
+      "des": "Bu nişanlanma xəttini qırıq xətt tərəfdən, habelə yalnız ötməni və ya yandan keçməni başa çatdırdıqdan sonra bütöv xətt tərəfdən kəsib keçməyə icazə verilir (m.69.6-7). Ona görə də traktorun sürətindən asılı olmayaraq ötmə əməliyyatını yerinə yetirməyə icazə verilir.",
+      "img": "assets/img/1/128.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "129": {
+      "a": "Bəli",
+      "b": "Bəli, əgər traktorun sürəti saatda 30 kilometrdən azdırsa",
+      "c": "Xeyr",
+      "des": "Bu şəraitdə traktorun sürətindən asılı olmayaraq onu ötmək qadağandır, çünki bu nişanlanma xəttini bütöv xətt tərəfdən yalnız ötməni və ya yandan keçməni başa çatdırdıqdan sonra kəsib keçməyə icazə verilir (m.69.6-7).",
+      "img": "assets/img/1/129.jpg",
+      "answerByLetter": "c",
+      "answer": "Xeyr"
+    },
+    "130": {
+      "a": "İcazə verilir",
+      "b": "Qadağandır",
+      "c": "İcazə verilir, ancaq səkiyə çıxmaq yolu ilə",
+      "des": "Sarı qırıq nişanlanma xətti durma qadağan olunan yerləri bildirir və 3.28 nişani ilə birlikdə tətbiq edilir və hərəkət hissəsinin kənarına və va bordürün üst hissəsinə cəkilir (m.69.6). Bu nisanlanma xətti NV-nin durmasını qadağan edir.",
+      "img": "assets/img/1/130.jpg",
+      "answerByLetter": "b",
+      "answer": "Qadağandır"
+    },
+    "131": {
+      "a": "İkisi də pozur",
+      "b": "Ancaq Б",
+      "c": "Heç biri pozmur",
+      "des": "Bu nişanlanma xəttini qırıq xətt tərəfdən, habelə yalnız ötməni və ya yandan keçməni başa çatdırdıqdan sonra bütöv xətt tərəfdən kəsib keçməyə icazə verilir (m.69.6,7). Bu şəraitdə ancaq Б avtomobili Qaydaları pozmur",
+      "img": "assets/img/1/131.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq Б"
+    },
+    "132": {
+      "a": "Nişanın qarşısında dayanmalısınız",
+      "b": "Stop-xəttin yanında dayanmalısınız",
+      "c": "Digər nəqliyyat vasitələrinin olmadığı halda yolayrıcını dayanmadan keçib getməlisiniz",
+      "des": "1.12 ('STOP-xətt') nişanlanma xətti 2.5 nişanı olduqda və ya svetoforun (nizamlayıcının) qadağan siqnalı verildikdə sürücünün dayanmalı olduğu yeri bildirir (m.69.6).",
+      "img": "assets/img/1/132.jpg",
+      "answerByLetter": "b",
+      "answer": "Stop-xəttin yanında dayanmalısınız"
+    },
+    "133": {
+      "a": "Yolayrıcındakı qırıq xəttin üstündə",
+      "b": "Sürücünün qərarı ilə istənilən yerdə",
+      "c": "Yolayrıcının qarşısındakı nişanlanma xəttinin qabağında",
+      "des": "1.13 nişanlanma xətti kəsişən yolla hərəkət edən NV-ə yol vermək üçün sürücünün lazım gəldikdə dayanmalı olduğu yeri göstərir (m.69.6).",
+      "img": "assets/img/1/133.jpg",
+      "answerByLetter": "c",
+      "answer": "Yolayrıcının qarşısındakı nişanlanma xəttinin qabağında"
+    },
+    "134": {
+      "a": "Velosiped yolu ilə hərəkət hissəsinin kəsişdiyi yeri",
+      "b": "Velosipedçinin üstünlüyə malik olduğu yeri",
+      "c": "Piyada keçidi yerini",
+      "des": "Bu nişanlanma xətti velosiped zolağının yolun hərəkət hissəsi ilə kəsişdiyi yeri göstərir (m.69.6). Yolayrıclardan kənarda belə nizamlanmayan kəsişmələrə yaxınlaşan velosipedçilər və moped sürənlər yolda hərəkət edən NV-ə yol verməlidirlər (m.46.3).",
+      "img": "assets/img/1/134.jpg",
+      "answerByLetter": "a",
+      "answer": "Velosiped yolu ilə hərəkət hissəsinin kəsişdiyi yeri"
+    },
+    "135": {
+      "a": "Ancaq V və Q",
+      "b": "B-dən başqa hər biri",
+      "c": "Ancaq Q və C",
+      "des": "A nişanlanma xətti (1.1) əks istiqamətli nəqliyyat axınlarını ayırır və yolların təhlükəli yerlərində hərəkət zolaqlarının sərhədini, yolun hərəkət hissəsinin giriş qadağan edilən sərhədlərini, nəqliyyat vasitələrinin duracaq yerlərinin sərhədlərini və avtomagistrallara aid edilməyən yolların hərəkət hissəsinin kənarlarını göstərir. B nişanlanma xətti (1.3) dörd və daha çox hərəkət zolağı olan yollarda əks istiqamətli nəqliyyat axınlarını ayırır. V nişanlanma xətti (1.4) dayanma qadağan olunan yerləri bildirir, müstəqil və ya 3.27 nişanı ilə birlikdə tətbiq edilir və hərəkət hissəsinin kənarına və ya bordürün üst hissəsində çəkilir. Q nişanlanma xətti (1.10) duracağın qadağan olunduğu yerləri bildirir, müstəqil və ya 3.28 nişanı ilə birlikdə tətbiq olunur və hərəkət hissəsinin kənarına və ya bordürün üst hissəsində çəkilir. C nişanlanma xətti (1.5) iki və ya üç zolaqlı olan yollarda əks istiqamətli nəqliyyat axınlarını ayırır, bir istiqamətdə hərəkət üçün iki və daha çox zolaq olduqda, hərəkət zolaqlarının sərhədlərini göstərir (m.69.6). Deməli, V və Q nişanlanma xətləri durmanı qadağan edir.",
+      "img": "assets/img/1/135.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq V və Q"
+    },
+    "136": {
+      "a": "Hər birini",
+      "b": "Ancaq A",
+      "c": "Ancaq C",
+      "des": "A nişanlanma xətti (1.1) əks istiqamətli nəqliyyat axınlarını ayırır və yolların təhlükəli yerlərində hərəkət zolaqlarının sərhədini, yolun hərəkət hissəsinin giriş qadağan edilən sərhədlərini, nəqliyyat vasitələrinin duracaq yerlərinin sərhədlərini və avtomagistrallara aid edilməyən yolların hərəkət hissəsinin kənarlarını göstərir. B nişanlanma xətti (1.3) dörd və daha çox hərəkət zolağı olan yollarda əks istiqamətli nəqliyyat axınlarını ayırır. V nişanlanma xətti (1.4) dayanma qadağan olunan yerləri bildirir, müstəqil və ya 3.27 nişanı ilə birlikdə tətbiq edilir və hərəkət hissəsinin kənarına və ya bordürün üst hissəsində çəkilir. Q nişanlanma xətti (1.10) duracağın qadağan olunduğu yerləri bildirir, müstəqil və ya 3.28 nişanı ilə birlikdə tətbiq olunur və hərəkt hissəsinin kənarına və ya bordürün üst hissəsində çəkilir. A, B, V və Q nişanlanma xətlərini kəsib keçmək qadağandır. Amma C nişanlanma xətti (1.5) iki və ya üç zolaqlı olan yollarda əks istiqamətli nəqliyyat axınlarını ayırır, bir istiqamətdə hərəkət üçün iki və daha çox zolaq olduqda, hərəkət zolaqlarının sərhədlərini göstərir. Bu nişanlanma xəttini istənilən tərəfdən kəsib keçməyə icazə verilir (m.69.7).",
+      "img": "assets/img/1/136.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq C"
+    },
+    "137": {
+      "a": "Xeyr",
+      "b": "Bəli",
+      "c": "Bəli, əgər marşrut nəqliyyat vasitəsi üçün maneə yaratmayacaqsınızsa",
+      "des": "Sarı rəngli ziqzaq formasında olan 1.17 nişanlanma xətti ilə ümumi istifadədə olan nəqliyyat vasitəsinin dayanacaq və taksilərin duracaq yeri işarələnir. İyul 1 2010 sonra dayanacaq meydançasına, meydança olmadıqda isə ümumi istifadədə olan nəqliyyat vasitələrinin dayanacaq yerini işarə edən 5.12 və ya 5.13 yol nişanlarına 15 metrdən az yaxınlıqda dayanma qadağandır (m.52.4.7).",
+      "img": "assets/img/1/137.jpg",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "138": {
+      "a": "Sizi məlumatlandırır ki, yol sağa dönür",
+      "b": "Sizi məlumatlandırır ki, yolun hərəkət hissəsinin daralma sahəsinə yaxınlaşırsınız",
+      "c": "Sağ zolağa keçmək üçün Sizə üstünlük verir",
+      "des": "Oxlar şəklində olan nişanlanması yolun hərəkət hissəsinin daralan sahəsinə (həmin istiqamətdə zolaqların sayının azaldığı sahəyə) yaxınlaşmanı bildirir (m.69.6). Bu halda sağ hərəkət zolağına keçmək lazımdır.",
+      "img": "assets/img/1/138.jpg",
+      "answerByLetter": "b",
+      "answer": "Sizi məlumatlandırır ki, yolun hərəkət hissəsinin daralma sahəsinə yaxınlaşırsınız"
+    },
+    "139": {
+      "a": "Dayanmanın vacib olduğu yeri göstərir",
+      "b": "Yolun təhlükəli sahəsinə daxil olmağınızı",
+      "c": "Yaxınlaşmaqda olan digər nəqliyyat vasitələrinə yol vermək məqsədi ilə təyin olunmuş yerə yaxınlaşma haqqında xəbərdarlıq edir",
+      "des": "Hərəkət zolağı üzərində üçbucaq formasında çəkilmiş 1.20 nişanlanması kəsişən yolla yaxınlaşmaqda olan digər nəqliyyat vasitələrinə yol vermək məqsədi ilə təyin olunmuş yerə yaxınlaşma haqqında xəbərdarlıq edir.",
+      "img": "assets/img/1/139.jpg",
+      "answerByLetter": "c",
+      "answer": "Yaxınlaşmaqda olan digər nəqliyyat vasitələrinə yol vermək məqsədi ilə təyin olunmuş yerə yaxınlaşma haqqında xəbərdarlıq edir"
+    },
+    "140": {
+      "a": "Yaxın yaşayış məntəqəsinə kimi məsafəni",
+      "b": "Yaxın yolayrıcıya kimi məsafəni",
+      "c": "Yolun və ya marşrutun nömrəsini",
+      "des": "Bu nişanlanma yolun və ya marşrutun nömrəsini göstərir (m.69.6).",
+      "img": "assets/img/1/140.jpg",
+      "answerByLetter": "c",
+      "answer": "Yolun və ya marşrutun nömrəsini"
+    },
+    "141": {
+      "a": "Taksi və marşrut nəqliyyat vasitələrinin hərəkəti üçün xüsusi hərəkət zolağını",
+      "b": "Ümumi istifadədə olan nəqliyyat vasitələrinin hərəkəti üçün xüsusi hərəkət zolağını",
+      "c": "Marşrut nəqliyyat vasitələrinin dayanma yerlərini",
+      "des": "'A' (və ya 'BUS') səklində olan 1.23 nişanlanması ümumi istifadədə olan NV üçün xüsusi zolağı göstərir (m.69.6).",
+      "img": "assets/img/1/141.jpg",
+      "answerByLetter": "b",
+      "answer": "Ümumi istifadədə olan nəqliyyat vasitələrinin hərəkəti üçün xüsusi hərəkət zolağını"
+    },
+    "142": {
+      "a": "Yol qurğularının hərəkətdə olan nəqliyyat vasitələri üçün təhlükə doğuran ünsürlərini",
+      "b": "Bütün yol qurğularının şaquli elementlərini",
+      "c": "Yolda təmirin olduğunu",
+      "des": "Bu nişanlanma xətti yol qurğularının hərəkətdə olan NV üçün təhlükə doğuran ünsürlərini (körpülərin dayaqlarını və s.) göstərir (m.69.9).",
+      "img": "assets/img/1/142.jpg",
+      "answerByLetter": "a",
+      "answer": "Yol qurğularının hərəkətdə olan nəqliyyat vasitələri üçün təhlükə doğuran ünsürlərini"
+    },
+    "143": {
+      "a": "Bütün avtobuslar, trolleybuslar və taksilər",
+      "b": "Ancaq təyin olunmuş və dayanacaqlarla işarələnmiş marşrutlarla hərəkət edən avtobus və trolleybuslar",
+      "c": "Ancaq avtobuslar",
+      "des": "'A' (və ya 'BUS' səklində olan 1.23 nişanlanması ümumi istifadədə olan NV üçün xüsusi zolağı göstərir (m.69.6). Bu zolaq ancaq dayanacaqlarla işarələnən və təyin olunmuş marşrutlarla hərəkət edən avtobus və trolleybuslar üçün nəzərdə tutulmuşdur.",
+      "img": "assets/img/1/143.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq təyin olunmuş və dayanacaqlarla işarələnmiş marşrutlarla hərəkət edən avtobus və trolleybuslar"
+    },
+    "144": {
+      "a": "Nişanlanma xətlərinin tələblərini",
+      "b": "Qanun bu vəziyyəti müəyyənləşdirmir",
+      "c": "Müvəqqəti quraşdırılmış yol nişanının tələblərini",
+      "des": "Əgər yeri dəyişdirilə bilən dayaqlarda qurulmuş müvəqqəti yol nişanının tələbi ilə yoldakı nişanlanma xətlərinin tələbləri biri-birinə zidd gəlirsə, sürücülər müvəqqəti quraşdırılmış yol nişanının tələblərini əsas tutmalıdırlar (m.69.7).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Müvəqqəti quraşdırılmış yol nişanının tələblərini"
+    },
+    "145": {
+      "a": "Ancaq A ilə",
+      "b": "Hər biri ilə",
+      "c": "Ancaq Б ilə",
+      "des": "Müvəqqəti quraşdırılmış 'Maneəni soldan keçmə' nişanı Sizə bütöv nişanlanma xəttini kəsməyə və maneəni ancaq A trayektoriyası ilə keçməyə icazə verir. Əgər yeri dəyişdirilə bilən dayaqlarda qurulmuş müvəqqəti yol nişanının tələbi ilə yoldakı nişanlanma xətlərinin tələbləri bir-birinə zidd gəlirsə, sürücülər müvəqqəti quraşdırılmış yol nişanının tələblərini əsas tutmalıdırlar (m.69.7).",
+      "img": "assets/img/1/145.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A ilə"
+    },
+    "146": {
+      "a": "Tunellərin, körpülərin aşırmalarının aşağı kənarını",
+      "b": "Təhlükə doğuran hər hansı bir yol elementini",
+      "c": "Ancaq işıqlanmayan tunelə girməyi bildirir",
+      "des": "Bu nişanlanma xətti tunellərin və körpülərin aşırımlarının aşağı kənarını göstərir (m.69.9).",
+      "img": "assets/img/1/146.jpg",
+      "answerByLetter": "a",
+      "answer": "Tunellərin, körpülərin aşırmalarının aşağı kənarını"
+    },
+    "147": {
+      "a": "'Yol verin' nişanına yaxınlaşmanı bildirir",
+      "b": "'Dayanmadan keçmək qadağandır' nişanına və STOP xəttə yaxınlaşma haqqında xəbərdarlıq edir",
+      "c": "Nizamlanan yolayrıcının qarşısında olan stop-xəttə yaxınlaşmanı bildirir",
+      "des": "'STOP' yazısı şəklində olan 1.21 nişanlanması 'STOP' nişanı ilə birlikdə tətbiq olduğu hallarda 1.12 (stop-xətt) nişanlanma xəttinə yaxınlaşmanı bildirir (m.69.6).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "'Dayanmadan keçmək qadağandır' nişanına və STOP xəttə yaxınlaşma haqqında xəbərdarlıq edir"
+    },
+    "148": {
+      "a": "Dəmir yol keçidinə yaxınlaşma barədə",
+      "b": "Yolun təhlükəli sahəsi ilə hərəkət etməyiniz barədə",
+      "c": "Təhlükəli kəsişmə yerinə yaxınlaşma barədə",
+      "des": "Bu nişanlanma xətti kiçik radiuslu döngələrdə, sərt enişlərdə, digər təhlükəli sahələrdə yol səddlərinin yan səthini göstərir (m.69.9). Bu şəkildəki 2.5 nişanlanma xətti Sizi yolun təhlükəli sahəsi ilə hərəkət etməyiniz barədə xəbərdar edir.",
+      "img": "assets/img/1/148.jpg",
+      "answerByLetter": "b",
+      "answer": "Yolun təhlükəli sahəsi ilə hərəkət etməyiniz barədə"
+    },
+    "149": {
+      "a": "Təhlükəli yol sahələrində yan səddi göstərir",
+      "b": "Başqa sahələrdə yol səddlərinin yan səthini göstərir",
+      "c": "Yolda təmir işlərinin görüldüyünü",
+      "des": "Bu nişanlanma xətti başqa sahələrdə yol səddlərinin yan səthini göstərir (m.69.9.6).",
+      "img": "assets/img/1/149.jpg",
+      "answerByLetter": "b",
+      "answer": "Başqa sahələrdə yol səddlərinin yan səthini göstərir"
+    },
+    "150": {
+      "a": "Nəqliyyat vasitələrinə dayanmanı qadağan edir",
+      "b": "Nəqliyyat vasitələrinə durmanı qadağan edir",
+      "c": "Yolun təhlükəli sahələrində bordürü göstərir",
+      "des": "Bu nişanlanma xətti təhlükəli sahələrdə yol səthindən hündürə çıxan təhlükəsizlik adacıqlarını (bordürü) qöstərir (m.69.9).",
+      "img": "assets/img/1/150.jpg",
+      "answerByLetter": "c",
+      "answer": "Yolun təhlükəli sahələrində bordürü göstərir"
+    },
+    "151": {
+      "a": "İcazə verilmir",
+      "b": "Həyətlərdən və bitişik ərazilərdən çıxma zamanı icazə verilir",
+      "c": "İcazə verilir, ancaq intensiv hərəkət vaxtı",
+      "des": "Dörd və daha artıq hərəkət zolağı olan yollarda əks istiqamətli nəqliyyat axınlarını ayıran 1.3 nişanlanma xəttini (qoşa bütöv xətti) kəsib keçmək qadağandır (m.49.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "İcazə verilmir"
+    },
+    "152": {
+      "a": "İcazə verilir, əgər avtobusun sürəti saatda 30 kilometrdirsə",
+      "b": "İcazə verilir",
+      "c": "İcazə verilmir",
+      "des": "Reversiv svetofor siqnalları söndürülərsə, bu nişanlanma xəttini ancaq sağ tərəfə kəsib keçməyə icazə verilir. Bu şəkildə bu nişanlanma xətti Sizdən solda olduğundan qarşıda gedən avtobusun hərəkət sürətindən asılı olmayaraq ötmə qadağandır.",
+      "img": "assets/img/1/152.jpg",
+      "answerByLetter": "c",
+      "answer": "İcazə verilmir"
+    },
+    "153": {
+      "a": "Təhlükəli yolun başlanğıcı haqqında",
+      "b": "Eyni istiqamətli nəqliyyat axınlarını ayıran bütöv nişanlanma xəttinə yaxınlaşmanı bildirir",
+      "c": "Bütün manevrlərin qadağan olunduğu zonanın başlanğıcı haqqında",
+      "des": "Cizgilərin uzunluğu onların arasındakı məsafədən üç dəfə böyük olan qırıq xətlər (1.6 nişanlanma xətti) yaxınlaşma xəttidir. Bu nişanlanma xətti əks istiqamətli və ya eyni istiqamətli nəqliyyat axınlarını ayıran 1.1 və ya 1.11 nişanlanma xətlərinə yaxınlaşma barədə xəbərdarlıq edir (m.69.6).",
+      "img": "assets/img/1/153.jpg",
+      "answerByLetter": "b",
+      "answer": "Eyni istiqamətli nəqliyyat axınlarını ayıran bütöv nişanlanma xəttinə yaxınlaşmanı bildirir"
+    },
+    "154": {
+      "a": "Hər hansı bir dayanmanın qadağan olunduğu yeri",
+      "b": "Səkinin yaxınlığında hərəkətin qadağan olunduğu yol sahəsini",
+      "c": "Ümumi istifadədə olan nəqliyyat vasitəsinin dayanacaq və taksilərin duracaq yerini",
+      "des": "Belə formada olan nişanlanma xətti ümumi istifadədə olan nəqliyyat vasitəsinin dayanacaq və taksilərin duracaq yerini bildirir. Bu dayanacaqlarda digər NV-nin dayanmasına ancaq sərnişinlərin minməsi (düşməsi) məqsədilə və ümumi istifadədə olan nəqliyyat vasitələrinin hərəkəti üçün maneə yaradılmaması şərti ilə icazə verilir.",
+      "img": "assets/img/1/154.jpg",
+      "answerByLetter": "c",
+      "answer": "Ümumi istifadədə olan nəqliyyat vasitəsinin dayanacaq və taksilərin duracaq yerini"
+    },
+    "155": {
+      "a": "Orta zolaqla hərəkəti davam etdirə bilər",
+      "b": "Sağ hərəkət zolağına keçməlidir",
+      "c": "Yolun sağ kənarına çıxıb dayanmalıdır",
+      "des": "Bu şəraitdə minik avtomobilinin sürücüsü, operativ NV-nə mane olmasa da, yolun kənar sağ zolağına keçib hərəkəti davam etdirməlidir, çünki normal hərəkət zamanı nəqliyyat vasitələrinin sürücüləri vəziyyətdən asılı olaraq, yolun hərəkət hissəsinin sağ kənarı ilə hərəkət etməlidirlər. (m.49.1).",
+      "img": "assets/img/1/155.jpg",
+      "answerByLetter": "b",
+      "answer": "Sağ hərəkət zolağına keçməlidir"
+    },
+    "156": {
+      "a": "Ancaq sağa",
+      "b": "Ancaq düzünə və ya sağa",
+      "c": "Hər bir istiqamətdə",
+      "des": "Operativ NV-nin sürücüsü göy sayrışan işıq siqnalını qoşaraq təxirəsalınmaz tapşırıqları yerinə yetirərkən yol hərəkətinin digər iştirakçıları üçün təhlükəli vəziyyəti yaratmamaq şərti ilə Qanunun tələblərindən (nizamlayıcının siqnalları istisna olmaqla) kənara çıxa bilər (m.74.1). Bu şəraitdə 'Düzünə və ya sağa hərəkət' nişanının və svetoforun siqnallarına baxmayaraq operativ NV-nin sürücüsü istənilən istiqamətdə hərəkəti davam etdirə bilər.",
+      "img": "assets/img/1/156.jpg",
+      "answerByLetter": "c",
+      "answer": "Hər bir istiqamətdə"
+    },
+    "157": {
+      "a": "Sağ hərəkət zolağına keçməli və hərəkəti davam etdirməlidir",
+      "b": "Yolun sağ kənarına çıxıb dayanmalıdır və kolondakı axırıncı avtomobil keçən kimi hərəkəti davam etdirməlidir",
+      "c": "Yolun sağ kənarına çıxıb dayanmalıdır və operativ nəqliyyat vasitəsi keçən kimi hərəkəti davam etdirməlidir",
+      "des": "Minik avtomobilinin sürücüsü üstün keçid hüququna malik olan operativ NV-nin və onun müşayiət etdiyi kolonun hərəkətinə mane olmamaq və onlara yol vermək məqsədi ilə sağ hərəkət zolağına keçib orada hərəkəti davam etdirə bilər (m.48.2; m.74.3; m.49.1). Bunun üçün hərəkət hissəsinin sağ kənarına çıxıb dayanmağa ehtiyac yoxdur.",
+      "img": "assets/img/1/157.jpg",
+      "answerByLetter": "a",
+      "answer": "Sağ hərəkət zolağına keçməli və hərəkəti davam etdirməlidir"
+    },
+    "158": {
+      "a": "Yolun sağ kənarında dayanmalıdır",
+      "b": "Hərəkəti ancaq kənar sağ zolaqda davam etdirməlidir",
+      "c": "Getdiyi istiqamət üzrə istənilən zolaqda hərəkəti davam etdirməlidir",
+      "des": "Bu şəraitdə minik avtomobilinin sürücüsü, operativ NV-nə mane olmasa da, yolun kənar sağ zolağına keçib hərəkəti davam etdirməlidir, çünki normal hərəkət zamanı nəqliyyat vasitələrinin sürücüləri vəziyyətdən asılı olaraq, yolun hərəkət hissəsinin sağ kənarı ilə hərəkət etməlidirlər. (m.49.1).",
+      "img": "assets/img/1/158.jpg",
+      "answerByLetter": "b",
+      "answer": "Hərəkəti ancaq kənar sağ zolaqda davam etdirməlidir"
+    },
+    "159": {
+      "a": "Ancaq göy və ya ağ rəngli sayrışan işıq siqnalını qoşduqda",
+      "b": "Sadalanan bütün hallarda",
+      "c": "Ancaq göy rəngli sayrışan işıq siqnalını və xüsusi səs siqnalını qoşduqda",
+      "des": "Göy və ya qırmızı sayrışan işıq və xüsusi səs siqnalı ilə işarə verən NV-nin sürücüsü yol hərəkətinin digər iştirakçılarına qarşı üstün keçid hüququna malikdir (m.74.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Ancaq göy rəngli sayrışan işıq siqnalını və xüsusi səs siqnalını qoşduqda"
+    },
+    "160": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Ola bilər",
+      "des": "Bu şəraitdə Siz üstünlüyə maliksiniz və hərəkəti davam etdirə bilərsiniz. Belə ki, ancaq göy və ya qırmızı sayrışan işıq və xüsusi səs siqnalı ilə işarə verən operativ NV-nin sürücüsü yol hərəkətinin digər iştirakçılarına qarşı üstün keçid hüququna malikdir (m.74.2).",
+      "img": "assets/img/1/160.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "161": {
+      "a": "Sağ hərəkət zolağına keçməli və hərəkəti davam etdirməlidir",
+      "b": "Sol hərəkət zolağına keçməli və hərəkəti davam etdirməlidir",
+      "c": "Yolun sağ kənarına çıxıb dayanmalıdır",
+      "des": "Minik avtomobilinin sürücüsü üstün keçid hüququna malik olan operativ NV-nin hərəkətinə mane olmamaq və ona yol vermək məqsədi ilə sağ hərəkət zolağına keçib orada hərəkəti davam etdirməlidir (m.48.2; m.74.3; m.49.1).",
+      "img": "assets/img/1/161.jpg",
+      "answerByLetter": "a",
+      "answer": "Sağ hərəkət zolağına keçməli və hərəkəti davam etdirməlidir"
+    },
+    "162": {
+      "a": "Ancaq piyadalara yol verməlisiniz",
+      "b": "Yolayrıcını birinci keçməlisiniz",
+      "c": "Xüsusi səs siqnalı və sayrışan işıq siqnalı qoşulmuş avtomobilə və eyni zamanda, piyadalara yol verməlisiniz",
+      "des": "Göy sayrışan işıq və xüsusi səs siqnalını qoşmuş operativ NV-nin sürücüsü yol hərəkətinin digər iştirakçılarına qarşı üstün keçid hüququna malikdir. Siz operativ NV-nin sürücüsünə və dönəcəyiniz yolda olan piyadalara yol verəndən sonra sağa dönə bilərsiniz (m.74.1,3; m.75.1).",
+      "img": "assets/img/1/162.jpg",
+      "answerByLetter": "c",
+      "answer": "Xüsusi səs siqnalı və sayrışan işıq siqnalı qoşulmuş avtomobilə və eyni zamanda, piyadalara yol verməlisiniz"
+    },
+    "163": {
+      "a": "Sürəti azaltmalısınız və lazım olduqda dərhal dayanmağa hazır olmalısınız",
+      "b": "DYP-nin avtomobilinin yanında dayanmalısınız və ancaq polis əməkdaşının icazəsindən sonra hərəkəti davam etdirməlisiniz",
+      "c": "Sürəti dəyişmədən hərəkəti davam etdirməlisiniz",
+      "des": "Yolun kənarında dayanan göy və ya qırmızı sayrışan işıq siqnalı ilə işarə verən operativ NV-ni gördükdə sürücülər sürəti azaltmalı və lazım olduqda dərhal dayanmağa hazır olmalıdırlar.",
+      "img": "assets/img/1/163.jpg",
+      "answerByLetter": "a",
+      "answer": "Sürəti azaltmalısınız və lazım olduqda dərhal dayanmağa hazır olmalısınız"
+    },
+    "164": {
+      "a": "Bütün nəqliyyat vasitələrinə",
+      "b": "Ancaq yük avtomobilinə",
+      "c": "Ancaq minik və yük avtomobillərinə",
+      "des": "Bu şəraitdə NV-nin hər bir zolaqda hərəkəti zolaqların üzərində asılmış svetoforlarla nizamlanır. Svetoforların siqnalları üzərində olan oxlar həmin zolaqlardan hərəkətin icazə verilmiş istiqamətlərini göstərir (m.59.4). Bu vəziyyətdə ancaq yük avtomobilinə düzünə hərəkət etməyə icazə verilir.",
+      "img": "assets/img/1/164.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq yük avtomobilinə"
+    },
+    "165": {
+      "a": "Hərəkəti qadağan edir",
+      "b": "Hərəkətə icazə verir və bildirir ki, onun vaxtı qurtarır, tezliklə qadağan siqnalı yanacaq",
+      "c": "Svetoforun nasaz olmasını",
+      "des": "Svetoforun yaşıl rəngli işığının yanıb-sönməsi NV-nin hərəkətinə icazə verir və bildirir ki, onun vaxtı qurtarır, tezliklə qadağan siqnalı yanacaq (m.59.3). Yaşıl rəngli işığın yanıb-sönməsi dörd dəfə təkrarlanır və bu, 3-5 saniyə vaxt ərzində baş verir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Hərəkətə icazə verir və bildirir ki, onun vaxtı qurtarır, tezliklə qadağan siqnalı yanacaq"
+    },
+    "166": {
+      "a": "Bu yolayrıcında sağa dönmək həmişə qadağandır",
+      "b": "Piyadalara yol vermək şərti ilə sağa dönməyə icazə verilir",
+      "c": "Ancaq svetoforun yaşıl işığı yandıqdan sonra sağa dönmə hərəkətinə icazə veriləcək",
+      "des": "Svetoforun ox şəklində qırmızı siqnalı sürücüləri məlumatlandırır ki, bu zolaqdan ancaq sağa hərəkət etməyə icazə verilir (m.59.4). Svetoforun ox şəklində olan yaşıl siqnalı yandıqdan sonra sağa dönmək olar.",
+      "img": "assets/img/1/166.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq svetoforun yaşıl işığı yandıqdan sonra sağa dönmə hərəkətinə icazə veriləcək"
+    },
+    "167": {
+      "a": "Hərəkəti qadağan edir",
+      "b": "Hərəkətə icazə verir və nizamlanmayan yolayrıcının və ya piyada keçidinin olduğunu bildirir",
+      "c": "Svetoforun nasaz olmasını",
+      "des": "Svetoforun sarı rəngli işığının yanıb-sönməsi NV-nin hərəkətinə icazə verir və nizamlanmayan yolayrıcının və ya piyada keçidinin olduğunu bildirir, təhlükə barədə xəbərdar edir (m.59.3).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Hərəkətə icazə verir və nizamlanmayan yolayrıcının və ya piyada keçidinin olduğunu bildirir"
+    },
+    "168": {
+      "a": "Svetoforun nasaz olmasını bildirir",
+      "b": "Hərəkəti qadağan edir",
+      "c": "Hərəkətə xüsusi ehtiyatlıqla icazə verir",
+      "des": "Dəmir yol keçidində quraşdırılmış svetoforun qırmızı rəngli işığının yanıb-sönməsi və ya növbəliklə iki yanıb-sönən qırmızı işıq NV-nin keçiddən hərəkətini qadağan edir (m.70.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Hərəkəti qadağan edir"
+    },
+    "169": {
+      "a": "Sağa dönmə svetoforun əlavə bölməsi ilə nizamlanır",
+      "b": "Bu yolayrıcında sağa dönmək həmişə qadağandır",
+      "c": "Sola dönmə svetoforun əlavə bölməsi ilə nizamlanır",
+      "des": "Svetoforun əsas yaşıl işığının üstünə qara konturlu oxlar çəkilmişsə, bu, sürücülərə svetoforun əlavə bölməsinin olduğunu bildirir və əlavə bölmənin işığında göstəriləndən fərqlənən digər istiqamətlərdə hərəkətə icazə verir (m.59.5).",
+      "img": "assets/img/1/169.jpg",
+      "answerByLetter": "a",
+      "answer": "Sağa dönmə svetoforun əlavə bölməsi ilə nizamlanır"
+    },
+    "170": {
+      "a": "Ancaq sola",
+      "b": "Sola və geriyə",
+      "c": "Düzünə və sola",
+      "des": "Svetoforun ox şəklində olan əlavə bölməsinin yaşıl işığının yanması, 'Zolaqlarda hərəkət istiqamətlər' nişanı və belə nişanlanma xətti Sizə ancaq sola dönməyə icazə verir. Svetoforun qırmızı işığı düzünə hərəkəti qadağan edir. Bu şəraitdə geriyə dönmək də qadağandır, çünki geriyə dönmə hərəkət istiqamətindəki kənar sol zolaqdan yerinə yetirilir (m.42.6). Sağa dönmək bütün nişanlar və işarələrlə qadağandır.",
+      "img": "assets/img/1/170.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq sola"
+    },
+    "171": {
+      "a": "Ancaq sağa, birinci döngəyə",
+      "b": "Sağa, birinci və ikinci döngələrə",
+      "c": "Hərəkət qadağandır",
+      "des": "Svetoforun ox şəklində olan əlavə bölməsinin yaşıl işığının yanması Sizə ancaq sağa birınci döngəyə dönməyə icazə verir (m.59.4). Svetoforun qırmızı işığı düzünə hərəkəti qadağan edir və bu səbəbdən sağa ikinci döngəyə dönməyə icazə verilmir.",
+      "img": "assets/img/1/171.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq sağa, birinci döngəyə"
+    },
+    "172": {
+      "a": "Svetoforun qarşısında",
+      "b": "Stop-xəttin qarşısında",
+      "c": "İstənilən yerdə",
+      "des": "Svetoforun qırmızı işığı hərəkəti qadağan edirsə və hərəkət hissəsində stop-xətt vardırsa, sürücü NV-ni bu xəttin bilavasitə qarşısında dayandırmalıdır (m.60.2).",
+      "img": "assets/img/1/172.jpg",
+      "answerByLetter": "b",
+      "answer": "Stop-xəttin qarşısında"
+    },
+    "173": {
+      "a": "Stop-xətti keçib sol zolağı tutmalısınız və kəsişən hərəkət hissəsinin qarşısında dayanmalısınız",
+      "b": "Stop-xəttin qarşısında dayanmalısınız, svetoforun yaşıl işığı yandıqdan sonra hərəkəti davam etdirməlisiniz",
+      "c": "Sağa dönməlisiniz",
+      "des": "Svetoforun ox şəklində olan əlavə bölməsinin yaşıl işığının yanması və 'Zolaqlarda hərəkət istiqamətləri' nişanı Sizə ancaq sağa dönməyə icazə verir (m.59.4). Bu şəraitdə ancaq sağa dönməlisiniz.",
+      "img": "assets/img/1/173.jpg",
+      "answerByLetter": "c",
+      "answer": "Sağa dönməlisiniz"
+    },
+    "174": {
+      "a": "Kəsişən hərəkət hissəsinin qarşısında",
+      "b": "İstənilən yerdə",
+      "c": "Svetoforun qarşısında",
+      "des": "'Stop-xətt' nişanı svetoforun qırmızı işığı hərəkəti qadağan etdiyi halda NV-nin hansı yerdə dayandırılmasını göstərir (m.60.2). Bu şəraitdə NV svetoforun qarşısında dayandırılmalıdır.",
+      "img": "assets/img/1/174.jpg",
+      "answerByLetter": "c",
+      "answer": "Svetoforun qarşısında"
+    },
+    "175": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Ola bilər",
+      "des": "Svetoforun əsas yaşıl işığının yanması Sizə yolayrıcını düzünə keçməyə icazə verir. Reversiv svetoforun söndürülməsi isə bildirir ki, 1.9 nişanlanma xəttindən soldakı zolaqda hərəkət qadağandır (m.59.8). Yolayrıcından sonra hərəkəti ancaq sağ zolaqda davam etdirmək olar.",
+      "img": "assets/img/1/175.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "176": {
+      "a": "Tramvaylara və xüsusi ayrılmış zolaqla hərəkət edən digər ümumi istifadədə olan nəqliyyat vasitələrinə",
+      "b": "Ümumi istifadədə olan bütün nəqliyyat vasitələrinə",
+      "c": "Ancaq tramvaylara",
+      "des": "Tramvaylar, habelə digər ümumi istifadədə olan NV üçün ayrılmış zolaqla hərəkət edən həmin NV-nin hərəkətini nizamlamaq üçün 'T' hərfi şəklində yerləşmiş ağ-sarımtıl dörd dairəvi siqnalı olan birrəngli siqnal svetoforları tətbiq edilir (m.59.9). Bu svetofor digər NV-ə şamil edilmir.",
+      "img": "assets/img/1/176.jpg",
+      "answerByLetter": "a",
+      "answer": "Tramvaylara və xüsusi ayrılmış zolaqla hərəkət edən digər ümumi istifadədə olan nəqliyyat vasitələrinə"
+    },
+    "177": {
+      "a": "Dəmir yol keçidini keçə bilərsiniz",
+      "b": "Keçidi keçib dayanmalıdır",
+      "c": "Keçidin qarşısında dayanmalısınız",
+      "des": "Qırmızı işıqların arasında, yaxud onların üzərində yerləşən və yanıb-sönən ağ işıq hərəkətə icazə verir (m.70.3, m.59.10). Ona görə də Siz dəmir yol keçidindən keçə bilərsiniz.",
+      "img": "assets/img/1/177.jpg",
+      "answerByLetter": "a",
+      "answer": "Dəmir yol keçidini keçə bilərsiniz"
+    },
+    "178": {
+      "a": "Ancaq düzünə",
+      "b": "Bütün istiqamətlərdə",
+      "c": "Ancaq düzünə və sağa",
+      "des": "Yolayrıcında durmuş nizamlayıcının sol və sağ tərəfindən gələn tramvaylara düzünə, relssiz NV-ə isə düzünə və sağa hərəkət etməyə icazə verilir. Yolayrıcında hərəkət növbəliyi nizamlayıcı tərəfindən nizamlandığından 'Yol verin' nişanı öz qüvvəsini itirir (m.58.2; m.60.5). Bu yolayrıcında ancaq düzünə və sağa hərəkət etməyə icazə verilir.",
+      "img": "assets/img/1/178.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq düzünə və sağa"
+    },
+    "179": {
+      "a": "Düzünə və ya sağa",
+      "b": "Ancaq düzünə",
+      "c": "Ancaq sağa",
+      "des": "Yolayrıcında durmuş nizamlayıcının sol və sağ tərəfindən gələn tramvaylara düzünə, relssiz NV-ə isə düzünə və sağa hərəkət etməyə icazə verilir. Siz sağ zolaqda hərəkət etdiyinizə görə ancaq sağa dönə bilərsiniz, çünki zolağa çəkilmiş 1.18 nişanlanma xətti bu barədə məlumat verir. Düzünə istiqamətdə hərəkəti davam etdirmək üçün sol zolaqa kecmək lazım idi (m.58.2; m.60.5).",
+      "img": "assets/img/1/179.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq sağa"
+    },
+    "180": {
+      "a": "Hər bir istiqamətdə",
+      "b": "Ancaq düzünə, sola və geriyə",
+      "c": "Ancaq düzünə və sola",
+      "des": "'Sola dönmə' siqnalını göstərən nizamlayıcının sol tərəfindən gələn NV-ə bütün istiqamətlərdə hərəkət etməyə icazə verilir (m.58.2). Bu şəraitdə Sizə sol zolaqda hərəkət etdiyinizə görə ancaq düzünə, sola və geriyə istiqamətlərdə hərəkət etməyə icazə verilir.",
+      "img": "assets/img/1/180.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq düzünə, sola və geriyə"
+    },
+    "181": {
+      "a": "Dərhal dayanmaq lazımdır",
+      "b": "Sürəti artırmaq lazımdır",
+      "c": "Yol hərəkəti iştirakçılarının diqqətini cəlb etməkdir",
+      "des": "Nizamlayıcının fitlə verdiyi siqnalların məqsədi yol hərəkəti iştirakçılarının diqqətini cəlb etməkdir (m.58.4).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Yol hərəkəti iştirakçılarının diqqətini cəlb etməkdir"
+    },
+    "182": {
+      "a": "Ancaq A",
+      "b": "Hər biri ilə",
+      "c": "A və ya Б",
+      "des": "'Sola dönmə' siqnalını göstərən nizamlayıcının sinə tərəfindən gələn NV-ə ancaq sağ istiqamətdə hərəkət etməyə icazə verilir (m.58.2). Bu şəraitdə Sizə ancaq A istiqamətində hərəkət etməyə icazə verilir.",
+      "img": "assets/img/1/182.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A"
+    },
+    "183": {
+      "a": "Ancaq minik avtomobilinin sürücüsü",
+      "b": "Heç biri",
+      "c": "Hər iki sürücü",
+      "des": "Bu yolayrıcında svetoforun işlək vəziyyətdə olmasına baxmayaraq NV-nin hərəkət növbəliyi nizamlayıcının siqnalları ilə nizamlanır. Belə olan halda sürücülər nizamlayıcının siqnallarına və göstərişlərinə əməl etməlidirlər. Nizamlayıcının göstərişlərinə əsasən hər iki sürücü hərəkəti davam etdirə bilərlər (m.58.3; m.60.5).",
+      "img": "assets/img/1/183.jpg",
+      "answerByLetter": "c",
+      "answer": "Hər iki sürücü"
+    },
+    "184": {
+      "a": "İcazə verilir, ancaq sağa",
+      "b": "Qadağandır",
+      "c": "İcazə verilir, ancaq sola",
+      "des": "'Sola dönmə' siqnalını göstərən nizamlayıcının sağ və arxa tərəfindən gələn NV-nin hərəkəti qadağandır (m.58.2). Bu şəraitdə Sizə hərəkəti davam etdirmək qadağandır.",
+      "img": "assets/img/1/184.jpg",
+      "answerByLetter": "b",
+      "answer": "Qadağandır"
+    },
+    "185": {
+      "a": "İcazə verilir, ancaq sağa",
+      "b": "Qadağandır",
+      "c": "İcazə verilir, ancaq sola",
+      "des": "'Sola dönmə' siqnalını göstərən nizamlayıcının sağ və arxa tərəfindən gələn NV-nin hərəkəti qadağandır (m.58.2). Bu şəraitdə Sizə hərəkəti davam etdirmək qadağandır.",
+      "img": "assets/img/1/185.jpg",
+      "answerByLetter": "b",
+      "answer": "Qadağandır"
+    },
+    "186": {
+      "a": "Ancaq avtobus",
+      "b": "Ancaq yük avtomobili və velosiped",
+      "c": "Hamısı",
+      "des": "Şəkildə nizamlanan yolayrıcı göstərilmişdir və burada NV-nin hərəkət növbəliyi nizamlayıcının siqnalları ilə müəyyənləşdirilir. 'Müəyyən istiqamət üzrə hərəkət' siqnalı nizamlayıcının sol və sağ tərəfinden gələn tramvayların düzünə, relssiz NV-nin düzünə ve sağa hərəkət etməsinə icazə verir, sinə və arxa tərəfindən gələn NV-nin hərəkətini isə qadağan edir (m.58.2). Bu şəraitdə yük avtomobilinin sürücüsü və velosipedçi Qaydaları pozurlar.",
+      "img": "assets/img/1/186.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq avtobus"
+    },
+    "187": {
+      "a": "Hərəkəti düzünə davam etdirməlisiniz",
+      "b": "Hərəkəti düzünə və ya sağa davam etdirməlisiniz",
+      "c": "Stop-xətt qarşısında avtomobili dayandırmalısınız",
+      "des": "Bu yolayrıcında svetoforun işlək vəziyyətdə olmasına baxmayaraq NV-nin hərəkət növbəliyi nizamlayıcının siqnalları İIə nizamlanır. Belə olan halda sürücülər nizamlayıcının siqnallarına və göstərişlərinə əməl etməlidirlər. Nizamlayıcının göstərişlərinə əsasən sürücü NV-ni stop-xəttin qarşısında dayandırmalıdır (m.58.3; m.60.2,5).",
+      "img": "assets/img/1/187.jpg",
+      "answerByLetter": "c",
+      "answer": "Stop-xətt qarşısında avtomobili dayandırmalısınız"
+    },
+    "188": {
+      "a": "Bəli",
+      "b": "Bəli, ancaq səkiyə çıxmaq yolu ilə",
+      "c": "Xeyr",
+      "des": "Əgər nizamlayıcının göstərişləri svetoforun siqnallarına, yol nişanlarının və nişanlanma xətlərinin tələblərinə ziddirsə, Siz ancaq nizamlayıcının göstərişlərini və siqnallarını əsas tutmalısınız (m.60.5). Ona görə də Siz nizamlayıcının göstərdiyi yerdə dayanmalısınız.",
+      "img": "assets/img/1/188.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "189": {
+      "a": "Ancaq düzünə",
+      "b": "Ancaq düzünə, sola və geriyə",
+      "c": "Hər bir istiqamətdə",
+      "des": "'Sola dönmə' siqnalını göstərən nizamlayıcının sol tərəfindən gələn NV-ə bütün istiqamətlərdə hərəkət etməyə icazə verilir (m.58.2). Bu şəraitdə Siz sağ zolaqda hərəkət etdiyinizə görə və qarşıda 'Birtərəfli hərəkət yoluna çıxış' nişanı quraşdırıldığına görə ancaq düzünə istiqamətdə hərəkət edə bilərsiniz. Sola və ya geriyə dönmə manevrləri isə hərəkət istiqamətinin kənar sol zolağından yerinə yetirilir (m.42.6).",
+      "img": "assets/img/1/189.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq düzünə"
+    },
+    "190": {
+      "a": "Velosiped və at arabası",
+      "b": "Yük avtomobilindən başqa hamısı",
+      "c": "Tramvay və minik avtomobili",
+      "des": "Şəkildə nizamlanan yolayrıcı göstərilmişdir və burada NV-nin hərəkət növbəliyi nizamlayıcının siqnalları ilə müəyyənləşdirilir. 'Müəyyən istiqamət üzrə hərəkət' siqnalı nizamlayıcının sol və sağ tərəfindən gələn tramvayların düzünə, relssiz NV-nin düzünə və sağa hərəkət etməsinə icazə verir, sinə və arxa tərəfindən gələn NV-nin hərəkətini isə qadağan edir (m.58.2). Bu şəraitdə tramvayın və minik avtomobilinin sürücüləri hərəkəti davam etdirə bilərlər.",
+      "img": "assets/img/1/190.jpg",
+      "answerByLetter": "c",
+      "answer": "Tramvay və minik avtomobili"
+    },
+    "191": {
+      "a": "Xeyr",
+      "b": "Bəli, əgər qəza dayanma işıq siqnalı nasazdırsa",
+      "c": "Bütün hallarda quraşdırmalıdır",
+      "des": "Qaydalara görə yaşayış məntəqələrində birtərəfli hərəkət olan yolların sol tərəfində dayanmağa icazə verilir (m.52.2). Bu şəraitdə sürücü yolun sol tərəfində, 'Dayanmaq qadağandır' nişanının təsir sahəsində texniki nasazlıq səbəbindən dayanmışdır. Dayanmanın qadağan edildiyi yerlərdə NV məcburi dayandıqda və ya onun hərəkət hissəsində olması yol hərəkətinin digər iştirakçıları üçün maneə yaradırsa, sürücü qəza dayanma işıq siqnalını qoşmalı və ya qəza dayanma nişanını quraşdırmalıdır (m.55.2).",
+      "img": "assets/img/1/191.jpg",
+      "answerByLetter": "b",
+      "answer": "Bəli, əgər qəza dayanma işıq siqnalı nasazdırsa"
+    },
+    "192": {
+      "a": "Ancaq avtomobilin üzərində quraşdırılmalıdır",
+      "b": "50 m-dən az olmayaraq",
+      "c": "30 m-dən az olmayaraq",
+      "des": "Qəza dayanma nişanı NV-nin arxa tərəfində, zərurət olduqda isə, həm də qabaq tərəfində, həmin zolaqda NV-dən ən azı 30 metr məsafədə quraşdırılır. Qəza dayanma nişanı ona görə quraşdırılır ki, yaxınlaşmaqda olan NV-nin sürücüləri nasaz NV-ni kifayət qədər uzaq məsafədən görə bilsinlər. Qəza dayanma nişanı yaşayış məntəqələrində hərəkət intensiv olduqda daha yaxında və ya bilavasitə avtomobilin üzərində qoyula bilər (m.55.3). Lakin bu yolda intensiv hərəkət olmadığından o, ən azı 30 m vəsafədə quraşdırılır.",
+      "img": "assets/img/1/192.jpg",
+      "answerByLetter": "c",
+      "answer": "30 m-dən az olmayaraq"
+    },
+    "193": {
+      "a": "Sürücülüyü öyrənən şəxs nəqliyyat vasitəsini idarə edərkən onu öyrədənə",
+      "b": "Əlil sürücülərə",
+      "c": "Operativ nəqliyyat vasitəsi sürücülərinə və sərinişinlərə",
+      "des": "Mexaniki NV-nin sürücüləri konstruksiyasında nəzərdə tutulmuş təhlükəsizlik kəmərləri ilə təchiz olunan NV-də hərəkət edərkən, təhlükəsizlik kəmərlərini bağlamalı və sərnişinlərin də kəməri bağlamalarını təmin etməlidirlər (12 yaşınadək uşaqların, geriyə hərəkət manevri edən sürücülərin, hamilə qadınların, sürücülüyü öyrənən şəxs NV-ni idarə edərkən onu öyrədənin, yaşayış məntəqələrində isə bunlardan başqa, operativ NV sürücülərinin və sərnişinlərinin kəməri bağlamamasına yol verilir (m.37.1)). Sualda sadalanan şəxslərdən ancaq sürücülüyü öyrənən şəxs NV-ni idarə edərkən onu öyrədənin kəməri bağlamamasına icazə verilir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Sürücülüyü öyrənən şəxs nəqliyyat vasitəsini idarə edərkən onu öyrədənə"
+    },
+    "194": {
+      "a": "Ancaq qəza dayanma işıq siqnalını qoşmalıdır",
+      "b": "Ancaq qəza dayanma nişanını quraşdırmalıdır",
+      "c": "Sadalananlann hər ikisi ilə",
+      "des": "Mexaniki NV-nin sürücüsü yol-nəqliyyat hadisəsi zamanı öz nəqliyyat vasitəsini qəza dayanma işıq siqnalını qoşmaqla və qəza dayanma nişanını quraşdırmaqla işarələməlidir (m.37.4; m.55.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Sadalananlann hər ikisi ilə"
+    },
+    "195": {
+      "a": "20 m-dən az olmayaraq",
+      "b": "100 m-dən az olmayaraq",
+      "c": "30 m-dən az olmayaraq",
+      "des": "Qəza dayanma nişanı NV-nin arxa tərəfində, zərurət olduqda isə həm də qabaq tərəfində, həmin zolaqda NV-dən ən azı 30 metr məsafədə quraşdırılır. Qəza dayanma nişanı ona görə quraşdırılır ki, yaxınlaşmaqda olan NV-nin sürücüləri nasaz NV-ni kifayət qədər uzaq məsafədən görə bilsinlər (m.55.3).",
+      "img": "assets/img/1/195.jpg",
+      "answerByLetter": "c",
+      "answer": "30 m-dən az olmayaraq"
+    },
+    "196": {
+      "a": "Birinci",
+      "b": "İkinci",
+      "c": "İkinci",
+      "des": "Görünmə şəraiti pis olan yerdə məcburi dayanma zamanı avtomobili işarələmək üçün qəza dayanma nişanından (1) istifadə olunmalıdır (m.55.1-2).",
+      "img": "assets/img/1/196.jpg",
+      "answerByLetter": "a",
+      "answer": "Birinci"
+    },
+    "197": {
+      "a": "Üçüncü",
+      "b": "İkinci",
+      "c": "Birinci",
+      "des": "Yedəkdə olan mexaniki nəqliyyat vasitəsində xarici işıq cihazları işləmirsə və ya onlar yoxdursa, onun arxa bortuna qəza dayanma nişanı (1) bərkidilə bilər. Bu, arxadan gələn sürücüləri diqqətli olmağa məcbur edən birvasitə kimi qəbul edilə bilər.",
+      "img": "assets/img/1/197.jpg",
+      "answerByLetter": "c",
+      "answer": "Birinci"
+    },
+    "198": {
+      "a": "Bu qurğulardan hər biri",
+      "b": "Ancaq yanıb-sönən fənər",
+      "c": "Ancaq qəza dayanma nişanı",
+      "des": "Görmə şəraiti pis olduğu yerdə məcburi dayanan NV-ni digər sürücülər vaxtında görmürlərsə, onu işarələmək üçün həm qəza dayanma nişanı, həm də yanıb-sönən fənər tətbiq oluna bilər (m.55.1-3).",
+      "img": "assets/img/1/198.jpg",
+      "answerByLetter": "a",
+      "answer": "Bu qurğulardan hər biri"
+    },
+    "199": {
+      "a": "Ancaq başqa yol hərəkət iştirakçılarının olmadığı halda",
+      "b": "Əgər bu siqnal digər hərəkət iştirakçılarını çaşdıracaqsa",
+      "c": "Hər iki sadalanan halda",
+      "des": "Əgər xəbərdarlıq dönmə göstərici siqnalları hərəkətin digər iştirakçılarını çaşdıracaqsa, sürücü tərəfindən bu siqnallar verilməməlidir. Qalan bütün manevrlər zamanı (hətta yaxınlıqda digər NV olmadığı halda belə) sürücü xəbərdarlıq dönmə göstərici siqnallarını verməlidir (m.42.1-3).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Əgər bu siqnal digər hərəkət iştirakçılarını çaşdıracaqsa"
+    },
+    "200": {
+      "a": "Bəli, əgər yaxınlıqda piyadalar vardırsa",
+      "b": "Bəli",
+      "c": "Xeyr, çünki yaşayış zonasında sürət həddi azdır",
+      "des": "Sürücü hərəkətə başlamadan, yerdəyişmədən, dönməden, ötmədən və dayanmadan qabaq (həmçinin yaşayış zonalarında da) müvafıq istiqamətə dönmək üçün xarici işıq siqnallarının köməyi ilə, bunlar olmadıqda və ya nasazlıq yarandıqda isə əl işarələri ilə siqnal verməlidir. Bu zaman manevr təhlükəsiz olmalı və hərəkətin digər iştirakçıları üçün maneə yaratmamalıdır (m.42.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Bəli"
+    },
+    "201": {
+      "a": "Bəli",
+      "b": "Bəli, əgər arxadan nəqliyyat vasitələri gəlirsə",
+      "c": "Xeyr",
+      "des": "Yolayrıcında baş yol üzrə hərəkəti davam etdirərkən sola dönəcəyiniz zaman, digər yol hərəkəti iştirakçılarının olmadığı halda belə, sola dönmə siqnalını verməlisiniz (m.42.1).",
+      "img": "assets/img/1/201.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "202": {
+      "a": "Bəli",
+      "b": "Bəli, əgər yaxınlıqda başqa nəqliyyat vasitələri vardırsa",
+      "c": "Xeyr",
+      "des": "Bütün yerlərdə, həmçinin avtodayanacaqlarda və YDM-də sürücü hərəkətə başlamadan, yerdəyişmədən, dönmədən, ötmədən və dayanmadan qabaq müvafiq istiqamətə dönmək üçün xarici işıq siqnallarının köməyi ilə, bunlar olmadıqda və ya nasazlıq yarandıqda isə əl işarələri ilə siqnal verməlidir. Bu zaman manevr təhlükəsiz olmalı və hərəkətin digər iştirakçıları üçün maneə yaratmamalıdır (m.42.1).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "203": {
+      "a": "Xeyr",
+      "b": "Bəli, əgər digər istiqamətlərdən nəqliyyat vasitələri gəlirsə",
+      "c": "Bəli",
+      "des": "Siz hərəkət zamanı yerinə yetirəcəyiniz bütün manevrlər barəsində hərəkətin digər iştirakçılarını xəbərdar etməlisiniz. Yolayrıcında baş yol üzrə hərəkəti davam etdirərkən sola dönəcəyiniz zaman hərəkətin digər iştirakçılarının olmadığı halda belə, sola dönmə siqnalını verməlisiniz (m.42.1).",
+      "img": "assets/img/1/203.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "204": {
+      "a": "Sürücü nə vaxt istəsə",
+      "b": "Manevrə başlamazdan əvvəl",
+      "c": "Bilavasitə dönmə zamanı",
+      "des": "NV-nin sonrakı hərəkət istiqamətinin hərəkətin digər iştirakçılarına aydın olması üçün dönmə göstəriciləri və ya əl ilə siqnal manevrə başlamadan əvvəl verilir, manevr qurtarandan sonra isə dərhal kəsilir (əl ilə verilən siqnal bilavasitə manevrə başlamadan əvvəl qurtara bilər) (m.42.2).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Manevrə başlamazdan əvvəl"
+    },
+    "205": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Bəli, əgər arxadan nəqliyyat vasitələri gəlirsə",
+      "des": "Sürücü hərəkətə başlamadan, yerdəyişmədən, dönmədən, ötmədən və dayanmadan qabaq müvafiq istiqamətə dönmək üçün xarici işıq siqnallarının köməyi ilə, bunlar olmadıqda və ya nasazlıq yarandıqda isə əl işarələri ilə siqnal verməlidir (m.42.1). Yolun belə döngə yerlərində dayanmaq və başqa zolağa keçmək manevri etməyəcəyiniz halda və hərəkətin digər iştirakçılarını çaşdırmamaq üçün sağa dönmə siqnalını qoşmamalısınız (m.42.2).",
+      "img": "assets/img/1/205.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "206": {
+      "a": "Manevr zamanı",
+      "b": "Bilavasitə manevr başlamazdan əvvəl",
+      "c": "Manevr qurtardıqdan dərhal sonra",
+      "des": "Dönmə göstəriciləri manevrə başlamadan əvvəl verilir və manevr qurtarandan sonra isə dərhal kəsilir ki, Sizin hərəkətinizin sonrakı istiqaməti barəsində yaranan fikir yol hərəkətinin digər iştirakçılarını çaşdırmasın (m.42.2-3).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Manevr qurtardıqdan dərhal sonra"
+    },
+    "207": {
+      "a": "Yolayrıcına daxil olana kimi, çünki başqa sürücülər də bu haqda xəbərdar olmalıdırlar",
+      "b": "Ancaq yolayrıcına daxil olandan sonra",
+      "c": "Dönmə işığının qoşulmasının mənası yoxdur, çünki sağa dönmə qadağandır",
+      "des": "Bu şəraitdə yolayrıcına daxil olana kimi sağa dönmə siqnalını qoşmaqla Siz minik avtomobilinin sürücüsünü çaşdıra bilərsiniz. Minik avtomobilinin sürücüsü Sizin yolayrıcında sağa dönəcəyinizi fikirləşib hərəkətə başlamaqla qəza vəziyyəti yarada bilər. Minik avtomobilinin sürücüsünü çaşdırmamaq məqsədi iiə sağa dönmə siqnalını ancaq yolayrıcına daxil olandan sonra qoşmalısınız (m.42.1-2).",
+      "img": "assets/img/1/207.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq yolayrıcına daxil olandan sonra"
+    },
+    "208": {
+      "a": "Xeyr",
+      "b": "Bəli",
+      "c": "Bəli, ancaq ötmənin sonunda",
+      "des": "Dönmə göstəriciləri ilə verilən siqnallar sürücüyə üstünlük vermir və onu təhlükəsizlik tədbirləri görməkdən azad etmir (m.42.2-3).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "209": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Bəli, ancaq sutkanın qaranlıq vaxtı",
+      "des": "'Zolağın qurtaracağı' nişanı və nişanlanma xətləri hərəkət etdiyiniz zolağın bitməsi haqqında Sizi xəbərdar edir və sağ zolağa keçməyinizi tələb edir. Bu manevri yerinə yetirən zaman sağa dönmə siqnalını hökmən qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/209.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "210": {
+      "a": "Bəli, əgər digər istiqamətlərdən nəqliyyat vasitələri gəlirsə",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "Yolayrıcında 'Sağa hərəkət' nişanının tələbini rəhbər tutaraq Siz sağa dönməlisiniz. Bu manevri yerinə yetirən zaman sağa dönmə siqnalını hökmən qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/210.jpg",
+      "answerByLetter": "b",
+      "answer": "Bəli"
+    },
+    "211": {
+      "a": "Xeyr",
+      "b": "Bəli, əgər arxadan nəqliyyat vasitələri gəlirsə",
+      "c": "Bəli",
+      "des": "Dairəvi hərəkət təşkil olunmuş yolayrıcına həm sol, həm də sağ zolaqdan daxil olmağa icazə verilir (m.42.6). Bu yolayrıcına daxil olma zamanı sağa dönmə manevri yerinə yetirildiyindən, Siz sağa dönmə siqnalını hökmən qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/211.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "212": {
+      "a": "Sadalanan hər iki səhvə yol verir",
+      "b": "Dönmə göstəricisini qoşmadan dönür",
+      "c": "'Düzünə hərəkət' nişanının təsir sahəsində dönür",
+      "des": "Yol sahəsinin başlanğıcında (yolayrıcıdan sonra) qurulmuş 'Düzünə hərəkət' nişanı hərəkət istiqamətində ən yaxın yolayrıcına qədər qüvvədə olur, sola və ya geriyə dönməni qadağan edir. Bu nişan həyətlərə və yola bitişik digər ərazilərə girmək üçün sağa dönməni qadağan etmir (m.65.4). Ona görə də sağda göstərilən həyətə girmək olar, lakin bu manevri yerinə yetirərkən sürücü sağa dönmə siqnalını qoşmayıb (m.42.1).",
+      "img": "assets/img/1/212.jpg",
+      "answerByLetter": "b",
+      "answer": "Dönmə göstəricisini qoşmadan dönür"
+    },
+    "213": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Sizin istəyinizdən asılıdır",
+      "des": "Sürücü yerdəyişmədən və dayanmadan qabaq müvafiq istiqamətə dönmək üçün xarici işıq siqnallarının köməyilə siqnai verməlidir (m.42.1). Bu şəraitdə Siz solda dayanmaq qərarına gəlmisiniz, deməli, sola dönmə siqnalını qoşmalısınız.",
+      "img": "assets/img/1/213.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "214": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Bəli, ancaq sutkanın qaranlıq vaxtı",
+      "des": "Qarşıda yaranan maneəni keçmək məqsədi ilə Siz sol zolağa keçməlisiniz və bu yerdəyişmədən qabaq sola dönmə göstəricisini qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/214.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "215": {
+      "a": "Bəli",
+      "b": "Bu vəziyyətdə dönmə göstəricilərinin qoşulmasına ehtiyac yoxdur",
+      "c": "Xeyr",
+      "des": "'Sağa və ya sola hərəkət' nişanı düzünə istiqamətdə hərəkəti qadağan edir. Siz sol zolaqda hərəkət etdiyinizə görə ancaq sola və ya geriyə istiqamətlərdə hərəkəti davam etdirə bilərsiniz (m.42.6). Bu manevri yerinə yetirən zaman sola dönmə siqnalını hökmən qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/215.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "216": {
+      "a": "Ancaq sağ zolağa qayıdandan sonra",
+      "b": "Ancaq yük avtomobilini keçəndən sonra",
+      "c": "Sol zolağa keçən kimi",
+      "des": "Minik avtomobilinin sürücüsü hərəkətin digər iştirakçılarını çaşdırmamaq məqsədi ilə sol zolağa keçən kimi sola dönmə göstəricisini dərhal söndürməlidir (m.42.3). Əks halda, hərəkətin digər iştirakçıları elə başa düşə bilərlər ki, minik avtomobilinin sürücüsü sola və ya geriyə dönmə manevri edir.",
+      "img": "assets/img/1/216.jpg",
+      "answerByLetter": "c",
+      "answer": "Sol zolağa keçən kimi"
+    },
+    "217": {
+      "a": "Ancaq sola",
+      "b": "Ancaq sağa",
+      "c": "Əvvəlcə sağa, bordürdən hərəkət zamanı isə sola",
+      "des": "Belə dar yolda geriyə dönməni ancaq yolun sağ kənarından yerinə yetirmək olar. Yolun sağ kənarını tutmaq üçün birinci sağa dönmə siqnalını qoşmaq lazımdır. Geriyə dönmə manevrini yerinə yetirməzdən öncə yol hərəkətinin digər iştirakçılarını xəbərdar etmək məqsədi ilə sola dönmə siqnalını qoşmalısınız (m.42.1).",
+      "img": "assets/img/1/217.jpg",
+      "answerByLetter": "c",
+      "answer": "Əvvəlcə sağa, bordürdən hərəkət zamanı isə sola"
+    },
+    "218": {
+      "a": "Yolayrıcına daxil olmazdan əvvəl",
+      "b": "Birinci hərəkət hissəsi ilə kəsişməyə daxil olduqdan sonra",
+      "c": "Sizin istəyinizdən asılıdır",
+      "des": "Birinci hərəkət hissəsi ilə kəsişməyə daxil olduqdan sonra, Siz sola dönmə siqnalını qoşmalısınız. Sola dönmə siqnalının yolayrıcına kimi qoşulması motosikletin sürücüsünü çaşdıra bilər (m.42.3).",
+      "img": "assets/img/1/218.jpg",
+      "answerByLetter": "b",
+      "answer": "Birinci hərəkət hissəsi ilə kəsişməyə daxil olduqdan sonra"
+    },
+    "219": {
+      "a": "Əmin olmalısınız ki, Sizi ötmürlər, sonra sola dönmə işığını qoşmalısınız və dönmə manevrinə başlamalısınız",
+      "b": "Sola dönmə işığını qoşmalısınız, sonra dönmə manevrinə başlamalısınız",
+      "c": "Siqnal verməlisiniz",
+      "des": "Sola və ya geriyə dönmə manevrlərindən əvvəl sola dönmə siqnalını qoşmaq lazımdır (m.42.1). Sola dönmə siqnalını qoşmazdan əvvəl sürücü əmin olmalıdır ki, onu ötən NV yoxdur. Qaydalara görə, hərəkət sürətini artırmaqla və ya başqa hərəkətlərlə ötən NV-nin sürücüsünə maneçilik törətmək qadağandır (m.51.1-4).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Əmin olmalısınız ki, Sizi ötmürlər, sonra sola dönmə işığını qoşmalısınız və dönmə manevrinə başlamalısınız"
+    },
+    "220": {
+      "a": "Ancaq sağ zolağa qayıdandan sonra",
+      "b": "Ötülən nəqliyyat vasitəsini keçəndən sonra",
+      "c": "Sol zolağa keçən kimi, dərhal",
+      "des": "Ötən NV-nin sürücüsü hərəkətin digər iştirakçılarını çaşdırmamaq məqsədi ilə sola dönmə göstəricisini sol zolağa keçən kimi dərhal söndürməlidir (m.42.3). Əks halda, hərəkətin digər iştirakçıları elə başa düşə bilərlər ki, ötən avtomobilin sürücüsü sola və ya geriyə dönmək manevri edir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Sol zolağa keçən kimi, dərhal"
+    },
+    "221": {
+      "a": "Onun köməyə ehtiyacının olmasını",
+      "b": "Döngədən sonra təhlükənin olmasını",
+      "c": "Onun hərəkətə başlamaq istədiyini",
+      "des": "Sürücü hərəkətə başlamazdan qabaq müvafiq istiqamətə dönmək üçün xarici işıq siqnallarının köməyi ilə, bunlar olmadıqda və ya nasazlıq yarandıqda isə əl işarələri ilə siqnal verməlidir (m.42.1). Yana uzadılmış sol qol, yaxud yana uzadılaraq düzbucaq şəklində dirsəkdən yuxarı bükülmüş sağ qol sola (geriyə) dönmə siqnalına uyğundur (m.42.2). Bu şəkildə sürücü yolun sağ kənarından hərəkətə başlamaq istədiyini bildirir.",
+      "img": "assets/img/1/221.jpg",
+      "answerByLetter": "c",
+      "answer": "Onun hərəkətə başlamaq istədiyini"
+    },
+    "222": {
+      "a": "Yolayrıcında təhlükənin yaranacağı barədə",
+      "b": "Onun sola və ya geriyə dönəcəyi barədə",
+      "c": "Onun yük avtomobilinə yol vermək məqsədi ilə dayanacağı barədə",
+      "des": "Yana uzadılmış sol qol sola (geriyə) dönmə siqnalına uyğundur (m.42.2). Bu şəkildə sürücünün verdiyi siqnal hərəkətin digər iştirakçilarına onun sola və va geriyə dönməsi barədə məlumat verir.",
+      "img": "assets/img/1/222.jpg",
+      "answerByLetter": "b",
+      "answer": "Onun sola və ya geriyə dönəcəyi barədə"
+    },
+    "223": {
+      "a": "Onun sağa dönəcəyi barədə",
+      "b": "Onun hərəkəti düzünə davam etdirəcəyi barədə",
+      "c": "Onun dayanacağı barədə",
+      "des": "Yolayrıcının üstündə asılmış 'Zolaqlarda hərəkət istiqaməti' nişanı hər iki zolaqdan sağa dönməyə icazə verilməsi barədə məlumat verir. Yana uzadılmış sağ qol, yaxud yana uzadılaraq düzbucaq şəklində dirsəkdən yuxarı bükülmüş sol qol sağa dönmə siqnalına uyğundur (m.42.2). Deməli, hər iki motosikletçi sağa dönmə manevri edəcəkləri barədə hərəkətin digər iştirakçilarını xəbərdar edirlər.",
+      "img": "assets/img/1/223.jpg",
+      "answerByLetter": "a",
+      "answer": "Onun sağa dönəcəyi barədə"
+    },
+    "224": {
+      "a": "Ancaq manevrdən sonra",
+      "b": "Manevr zamanı",
+      "c": "Bilavasitə manevrə başlamazdan əvvəl",
+      "des": "Dönməni göstərmək üçün əl ilə verilən siqnal bilavasitə manevrə başlamazdan əvvəl qurtara bilər (m.42.3). Burada məqsəd ondan ibarətdir ki, sürücü manevr zamanı hər iki əlindən istifadə etmək imkanına malik olsun.",
+      "img": "assets/img/nano.png",
+      "answerByLetter": "c",
+      "answer": "Bilavasitə manevrə başlamazdan əvvəl"
+    },
+    "225": {
+      "a": "Onun sağa dönəcəyi barədə",
+      "b": "Onun motosikletə yol vermək məqsədi ilə dayanacağı barədə",
+      "c": "Onun hərəkəti düzünə davam etdirəcəyi barədə",
+      "des": "yuxarı bükülmüş sol qol sağa dönmə siqnalına uyğundur (m.42.2). Minik avtomobilinin sürücüsünün bu siqnalı onun sağa dönəcəyi barədə məlumat verir.",
+      "img": "assets/img/1/225.jpg",
+      "answerByLetter": "a",
+      "answer": "Onun sağa dönəcəyi barədə"
+    },
+    "226": {
+      "a": "Onun sağa dönəcəyi barədə",
+      "b": "Onun minik avtomobilinə yol vermək məqsədi ilə sürəti azaldıb dayanacağı barədə",
+      "c": "Onun hərəkəti düzünə davam etdirəcəyi barədə",
+      "des": "Yuxarı qaldırılmış sol və ya sağ qol tormozlama siqnalına uyğundur (m.42.2). Eyni əhəmiyyətli yolların kəsişdiyi yolayrıcında relssiz NV-nin sürücüsü sağdan yaxınlaşan NV-ə yol verməlidir (m.77.3). Bu şəraitdə motosikletçinin verdiyi işarə onun minik avtomobilinə yol vermək məqsədi ilə sürəti azaldıb dayanacağı barədə məlumat verir.",
+      "img": "assets/img/1/226.jpg",
+      "answerByLetter": "b",
+      "answer": "Onun minik avtomobilinə yol vermək məqsədi ilə sürəti azaldıb dayanacağı barədə"
+    },
+    "227": {
+      "a": "Ancaq mexaniki nəqliyyat vasitələrinə",
+      "b": "Bütün nəqliyyat vasitələrinə və piyadalara",
+      "c": "Ancaq marşrut nəqliyyat vasitələrinə",
+      "des": "Sürücü bitişik ərazidən yola çıxarkən yolda hərəkət edən nəqliyyat vasitələrinə və piyadalara, yoldan kənara çıxdıqda isə hərəkət yolunu keçən piyadalara və velosipedçilərə yol verməlidir (m.42.4).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Bütün nəqliyyat vasitələrinə və piyadalara"
+    },
+    "228": {
+      "a": "Bəli, əgər o yük avtomobilinə maneə yaratmırsa",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "Minik avtomobilinin sürücüsü bordürün kənarından o zaman hərəkətə başlaya bilər ki, onun bu manevri ikinci zolaqda hərəkət edən yük avtomobilinin hərəkətinə maneə yaratmasın (m.42.1).",
+      "img": "assets/img/1/228.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli, əgər o yük avtomobilinə maneə yaratmırsa"
+    },
+    "229": {
+      "a": "Xeyr",
+      "b": "Ola bilər",
+      "c": "Bəli",
+      "des": "Yolun sağ kənarından hərəkətə başlamazdan öncə sürücü əmin olmalıdır ki, o, bu manevrlə hərəkətin digər iştirakçıları üçün təhlükə və maneə yaratmır (m.42.1). Ona görə də Siz bu şəraitdə geriyə dönməkdə olan minik avtomobilınə yol verməlisiniz.",
+      "img": "assets/img/1/229.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "230": {
+      "a": "Yolun sağ kənarında dayanmaq istəyən sürücü",
+      "b": "Yolun sol kənarından hərəkətə başlamaq istəyən sürücü",
+      "c": "Yolun sağ kənarından hərəkətə başlamaq istəyən sürücü",
+      "des": "Yolun sağ kənarından hərəkətə başlamazdan öncə sürücü əmin olmalıdır ki, o, bu manevrlə hərəkətin digər iştirakçıları üçün təhlükə və maneə yaratmır (m.42.1). Ona görə də yolun sağ kənarından hərəkətə başlamaq istəyən sürücü hərəkətdə olan avtomobilə (yolun sağ kənarında dayanmaq istəyən avtomobilə) yol verməlidir.",
+      "img": "assets/img/1/230.jpg",
+      "answerByLetter": "c",
+      "answer": "Yolun sağ kənarından hərəkətə başlamaq istəyən sürücü"
+    },
+    "231": {
+      "a": "Bəli, əgər o sağa dönürsə",
+      "b": "Xeyr",
+      "c": "Bəli",
+      "des": "Sürücü yola bitişik ərazidən yola çıxarkən yolda hərəkət edən nəqliyyat vasitələrinə və piyadalara yol verməlidir (m.42.4). Bu şəraitdə yük avtomobili yola bitişik ərazidən cıxdığından Siz ona yol verməməlisiniz.",
+      "img": "assets/img/1/231.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "232": {
+      "a": "Zolağı dəyişmədən sürəti azaltmalı, sonra isə tormozlama zolağına keçməlidir",
+      "b": "Sürəti dəyişmədən tormozlama zolağına keçməlidir, sürəti azaltmalıdır, sonra dönməyə başlamalıdır",
+      "c": "Hər iki variant mümkündür",
+      "des": "Bu şəraitdə hərəkət istiqamətini sağa dəyişmək istəyən sürücü vaxtında tormozlama zolağına keçməli və yalnız burada sürəti azaldaraq sağa dönməlidir (m.42.11).",
+      "img": "assets/img/1/232.jpg",
+      "answerByLetter": "b",
+      "answer": "Sürəti dəyişmədən tormozlama zolağına keçməlidir, sürəti azaltmalıdır, sonra dönməyə başlamalıdır"
+    },
+    "233": {
+      "a": "Minik avtomobilinin sürücüsü",
+      "b": "Fərqi yoxdur",
+      "c": "Motosikletçi",
+      "des": "Eyni səmtə gedən nəgliyyat vasitələri yerdəyişməni eyni vaxtda edirlərsə, onda sürücü özündən sağdakı nəqlıyyat vasitələrinə yol verməlidir (m.42.5). Bu şəraitdə minik avtomobilinin sürücüsü yol verməlidir.",
+      "img": "assets/img/1/233.jpg",
+      "answerByLetter": "a",
+      "answer": "Minik avtomobilinin sürücüsü"
+    },
+    "234": {
+      "a": "Ancaq qarşıdan gələn avtomobilə",
+      "b": "Qarşıdan gələn avtomobilə və piyadalara",
+      "c": "Heç kimə",
+      "des": "Solda yerləşən həyətə dönərkən (yola bitişik əraziyə) piyadalara və qarşıdan gələn minik avtomobilinə yol verməlisiniz. Sürücü yoldan kənara çıxdıqda hərəkət yolunu keçən piyadalara və velosipedçilərə, yolayrıcından kənarda sola və ya geriyə dönərkən isə qarşıdan gələn NV-ə yol verməlidir (m.42.4,9).",
+      "img": "assets/img/1/234.jpg",
+      "answerByLetter": "b",
+      "answer": "Qarşıdan gələn avtomobilə və piyadalara"
+    },
+    "235": {
+      "a": "Bəli",
+      "b": "Ola bilər",
+      "c": "Xeyr",
+      "des": "Sürücü yerdəyişmə zamanı hərəkət istiqamətini dəyişmədən eyni səmtə gedən nəgliyyat vasitələrinə yol verməlidir. Eyni səmtə gedən nəgliyyat vasitələri yerdəyişməni eyni vaxtda edirlərsə, onda sürücü özündən sağdakı nəqliyyat vasitələrinə yol verməlidir (m.42.5). Siz hərəkət istiqamətini dəyişmədən eyni səmtə gedən nəgliyyat vasitəsini idarə etdiyinizdən yol verməyə borclu deyilsiniz.",
+      "img": "assets/img/1/235.jpg",
+      "answerByLetter": "c",
+      "answer": "Xeyr"
+    },
+    "236": {
+      "a": "Minik avtomobilinin sürücüsü",
+      "b": "Fərqi yoxdur",
+      "c": "Yük avtomobilinin sürücüsü",
+      "des": "Qarşıda yolun sağdan daralması səbəbindən yük avtomibilinin sürücüsü sol zolağa yerdəyişmə etməlidir və bu zaman o, hərəkət istiqamətini dəyişmədən eyni səmtə gedən minik avtomobilinə yol verməlidir (m.42.5). Siz hərəkət istiqamətini dəyişmədən eyni səmtə gedən minik avtomobilini idarə etdiyinizdən yol verməyə borclu deyilsiniz.",
+      "img": "assets/img/1/236.jpg",
+      "answerByLetter": "c",
+      "answer": "Yük avtomobilinin sürücüsü"
+    },
+    "237": {
+      "a": "Ancaq nizamlanan yolayrıclarında",
+      "b": "Ancaq yolun yolayrıclar arasında olan sahəsində",
+      "c": "Ancaq nizamlanmayan yolayrıclarında",
+      "des": "Yolayrıcından kənarda geri dönərkən yolun sol kənarı tərəfdən manevr etmək üçün hərəkət hissəsinin eni kifayət qədər olmadıqda hərəkət hissəsinin sağ kənarından (yolun sağ qırağından) manevr etməyə yol verilir. Bu zaman sürücü arxadan və qarşıdan qələn nəqliyyat vasitələrinə yol verməlidir (m.42.9).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Ancaq yolun yolayrıclar arasında olan sahəsində"
+    },
+    "238": {
+      "a": "Yük avtomobilinin sürücüsünə yol verməlidir, çünki özü sürətləndirmə zolağından çıxır",
+      "b": "Hərəkət üstünlüyünə malikdir, çünki yük avtomobilindən sağda yerləşir",
+      "c": "Dayanmalıdır",
+      "des": "Yola giriş yerində sürətləndirmə zolağı olduqda sürücü həmin zolaqla getməli və bu yolla gedən NV-ə yol verərək qonşu zolağa keçməlidir (m.42.11). Bu şəraitdə minik avtomobilinin sürücüsü yol verməlidir.",
+      "img": "assets/img/1/238.jpg",
+      "answerByLetter": "a",
+      "answer": "Yük avtomobilinin sürücüsünə yol verməlidir, çünki özü sürətləndirmə zolağından çıxır"
+    },
+    "239": {
+      "a": "Ancaq Б",
+      "b": "Hər biri ilə",
+      "c": "Ancaq A",
+      "des": "NV sağa dönərkən hərəkət hissəsinin mümkün qədər sağ kənarına yaxın hərəkət etməlidir (m.42.7). Ona görə də Siz göstərilən trayektoriyalardan ancaq A ilə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/239.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A"
+    },
+    "240": {
+      "a": "Sağ zolaqda hərəkət edən avtomobilə maneə yaratmamalıdır",
+      "b": "Üstünlüyə malikdir, çünki o, ötməni yerinə yetirir",
+      "c": "Siqnal verməlidir",
+      "des": "Bu vəziyyətdə sağ zolağa keçmək istəyən sürücü sağ zolaqda hərəkət edən avtomobilə maneə yaratmamalıdır, çünki o, yerdəyışmə zamanı hərəkət istiqamətini dəyişmədən eyni səmtə gedən nəqliyyat vasitələrinə yol verməlidir (m.42.5).",
+      "img": "assets/img/1/240.jpg",
+      "answerByLetter": "a",
+      "answer": "Sağ zolaqda hərəkət edən avtomobilə maneə yaratmamalıdır"
+    },
+    "241": {
+      "a": "Ancaq velosipedçiyə yol verməlisiniz",
+      "b": "Ancaq piyadalara yol verməlisiniz",
+      "c": "Piyadalara və velosipedçiyə yol verməlisiniz",
+      "des": "Sürücü yoldan kənara (yola bitişik ərazilərə döndükdə) çıxdıqda hərəkət yolunu keçən piyadalara və velosipedçilərə yol verməlidir (m.42.4). Bu şəraitdə Siz piyadalara və velosipedçiyə yol verməlisiniz.",
+      "img": "assets/img/1/241.jpg",
+      "answerByLetter": "c",
+      "answer": "Piyadalara və velosipedçiyə yol verməlisiniz"
+    },
+    "242": {
+      "a": "Minik avtomobilinin sürücüsü",
+      "b": "Fərqi yoxdur",
+      "c": "Yük avtomobilinin sürücüsü",
+      "des": "Eyni səmtə gedən nəgliyyat vasitələri yerdəyişməni eyni vaxtda edirlərsə, onda sürücü özündən sağdakı nəqliyyat vasitələrinə yol verməlidir (m.42.5). Bu şəraitdə yük avtomobilinin sürücüsü yol verməlidir.",
+      "img": "assets/img/1/242.jpg",
+      "answerByLetter": "c",
+      "answer": "Yük avtomobilinin sürücüsü"
+    },
+    "243": {
+      "a": "Fərqi yoxdur",
+      "b": "Yük avtomobilinin sürücüsü",
+      "c": "Minik avtomobilinin sürücüsü",
+      "des": "Sürücü yola bitişik ərazidən yola çıxarkən yolda hərəkət edən nəqliyyat vasitələrinə və piyadalara yol verməlidir (m.42.4). Bu şəraitdə minik avtomobili yola bitişik ərazidən (YDM-dən) cıxdığından ona nisbətən yük avtomobilinin sürücüsü üstünlüyə malikdir.",
+      "img": "assets/img/1/243.jpg",
+      "answerByLetter": "b",
+      "answer": "Yük avtomobilinin sürücüsü"
+    },
+    "244": {
+      "a": "Yük avtomobilinin sürücüsü",
+      "b": "Minik avtomobilinin sürücüsü",
+      "c": "Fərqi yoxdur",
+      "des": "'Zolağın qurtaracağı' nişanının verdiyi məlumata görə sağ hərəkət zolağı qarşıda bitəcəkdir və bu səbəbdən minik avtomobilinin sürücüsü sol zolağa yerdəyişmə etməlidir. Yerdəyişmə zamanı o, hərəkət istiqamətini dəyişmədən eyni səmtə gedən yük avtomobilinə yol verməlidir (m.42.5). Siz hərəkət istiqamətini dəyişmədən eyni səmtə gedən yük avtomobilini idarə etdiyinizdən yol verməyə borclu deyilsiniz.",
+      "img": "assets/img/1/244.jpg",
+      "answerByLetter": "b",
+      "answer": "Minik avtomobilinin sürücüsü"
+    },
+    "245": {
+      "a": "Minik avtomobilinin sürücüsü",
+      "b": "Fərqi yoxdur",
+      "c": "Avtobusun sürücüsü",
+      "des": "Nəqliyyat vasitələrinin hərəkət trayektoriyaları kəsişdikdə, keçmənin növbəliyi isə qaydalarda göstərilmədikdə sağ tərəfdən hərəkət edən nəqliyyat vasitəsinə üstünlük verilir (m.42.10). Bu şəraitdə avtobusun sürücüsü yol verməlidir.",
+      "img": "assets/img/1/245.jpg",
+      "answerByLetter": "c",
+      "answer": "Avtobusun sürücüsü"
+    },
+    "246": {
+      "a": "Sağdan yaxınlaşan nəqliyyat vasitəsinə yol verməlisiniz",
+      "b": "Fərqi yoxdur",
+      "c": "Soldan yaxınlaşan nəqliyyat vasitəsinə yol verməlisiniz",
+      "des": "Nəqliyyat vasitələrinin hərəkət trayektoriyaları kəsişdikdə, keçmənin növbəliyi isə qaydalarda göstərilmədikdə sağ tərəfdən hərəkət edən nəqliyyat vasitəsinə üstünlük verilir (m.42.10).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Sağdan yaxınlaşan nəqliyyat vasitəsinə yol verməlisiniz"
+    },
+    "247": {
+      "a": "Bəli",
+      "b": "Fərqi yoxdur",
+      "c": "Xeyr",
+      "des": "Bütün hallarda (bu şəraitdə dayanacaqda) nəqliyyat vasitələrinin hərəkət trayektoriyaları kəsişdikdə, keçmənin növbəliyi isə qaydalarda göstərilmədikdə sağ tərəfdən hərəkət edən nəqliyyat vasitəsinə üstünlük verilir (m.42.10).",
+      "img": "assets/img/1/247.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "248": {
+      "a": "Hərəkət üstünlüyünə maliksiniz",
+      "b": "Siqnal verməlisiniz",
+      "c": "Sağ zolaqda hərəkət edən bütün nəqliyyat vasitələrinə yol verməlisiniz",
+      "des": "Siz sağ zolağa keçərkan orada hərəkət edən bütün nəqliyyat vasitələrinə yol verməlisiniz (m.42.5).",
+      "img": "assets/img/1/248.jpg",
+      "answerByLetter": "c",
+      "answer": "Sağ zolaqda hərəkət edən bütün nəqliyyat vasitələrinə yol verməlisiniz"
+    },
+    "249": {
+      "a": "Hər biri ilə",
+      "b": "Ancaq A",
+      "c": "Ancaq A və ya B",
+      "des": "Yolayrıcının qarşısında 'Birtərəfli hərəkət yoluna çıxış' nişanı qoyulmuşdur və bu nişan düzünə və sağa istiqamətlərdə hərəkəti qadağan etmir. NV sağa dönərkən hərəkət hissəsinin mümkün qədər sağ kənarına yaxın hərəkət etməlidir (m.42.7). Ona görə də Siz göstərilən trayektoriyalardan ancaq A və ya B ilə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/249.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A və ya B"
+    },
+    "250": {
+      "a": "Hər biri ilə",
+      "b": "Ancaq A",
+      "c": "Ancaq A və B",
+      "des": "'Dairəvi hərəkət' nişanı Sizə bildirir ki, bu yolayrıcında hərəkət nişanda olan oxlar istiqamətində təşkil olunub. NV sağa dönərkən hərəkət hissəsinin mümkün qədər sağ kənarına yaxın hərəkət etməlidir (m.42.7). Ona görə də Siz göstərilən trayektoriyalardan ancaq A ilə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/250.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq A"
+    },
+    "251": {
+      "a": "Xeyr",
+      "b": "Ola bilər",
+      "c": "Bəli",
+      "des": "Svetoforun əlavə bölməsinin yaşıl işığının yanması sağa dönməyə icazə verir, lakin bunun üçün Siz əvvəlcədən sağ zolağa keçməlidiniz (m.42.7). Sol zolaqdan sağa dönmək qadağandır.",
+      "img": "assets/img/1/251.jpg",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "252": {
+      "a": "Bəli",
+      "b": "Ola bilər",
+      "c": "Xeyr",
+      "des": "Bu vəziyyətdə sağa dönərkən hərəkət hissəsinin mümkün qədər sağ kənarına yaxın hərəkət etməlisiniz (m.42.7). Sizin dönəcəyiniz sağ kənar zolaqda nasaz NV dayandığından şəkildə göstərilən trayektoriyada hərəkəti davam etdirməyə icazə verilir.",
+      "img": "assets/img/1/252.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "253": {
+      "a": "Hər iki variant mümkündür",
+      "b": "İkinci zolaqda yolayrıcına kimi getməlisiniz, sonra dönməlisiniz",
+      "c": "Sağ zolağa keçməlisiniz, sonra dönməlisiniz",
+      "des": "'Zolaqlarda hərəkət istiqaməti' nişanı məlumat verir ki, bu yolayrıcında sağa dönməyə həm sol, həm də sağ zolaqdan icazə verilir. Ona görə də Siz hər iki zolaqdan sağa dönə bilərsiniz.",
+      "img": "assets/img/1/253.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər iki variant mümkündür"
+    },
+    "254": {
+      "a": "Sağ zolağa keçməlisiniz, sonra dönməlisiniz",
+      "b": "İkinci zolaqda yolayrıcına kimi getməlisiniz, sonra dönməlisiniz",
+      "c": "Hər iki variant mümkündür",
+      "des": "Zolaqlarda çəkilmiş 1.18 nişanlanma xətləri məlumat verir ki, bu yolayrıcında sağa dönməyə həm sol, həm də sağ zolaqdan icazə verilir. Ona görə də Siz hər iki zolaqdan sağa dönə bilərsiniz.",
+      "img": "assets/img/1/254.jpg",
+      "answerByLetter": "c",
+      "answer": "Hər iki variant mümkündür"
+    },
+    "255": {
+      "a": "Düzünə, sola və geriyə",
+      "b": "Ancaq düzünə",
+      "c": "Ancaq düzünə və sola",
+      "des": "'Nəqliyyat vasitəsinin növü' lövhəciyi 'Düzünə və ya sağa hərəkət' nişanının ancaq icazə verilən maksimum kütləsi 3,5 t-dan artıq olan yük avtomobillərinə şamil olunduğunu dəqiqləşdirir (m.68.1). Ona görə də Siz minik avtomobilində sol zolaqdan icazə verilən bütün istiqamətlərdə, yəni sola, geriyə və düzünə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/255.jpg",
+      "answerByLetter": "a",
+      "answer": "Düzünə, sola və geriyə"
+    },
+    "256": {
+      "a": "Ancaq sağdan",
+      "b": "Ancaq soldan",
+      "c": "Sağdan və ya soldan",
+      "des": "Dairəvi hərəkətli yolayrıcına daxil olarkən sağa dönmə manevri nəinki sağ, həm də sol zolaqdan yerinə yetirilə bilər (m.42.6). Ona görə də yolayrıcına hər iki zolaqdan daxil olmağa icazə verilir.",
+      "img": "assets/img/1/256.jpg",
+      "answerByLetter": "c",
+      "answer": "Sağdan və ya soldan"
+    },
+    "257": {
+      "a": "Heç biri pozmur",
+      "b": "Ancaq minik avtomobilinin sürücüsü",
+      "c": "Hər ikisi",
+      "des": "'Dairəvi hərəkət' nişanı Sizə bildirir ki, bu yolayrıcında hərəkət nişanda olan oxlar istiqamətində təşkil olunub. Dairəvi hərəkətli yolayrıcına daxil olarkən sağa dönmə manevri nəinki sağ, həm də sol zolaqdan yerinə yetirilə bilər (m.42.6). Dairəvi hərəkətli yolayrıcından çıxarkən sağa dönməzdən əvvəl sürücü həmin istiqamətdə hərəkət hissəsində kənar sağ zolağı tutmalı və dönəcəyi hərəkət hissəsinin kənar sağ zolağına daxil olmalıdır (m.42.6-7). Bu qaydalara minik avtomobilinin sürücüsü riayət etmir.",
+      "img": "assets/img/1/257.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq minik avtomobilinin sürücüsü"
+    },
+    "258": {
+      "a": "Ancaq sola",
+      "b": "Sağa, sola və geriyə",
+      "c": "Ancaq sola və geriyə",
+      "des": "'Sağa və ya sola hərəkət' nişanı bu yolayrıcında ancaq düzünə istiqamətdə hərəkətin davam etdirilməsini qadağan edir. Hərəkət istiqamətində iki zolağın olması bildirir ki, sol zolaqdan sola və geriyə dönmək olar (m.42.6). Siz sol zolaqda olduğunuzdan sola və geriyə hərəkəti davam etdirə bilərsiniz.",
+      "img": "assets/img/1/258.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq sola və geriyə"
+    },
+    "259": {
+      "a": "Ancaq A",
+      "b": "Hər biri ilə",
+      "c": "Ancaq Б",
+      "des": "'Zolaqlarda hərəkət istiqaməti' nişanı məlumat verir ki, bu yolayrıcında sola dönməyə həm sol, həm də orta zolaqdan icazə verilir. Ona görə də Siz hər iki trayektoriyada sola dönə bilərsiniz.",
+      "img": "assets/img/1/259.jpg",
+      "answerByLetter": "b",
+      "answer": "Hər biri ilə"
+    },
+    "260": {
+      "a": "Bəli",
+      "b": "Ola bilər",
+      "c": "Xeyr",
+      "des": "Yolayrıcında geriyə dönmək qadağan deyildir (m.42.12). 'Baş yol' və 'Baş yolun istiqaməti' nişanları da bu manevrin yerinə yetirilməsinə məhdudiyyət qoymur.",
+      "img": "assets/img/1/260.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli"
+    },
+    "261": {
+      "a": "Ancaq Б",
+      "b": "Ancaq A",
+      "c": "Hər biri ilə",
+      "des": "'Birtərəfli yolun qurtaracağı' və 'İkitərəfli hərəkət' nişanları Sizi xəbərdar edir ki, birtərəfli yol yolayrıcında bitir. Ona görə də sola dönmə kənar sol zolaqdan (Б trayektoriyası ilə) yerinə yetirilməlidir (m.42.6).",
+      "img": "assets/img/1/261.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б"
+    },
+    "262": {
+      "a": "Ancaq Б",
+      "b": "Hər biri ilə",
+      "c": "Ancaq A",
+      "des": "Sola və ya gerıyə dönməzdən əvvəl sürücü həmin istiqamətdə hərəkət hissəsində müvafiq kənar vəziyyət tutmalıdır. Solda hərəkət hissəsi ilə bir səviyyədə yerləşən eyni istiqamətdə tramvay yolları olduqda, 5.8.1 və ya 5.8.2 nişanları ilə başqa hərəkət qaydası müəyyən edilməmişdirsə, həmin yollardan keçərək sola və geriyə dönmək lazımdır. Bu zaman tramvay üçün maneə yaradılmamalıdır (m.42.6). Ona görə də Siz ancaq A trayektoriyası ilə sola dönə bilərsiniz.",
+      "img": "assets/img/1/262.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A"
+    },
+    "263": {
+      "a": "Hər biri ilə",
+      "b": "Ancaq A",
+      "c": "Ancaq Б",
+      "des": "Sola və ya geriyə dönməzdən əvvəl sürücü həmin istiqamətdə hərəkət hissəsində müvafiq kənar vəziyyət tutmalıdır. Solda hərəkət hissəsi ilə bir səviyyədə yerləşən eyni istiqamətdə tramvay yolları olduqda 5.8.1 və ya 5.8.2 nişanları ilə başqa hərəkət qaydası müəyyən edilməmişdirsə, həmin yollardan keçərək sola və geriyə dönmək lazımdır. Bu zaman tramvay üçün maneə yaradılmamalıdır (m.42.6). 5.8.1 'Zolaqlarda hərəkət istiqamətləri' nişanı tramvay yollarına çıxmaqla sola və geriyə dönməni qadağan edir (A trayektoriyasında). Ona görə də Siz ancaq Б trayektoriyasında sola dönə bilərsiniz.",
+      "img": "assets/img/1/263.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq Б"
+    },
+    "264": {
+      "a": "Ancaq Б",
+      "b": "Ancaq A",
+      "c": "Hər biri ilə",
+      "des": "Elə dönmək lazımdır ki, NV hərəkət hissələrinin kəsişdiyi yerdən çıxarkən qarşıdan gələn nəqliyyatın yoluna keçməsin (m.42.7). Deməli, sola dönməni ancaq Б trayektoriyası ilə yerinə yetirmək lazımdır.",
+      "img": "assets/img/1/264.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq Б"
+    },
+    "265": {
+      "a": "Ancaq A",
+      "b": "Hər biri ilə",
+      "c": "Ancaq Б",
+      "des": "Bu şəraitdə Siz hər bir trayektoriyada hərəkət etməklə geriyə dönə bilərsiniz. 'Sola dönmək qadağandır' nişanı bu yolayrıcında ancaq sola dönməni qadağan edir, lakin geriyə dönməyə icazə verir.",
+      "img": "assets/img/1/265.jpg",
+      "answerByLetter": "b",
+      "answer": "Hər biri ilə"
+    },
+    "266": {
+      "a": "Ancaq A",
+      "b": "Hər biri ilə",
+      "c": "Ancaq Б",
+      "des": "Elə dönmək lazımdır ki, NV hərəkət hissələrinin kəsişdiyi yerdən çıxarkən qarşıdan gələn nəqliyyatın yoluna keçməsin (m.42.7). 'Birtərəfli hərəkət yoluna çıxış' nişanı sürücüləri məlumatlandırır ki, kəsişən yolda NV-nin hərəkəti ancaq sağdan sola doğru yönəlmişdir. Deməli, sola dönməni hər iki trayektoriya ilə yerinə yetirməyə icazə verilir.",
+      "img": "assets/img/1/266.jpg",
+      "answerByLetter": "b",
+      "answer": "Hər biri ilə"
+    },
+    "267": {
+      "a": "Hər biri ilə",
+      "b": "Ancaq Б",
+      "c": "Ancaq A",
+      "des": "Sola dönməni hər iki trayektoriya ilə yerinə yetirməyə icazə verilir, amma elə dönmək lazımdır ki, NV hərəkət hissələrinin kəsişdiyi yerdən cıxarkən qarşıdan gələn nəqliyyatın yoluna keçməsin (m.42.7).",
+      "img": "assets/img/1/267.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər biri ilə"
+    },
+    "268": {
+      "a": "Hər biri ilə",
+      "b": "Ancaq B",
+      "c": "Ancaq A",
+      "des": "Sola dönməni hər üç trayektoriya ilə yerinə yetirməyə icazə verilir, amma elə dönmək lazımdır ki, NV hərəkət hissələrinin kəsişdiyi yerdən çıxarkən qarşıdan gələn nəqliyyatın yoluna keçməsin (m.42.7).",
+      "img": "assets/img/1/268.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər biri ilə"
+    },
+    "269": {
+      "a": "Ola bilər",
+      "b": "Xeyr",
+      "c": "Bəli",
+      "des": "Siz sol zolaqda olduğunuzdan və 1.11 nişanlanma xəttini qırıq xətt tərəfdən kəsmək qadağan edilmədiyindən, bu yolayrıcında geriyə dönməyə icazə verilir (m.42.6).",
+      "img": "assets/img/1/269.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "270": {
+      "a": "Ancaq A",
+      "b": "Heç biri ilə",
+      "c": "Ancaq Б",
+      "des": "'Düzünə hərəkət' nişanının qüvvəsi ancaq hərəkət hissələrinin birinci kəsişmə sahəsinə, yəni ayırıcı zolağa kimi şamil edilir (m.65.4). Deməli, geriyə dönməni ancaq A trayektoriyası ilə yerinə yetirməyə icazə verilir.",
+      "img": "assets/img/1/270.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A"
+    },
+    "271": {
+      "a": "Hər ikisi pozur",
+      "b": "Ancaq avtomobilin sürücüsü",
+      "c": "Heç biri pozmur",
+      "des": "Motosikletçi sola dönərkən sol zolağın kənar sol tərəfini tutmalı idi (m.42.6). Minik avtomobilinin sürücüsü isə sağa dönərkən hərəkət hissəsinin mümkün qədər sağ kənarına yaxın, yəni sağdan birinci zolaqda hərəkət etməli idi (m.42.7). Ona görə də hər iki sürücü Qaydaları pozurlar.",
+      "img": "assets/img/1/271.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər ikisi pozur"
+    },
+    "272": {
+      "a": "İcazə verilir, ancaq Б ilə",
+      "b": "Qadağandır",
+      "c": "İcazə verilir, ancaq A ilə",
+      "des": "'Birtərəfli yol' və 'İkitərəfli hərəkət' nişanları yolda olan sürücüləri məlumatlandırır ki, bu yolun hərəkət hissəsində NV ancaq bir tərəfə ('Birtərəfli yol' nişanındakı ox istiqamətində) hərəkət edirlər və birtərəfli hərəkət yolayrıcında bitir. Siz yolayrıcına kimi geriyə döndükdə hərəkət axınının əks istiqamətində hərəkət etmiş olacaqsınız. Bununla əlaqədar olaraq geriyə dönmək hər iki trayektoriyada qadağandır.",
+      "img": "assets/img/1/272.jpg",
+      "answerByLetter": "b",
+      "answer": "Qadağandır"
+    },
+    "273": {
+      "a": "Ancaq B",
+      "b": "Ancaq A",
+      "c": "Hər biri ilə",
+      "des": "Yolayrıclarından kənarda yolun sol kənarından geriyə dönmək üçün hərəkət hissəsinin eni kifayət qədər olmadıqda hərəkət hissəsinin sağ kənarından (yolun sağ qırağından), yəni A trayektoriyası ilə manevr etməyə icazə verilir (m.42.9).",
+      "img": "assets/img/1/273.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq A"
+    },
+    "274": {
+      "a": "Bəli, əgər digər hərəkət iştirakçılarına maneçilik yaradılmayacaqsa",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "Yolayrıclarında geriyə hərəkət etmək qadağandır (m.42.14), lakin həyətlərə giriş yeri yolayrıcı sayılmır (m.1.11). Ona görə də hərəkətin digər iştirakçılarına maneçilik yaradılmayacağı halda geriyə dönməyə icazə verilir.",
+      "img": "assets/img/1/274.jpg",
+      "answerByLetter": "a",
+      "answer": "Bəli, əgər digər hərəkət iştirakçılarına maneçilik yaradılmayacaqsa"
+    },
+    "275": {
+      "a": "Ancaq Б",
+      "b": "Hər biri ilə",
+      "c": "Ancaq A",
+      "des": "Yol sahəsinin başlanğıcında (yolayrıcıdan sonra) qurulmuş 'Düzünə hərəkət' nişanı hərəkət istiqamətində ən yaxın yolayrıcına qədər qüvvədə olur, sola və ya geriyə dönməni qadağan edir (m.65.4). Б trayektoriyası nişanin təsir sahəsində yerləşir. Deməli, geriyə dönməni ancaq A trayektoriyası ilə yerinə yetirməyə icazə verilir.",
+      "img": "assets/img/1/275.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq A"
+    },
+    "276": {
+      "a": "Ancaq A avtomobilinin sürücüsü",
+      "b": "Ancaq B avtomobilinin sürücüsü",
+      "c": "Heç biri",
+      "des": "'Birtərəfli hərəkət yoluna çıxış' nişanı sürücüləri məlumatlandırır ki, kəsişən yolda NV-nin hərəkəti bir tərəfə təşkil olunmuşdur. Lakin bu, yolayrıcında geriyə dönməni qadağan etmir. Geriyə dönməkdə olan minik avtomobillərinin hərəkət trayektoriyaları kəsişmədiyindən və bu manevrlər digər NV üçün maneə yaratmadığından, onların heç biri Qaydaları pozmur.",
+      "img": "assets/img/1/276.jpg",
+      "answerByLetter": "c",
+      "answer": "Heç biri"
+    },
+    "277": {
+      "a": "Ancaq Б",
+      "b": "Ancaq A.",
+      "c": "Hər biri ilə",
+      "des": "Bu yolayrıcında geriyə dönərkən Siz ikitərəfli hərəkət təşkil olunmuş yolun sahəsindən istifadə etmiş olursunuz. Ona görə də yolayrıcına cıxdıqda Siz yolun sağ tərəfi ilə, yəni A trayektoriyası ilə hərəkət etməlisiniz.",
+      "img": "assets/img/1/277.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq A."
+    },
+    "278": {
+      "a": "Bəli, ancaq sutkanın işıqlı vaxtı",
+      "b": "Bəli",
+      "c": "Xeyr",
+      "des": "Yolun ən azı bir istiqamətdə 100 metrdən az hissəsi görünən yerlərdə geriyə dönmək qadağandır (m.42.12). 'Təhlükəli döngələr' nişanı 'Qüvvədə olma zonası' lövhəciyi ilə birgə olaraq yaşayış məntəqələrindən kənarda birinci döngəyə 150-300 metr qalmış quraşdırılır. Bu lövhəciyi bu döngələrə kimi olan məsafə barədə yox, onların uzunluğu barədə məlumat verir, deməli, nişanların yaxınlığında geriyə dönməyə icazə verir.",
+      "img": "assets/img/1/278.jpg",
+      "answerByLetter": "b",
+      "answer": "Bəli"
+    },
+    "279": {
+      "a": "Başqa şəxslərin köməyindən istifadə etmək",
+      "b": "Qəza dayanma işıq siqnalını qoşmaq",
+      "c": "Səs siqnalı vermək",
+      "des": "Nəqliyyat vasitəsinin geriyə hərəkətinə o şərtlə icazə verilir ki, bu manevr təhlükəsiz olsun və hərəkətin digər iştirakçılarına maneə yaratmasın. Lazım gəldikdə, sürücü başqa şəxslərin köməyindən istifadə etməlidir (m.42.13).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Başqa şəxslərin köməyindən istifadə etmək"
+    },
+    "280": {
+      "a": "İcazə verilir, ancaq yolun 100 metrdən çoxu görünəndə",
+      "b": "İcazə verilir, ancaq yolun 10 metrdən çoxu görünəndə",
+      "c": "İcazə verilmir",
+      "des": "'Piyada keçidi' nişanı yaşayış məntəqələrindən kənarda piyada keçidinə 150-300 metr qalmış quraşdırılır və bu nişan geriyə dönməni qadağan etmir. Yolun ən azı bir istiqamətdə 100 metrdən az hissəsi görünən yerlərdə geriyə dönmək qadağandır (m.42.12). Deməli, nisanın yaxınlığında yolun 100 metrdən çoxu qöründüyündən geriyə dönməyə icazə verilir.",
+      "img": "assets/img/1/280.jpg",
+      "answerByLetter": "a",
+      "answer": "İcazə verilir, ancaq yolun 100 metrdən çoxu görünəndə"
+    },
+    "281": {
+      "a": "Bütün şəkillərdə",
+      "b": "Ancaq soldakı və sağdakı şəkillərdə",
+      "c": "Ancaq soldakı şəkildə",
+      "des": "Qaydalara görə piyada keçidlərində geriyə dönmək qadağandır (m.42.12). Deməli, soldakı şəkildə göstərilən yerdə geriyə dönmək qadağandır. 1.11 nişanlanma xəttini qırıq xətt tərəfdən kəsmək qadağan edilmədiyindən, ikinci şəkildə göstərilən yerdə geriyə dönməyə icazə verilir. Eyni istiqamətdə azı iki hərəkət zolağı olan yolda tramvay yolları olduqda, tramvay yollarına çıxmaq qadağandır (m.42.4). Sağ şəkildə göstərilən vəziyyətdə (bir hərəkət zolağı olduqda) tramvayın hərəkətinə maneə yaratmadan, tramvay yolunu keçib geriyə dönməyə icazə verilir (m.42.6).",
+      "img": "assets/img/1/281.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq soldakı şəkildə"
+    },
+    "282": {
+      "a": "Ancaq A və ya B",
+      "b": "Ancaq A",
+      "c": "Hər biri ilə",
+      "des": "Qarşıda 1.14.1 nişanlanma xətti ilə nizamlanmayan piyada keçidi göstərilmişdir. Qaydalara görə ancaq piyada keçidlərində geriyə dönmək qadağandır (m.42.12). Deməli, geriyə dönməni ancaq A və B trayektoriyaları ilə yerinə yetirməyə icazə verilir.",
+      "img": "assets/img/1/282.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq A və ya B"
+    },
+    "283": {
+      "a": "Bütün hallarda yol verməlidir",
+      "b": "Yol nişanları ilə hərəkət üstünlüyü müəyyən edilməmişdirsə, verməlidir",
+      "c": "Xeyr",
+      "des": "Yol nişanları ilə hərəkət üstünlüyü müəyyən edilməmişdirsə, dairəvi hərəkət təşkil olunmuş yolayrıcına daxil olan sürücü dairədə hərəkət edən nəqliyyat vasitələrinə yol verməlidir (m.42.15).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Yol nişanları ilə hərəkət üstünlüyü müəyyən edilməmişdirsə, verməlidir"
+    },
+    "284": {
+      "a": "Xeyr",
+      "b": "Ola bilər",
+      "c": "Bəli",
+      "des": "'Düzünə hərəkət' nişanı geriyə hərəkəti qadağan etmir. NV-nin sürücüsü bu yolda geriyə hərəkət edə bilər.",
+      "img": "assets/img/1/284.jpg",
+      "answerByLetter": "c",
+      "answer": "Bəli"
+    },
+    "285": {
+      "a": "Piyada keçidlərində",
+      "b": "Ümumi istifadədə olan nəqliyyat vasitələrinin dayanacaqlarında",
+      "c": "Birtərəfli hərəkət olan yollarda",
+      "des": "Yolayrıclarda, piyada keçidlərində, ümumi istifadədə olan nəqliyyat vasitələrinin dayanacaq yerlərində geriyə hərəkət etmək qadağandır (m.42.14). Birtərəfli hərəkət olan yollarda surucuyə geriyə hərəkət etməyə icazə verilir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Birtərəfli hərəkət olan yollarda"
+    },
+    "286": {
+      "a": "Ancaq geriyə dönmə",
+      "b": "Ancaq geriyə hərəkət",
+      "c": "Sadalanan heç biri",
+      "des": "Körpülərdə geriyə dönmə və geriyə hərəkət qadağandır (m.42.12,14).",
+      "img": "assets/img/1/286.jpg",
+      "answerByLetter": "c",
+      "answer": "Sadalanan heç biri"
+    },
+    "287": {
+      "a": "Ancaq A",
+      "b": "Ancaq Б",
+      "c": "Hər biri ilə",
+      "des": "Solda hərəkət hissəsi ilə bir səviyyədə yerləşən eyni istiqamətdə tramvay yolları olduqda 5.8.1 və ya 5.8.2 nişanları ilə başqa hərəkət qaydası müəyyən edilməmişdirsə, həmin yollardan keçərək sola və geriyə dönmək lazımdır (m.42.6). Bu şəraitdə tramvayın olmadığı halda Б trayektoriyası ilə geriyə dönməyə icazə verilir.",
+      "img": "assets/img/1/287.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq Б"
+    },
+    "288": {
+      "a": "Xeyr",
+      "b": "Bəli",
+      "c": "Ola bilər",
+      "des": "Avtobus dayanacağında duran piyadaya yaxınlaşmaq üçün minik avtomobilinin sürücüsünə geriyə hərəkət etməyə icazə verilmir, çünki ictimai nəqliyyatın dayanacaq məntəqələrinin yerlərində geriyə hərəkət etmək qadağandır (m.42.14).",
+      "img": "assets/img/1/288.jpg",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "289": {
+      "a": "Bəli, əgər digər hərəkət iştirakçılarına maneçilik yaradılmayacaqsa",
+      "b": "Xeyr",
+      "c": "Bəli",
+      "des": "Yolayrıclarında geriyə hərəkət qadağan olunduğundan (m.42.14) sürücü geriyə dönə bilməz.",
+      "img": "assets/img/1/289.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "290": {
+      "a": "Bəli",
+      "b": "Xeyr",
+      "c": "Bəli, əgər digər nəqliyyat vasitələrinin hərəkətinə maneçilik yaradılmayacaqsa",
+      "des": "Tunellərdə geriyə hərəkət qadağan olunduğundan (m.42.14) sürücü piyadaya yaxınlaşa bilməz.",
+      "img": "assets/img/1/290.jpg",
+      "answerByLetter": "b",
+      "answer": "Xeyr"
+    },
+    "291": {
+      "a": "Hər iki motosikletçi",
+      "b": "Ancaq hərəkət zolağının sol tərəfındə olan",
+      "c": "Ancaq hərəkət zolağının sağ tərəfində olan",
+      "des": "Qaydalara görə bu yolda hər hərəkət istiqaməti üçün bir hərəkət zolağı vardır. Hərəkət zolağı eni avtomobillərin bir sırada hərəkəti üçün kifayət edən hər hansı uzununa zolağıdır (m.1.15). Yanqoşqusuz motosikletlərin qabarit ölçülərini və onlar arasındakı təhlükəsiz intervalı nəzərə alaraq, onların bir zolaqda, iki sırada hərəkətinə icazə verilir.",
+      "img": "assets/img/1/291.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər iki motosikletçi"
+    },
+    "292": {
+      "a": "Ancaq müvafiq nişanlarla",
+      "b": "Ancaq nişanlanma xətləri ilə",
+      "c": "Nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda, sürücü özü təyin etməlidir",
+      "des": "Hərəkət hissəsində zolaqların sayı nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda isə hərəkət hissəsinin enini, NV-nin qabaritlərini və onların arasındakı intervalı nəzərə almaqla sürücü özü təyin edir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda, sürücü özü təyin etməlidir"
+    },
+    "293": {
+      "a": "Hər iki motosikletçi",
+      "b": "Ancaq hərəkət zolağının sağ tərəfində olan",
+      "c": "Ancaq hərəkət zolağının sol tərəfində olan",
+      "des": "Qaydalara görə bu yolda hər hərəkət istiqaməti üçün iki hərəkət zolağı vardır. Hərəkət zolağı eni avtomobillərin bir sırada hərəkəti üçün kifayət edən hər hansı uzununa zolağıdır (m.1.15). Yanqoşqusuz motosikletlərin qabarit ölçülərini və onlar arasındakı təhlükəsiz intervalı nəzərə alaraq, onların bir zolaqda iki sırada hərəkətinə icazə verilir.",
+      "img": "assets/img/1/293.jpg",
+      "answerByLetter": "a",
+      "answer": "Hər iki motosikletçi"
+    },
+    "294": {
+      "a": "Ancaq avtomobillərin qabaritlərini",
+      "b": "Hərəkət hissəsinin enini, avtomobiliərin qabaritlərini və onlar arasındakı intervalları",
+      "c": "Ancaq hərəkət hissəsinin enini",
+      "des": "Hərəkət hissəsində zolaqların sayı nişanlanma xətləri və ya nişanlarla, bunlar olmadıqda isə hərəkət hissəsinin enini, NV-nin qabaritlərini və onlar arasındakı intervalı nəzərə almaqla sürücü özü təyin edir.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Hərəkət hissəsinin enini, avtomobiliərin qabaritlərini və onlar arasındakı intervalları"
+    },
+    "295": {
+      "a": "Düzünə və ya sola",
+      "b": "Ancaq sola",
+      "c": "Sola və ya geriyə",
+      "des": "Üç hərəkət zolağı olan ikitərəfli hərəkət yollarında NV yolun hərəkət hissəsinin mərkəzində yerləşən və hər iki istiqamət üçün sol kənar hesab olunan orta zolağa keçməməlidirlər. Orta zolağa keçməyə yalnız ötmə, yandan keçmə və sola, yaxud geriyə dönmə üçün icazə verilir (m.49.3). Ona görə də bu yolayrıcında hərəkəti ancaq sola və geriyə davam etdirmək olar.",
+      "img": "assets/img/1/295.jpg",
+      "answerByLetter": "c",
+      "answer": "Sola və ya geriyə"
+    },
+    "296": {
+      "a": "İcazə verilir, ancaq sola və ya geriyə dönmək məqsədi ilə",
+      "b": "İcazə verilir",
+      "c": "İcazə verilir, ancaq ötmək məqsədi ilə",
+      "des": "Eyni istiqamətdə üç və daha artıq hərəkət zolağı olan yolda NV-nin bütün hərəkət zolağını tutduqları intensıv hərəkət vaxtı ağırçəkili NV (tam kütləsi 3,5 tondan çox olan) həmin istiqamətdə kənar sol zolağı tutmamalıdır (hərəkət istiqamətini sola dəyişmək və ya dönmək halları istisna olmaqla) (m.49.5).",
+      "img": "assets/img/1/296.jpg",
+      "answerByLetter": "a",
+      "answer": "İcazə verilir, ancaq sola və ya geriyə dönmək məqsədi ilə"
+    },
+    "297": {
+      "a": "Ancaq minik",
+      "b": "Heç biri pozmur",
+      "c": "Ancaq yük",
+      "des": "Uç hərəkət zolağı olan ikitərəfli hərəkət yoluna dönərkən orta zolağa girmək qadağandır, çünki həmin yolda hərəkət edən NV bu zolaqdan sola və ya geriyə dönmək üçün istifadə edir (m.49.3). Bu səbəbdən minik avtomobilinin sürücüsü Qaydaları pozur. Yük avtomobilinin sürücüsü isə Qaydaları pozmur, çünki o, sola dönərkən qarşıdan gələn nəqliyyatın yoluna keçmir (m.42.7).",
+      "img": "assets/img/1/297.jpg",
+      "answerByLetter": "c",
+      "answer": "Ancaq yük"
+    },
+    "298": {
+      "a": "Xeyr",
+      "b": "Bəli",
+      "c": "Bəli, əgər at arabasının sürəti saatda 30 kilometrdən azdırsa",
+      "des": "At arabasının sürətının az olması, qırıq nişanlanma xətti və qarşıdan gələn NV-nin olmaması heç də bu qaydada ötməyə icazə vermir. Belə yollarda ötmə məqsədi ilə ancaq orta zolaqdan istifadə etməyə icazə verilir (m.49.3).",
+      "img": "assets/img/1/298.jpg",
+      "answerByLetter": "a",
+      "answer": "Xeyr"
+    },
+    "299": {
+      "a": "Ancaq sağ zolaqda",
+      "b": "Hər birində",
+      "c": "Sol zolaqdan başqa hər birində",
+      "des": "Yolun sağ zolaqları boş olduğu halda sol zolaqları tutmaq qadağandır. Bu şəraitdə Siz ancaq sağ zolaqda hərəkət edə bilərsiniz (m.49.1).",
+      "img": "assets/img/1/299.jpg",
+      "answerByLetter": "a",
+      "answer": "Ancaq sağ zolaqda"
+    },
+    "300": {
+      "a": "Hər birində",
+      "b": "Ancaq sağ zolaqda",
+      "c": "Ancaq sol zolaqda",
+      "des": "Yaşayış məntəqələrindən kənarda yolun sağ zolaqları boş olduğu halda sol zolaqları tutmaq qadağandır. Deməli, Siz ötmədən sonra ancaq sağ zolaqda hərəkət edə bilərsiniz (m.49.1).",
+      "img": "assets/img/1/300.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq sağ zolaqda"
+    },
+    "301": {
+      "a": "Ancaq sol zolaqda",
+      "b": "Ancaq sağ zolaqda",
+      "c": "Hər birində",
+      "des": "Normal hərəkət zamanı NV-nin sürücüləri vəziyyətdən asılı olaraq, yolun hərəkət hissəsinin sağ kənarı ilə hərəkət etməlidirlər (m.49.1), yəni eyni istiqamətdəki sağ zolaqlar boş olduğu halda, sol zolaqlara keçmək qadağandır. Deməli, Siz yük avtomobilini keçdikdən sonra ancaq sağ zolaqda hərəkəti davam etdirməlisiniz (m.49.1).",
+      "img": "assets/img/1/301.jpg",
+      "answerByLetter": "b",
+      "answer": "Ancaq sağ zolaqda"
+    }
+    
+    
+    
+    
+  }
+]
