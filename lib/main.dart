@@ -75,8 +75,8 @@ class _MyAppState extends DevExamState<MyApp> {
             return PerceptiveWidget(
               child: MaterialApp(
                 theme: devExam.theme.light,
-                locale:
-                    localizationState.locale ?? devExam.intl.locale.languageCode,
+                locale: localizationState.locale ??
+                    devExam.intl.locale.languageCode,
                 localizationsDelegates: [
                   devExam.intl.delegate,
                   GlobalMaterialLocalizations.delegate,
@@ -84,7 +84,7 @@ class _MyAppState extends DevExamState<MyApp> {
                   GlobalCupertinoLocalizations.delegate,
                 ],
                 supportedLocales: [
-                  Locale('az', 'AZ'),
+                  Locale('en', 'UK'),
                   Locale('ru', 'RU'),
                 ],
                 navigatorKey: _navigatorKey,

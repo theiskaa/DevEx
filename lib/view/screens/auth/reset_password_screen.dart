@@ -118,10 +118,10 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
   }
 
   String getLANGCODE(BuildContext context) {
-    if (devExam.intl.of(context).fmt('lang') == "az") {
+    if (devExam.intl.of(context).fmt('lang') == "en") {
       return "RU";
     } else if (devExam.intl.of(context).fmt('lang') == "ru") {
-      return "AZ";
+      return "EN";
     } else {
       return null;
     }
@@ -140,12 +140,12 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
       ),
       border: Border.all(color: devExam.theme.darkGreenblue.withOpacity(.3)),
       onTap: () {
-        if (devExam.intl.of(context).fmt('lang') == "az") {
+        if (devExam.intl.of(context).fmt('lang') == "en") {
           BlocProvider.of<LocalizationBloc>(context)
               .add(LocalizationSuccess(langCode: Lang.RUS));
         } else if (devExam.intl.of(context).fmt('lang') == "ru") {
           BlocProvider.of<LocalizationBloc>(context)
-              .add(LocalizationSuccess(langCode: Lang.AZ));
+              .add(LocalizationSuccess(langCode: Lang.EN));
         }
       },
     );
@@ -163,7 +163,7 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
 
   Text buildtitle() {
     return Text(
-      "devExam",
+      "Dev Ex",
       style: TextStyle(
         color: Colors.black,
         fontWeight: FontWeight.w900,

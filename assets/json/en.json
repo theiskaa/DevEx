@@ -1,0 +1,157 @@
+[
+  {
+    "1": "Which is first programming language?",
+    "2": "Who is first programmer in the world?",
+    "3": "Which is the first personal computer?",
+    "4": "Which one is the first search engine in internet?",
+    "5": "In which decade was the American Institute of Electrical Engineers (AIEE) founded?",
+    "6": "What is part of a database that holds only one type of information?",
+    "7": "In which decade with the first transatlantic radio broadcast occur?",
+    "8": "First computer virus is know as:",
+    "9": "Which of the following is not a operating system?",
+    "10": "1024 bit is equals to how many byte?",
+    "11": "Mac operating system developed by which company?",
+    "12": "In computer world, Trojan refer to",
+    "13": "Which one of the followings is a programming language",
+    "14": "Which computer program converts assembly language to machine language",
+    "15": "A computer use which type of number system to calculate and to store data"
+  },
+  {
+    "1": {
+      "a": "C",
+      "b": "FORTRAN",
+      "c": "C#",
+      "des": "In 1957, the first of the major languages appeared in the form of FORTRAN. Its name stands for FORmula TRANslating system. The language was designed at IBM for scientific computing. The components were very simple, and provided the programmer with low-level access to the computers innards.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "FORTRAN"
+    },
+    "2": {
+      "a": "Ada Lovelace",
+      "b": "Guido van Rossum",
+      "c": "Steve Wozniak",
+      "des": "Ada Lovelace has been called the world's first computer programmer. What she did was write the world's first machine algorithm for an early computing machine that existed only on paper. Of course, someone had to be the first, but Lovelace was a woman, and this was in the 1840s.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Ada Lovelace"
+    },
+    "3": {
+      "a": "Apple 1",
+      "b": "The Kenbak-1",
+      "c": "IBM 610",
+      "des": "The Kenbak-1, released in early 1971, is considered by the Computer History Museum to be the world's first personal computer. It was designed and invented by John Blankenbaker of Kenbak Corporation in 1970, and was first sold in early 1971.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "The Kenbak-1"
+    },
+    "4": {
+      "a": "Google",
+      "b": "Altvista",
+      "c": "WWW Virtual Library",
+      "des": "Fortunately for early users, the first web designers set to work creating search engines. Indeed the first of them, the WWW Virtual Library, was created by the Web's creator, Tim Berners-Lee. The Virtual Library, and its most well-known clone, 1994's Yahoo, weren't really search engines",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "WWW Virtual Library"
+    },
+    "5": {
+      "a": "1880s",
+      "b": "1850s",
+      "c": "1900s",
+      "des": "The IEEE (Institute of Electrical and Electronics Engineers) was formed in 1963 by the merger of the Institute of Radio Engineers (IRE, founded 1912) and the American Institute of Electrical Engineers (AIEE, founded 1884).",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "1880s"
+    },
+    "6": {
+      "a": "Report",
+      "b": "Field",
+      "c": "File",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "Field"
+    },
+    "7": {
+      "a": "1850s",
+      "b": "1870s",
+      "c": "1900s",
+      "des": "On December 12, 1901, a radio transmission received by Guglielmo Marconi resulted in the first transmission of a transatlantic wireless signal (Morse Code) from Poldhu, Cornwall, to St. John's, Newfoundland.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "1900s"
+    },
+    "8": {
+      "a": "Creeper Virus",
+      "b": "Rabbit",
+      "c": "Elk cloner",
+      "des": "The first computer virus, called 'Creeper system', was an experimental self-replicating virus released in 1971. It was filling up the hard drive until a computer could not operate any further. This virus was created by BBN technologies in the US.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Creeper Virus"
+    },
+    "9": {
+      "a": "MacOS",
+      "b": "Windows",
+      "c": "Python",
+      "des": "python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. So it isn't operating system",
+      "img": "assets/img/9.png",
+      "answerByLetter": "c",
+      "answer": "Python"
+    },
+    "10": {
+      "a": "1 byte",
+      "b": "32 byte",
+      "c": "128 byte",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "128 byte"
+    },
+    "11": {
+      "a": "IBM",
+      "b": "Apple",
+      "c": "Microsoft",
+      "des": "The Macintosh Operating System (Mac OS) is an operating system (OS) designed by Apple Inc. to be installed and operated on the Apple Macintosh series of computers. Introduced in 1984, it is a graphical user interface (GUI) based OS that has since been released as multiple different versions.",
+      "img": "assets/img/11.png",
+      "answerByLetter": "b",
+      "answer": "Apple"
+    },
+    "12": {
+      "a": "Malware",
+      "b": "Virus",
+      "c": "Worm",
+      "des": "A Trojan horse is a program that hosts or installs a Trojan malware in the context of computer software. The term is derived from the classic Trojan Horse myth. Trojans may seem like useful or interesting programs to the innocent user, but they are harmful when executed. There are two types of Trojans.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Malware"
+    },
+    "13": {
+      "a": "HTTP",
+      "b": "HTML",
+      "c": "Dart",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Dart"
+    },
+    "14": {
+      "a": "Interpreter",
+      "b": "Compiler",
+      "c": "Assembler",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Assembler"
+    },
+    "15": {
+      "a": "decimal",
+      "b": "octal",
+      "c": "binary",
+      "des": "A computer uses binary number system to calculate and store data. Binary number system consists of 1's and 0's this binary number system is also called machine language which impossible for humans to learn.",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "binary"
+    }
+   
+  }
+]

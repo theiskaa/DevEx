@@ -11,7 +11,7 @@ part 'localization_event.dart';
 part 'localization_state.dart';
 
 class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
-  LocalizationBloc() : super(LocalizationState(Locale('az', 'AZ')));
+  LocalizationBloc() : super(LocalizationState(Locale('en', 'UK')));
 
   @override
   Stream<LocalizationState> mapEventToState(
@@ -29,7 +29,7 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
     final _dbService = await LocalDbService.instance;
     final defaultLanguageCode = _dbService.languageCode;
     if (defaultLanguageCode == null) {
-      locale = Locale('az', 'AZ');
+      locale = Locale('en', 'UK');
       await _dbService.setLanguage(locale.languageCode);
     } else {
       locale = Locale(defaultLanguageCode);
@@ -42,11 +42,11 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
     Lang selectedLang,
   ) async* {
     final _dbService = await LocalDbService.instance;
-    if (selectedLang == Lang.AZ) {
+    if (selectedLang == Lang.EN) {
       yield* _setAndLoadLang(
         localDbService: _dbService,
-        languageCode: 'az',
-        countryCode: 'AZ',
+        languageCode: 'en',
+        countryCode: 'UK',
       );
     } else if (selectedLang == Lang.RUS) {
       yield* _setAndLoadLang(

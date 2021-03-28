@@ -61,7 +61,7 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "${devExam.intl.of(context).fmt('test.des')}: ",
+          "${devExam.intl.of(context).fmt('test.answer')}: ",
           style: TextStyle(
             color: Colors.black,
             fontSize: 28,
@@ -73,23 +73,24 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
           child: RichText(
             textAlign: TextAlign.center,
             text: TextSpan(
-                text:
-                    "${data[1][i.toString()]["answerByLetter"].toString().toUpperCase()}: ",
-                style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w800,
-                ),
-                children: [
-                  TextSpan(
-                    text: data[1][i.toString()]["answer"].toString(),
-                    style: TextStyle(
-                      fontSize: 23,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w600,
-                    ),
+              text:
+                  "${data[1][i.toString()]["answerByLetter"].toString().toUpperCase()}: ",
+              style: TextStyle(
+                fontSize: 25,
+                color: Colors.black,
+                fontWeight: FontWeight.w800,
+              ),
+              children: [
+                TextSpan(
+                  text: data[1][i.toString()]["answer"].toString(),
+                  style: TextStyle(
+                    fontSize: 23,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600,
                   ),
-                ]),
+                ),
+              ],
+            ),
           ),
         )
       ],
@@ -101,7 +102,7 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "${devExam.intl.of(context).fmt('test.answer')}: ",
+          "${devExam.intl.of(context).fmt('test.des')}: ",
           style: TextStyle(
             color: Colors.black,
             fontSize: 30,

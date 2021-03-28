@@ -224,7 +224,8 @@ class _ProfileState extends DevExamState<Profile> {
             showSnack(
               isFloating: true,
               context: context,
-              title: devExam.intl.of(context).fmt('message.resetPasswordSuccess'),
+              title:
+                  devExam.intl.of(context).fmt('message.resetPasswordSuccess'),
               color: devExam.theme.accentGreenblue,
             );
             state.status = AuthStatus.undefined;
@@ -267,7 +268,8 @@ class _ProfileState extends DevExamState<Profile> {
               showSnack(
                 isFloating: true,
                 context: context,
-                title: "${devExam.intl.of(context).fmt('clearExamResult.success')}",
+                title:
+                    "${devExam.intl.of(context).fmt('clearExamResult.success')}",
                 color: devExam.theme.accentGreenblue,
               );
             } else {
@@ -275,7 +277,8 @@ class _ProfileState extends DevExamState<Profile> {
                 sec: 6,
                 isFloating: true,
                 context: context,
-                title: "${devExam.intl.of(context).fmt('clearExamResult.error')}",
+                title:
+                    "${devExam.intl.of(context).fmt('clearExamResult.error')}",
                 color: devExam.theme.accentGreenblue,
               );
             }
@@ -390,7 +393,8 @@ class _ProfileState extends DevExamState<Profile> {
                   langType: doc['lang'],
                   correctAnswersCount: doc['correctAnswersCount'],
                   incorrectAnswersCount: doc['incorrectAnswersCount'],
-                  date: _userService.readTimestamp(doc['date'], context, devExam),
+                  date:
+                      _userService.readTimestamp(doc['date'], context, devExam),
                   incorrectAnswersList: doc['incorrectAnswersList'],
                   noInternet: _showNoInternet,
                 ),
@@ -672,12 +676,12 @@ class _ProfileState extends DevExamState<Profile> {
         );
       }
     } else if (item == menuStrings(context, devExam)[3]) {
-      if (devExam.intl.of(context).fmt('lang') == "az") {
+      if (devExam.intl.of(context).fmt('lang') == "en") {
         BlocProvider.of<LocalizationBloc>(context)
             .add(LocalizationSuccess(langCode: Lang.RUS));
       } else if (devExam.intl.of(context).fmt('lang') == "ru") {
         BlocProvider.of<LocalizationBloc>(context)
-            .add(LocalizationSuccess(langCode: Lang.AZ));
+            .add(LocalizationSuccess(langCode: Lang.EN));
       }
     } else if (item == menuStrings(context, devExam)[4]) {
       showDialog(
@@ -724,7 +728,8 @@ class _ProfileState extends DevExamState<Profile> {
           accentColor: devExam.theme.accentTestPurple,
           validator: (val) => validateNewUsername(val),
           darkColor: devExam.theme.darkTestPurple,
-          hint: "${devExam.intl.of(context).fmt('account.username')}".toLowerCase(),
+          hint: "${devExam.intl.of(context).fmt('account.username')}"
+              .toLowerCase(),
           controller: newUsernameController,
         ),
         accentColor: devExam.theme.accentTestPurple,

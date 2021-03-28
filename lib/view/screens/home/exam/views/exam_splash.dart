@@ -14,6 +14,17 @@ class ExamSplash extends DevExamStatefulWidget {
   _ExamSplashState createState() => _ExamSplashState();
 }
 
+/*
+   "16": {
+      "a": "",
+      "c": "",
+      "des": "",
+      "img": "",
+      "answerByLetter": "",
+      "answer": ""
+    }
+ */
+
 class _ExamSplashState extends DevExamState<ExamSplash> {
   final _connection = ConnectivityObserver();
   bool _showNoInternet = false;

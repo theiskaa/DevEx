@@ -179,7 +179,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
   CustomFAB buildBackButton() {
     return CustomFAB(
       backgroundColor: devExam.theme.darkTestPurple,
-      child: Icon(Icons.keyboard_backspace_sharp),
+      child: Icon(Icons.keyboard_backspace_sharp, color: Colors.white),
       onTap: () => backQuestion(),
       bottomLeftRadius: 30,
       bottomRightRadius: 30,
@@ -352,24 +352,27 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                     showSnack(
                       context: context,
                       sec: 6,
-                      title:
-                          devExam.intl.of(context).fmt('attention.min10Question'),
+                      title: devExam.intl
+                          .of(context)
+                          .fmt('attention.min10Question'),
                       color: devExam.theme.errorBg,
                     );
                   } else {
                     if (_showNoInternet) {
                       showSnack(
                         context: context,
-                        title:
-                            devExam.intl.of(context).fmt('attention.noConnection'),
+                        title: devExam.intl
+                            .of(context)
+                            .fmt('attention.noConnection'),
                         color: devExam.theme.errorBg,
                       );
                     } else {
                       setState(() => questionIsSaved = true);
                       showActerSnack(
                         context: context,
-                        title:
-                            devExam.intl.of(context).fmt('customCategory.saving'),
+                        title: devExam.intl
+                            .of(context)
+                            .fmt('customCategory.saving'),
                         actTitle: devExam.intl.of(context).fmt('act.cancel'),
                         color: devExam.theme.darkTestPurple,
                         onComplete: () => saveQuestionToCustomCategory(),

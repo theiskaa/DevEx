@@ -3,7 +3,7 @@ import 'dart:async' show Future;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-enum Lang { RUS, AZ }
+enum Lang { RUS, EN }
 
 class Intl {
   Locale locale;
@@ -48,7 +48,7 @@ class IntlDelegate extends LocalizationsDelegate<Intl> {
   const IntlDelegate();
 
   @override
-  bool isSupported(Locale locale) => ['ru', 'az'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => ['ru', 'en'].contains(locale.languageCode);
 
   @override
   Future<Intl> load(Locale locale) async {

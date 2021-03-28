@@ -68,11 +68,11 @@ class _ExamResultState extends DevExamState<ExamResult> {
     _connection.offlineAction = showError;
     _connection.onlineAction = hideError;
     _connection.connectionTest();
-    Timer(Duration(seconds: 2), () => saveExamResultToCloud());
+    Timer(Duration(seconds: 2), () => saveExamResultToCloud(context));
     super.initState();
   }
 
-  void saveExamResultToCloud() async {
+  void saveExamResultToCloud(BuildContext contxt) async {
     if (_showNoInternet) {
       print("NO INTERNET");
     } else {
@@ -87,10 +87,10 @@ class _ExamResultState extends DevExamState<ExamResult> {
         print("Successfullt saved data on cloud");
       } else {
         // ignore: deprecated_member_use
-        Scaffold.of(context).showSnackBar(
+        Scaffold.of(contxt).showSnackBar(
           SnackBar(
             content: Text(
-              devExam.intl.of(context).fmt('attention.cantSaveExamResult'),
+              devExam.intl.of(contxt).fmt('attention.cantSaveExamResult'),
             ),
           ),
         );
