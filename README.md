@@ -18,15 +18,15 @@ Dev ex is so big app, so photos isn't enought to understand application. hovewer
 for get more about **DevEx** check this overview video,
 
 #### Authentication
-<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/auth.png" width="600">
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/auth.png" width="800">
 
 #### Home & Profile
-<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/profile.png" width="600">
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/profile.png" width="800">
 
 #### Exam 
-<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/exam.png" width="600">
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/exam.png" width="800">
 
 #### Testing (learning) 
-<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test.png" width="400">
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test.png" width="600">
 
 
