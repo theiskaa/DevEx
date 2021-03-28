@@ -1,8 +1,10 @@
 # Dev Ex 
 
 ### About Dev Ex : 
-(Dev Exam) application have been developed with flutter + firebase backaend service.
-It's a online exam and learning platform, for developers. here users can: 
+**(Dev Exam)** application have been developed with flutter + firebase backaend service.
+It's a online exam and learning platform, for developers.
+
+### Features
 - *Login*, *Register*, *Changing password* **(with firebase auth services)**
 - *Customize profile*: *Add profile photo* *change username*, *change password*, *change language between **English** and **Russian***.
 - *Search question by index*, *saving questions and creating custom categories with saved questions.*, *full size image overviews.*
