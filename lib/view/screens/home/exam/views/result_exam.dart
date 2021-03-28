@@ -82,18 +82,20 @@ class _ExamResultState extends DevExamState<ExamResult> {
         personID: widget.userID,
         incorrectAnswersList: incorrectAnswersList,
         context: context,
+        devExam: devExam,
       );
       if (result == true) {
         print("Successfullt saved data on cloud");
       } else {
+        print("couldn't save data to cloud");
         // ignore: deprecated_member_use
-        Scaffold.of(contxt).showSnackBar(
-          SnackBar(
-            content: Text(
-              devExam.intl.of(contxt).fmt('attention.cantSaveExamResult'),
-            ),
-          ),
-        );
+        // Scaffold.of(contxt).showSnackBar(
+        //   SnackBar(
+        //     content: Text(
+        //       devExam.intl.of(contxt).fmt('attention.cantSaveExamResult'),
+        //     ),
+        //   ),
+        // );
       }
     }
     setState(() => isButtonDisabled = false);
@@ -196,7 +198,7 @@ class _ExamResultState extends DevExamState<ExamResult> {
   }
 
   double getSizeOfText() {
-    if (devExam.intl.of(context).fmt('lang') == "az") {
+    if (devExam.intl.of(context).fmt('lang') == "en") {
       return 25;
     } else if (devExam.intl.of(context).fmt('lang') == "ru") {
       return 22;

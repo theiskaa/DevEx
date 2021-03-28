@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 
+import 'package:devexam/core/system/log.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../widgets/components/loading.dart';
@@ -33,10 +34,10 @@ class _GetJsonForExamState extends DevExamState<GetJsonForExam> {
               List data = jsonDecode(snapshot.data.toString());
               var random = Random();
               var dataLength =
-                  (data == null) ? 166 : data[0].keys.toList().length;
+                  (data == null) ? 15 : data[0].keys.toList().length;
               List cuttedData = [{}, {}];
 
-              for (int i = 1; i < 11; i++) {
+              for (int i = 1; i < 6; i++) {
                 var qi = random.nextInt(dataLength);
                 if (cuttedData[0].containsKey(qi)) {
                   var newQi = random.nextInt(data[0].keys.toList().length);
@@ -60,6 +61,7 @@ class _GetJsonForExamState extends DevExamState<GetJsonForExam> {
                   data[1] == null) {
                 return Loading();
               } else {
+              Log.d("$cuttedData");
                 return ExamScreen(
                   userID: widget.userID,
                   data: cuttedData,

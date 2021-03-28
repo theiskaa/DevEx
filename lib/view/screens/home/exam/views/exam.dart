@@ -30,7 +30,6 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
   int currentQuestionIndex = 1;
   List<dynamic> allQuestions;
   var allQuestionsLenght;
-  Color currentColor = Color(0xff2865CE);
   bool buttonDisabled = false;
 
   int incorrectAnswersListCounter = 0;
@@ -39,7 +38,7 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
   @override
   void initState() {
     super.initState();
-    allQuestions = data[1].keys.toList();
+    allQuestions = data[0].keys.toList();
     allQuestionsLenght = allQuestions.length;
   }
 
@@ -47,7 +46,7 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
     setState(() {
       buttonDisabled = false;
       if (currentQuestionIndex < allQuestionsLenght) {
-        currentQuestionIndex++;
+        currentQuestionIndex += 1;
       } else {
         Navigator.pushAndRemoveUntil(
           context,
@@ -156,12 +155,15 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
       },
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 16),
-        child: Container(
-          child: ClipRRect(
-            child: Image.asset(data[1][currentQuestionIndex.toString()]["img"]),
-            borderRadius: BorderRadius.circular(30),
-          ),
-        ),
+        child: (data[1][currentQuestionIndex.toString()]["img"] != null)
+            ? Container(
+                child: ClipRRect(
+                  child: Image.asset(
+                      data[1][currentQuestionIndex.toString()]["img"]),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+              )
+            : SizedBox.shrink(),
       ),
     );
   }
@@ -209,7 +211,7 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
         padding: EdgeInsets.all(30),
         alignment: Alignment.bottomCenter,
         child: Text(
-          data[0][currentQuestionIndex.toString()],
+          data[0][currentQuestionIndex.toString()] ?? " ",
           style: TextStyle(
             fontSize: "${data[0][currentQuestionIndex.toString()]}"
                         .characters

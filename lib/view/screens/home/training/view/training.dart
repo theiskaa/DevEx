@@ -464,33 +464,30 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                 style: alertButtonsStyle(devExam.theme.darkTestPurple),
                 onPressed: () async {
                   ScaffoldMessenger.of(context).removeCurrentSnackBar();
-                  Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => MainScreen(),
-                      ),
-                      (route) => false);
+
                   var result = await _userServices.createCustomCategory(
                     uid: widget.userID,
                     savedQuestions: savedQuestionList,
                     context: context,
+                    devExam: devExam,
                   );
                   print("===================== $result");
-                  // if (result == true) {
-                  //   Navigator.of(context).pushReplacement(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => MainScreen(),
-                  //     ),
-                  //   );
-                  // } else {
-                  //   showSnack(
-                  //     barIsTop: true,
-                  //     context: context,
-                  //     title:
-                  //         "Couldn't created new custom category please check your internet connection, and try later.",
-                  //     color: Color(0xff017296),
-                  //   );
-                  // }
+                  if (result == true) {
+                    Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => MainScreen(),
+                        ),
+                        (route) => false);
+                  } else {
+                    Navigator.pop(context);
+                    showSnack(
+                      context: context,
+                      title:
+                          "Couldn't created new custom category please check your internet connection, and try later.",
+                      color: Color(0xff017296),
+                    );
+                  }
                 },
                 child: Text(
                   "${devExam.intl.of(context).fmt('test.act.createBack')}",

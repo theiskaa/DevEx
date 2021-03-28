@@ -102,7 +102,7 @@ class UserServices {
       String personID,
       List<dynamic> incorrectAnswersList,
       BuildContext context,
-      DevExam devExam}) async {
+      DevExam devExam,}) async {
     try {
       await usersRef.doc(personID).collection('examResults').doc().set({
         'correctAnswersCount': correctAnswersCount,
@@ -131,7 +131,8 @@ class UserServices {
       await usersRef.doc(uid).collection('savedQuestions').doc().set({
         'date': Timestamp.now(),
         'questions': savedQuestions,
-        'lang': "${devExam.intl.of(context).fmt('test.custom.category.lang')}",
+        'lang':
+            devExam.intl.of(context).fmt('test.custom.category.lang') ?? " ",
         'platform': Platform.isIOS ? "IOS" : "Android",
       });
       return true;
@@ -170,7 +171,8 @@ class UserServices {
   }
 
   /// Convert given [Timestamp] to String.
-  String readTimestamp(Timestamp timestamp, BuildContext context, DevExam devExam) {
+  String readTimestamp(
+      Timestamp timestamp, BuildContext context, DevExam devExam) {
     var now = DateTime.now();
     var format = DateFormat('HH:mm a');
     var date =

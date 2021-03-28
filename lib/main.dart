@@ -34,8 +34,8 @@ void main() async {
   devExam.intl = Intl();
 
   // initialize intl locale from devExam singleton.
-  devExam.intl.locale = Locale('az');
-  devExam.intl.supportedLocales = ['ru', 'az'];
+  devExam.intl.locale = Locale('en');
+  devExam.intl.supportedLocales = ['ru', 'en'];
 
   // initialize log level.
   Log.level = 'verbose';
