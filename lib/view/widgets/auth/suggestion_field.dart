@@ -368,10 +368,10 @@ class SuggestionFieldState extends DevExamState<SuggestionField> {
       _matchers.remove(selectedItem);
       if (widget.onIconTap != null) widget.onIconTap();
       if (_matchers.length == 0) {
-        closeBox();
         _customSetState(setState(() {
           showSuggestionBox = false;
         }));
+        closeBox();
       }
       _customSetState(setState(() {}));
       showBox();

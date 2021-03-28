@@ -13,3 +13,20 @@ It's a online exam and learning platform, for developers.
 
 The project is still in development progress so it's just demo, everyone who want to contribute this project, can reach me by **Instagram** or **Twitter**.
 
+## App Overivew:
+Dev ex is so big app, so photos isn't enought to understand application. hovewer i push some photos about screens. 
+for get more about **DevEx** check this overview video,
+
+#### Authentication
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/auth.png" width="600">
+
+#### Home & Profile
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/profile.png" width="600">
+
+#### Exam 
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/exam.png" width="600">
+
+#### Testing (learning) 
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test.png" width="400">
+
+
