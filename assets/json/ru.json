@@ -15,11 +15,11 @@
     "13": "Which one of the followings is a programming language",
     "14": "Which computer program converts assembly language to machine language",
     "15": "A computer use which type of number system to calculate and to store data",
-    "16": "",
-    "17": "",
-    "18": "",
-    "19": "",
-    "20": ""
+    "16": "The _________ is a computer program that translates the source code into ",
+    "17": "If(a=14 && b=4) then c = a/b, what is c? ",
+    "18": "If m=5, y=m++ then value of y and m would be _____ and _______",
+    "19": "Who programmed the first computer game 'Spacewar!' in 1962",
+    "20": "Who is known as the father of internet"
   },
   {
     "1": {
@@ -107,7 +107,7 @@
       "a": "1 byte",
       "b": "32 byte",
       "c": "128 byte",
-      "des": "",
+      "des": "No answer description available for this question",
       "img": "assets/img/none.png",
       "answerByLetter": "b",
       "answer": "128 byte"
@@ -134,7 +134,7 @@
       "a": "HTTP",
       "b": "HTML",
       "c": "Dart",
-      "des": "",
+      "des": "No answer description available for this question",
       "img": "assets/img/none.png",
       "answerByLetter": "c",
       "answer": "Dart"
@@ -143,7 +143,7 @@
       "a": "Interpreter",
       "b": "Compiler",
       "c": "Assembler",
-      "des": "",
+      "des": "No answer description available for this question",
       "img": "assets/img/none.png",
       "answerByLetter": "c",
       "answer": "Assembler"
@@ -158,44 +158,49 @@
       "answer": "binary"
     },
     "16": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
+      "a": "Compiler",
+      "b": "Interpreter",
+      "c": "Assembler",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Compiler"
     },
     "17": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
+      "a": "2",
+      "b": "3",
+      "c": "4",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "b",
+      "answer": "3"
     },
     "18": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
+      "a": "2 and 4",
+      "b": "3 and 5",
+      "c": "5 and 6",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "5 and 6"
     },
     "19": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
+      "a": "Steave Russell",
+      "b": "Tim Berners-Lee",
+      "c": "Konard Zuse",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "a",
+      "answer": "Steave Russell"
     },
     "20": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
+      "a": "Alan Perlis",
+      "b": "Jean E. Sammet",
+      "c": "Vint Cerf",
+      "des": "No answer description available for this question",
+      "img": "assets/img/none.png",
+      "answerByLetter": "c",
+      "answer": "Vint Cerf"
     }
   }
 ]

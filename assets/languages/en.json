@@ -89,7 +89,7 @@
   "test.act.createBack": "Create and Exit",
   "test.des": "Explanation",
   "test.answer": "Answer",
-  "test.wannaPassTest": "Do you want to pass the test?",
+  "test.wannaPassTest": "Do you want exit to the test?",
   "test.saved..": "You have",
   "..test.questions": "special question to save, do you want to create a special category from these questions?",
   "test.custom.category.lang": "English",

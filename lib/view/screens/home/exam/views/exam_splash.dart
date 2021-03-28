@@ -139,14 +139,17 @@ class _ExamSplashState extends DevExamState<ExamSplash> {
     );
   }
 
-  Text buildText(BuildContext context) {
-    return Text(
-      devExam.intl.of(context).fmt('exam.ask'),
-      textAlign: TextAlign.center,
-      style: TextStyle(
-        color: Colors.black,
-        fontSize: 35,
-        fontWeight: FontWeight.bold,
+  Widget buildText(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30),
+      child: Text(
+        devExam.intl.of(context).fmt('exam.ask'),
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.black,
+          fontSize: 28,
+          fontWeight: FontWeight.bold,
+        ),
       ),
     );
   }

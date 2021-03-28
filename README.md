@@ -1,17 +1,13 @@
-# devexam
+# Dev Ex 
 
-A new Flutter project.
+### About Dev Ex : 
+(Dev Exam) application have been developed with flutter + firebase backaend service.
+It's a online exam and learning platform, for developers. here users can: 
+- *Login*, *Register*, *Changing password* **(with firebase auth services)**
+- *Customize profile*: *Add profile photo* *change username*, *change password*, *change language between **English** and **Russian***.
+- *Search question by index*, *saving questions and creating custom categories with saved questions.*, *full size image overviews.*
+- *Showing wrong and right answers by changing button colors*, *have Explanation and answer screen to look when you are in testing page.*
+- *Exam with 15 minute cutdown timer*,* and when complete exam, it's otomaticly will save incorrect password as list. and it would be diplayed in down profile as* **Exam History.**
 
-## Getting Started
+The project is still in development progress so it's just demo, everyone who want to contribute this project, can reach me by **Instagram** or **Twitter**.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# DevExam

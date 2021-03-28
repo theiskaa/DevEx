@@ -122,7 +122,7 @@ class _ExamReviewState extends DevExamState<ExamReview> {
   CustomFAB buildBackButton() {
     return CustomFAB(
       backgroundColor: devExam.theme.darkExamBlue,
-      child: Icon(Icons.keyboard_backspace_sharp),
+      child: Icon(Icons.keyboard_backspace_sharp, color: Colors.white),
       onTap: () => backQuestion(),
       bottomLeftRadius: 30,
       bottomRightRadius: 30,

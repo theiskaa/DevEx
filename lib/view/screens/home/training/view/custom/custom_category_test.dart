@@ -132,7 +132,7 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
   CustomFAB buildBackButton() {
     return CustomFAB(
       backgroundColor: devExam.theme.darkTestPurple,
-      child: Icon(Icons.keyboard_backspace_sharp),
+      child: Icon(Icons.keyboard_backspace_sharp,color: Colors.white),
       onTap: () => backQuestion(),
       bottomLeftRadius: 30,
       bottomRightRadius: 30,
