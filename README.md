@@ -29,4 +29,6 @@ To get more about **DevEx** check [this overview video](https://youtu.be/etSj5Jv
 #### Testing (learning) 
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test.png" width="600">
 
+#### Settings
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings.png" width="800">
 
