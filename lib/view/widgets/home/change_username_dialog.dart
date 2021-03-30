@@ -80,10 +80,7 @@ class ChangeUsernameDialog extends DevExamStatelessWidget {
 
   RoundedRectangleBorder shape() {
     return RoundedRectangleBorder(
-      borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(30),
-        bottomRight: Radius.circular(30),
-      ),
+      borderRadius: BorderRadius.circular(20),
       side: BorderSide(color: Color(0xff017296)),
     );
   }

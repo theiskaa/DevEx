@@ -26,6 +26,7 @@ List<String> menuStrings(BuildContext context, DevExam devExam) => [
       "${devExam.intl.of(context).fmt('more.changeUsername')}",
       "${devExam.intl.of(context).fmt('more.resetPassword')}",
       "${devExam.intl.of(context).fmt('more.changeLanguage')}",
+      "${devExam.intl.of(context).fmt('more.title')}",
       "${devExam.intl.of(context).fmt('more.logout')}",
     ];
 
@@ -35,6 +36,7 @@ List<IconData> menuIcons = [
   Icons.person_outline_outlined,
   Icons.lock_outlined,
   Icons.language,
+  Icons.settings,
   Icons.exit_to_app,
 ];
 
@@ -50,6 +52,8 @@ IconData getValidIcon(Object item, BuildContext context, DevExam devExam) {
     return menuIcons[3];
   } else if (item == menuStrings(context, devExam)[4]) {
     return menuIcons[4];
+  } else if (item == menuStrings(context, devExam)[5]) {
+    return menuIcons[5];
   } else {
     return null;
   }

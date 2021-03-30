@@ -1,3 +1,5 @@
+import 'package:devexam/core/system/devexam.dart';
+import 'package:flutter/material.dart';
 import 'package:formz/formz.dart';
 import 'package:meta/meta.dart';
 
@@ -62,5 +64,20 @@ class ConfirmedPassword
   @override
   ConfirmedPasswordValidationError validator(String value) {
     return password == value ? null : ConfirmedPasswordValidationError.invalid;
+  }
+}
+
+
+String validateNewUsername({
+  String newUsername,
+  DevExam devExam,
+  BuildContext context,
+}) {
+  RegExp regExp =
+      RegExp(r'^(?=[a-zA-Z0-9._]{2,10}$)(?!.*[_.]{2})[^_.].*[^_.]$');
+  if (!regExp.hasMatch(newUsername)) {
+    return devExam.intl.of(context).fmt('account.create.invalidForm');
+  } else {
+    return null;
   }
 }

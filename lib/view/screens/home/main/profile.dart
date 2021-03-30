@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/utils/validators.dart';
+import 'package:devexam/view/screens/home/settings/setting_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -684,6 +686,13 @@ class _ProfileState extends DevExamState<Profile> {
             .add(LocalizationSuccess(langCode: Lang.EN));
       }
     } else if (item == menuStrings(context, devExam)[4]) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => SettingsScreen(userID: widget.userID),
+        ),
+      );
+    } else if (item == menuStrings(context, devExam)[5]) {
       showDialog(
         context: context,
         builder: (context) {
@@ -726,7 +735,11 @@ class _ProfileState extends DevExamState<Profile> {
         darkColor: devExam.theme.darkTestPurple,
         textField: CustomAuthField(
           accentColor: devExam.theme.accentTestPurple,
-          validator: (val) => validateNewUsername(val),
+          validator: (val) => validateNewUsername(
+            newUsername: val,
+            devExam: devExam,
+            context: context,
+          ),
           darkColor: devExam.theme.darkTestPurple,
           hint: "${devExam.intl.of(context).fmt('account.username')}"
               .toLowerCase(),
@@ -776,10 +789,7 @@ class _ProfileState extends DevExamState<Profile> {
   }) {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(15),
         side: BorderSide(color: devExam.theme.darkTestPurple),
       ),
       title: Text(title),
@@ -801,15 +811,5 @@ class _ProfileState extends DevExamState<Profile> {
         ),
       ],
     );
-  }
-
-  String validateNewUsername(String newUsername) {
-    RegExp regExp =
-        RegExp(r'^(?=[a-zA-Z0-9._]{2,10}$)(?!.*[_.]{2})[^_.].*[^_.]$');
-    if (!regExp.hasMatch(newUsername)) {
-      return devExam.intl.of(context).fmt('account.create.invalidForm');
-    } else {
-      return null;
-    }
   }
 }
