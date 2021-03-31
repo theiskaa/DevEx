@@ -1,3 +1,4 @@
+
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
@@ -17,8 +18,43 @@ class ResetpasswordCubit extends Cubit<ResetpasswordState> {
   Future<void> emailChanged(String value) async {
     final email = Email.dirty(value);
     emit(
-      state.copyWith(email: email, formzStatus: Formz.validate([email])),
+      state.copyWith(
+        email: email,
+        formzStatus: Formz.validate([email]),
+      ),
     );
+  }
+
+  Future<void> newPasswordChanged(String value) async {
+    final newPassword = Password.dirty(value);
+    emit(
+      state.copyWith(
+        newPassword: newPassword,
+        formzStatus: Formz.validate([newPassword]),
+      ),
+    );
+  }
+
+  Future<void> changePassword({
+    String uid,
+    String newPassword,
+  }) async {
+    if (!state.formzStatus.isValidated) return;
+    emit(state.copyWith(
+      status: AuthStatus.loading,
+      formzStatus: FormzStatus.submissionInProgress,
+    ));
+    var result = await userServices.changePassword(
+      uid: uid,
+      newPassword: newPassword,
+    );
+    print(result);
+    emit(state.copyWith(
+      status: result,
+      formzStatus: result == AuthStatus.successful
+          ? FormzStatus.submissionSuccess
+          : FormzStatus.submissionFailure,
+    ));
   }
 
   Future<void> sendResetPasswordMail() async {
@@ -37,3 +73,4 @@ class ResetpasswordCubit extends Cubit<ResetpasswordState> {
     ));
   }
 }
+
