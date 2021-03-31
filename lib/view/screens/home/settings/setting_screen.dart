@@ -17,6 +17,8 @@ import 'package:devexam/view/widgets/auth/custom_auth_field.dart';
 import 'package:devexam/view/widgets/home/change_username_dialog.dart';
 import 'package:devexam/view/widgets/home/profile_image_card.dart';
 
+import 'change_password.dart';
+
 class SettingsScreen extends DevExamStatefulWidget {
   final userID;
   SettingsScreen({this.userID});
@@ -111,7 +113,23 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
           icon: Icons.lock_outline_rounded,
           iconCardcolor: Color(0xff2D56A1),
           title: devExam.intl.of(context).fmt('settings.changePassword'),
-          onTap: () {},
+          onTap: () {
+            if (_showNoInternet) {
+              showSnack(
+                isFloating: true,
+                context: context,
+                title: devExam.intl.of(context).fmt('attention.noConnection'),
+                color: devExam.theme.errorBg,
+              );
+            } else {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ChangePassword(),
+                ),
+              );
+            }
+          },
         ),
         SizedBox(height: 15),
         miniDivider,
