@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_cropper/image_cropper.dart';
@@ -14,6 +15,8 @@ import '../utils/fire_exception_hander.dart';
 
 /// Custom service class for controlle user acts.
 class UserServices {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+
   // Change username.
   Future<bool> changeUsername(String uid, String newUsername) async {
     try {
@@ -24,6 +27,41 @@ class UserServices {
       return true;
     } catch (e) {
       print(e.toString());
+      return false;
+    }
+  }
+
+  // Change password in local
+  Future<AuthStatus> changePassword({
+    String uid,
+    String newPassword,
+  }) async {
+    AuthStatus authStatus;
+    try {
+      var user = _auth.currentUser;
+      await user.updatePassword(newPassword);
+      await usersRef.doc(uid).update({'password': newPassword});
+      authStatus = AuthStatus.successful;
+    } catch (e) {
+      authStatus = AuthExceptionHandler.handleFireAuthException(e);
+    }
+
+    return authStatus;
+  }
+
+  // For reauthenticate and validate currentPassword.
+  Future<bool> validateCurrentPassword(String password) async {
+    var user = _auth.currentUser;
+
+    var authCredentials = EmailAuthProvider.credential(
+      email: user.email,
+      password: password,
+    );
+    try {
+      var authResult = await user.reauthenticateWithCredential(authCredentials);
+      return authResult.user != null;
+    } catch (e) {
+      print(e);
       return false;
     }
   }
@@ -96,13 +134,14 @@ class UserServices {
 
   /// Save Exam's `correctAnswersCount`, `incorrectAnswersCount` and `incorrectAnswersList`.
   /// for show this values into exam history list (profile).
-  Future<bool> saveExamHistory(
-      {String correctAnswersCount,
-      String incorrectAnswersCount,
-      String personID,
-      List<dynamic> incorrectAnswersList,
-      BuildContext context,
-      DevExam devExam,}) async {
+  Future<bool> saveExamHistory({
+    String correctAnswersCount,
+    String incorrectAnswersCount,
+    String personID,
+    List<dynamic> incorrectAnswersList,
+    BuildContext context,
+    DevExam devExam,
+  }) async {
     try {
       await usersRef.doc(personID).collection('examResults').doc().set({
         'correctAnswersCount': correctAnswersCount,
