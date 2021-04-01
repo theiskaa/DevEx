@@ -12,6 +12,7 @@ enum AuthStatus {
   userDisabled,
   operationNotAllowed,
   tooManyRequests,
+  weakPassword,
   undefined,
 
   cantSaveSuggestion
@@ -43,6 +44,9 @@ class AuthExceptionHandler {
         break;
       case "email-already-in-use":
         status = AuthStatus.emailAlreadyExists;
+        break;
+      case "weak-password":
+        status = AuthStatus.weakPassword;
         break;
       default:
         status = AuthStatus.undefined;
@@ -78,6 +82,9 @@ class AuthExceptionHandler {
       case AuthStatus.emailAlreadyExists:
         errorMessage =
             devExam.intl.of(context).fmt('authStatus.emailAlreadyExists');
+        break;
+      case AuthStatus.weakPassword:
+        errorMessage = devExam.intl.of(context).fmt('authStatus.weakPassword');
         break;
       case AuthStatus.cantSaveSuggestion:
         errorMessage = "Can't save suggestion";
