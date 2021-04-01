@@ -40,7 +40,6 @@ class UserServices {
     try {
       var user = _auth.currentUser;
       await user.updatePassword(newPassword);
-      await usersRef.doc(uid).update({'password': newPassword});
       authStatus = AuthStatus.successful;
     } catch (e) {
       authStatus = AuthExceptionHandler.handleFireAuthException(e);

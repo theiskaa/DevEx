@@ -23,7 +23,7 @@
   "authStatus.undefined": "An indescribable error occurred.",
   "authStatus.passwordChangedSuccessfully": "Password changed successfully",
   "authStatus.samePasswords": "The new password must be different from the old password.",
-  "authStatus.oldPasswordIsIncorrect": "The current password is incorrect",
+  "authStatus.currentPasswordIsIncorrect": "The current password is incorrect",
   "authStatus.weakPassword": "Weak password",
 
   "auth.signIn": "Sing In",

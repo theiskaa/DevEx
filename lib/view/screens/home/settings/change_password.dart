@@ -147,30 +147,17 @@ class _ChangePasswordViewState extends DevExamState<ChangePasswordView> {
       controller: currentPassController,
       accentColor: devExam.theme.darkGreenblue,
       darkColor: devExam.theme.darkGreenblue,
+      obscureText: true,
       onChanged: (val) {
         setState(() {});
       },
       hint: devExam.intl.of(context).fmt('account.oldPassword'),
-      // errorText: (currentPassController.text.length == 0)
-      //     ? null
-      //     : (checkCurrentPassword)
-      //         ? null
-      //         : devExam.intl.of(context).fmt('authStatus.oldPasswordIsIncorrect'),
-
-      /*
-       (currentPassController.text.length == 0)
-          ? null
-          : (currentPassController.text == widget.currentPassword)
-              ? null
-              : devExam.intl.of(context).fmt('authStatus.currentPasswordIsIncorrect'),
-      */
     );
   }
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
       elevation: 0,
-      // title: Text(devExam.intl.of(context).fmt('settings.changePassword')),
       backgroundColor: Colors.transparent,
       leading: OpacityButton(
         opacityValue: .3,
@@ -196,6 +183,7 @@ class __NewPasswordFieldState extends DevExamState<_NewPasswordField> {
       builder: (context, state) {
         return CustomAuthField(
           controller: widget.controller,
+          obscureText: true,
           onChanged: (val) {
             context.read<ResetpasswordCubit>().newPasswordChanged(val);
             setState(() {});
