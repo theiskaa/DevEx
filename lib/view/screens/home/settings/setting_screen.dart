@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
 import 'package:devexam/view/widgets/settings/setting_tile.dart';
@@ -30,7 +33,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
   final _userService = UserServices();
   final _connection = ConnectivityObserver();
   bool _showNoInternet = false;
-  bool _switchValue = false;
+  bool _themeSwitchValue;
 
   final newUsernameFormKey = GlobalKey<FormState>();
   final newUsernameController = TextEditingController();
@@ -58,9 +61,24 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
     setState(() => _showNoInternet = false);
   }
 
+  bool detectTheme() {
+    BlocProvider.of<ThemeBloc>(context).add(DecideTheme());
+    if (BlocProvider.of<ThemeBloc>(context).state.themeData ==
+        devExam.theme.dark) {
+      setState(() => _themeSwitchValue = true);
+      return _themeSwitchValue = true;
+    } else if (BlocProvider.of<ThemeBloc>(context).state.themeData ==
+        devExam.theme.light) {
+      setState(() => _themeSwitchValue = false);
+      return _themeSwitchValue = false;
+    }
+    return false;
+  }
+
   @override
   void initState() {
     super.initState();
+    detectTheme();
     _connection.offlineAction = showError;
     _connection.onlineAction = hideError;
     _connection.connectionTest();
@@ -155,12 +173,17 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
       disableOnTap: true,
       title: devExam.intl.of(context).fmt('settings.darkTheme'),
       tralling: CupertinoSwitch(
-        activeColor: devExam.theme.darkTestPurple,
-        value: _switchValue,
-        onChanged: (value) {
-          setState(() {
-            _switchValue = value;
-          });
+        activeColor: Color(0xFFC72159),
+        value: _themeSwitchValue,
+        onChanged: (value) async {
+          if (value == false) {
+            setState(() => _themeSwitchValue = value);
+            BlocProvider.of<ThemeBloc>(context).add(LightTheme());
+          } else {
+            setState(() => _themeSwitchValue = value);
+
+            BlocProvider.of<ThemeBloc>(context).add(DarkTheme());
+          }
         },
       ),
     );

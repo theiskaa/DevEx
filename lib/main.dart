@@ -1,3 +1,6 @@
+import 'dart:math';
+
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -41,12 +44,7 @@ void main() async {
   Log.level = 'verbose';
 
   /// Run app with wrapping widget with [BlocProvider/LocalizationBloc] BlocProvider
-  runApp(
-    BlocProvider(
-      create: (_) => LocalizationBloc()..add(LocalizationStarted()),
-      child: MyApp(),
-    ),
-  );
+  runApp(MyApp());
 }
 
 class MyApp extends DevExamStatefulWidget {
@@ -62,44 +60,62 @@ class _MyAppState extends DevExamState<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return app();
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => LocalizationBloc()..add(LocalizationStarted()),
+        ),
+        BlocProvider<AuthBloc>(
+          create: (context) => AuthBloc(fireAuthService: fireAuthService),
+        ),
+        BlocProvider<ThemeBloc>(
+          create: (context) => ThemeBloc(devExam)..add(DecideTheme()),
+        ),
+      ],
+      child: appHead(),
+    );
   }
 
-  RepositoryProvider<FireAuthService> app() {
+  RepositoryProvider<FireAuthService> appHead() {
     return RepositoryProvider.value(
       value: fireAuthService,
-      child: BlocProvider<AuthBloc>(
-        create: (context) => AuthBloc(fireAuthService: fireAuthService),
-        child: BlocBuilder<LocalizationBloc, LocalizationState>(
-          builder: (context, localizationState) {
-            return PerceptiveWidget(
-              child: MaterialApp(
-                theme: devExam.theme.light,
-                locale: localizationState.locale ??
-                    devExam.intl.locale.languageCode,
-                localizationsDelegates: [
-                  devExam.intl.delegate,
-                  GlobalMaterialLocalizations.delegate,
-                  GlobalWidgetsLocalizations.delegate,
-                  GlobalCupertinoLocalizations.delegate,
-                ],
-                supportedLocales: [
-                  Locale('en', 'UK'),
-                  Locale('ru', 'RU'),
-                ],
-                navigatorKey: _navigatorKey,
-                debugShowCheckedModeBanner: false,
-                title: 'devExam',
-                onGenerateRoute: (_) => MaterialPageRoute<void>(
-                  builder: (_) => Splash(),
-                ),
-                builder: (context, child) {
-                  return buildBlocListener(child);
-                },
-              ),
-            );
-          },
+      child: BlocBuilder<LocalizationBloc, LocalizationState>(
+        builder: (context, localizationState) {
+          return BlocBuilder<ThemeBloc, ThemeState>(
+            builder: (context, themeState) {
+              return materialApp(localizationState, themeState);
+            },
+          );
+        },
+      ),
+    );
+  }
+
+  PerceptiveWidget materialApp(
+      LocalizationState localizationState, ThemeState themeState) {
+    return PerceptiveWidget(
+      child: MaterialApp(
+        theme: themeState.themeData,
+        locale: localizationState.locale ?? devExam.intl.locale.languageCode,
+        localizationsDelegates: [
+          devExam.intl.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: [
+          Locale('en', 'UK'),
+          Locale('ru', 'RU'),
+        ],
+        navigatorKey: _navigatorKey,
+        debugShowCheckedModeBanner: false,
+        title: 'DevExam',
+        onGenerateRoute: (_) => MaterialPageRoute<void>(
+          builder: (_) => Splash(),
         ),
+        builder: (context, child) {
+          return buildBlocListener(child);
+        },
       ),
     );
   }

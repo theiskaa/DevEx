@@ -32,7 +32,6 @@ class _MainScreenState extends DevExamState<MainScreen> {
         selectedFontSize: 14,
         unselectedFontSize: 11.5,
         currentIndex: widget.index ?? _currentIndex,
-        backgroundColor: Colors.white,
         items: buildItems(context),
         onTap: changeScreen,
       ),

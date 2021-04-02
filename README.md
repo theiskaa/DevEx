@@ -6,7 +6,7 @@ It's a online exam and learning platform, for developers.
 
 ### Features
 - *Login*, *Register*, *Changing password* **(with firebase auth services)**
-- *Customize profile*, *Add profile photo*, *change username*, *change password*, *change language between **English** and **Russian***.
+- *Customize profile*, *Add profile photo*, *change username*, *Send password reset mail* ,*change password in local*, *change language between **English** and **Russian***.
 - *Search question by index*, *saving questions and creating custom categories with saved questions.*, *full size image overviews.*
 - *Showing wrong and right answers by changing button colors*, *Explanation and answer screen to look when you are in testing page.*
 - *Exam with 15 minute cutdown timer*, *and when complete exam, it's otomaticly will save incorrect password as list. and it would be diplayed in down profile as* **Exam History.**
