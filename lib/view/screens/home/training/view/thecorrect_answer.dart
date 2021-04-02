@@ -46,7 +46,7 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
             SizedBox(height: 80),
             buildDes(),
             SizedBox(height: 30),
-            divider(context),
+            divider(),
             SizedBox(height: 30),
             buildAnswers(),
             SizedBox(height: 30),

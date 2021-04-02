@@ -161,7 +161,7 @@ class _ChangePasswordViewState extends DevExamState<ChangePasswordView> {
       backgroundColor: Colors.transparent,
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(Icons.arrow_back_ios, color: Colors.black),
+        child: Icon(Icons.arrow_back_ios),
         onTap: () => Navigator.pop(context),
       ),
     );

@@ -16,6 +16,6 @@ class Splash extends DevExamStatelessWidget {
       ],
     );
     //
-    return Container(color: Colors.white);
+    return Container();
   }
 }

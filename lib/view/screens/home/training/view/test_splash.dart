@@ -141,7 +141,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
         searchQuestionDropDown(),
         customCategoriesCard(),
         SizedBox(height: 15),
-        divider(context),
+        divider(),
         SizedBox(height: 15),
         categories()
       ],

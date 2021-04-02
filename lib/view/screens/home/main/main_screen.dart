@@ -27,10 +27,6 @@ class _MainScreenState extends DevExamState<MainScreen> {
     return Scaffold(
       body: _screens[widget.index ?? _currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: devExam.theme.accentGreenblue,
-        unselectedItemColor: Colors.grey,
-        selectedFontSize: 14,
-        unselectedFontSize: 11.5,
         currentIndex: widget.index ?? _currentIndex,
         items: buildItems(context),
         onTap: changeScreen,

@@ -159,7 +159,6 @@ class _ProfileState extends DevExamState<Profile> {
     return AnimatedCustomFAB(
       size: 35,
       tappedSize: 30,
-      backgroundColor: Colors.white,
       child: Center(
         child: Icon(
           Icons.arrow_upward,
@@ -190,10 +189,7 @@ class _ProfileState extends DevExamState<Profile> {
           children: [
             profileInfo(user),
             SizedBox(height: 30),
-            divider(
-              context,
-              width: MediaQuery.of(context).size.width - 70,
-            ),
+            divider(),
             SizedBox(height: 30),
             buildTitleOfExamHistory(),
             SizedBox(height: 10),
@@ -546,7 +542,6 @@ class _ProfileState extends DevExamState<Profile> {
               currentuser.username == null ? "404" : "${currentuser.username}",
               textAlign: TextAlign.left,
               style: TextStyle(
-                color: Colors.black,
                 fontSize: 18.5.fP,
                 fontWeight: FontWeight.w900,
               ),
@@ -556,7 +551,8 @@ class _ProfileState extends DevExamState<Profile> {
           return Container(
             alignment: Alignment.topLeft,
             child: SpinKitThreeBounce(
-              color: Colors.black.withOpacity(.9),
+              // TODO: Change
+              color: Colors.black,
               size: 15,
             ),
           );
@@ -596,10 +592,7 @@ class _ProfileState extends DevExamState<Profile> {
         return PopupMenuButton(
           offset: Offset(2, 10),
           elevation: 3,
-          icon: Icon(
-            Icons.more_vert,
-            color: Colors.black,
-          ),
+          icon: Icon(Icons.more_vert),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
             side: BorderSide(color: devExam.theme.darkTestPurple),

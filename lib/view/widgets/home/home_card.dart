@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../components/widgets.dart';
 
@@ -23,8 +25,6 @@ class HomeCard extends DevExamStatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(50),
-        splashColor: Colors.black.withOpacity(.6),
-        highlightColor: Colors.grey.withOpacity(.5),
         onLongPress: onLongPress,
         child: gridOfCard(context),
       ),
@@ -38,12 +38,18 @@ class HomeCard extends DevExamStatelessWidget {
         width: MediaQuery.of(context).size.width - 100,
         height: MediaQuery.of(context).size.width - 100,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? Colors.black
+              : Colors.white,
           borderRadius: BorderRadius.circular(50),
           boxShadow: [
             BoxShadow(
+              color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? Colors.grey[200].withOpacity(.1)
+                  : Colors.black.withOpacity(.6),
               spreadRadius: .3,
-              color: Colors.grey[700],
               blurRadius: 15,
               offset: Offset(0, 8),
             ),

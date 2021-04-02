@@ -1,5 +1,7 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 class SettingTile extends DevExamStatelessWidget {
@@ -23,18 +25,21 @@ class SettingTile extends DevExamStatelessWidget {
   @override
   Widget build(BuildContext context) {
     return disableOnTap
-        ? item()
+        ? item(context)
         : OpacityButton(
             opacityValue: .4,
             onTap: onTap,
-            child: item(),
+            child: item(context),
           );
   }
 
-  Container item() {
+  Container item(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.grey[50].withOpacity(.3),
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.grey[800].withOpacity(.3)
+            : Colors.grey[100].withOpacity(.3),
         borderRadius: BorderRadius.circular(10),
       ),
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
@@ -53,7 +58,6 @@ class SettingTile extends DevExamStatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  color: Colors.black,
                   fontSize: 15.5,
                 ),
               ),
@@ -62,7 +66,6 @@ class SettingTile extends DevExamStatelessWidget {
           tralling ??
               Icon(
                 Icons.arrow_forward_ios,
-                color: Colors.black,
                 size: 20,
               ),
         ],

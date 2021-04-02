@@ -14,7 +14,7 @@ Widget menuButton(String item, IconData icon) {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Expanded(child: Text(item)),
-        Icon(icon, color: Colors.black),
+        Icon(icon),
       ],
     ),
   );
@@ -60,11 +60,12 @@ IconData getValidIcon(Object item, BuildContext context, DevExam devExam) {
 }
 
 /// Custom divider.
-Container divider(BuildContext context, {double width}) {
-  return Container(
-    height: .3,
-    width: width ?? MediaQuery.of(context).size.width,
-    color: Colors.black,
+Widget divider() {
+  return Divider(
+    height: 5,
+    thickness: 1,
+    indent: 50,
+    endIndent: 50,
   );
 }
 
@@ -163,7 +164,6 @@ Future<void> showActerSnack({
     backgroundColor: color,
     action: SnackBarAction(
       label: "$actTitle",
-      textColor: Colors.white,
       onPressed: () {
         return onDissmissed();
       },

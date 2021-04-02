@@ -65,14 +65,12 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
     BlocProvider.of<ThemeBloc>(context).add(DecideTheme());
     if (BlocProvider.of<ThemeBloc>(context).state.themeData ==
         devExam.theme.dark) {
-      setState(() => _themeSwitchValue = true);
       return _themeSwitchValue = true;
     } else if (BlocProvider.of<ThemeBloc>(context).state.themeData ==
         devExam.theme.light) {
-      setState(() => _themeSwitchValue = false);
       return _themeSwitchValue = false;
     }
-    return false;
+    return _themeSwitchValue = false;
   }
 
   @override
@@ -313,7 +311,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
 
   Widget get customDivider {
     return Container(
-      child: divider(context),
+      child: divider(),
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
     );
   }
@@ -332,7 +330,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
       backgroundColor: Colors.transparent,
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(Icons.arrow_back_ios, color: Colors.black),
+        child: Icon(Icons.arrow_back_ios),
         onTap: () => Navigator.pop(context),
       ),
     );
