@@ -1,8 +1,10 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 import '../../../../../core/system/fire.dart';
@@ -111,7 +113,10 @@ class _TestSplashState extends DevExamState<TestSplash> {
     );
     //
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
       appBar: buildAppBar(context),
       body: buildBody(context),
     );
@@ -174,8 +179,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
           onTap: () {
             if (_showNoInternet) {
               showSnack(
-                              devExam: devExam,
-
+                devExam: devExam,
                 context: context,
                 title: devExam.intl.of(context).fmt('attention.noConnection'),
                 color: devExam.theme.errorBg,
@@ -206,10 +210,19 @@ class _TestSplashState extends DevExamState<TestSplash> {
   Widget searchQuestionDropDown() {
     return SearchQuestionDropDown(
       child: DropdownButton(
-        iconEnabledColor: devExam.theme.darkTestPurple,
+        underline: SizedBox.shrink(),
+        iconEnabledColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? devExam.theme.accentTestPurple
+            : devExam.theme.darkTestPurple,
         hint: Text(
           devExam.intl.of(context).fmt('category.searchByIndex'),
-          style: TextStyle(color: devExam.theme.darkTestPurple),
+          style: TextStyle(
+            color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                    devExam.theme.dark
+                ? Colors.white
+                : devExam.theme.darkTestPurple,
+          ),
         ),
         items: allQuestions.map((value) {
           return DropdownMenuItem(
@@ -217,7 +230,10 @@ class _TestSplashState extends DevExamState<TestSplash> {
             child: Text(
               '$value',
               style: TextStyle(
-                color: devExam.theme.darkTestPurple,
+                color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                        devExam.theme.dark
+                    ? Colors.white
+                    : devExam.theme.darkTestPurple,
                 fontSize: 17.5,
                 fontWeight: FontWeight.bold,
               ),
@@ -242,11 +258,11 @@ class _TestSplashState extends DevExamState<TestSplash> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: Colors.transparent,
       elevation: 0,
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(Icons.arrow_back_ios, color: Colors.black),
+        child: Icon(Icons.arrow_back_ios),
         onTap: () => Navigator.pop(context),
       ),
     );

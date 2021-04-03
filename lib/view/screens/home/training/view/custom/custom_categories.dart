@@ -323,10 +323,7 @@ class _CustomTestCategoriesState extends DevExamState<CustomTestCategories> {
     return AlertDialog(
       backgroundColor: devExam.theme.darkTestPurple.withOpacity(.9),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(20),
         side: BorderSide(color: Colors.white),
       ),
       title: Text(title, style: TextStyle(color: Colors.white)),

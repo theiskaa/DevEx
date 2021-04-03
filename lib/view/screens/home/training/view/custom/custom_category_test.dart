@@ -115,7 +115,6 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
     //
     return WillPopScope(
       child: Scaffold(
-        backgroundColor: Colors.white,
         appBar: buildAppBar(context),
         body: buildSingleChildScrollView(),
         floatingActionButtonLocation:
@@ -132,7 +131,7 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
   CustomFAB buildBackButton() {
     return CustomFAB(
       backgroundColor: devExam.theme.darkTestPurple,
-      child: Icon(Icons.keyboard_backspace_sharp,color: Colors.white),
+      child: Icon(Icons.keyboard_backspace_sharp, color: Colors.white),
       onTap: () => backQuestion(),
       bottomLeftRadius: 30,
       bottomRightRadius: 30,
@@ -161,36 +160,45 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
   }
 
   Widget buildImageContainer() {
-    return OpacityButton(
-      opacityValue: .5,
-      onTap: () {
-        if (data[1][currentQuestionIndex.toString()]["img"] !=
-            "assets/img/none.png") {
-          Navigator.of(context).push(
-            PageRouteBuilder(
-              opaque: false,
-              pageBuilder: (
-                BuildContext context,
-                _,
-                __,
-              ) =>
-                  FullscreenImage(
-                image: data[1][currentQuestionIndex.toString()]["img"],
+    if (data[1][currentQuestionIndex.toString()]["img"] ==
+            "assets/img/none.png" ||
+        data[1][currentQuestionIndex.toString()]["img"] == " ") {
+      return SizedBox(height: 0, width: 0);
+    } else {
+      return OpacityButton(
+        opacityValue: .5,
+        onTap: () {
+          if (data[1][currentQuestionIndex.toString()]["img"] !=
+              "assets/img/none.png") {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (
+                  BuildContext context,
+                  _,
+                  __,
+                ) =>
+                    FullscreenImage(
+                  image: data[1][currentQuestionIndex.toString()]["img"],
+                ),
               ),
-            ),
-          );
-        }
-      },
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: Container(
-          child: ClipRRect(
-            child: Image.asset(data[1][currentQuestionIndex.toString()]["img"]),
-            borderRadius: BorderRadius.circular(30),
-          ),
+            );
+          }
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: (data[1][currentQuestionIndex.toString()]["img"] != null)
+              ? Container(
+                  child: ClipRRect(
+                    child: Image.asset(
+                        data[1][currentQuestionIndex.toString()]["img"]),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                )
+              : SizedBox.shrink(),
         ),
-      ),
-    );
+      );
+    }
   }
 
   Column buildAnswerButtons() {
@@ -257,17 +265,18 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
       elevation: 0,
+      backgroundColor: Colors.transparent,
       centerTitle: true,
-      title: Text("$currentQuestionIndex/$allQuestionsLenght",
-          style: TextStyle(color: Colors.black)),
+      title: Text(
+        allQuestionsLenght > 1
+            ? "$currentQuestionIndex/$allQuestionsLenght"
+            : "",
+        style: TextStyle(fontSize: 20),
+      ),
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(
-          Icons.close,
-          color: Colors.black,
-        ),
+        child: Icon(Icons.close),
         onTap: () => showDialog(
           context: context,
           builder: (context) => buildAlertDialog(),
@@ -276,10 +285,7 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
       actions: [
         OpacityButton(
           opacityValue: .3,
-          child: Icon(
-            Icons.description,
-            color: Colors.black,
-          ),
+          child: Icon(Icons.description),
           onTap: () => Navigator.of(context).push(
             PageRouteBuilder(
               opaque: false,
@@ -302,13 +308,11 @@ class _CustomCategoryTestState extends DevExamState<CustomCategoryTest> {
   AlertDialog buildAlertDialog() {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(20),
       ),
       title: Text(
         "${devExam.intl.of(context).fmt('test.wannaPassTest')}",
+        style: TextStyle(fontSize: 20),
       ),
       actions: [
         TextButton(

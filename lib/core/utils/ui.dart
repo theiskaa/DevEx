@@ -152,7 +152,11 @@ Future<void> showActerSnack({
           timer,
           Padding(
             padding: const EdgeInsets.only(top: 10),
-            child: Text("$title...", textAlign: TextAlign.center),
+            child: Text(
+              "$title...",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ],
       ),
@@ -175,6 +179,7 @@ Future<void> showActerSnack({
     backgroundColor: color,
     action: SnackBarAction(
       label: "$actTitle",
+      textColor: Colors.white,
       onPressed: () {
         return onDissmissed();
       },

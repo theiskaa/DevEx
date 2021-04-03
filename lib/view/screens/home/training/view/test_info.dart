@@ -1,5 +1,7 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../widgets/components/widgets.dart';
 
@@ -16,7 +18,10 @@ class TestInfo extends DevExamStatelessWidget {
     );
     //
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.8),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.8)
+          : Colors.white.withOpacity(.8),
       appBar: buildAppBar(context),
       body: buildBody(context, info),
     );
@@ -45,7 +50,6 @@ class TestInfo extends DevExamStatelessWidget {
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: 23,
-        color: Colors.black.withOpacity(.7),
       ),
     );
   }
@@ -56,7 +60,6 @@ class TestInfo extends DevExamStatelessWidget {
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: 30,
-        color: Colors.black,
         fontWeight: FontWeight.bold,
       ),
     );
@@ -66,13 +69,13 @@ class TestInfo extends DevExamStatelessWidget {
     return AppBar(
       elevation: 0,
       leading: IconButton(
-        icon: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
-        ),
+        icon: Icon(Icons.arrow_back_ios),
         onPressed: () => Navigator.pop(context),
       ),
-      backgroundColor: Colors.white.withOpacity(.7),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.8)
+          : Colors.white.withOpacity(.8),
     );
   }
 }

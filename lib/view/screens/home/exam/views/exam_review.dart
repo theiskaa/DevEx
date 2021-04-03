@@ -256,7 +256,9 @@ class _ExamReviewState extends DevExamState<ExamReview> {
       elevation: 0,
       centerTitle: false,
       title: Text(
-        "$currentQuestionIndex/$allQuestionsLenght",
+        allQuestionsLenght > 1
+            ? "$currentQuestionIndex/$allQuestionsLenght"
+            : "",
         style: TextStyle(fontSize: 20),
       ),
       leading: OpacityButton(
