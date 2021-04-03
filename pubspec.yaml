@@ -79,6 +79,7 @@ flutter:
     - assets/custom/empty.png
     - assets/custom/logo.png
     - assets/custom/wifi.png
+    - assets/custom/wifi_white.png
 
   # Images of jsons (Question images)
     - assets/img/none.png

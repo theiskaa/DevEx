@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
 import 'package:devexam/view/screens/home/settings/setting_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -158,14 +159,26 @@ class _ProfileState extends DevExamState<Profile> {
   Widget goToTopButton() {
     return AnimatedCustomFAB(
       size: 35,
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? Colors.black
+          : Colors.white,
       tappedSize: 30,
       child: Center(
         child: Icon(
           Icons.arrow_upward,
-          color: indicatorColors[indicatorColorIndex],
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? Colors.white
+              : Colors.black,
         ),
       ),
-      border: Border.all(color: indicatorColors[indicatorColorIndex]),
+      border: Border.all(
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : Colors.black,
+      ),
       onTap: () {
         setState(() => showGoToTopButton = false);
         _scrollController.animateTo(
@@ -298,7 +311,13 @@ class _ProfileState extends DevExamState<Profile> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/custom/wifi.png', height: 100),
+              Image.asset(
+                BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                        devExam.theme.dark
+                    ? "assets/custom/wifi_white.png"
+                    : 'assets/custom/wifi.png',
+                height: 100,
+              ),
               SizedBox(height: 15),
               Text(
                 "${devExam.intl.of(context).fmt('attention.noConnection')}",
@@ -556,8 +575,10 @@ class _ProfileState extends DevExamState<Profile> {
           return Container(
             alignment: Alignment.topLeft,
             child: SpinKitThreeBounce(
-              // TODO: Change
-              color: Colors.black,
+              color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? Colors.white
+                  : Colors.black,
               size: 15,
             ),
           );
