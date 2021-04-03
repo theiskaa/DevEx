@@ -11,7 +11,6 @@ class Loading extends DevExamStatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      backgroundColor: Colors.white,
       body: buildLoading(),
     );
   }

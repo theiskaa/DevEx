@@ -1,5 +1,7 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/utils/connectivity.dart';
 import '../../../../widgets/components/widgets.dart';
@@ -13,17 +15,6 @@ class ExamSplash extends DevExamStatefulWidget {
   @override
   _ExamSplashState createState() => _ExamSplashState();
 }
-
-/*
-   "16": {
-      "a": "",
-      "c": "",
-      "des": "",
-      "img": "",
-      "answerByLetter": "",
-      "answer": ""
-    }
- */
 
 class _ExamSplashState extends DevExamState<ExamSplash> {
   final _connection = ConnectivityObserver();
@@ -64,7 +55,10 @@ class _ExamSplashState extends DevExamState<ExamSplash> {
     );
     //
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
       appBar: buildAppBar(context),
       body: buildBody(context),
     );
@@ -146,7 +140,6 @@ class _ExamSplashState extends DevExamState<ExamSplash> {
         devExam.intl.of(context).fmt('exam.ask'),
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: Colors.black,
           fontSize: 28,
           fontWeight: FontWeight.bold,
         ),
@@ -167,7 +160,11 @@ class _ExamSplashState extends DevExamState<ExamSplash> {
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.white.withOpacity(.9),
+      leading: SizedBox(),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
     );
   }
 }

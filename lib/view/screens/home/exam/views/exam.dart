@@ -1,7 +1,9 @@
 import 'dart:async';
 
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 import '../../../../../core/utils/ui.dart';
@@ -103,7 +105,6 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
     //
     return WillPopScope(
       child: Scaffold(
-        backgroundColor: Colors.white,
         appBar: buildAppBar(context),
         body: buildBody(),
       ),
@@ -133,39 +134,45 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
   }
 
   Widget buildImageContainer() {
-    return OpacityButton(
-      opacityValue: .5,
-      onTap: () {
-        if (data[1][currentQuestionIndex.toString()]["img"] !=
-            "assets/img/none.png") {
-          Navigator.of(context).push(
-            PageRouteBuilder(
-              opaque: false,
-              pageBuilder: (
-                BuildContext context,
-                _,
-                __,
-              ) =>
-                  FullscreenImage(
-                image: data[1][currentQuestionIndex.toString()]["img"],
-              ),
-            ),
-          );
-        }
-      },
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: (data[1][currentQuestionIndex.toString()]["img"] != null)
-            ? Container(
-                child: ClipRRect(
-                  child: Image.asset(
-                      data[1][currentQuestionIndex.toString()]["img"]),
-                  borderRadius: BorderRadius.circular(30),
+    if (data[1][currentQuestionIndex.toString()]["img"] ==
+            "assets/img/none.png" ||
+        data[1][currentQuestionIndex.toString()]["img"] == " ") {
+      return SizedBox(height: 0, width: 0);
+    } else {
+      return OpacityButton(
+        opacityValue: .5,
+        onTap: () {
+          if (data[1][currentQuestionIndex.toString()]["img"] !=
+              "assets/img/none.png") {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (
+                  BuildContext context,
+                  _,
+                  __,
+                ) =>
+                    FullscreenImage(
+                  image: data[1][currentQuestionIndex.toString()]["img"],
                 ),
-              )
-            : SizedBox.shrink(),
-      ),
-    );
+              ),
+            );
+          }
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: (data[1][currentQuestionIndex.toString()]["img"] != null)
+              ? Container(
+                  child: ClipRRect(
+                    child: Image.asset(
+                        data[1][currentQuestionIndex.toString()]["img"]),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                )
+              : SizedBox.shrink(),
+        ),
+      );
+    }
   }
 
   Column buildAnswerButtons() {
@@ -229,16 +236,17 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       elevation: 0,
       centerTitle: true,
-      title: Text("$currentQuestionIndex/$allQuestionsLenght",
-          style: TextStyle(color: Colors.black)),
+      title: Text(
+        "$currentQuestionIndex/$allQuestionsLenght",
+        style: TextStyle(fontSize: 20),
+      ),
       leading: OpacityButton(
         opacityValue: .3,
         child: Icon(
           Icons.close,
-          color: Colors.black,
         ),
         onTap: () => showDialog(
           context: context,
@@ -259,13 +267,22 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
       duration: 900,
       width: 45,
       height: 45,
-      color: devExam.theme.darkExamBlue,
-      fillColor: Colors.white,
+      color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.accentExamBlue
+          : devExam.theme.darkExamBlue,
+      fillColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor
+          : Colors.white,
       backgroundColor: null,
       strokeWidth: 3.5,
       textStyle: TextStyle(
         fontSize: 10.5,
-        color: devExam.theme.darkExamBlue,
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? devExam.theme.accentExamBlue
+            : devExam.theme.darkExamBlue,
         fontWeight: FontWeight.bold,
       ),
       isReverse: true,
@@ -290,10 +307,7 @@ class _ExamScreenState extends DevExamState<ExamScreen> {
   AlertDialog buildAlertDialog() {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(20),
       ),
       title: Text("${devExam.intl.of(context).fmt('exam.exitAsk')}"),
       actions: [

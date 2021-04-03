@@ -105,7 +105,6 @@ class _ExamReviewState extends DevExamState<ExamReview> {
     //
     return WillPopScope(
       child: Scaffold(
-        backgroundColor: Colors.white,
         appBar: buildAppBar(context),
         body: buildSingleChildScrollView(),
         floatingActionButtonLocation:
@@ -151,36 +150,45 @@ class _ExamReviewState extends DevExamState<ExamReview> {
   }
 
   Widget buildImageContainer() {
-    return OpacityButton(
-      opacityValue: .5,
-      onTap: () {
-        if (data[1][currentQuestionIndex.toString()]["img"] !=
-            "assets/img/none.png") {
-          Navigator.of(context).push(
-            PageRouteBuilder(
-              opaque: false,
-              pageBuilder: (
-                BuildContext context,
-                _,
-                __,
-              ) =>
-                  FullscreenImage(
-                image: data[1][currentQuestionIndex.toString()]["img"],
+    if (data[1][currentQuestionIndex.toString()]["img"] ==
+            "assets/img/none.png" ||
+        data[1][currentQuestionIndex.toString()]["img"] == " ") {
+      return SizedBox(height: 0, width: 0);
+    } else {
+      return OpacityButton(
+        opacityValue: .5,
+        onTap: () {
+          if (data[1][currentQuestionIndex.toString()]["img"] !=
+              "assets/img/none.png") {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (
+                  BuildContext context,
+                  _,
+                  __,
+                ) =>
+                    FullscreenImage(
+                  image: data[1][currentQuestionIndex.toString()]["img"],
+                ),
               ),
-            ),
-          );
-        }
-      },
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: Container(
-          child: ClipRRect(
-            child: Image.asset(data[1][currentQuestionIndex.toString()]["img"]),
-            borderRadius: BorderRadius.circular(30),
-          ),
+            );
+          }
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: (data[1][currentQuestionIndex.toString()]["img"] != null)
+              ? Container(
+                  child: ClipRRect(
+                    child: Image.asset(
+                        data[1][currentQuestionIndex.toString()]["img"]),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                )
+              : SizedBox.shrink(),
         ),
-      ),
-    );
+      );
+    }
   }
 
   Column buildAnswerButtons() {
@@ -244,16 +252,17 @@ class _ExamReviewState extends DevExamState<ExamReview> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       elevation: 0,
       centerTitle: false,
-      title: Text("$currentQuestionIndex/$allQuestionsLenght",
-          style: TextStyle(color: Colors.black)),
+      title: Text(
+        "$currentQuestionIndex/$allQuestionsLenght",
+        style: TextStyle(fontSize: 20),
+      ),
       leading: OpacityButton(
         opacityValue: .3,
         child: Icon(
           Icons.close,
-          color: Colors.black,
         ),
         onTap: () => showDialog(
           context: context,
@@ -263,10 +272,7 @@ class _ExamReviewState extends DevExamState<ExamReview> {
       actions: [
         OpacityButton(
           opacityValue: .3,
-          child: Icon(
-            Icons.description,
-            color: Colors.black,
-          ),
+          child: Icon(Icons.description),
           onTap: () => Navigator.of(context).push(
             PageRouteBuilder(
               opaque: false,
@@ -289,10 +295,7 @@ class _ExamReviewState extends DevExamState<ExamReview> {
   AlertDialog buildAlertDialog() {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(20),
       ),
       title: Text(
         "${devExam.intl.of(context).fmt('test.wannaPassTest')}",

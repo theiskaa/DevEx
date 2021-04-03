@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../components/widgets.dart';
 
@@ -139,8 +141,11 @@ class _AnimePressButtonState extends DevExamState<AnimePressButton>
             fontWeight: (widget.fontWeight != null)
                 ? widget.fontWeight
                 : FontWeight.w500,
-            color:
-                (widget.titleColor != null) ? widget.titleColor : Colors.black,
+            color: (widget.titleColor != null) ? widget.titleColor : null,
+            // : BlocProvider.of<ThemeBloc>(context).state.themeData ==
+            //         devExam.theme.dark
+            //     ? Colors.white
+            //     : Colors.black,
           ),
         ),
       ),
@@ -149,17 +154,29 @@ class _AnimePressButtonState extends DevExamState<AnimePressButton>
 
   BoxDecoration boxDecoration() {
     return BoxDecoration(
-      color: (widget.color != null) ? widget.color : Colors.white,
+      color: (widget.color != null)
+          ? widget.color
+          : BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? Colors.black
+              : Colors.white,
       borderRadius: (widget.borderRadius != null)
           ? widget.borderRadius
           : BorderRadius.circular(10),
       boxShadow: (widget.boxShadow != null)
           ? widget.boxShadow
           : [
-              BoxShadow(
-                blurRadius: 12.0,
-                offset: Offset(0.0, 5.0),
-              ),
+              BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? BoxShadow(
+                      blurRadius: 5.0,
+                      color: Colors.white.withOpacity(.2),
+                      offset: Offset(0.0, 3.0),
+                    )
+                  : BoxShadow(
+                      blurRadius: 12.0,
+                      offset: Offset(0.0, 5.0),
+                    ),
             ],
 
       ///

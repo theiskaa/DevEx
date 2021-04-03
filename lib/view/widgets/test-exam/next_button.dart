@@ -27,10 +27,7 @@ class NextButton extends DevExamStatelessWidget {
       padding: EdgeInsets.all(4),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          labelText(context),
-          Icon(Icons.arrow_forward_ios, color: Colors.black)
-        ],
+        children: [labelText(context), Icon(Icons.arrow_forward_ios)],
       ),
     );
   }
@@ -38,7 +35,6 @@ class NextButton extends DevExamStatelessWidget {
   Text labelText(BuildContext context) => Text(
         label,
         style: TextStyle(
-          color: Colors.black,
           fontSize: getSizeOfText(context),
           fontWeight: FontWeight.w700,
         ),

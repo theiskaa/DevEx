@@ -1,6 +1,8 @@
 import 'dart:async';
 
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/services/user_service.dart';
 import '../../../../../core/utils/connectivity.dart';
@@ -59,7 +61,6 @@ class _ExamResultState extends DevExamState<ExamResult> {
   void initState() {
     if (correctAnswers < 5) {
       image = "assets/custom/bad.png";
-      // shenit shoperi ar gomova cay locikoba ikitxe (bez pilotcikisi)
     } else if (correctAnswers >= 5 && correctAnswers <= 8) {
       image = "assets/custom/good.png";
     } else if (correctAnswers > 8 && correctAnswers <= 10) {
@@ -120,7 +121,6 @@ class _ExamResultState extends DevExamState<ExamResult> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: Center(
         child: SingleChildScrollView(
           child: Center(child: buildBody()),
@@ -171,14 +171,20 @@ class _ExamResultState extends DevExamState<ExamResult> {
         text: TextSpan(
           text: "$message ",
           style: TextStyle(
-            color: Colors.black,
+            color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                    devExam.theme.dark
+                ? Colors.white
+                : Colors.black,
             fontSize: getSizeOfText(),
           ),
           children: [
             TextSpan(
               text: "$result ",
               style: TextStyle(
-                color: Colors.black,
+                color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                        devExam.theme.dark
+                    ? Colors.white
+                    : Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: getSizeOfText() + 2,
               ),

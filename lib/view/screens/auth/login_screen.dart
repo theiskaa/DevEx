@@ -269,9 +269,11 @@ class _EmailField extends DevExamStatelessWidget {
                       devExam.theme.dark
                   ? buildSuggestionBoxDecorationDark()
                   : buildSuggestionBoxDecorationLight(),
-          suggestionItemStyle:  BlocProvider.of<ThemeBloc>(context).state.themeData ==
+          suggestionItemStyle:
+              BlocProvider.of<ThemeBloc>(context).state.themeData ==
                       devExam.theme.dark
-                  ? buildSuggestionItemStyleDark() :buildSuggestionItemStyleLight() ,
+                  ? buildSuggestionItemStyleDark()
+                  : buildSuggestionItemStyleLight(),
           onTap: () {
             context.read<LoginCubit>().emailChanged(emailTextController.text);
           },
@@ -329,7 +331,7 @@ class _EmailField extends DevExamStatelessWidget {
     );
   }
 
-   SuggestionItemStyle buildSuggestionItemStyleDark() {
+  SuggestionItemStyle buildSuggestionItemStyleDark() {
     return SuggestionItemStyle(
       backgroundColor: Colors.black,
       icon: Icons.clear,
