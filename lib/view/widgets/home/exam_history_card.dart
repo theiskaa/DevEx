@@ -151,6 +151,10 @@ class ExamHistoryCard extends DevExamStatelessWidget {
           text: TextSpan(
             text: "$title: ",
             style: TextStyle(
+              color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? Colors.white.withOpacity(.7)
+                  : Colors.black.withOpacity(.7),
               fontSize: isRussian(context) ? 14.0 : 16,
               fontWeight: FontWeight.w400,
             ),
@@ -158,6 +162,10 @@ class ExamHistoryCard extends DevExamStatelessWidget {
               TextSpan(
                 text: "$item",
                 style: TextStyle(
+                  color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                          devExam.theme.dark
+                      ? Colors.white
+                      : Colors.black,
                   fontWeight: FontWeight.w800,
                 ),
               )

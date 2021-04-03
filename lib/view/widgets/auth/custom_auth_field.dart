@@ -34,6 +34,7 @@ class CustomAuthField extends DevExamStatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      decoration: InputDecoration(hintText: hint, errorText: errorText),
       obscureText: (obscureText != null) ? obscureText : false,
       validator: validator,
       onChanged: onChanged,

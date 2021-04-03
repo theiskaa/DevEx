@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../view/widgets/test-exam/circular_countdown_timer.dart';
 import '../system/devexam.dart';
@@ -76,9 +78,18 @@ void showSnack({
   Color color,
   bool isFloating = false,
   int sec,
+  @required DevExam devExam,
 }) async {
   final snack = SnackBar(
-    content: Text(title),
+    content: Text(
+      title,
+      style: TextStyle(
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : Colors.white,
+      ),
+    ),
     duration: Duration(seconds: (sec != null) ? sec : 3),
     margin: isFloating ? EdgeInsets.all(8) : null,
     behavior: isFloating ? SnackBarBehavior.floating : SnackBarBehavior.fixed,

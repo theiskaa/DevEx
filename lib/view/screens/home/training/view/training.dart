@@ -350,6 +350,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                 onTap: () {
                   if (widget.isAbleToSaveQ == false) {
                     showSnack(
+                      devExam: devExam,
                       context: context,
                       sec: 6,
                       title: devExam.intl
@@ -360,6 +361,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                   } else {
                     if (_showNoInternet) {
                       showSnack(
+                        devExam: devExam,
                         context: context,
                         title: devExam.intl
                             .of(context)
@@ -482,6 +484,8 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                   } else {
                     Navigator.pop(context);
                     showSnack(
+                                              devExam: devExam,
+
                       context: context,
                       title:
                           "Couldn't created new custom category please check your internet connection, and try later.",

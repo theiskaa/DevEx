@@ -212,6 +212,7 @@ class _ProfileState extends DevExamState<Profile> {
           if (state.status != AuthStatus.successful &&
               state.formzStatus.isSubmissionFailure) {
             showSnack(
+              devExam: devExam,
               isFloating: true,
               context: context,
               title: "$errorMessage",
@@ -220,6 +221,7 @@ class _ProfileState extends DevExamState<Profile> {
           }
           if (state.status == AuthStatus.successful) {
             showSnack(
+              devExam: devExam,
               isFloating: true,
               context: context,
               title:
@@ -264,6 +266,7 @@ class _ProfileState extends DevExamState<Profile> {
             print("========= $result");
             if (result == true) {
               showSnack(
+                devExam: devExam,
                 isFloating: true,
                 context: context,
                 title:
@@ -272,6 +275,7 @@ class _ProfileState extends DevExamState<Profile> {
               );
             } else {
               showSnack(
+                devExam: devExam,
                 sec: 6,
                 isFloating: true,
                 context: context,
@@ -526,6 +530,7 @@ class _ProfileState extends DevExamState<Profile> {
             onTap: () {
               if (_showNoInternet) {
                 showSnack(
+                  devExam: devExam,
                   isFloating: true,
                   context: context,
                   title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -629,6 +634,7 @@ class _ProfileState extends DevExamState<Profile> {
     if (item == menuStrings(context, devExam)[0]) {
       if (_showNoInternet) {
         showSnack(
+          devExam: devExam,
           isFloating: true,
           context: context,
           title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -644,6 +650,7 @@ class _ProfileState extends DevExamState<Profile> {
     } else if (item == menuStrings(context, devExam)[1]) {
       if (_showNoInternet) {
         showSnack(
+          devExam: devExam,
           isFloating: true,
           context: context,
           title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -658,6 +665,7 @@ class _ProfileState extends DevExamState<Profile> {
     } else if (item == menuStrings(context, devExam)[2]) {
       if (_showNoInternet) {
         showSnack(
+          devExam: devExam,
           isFloating: true,
           context: context,
           title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -749,6 +757,7 @@ class _ProfileState extends DevExamState<Profile> {
             );
             if (result == true) {
               showSnack(
+                devExam: devExam,
                 isFloating: true,
                 context: context,
                 title: devExam.intl.of(context).fmt('changeUsername.success'),
@@ -757,6 +766,7 @@ class _ProfileState extends DevExamState<Profile> {
               newUsernameController.clear();
             } else {
               showSnack(
+                devExam: devExam,
                 sec: 6,
                 isFloating: true,
                 context: context,

@@ -1,3 +1,4 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -72,7 +73,6 @@ class _RegisterScreenState extends DevExamState<RegisterScreen> {
     return Scaffold(
       floatingActionButton: langFAB(),
       key: scaffoldKey,
-      backgroundColor: Colors.white,
       body: BlocListener<RegisterCubit, RegisterState>(
         listener: buildBlocListener,
         child: BlocBuilder<RegisterCubit, RegisterState>(
@@ -111,6 +111,7 @@ class _RegisterScreenState extends DevExamState<RegisterScreen> {
     if (state.status != AuthStatus.successful &&
         state.formzStatus.isSubmissionFailure) {
       showSnack(
+        devExam: devExam,
         context: context,
         title: "$errorMessage",
         color: devExam.theme.darkTestPurple,
@@ -186,7 +187,6 @@ class _RegisterScreenState extends DevExamState<RegisterScreen> {
     return Text(
       "Dev Ex",
       style: TextStyle(
-        color: Colors.black,
         fontWeight: FontWeight.w900,
         fontSize: 50,
       ),
@@ -199,7 +199,6 @@ class _UsernameField extends DevExamStatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<RegisterCubit, RegisterState>(
       builder: (context, state) {
-        // print("1 state == ${state.status} form usernameField");
         return CustomAuthField(
           errorText: state.username.invalid
               ? devExam.intl.of(context).fmt('account.create.invalidForm')
@@ -221,7 +220,6 @@ class _EmailField extends DevExamStatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<RegisterCubit, RegisterState>(
       builder: (context, state) {
-        // print("2 state == ${state.status} form emailField");
         return CustomAuthField(
           accentColor: devExam.theme.accentTestPurple,
           darkColor: devExam.theme.darkTestPurple,
@@ -302,6 +300,7 @@ class _RegisterButton extends DevExamStatelessWidget {
       onTap: () {
         if (showNoInternet) {
           showSnack(
+            devExam: devExam,
             context: context,
             title: devExam.intl.of(context).fmt('attention.noConnection'),
             color: Colors.red[700],
@@ -313,6 +312,7 @@ class _RegisterButton extends DevExamStatelessWidget {
             context.read<RegisterCubit>().registerWEP();
           } else {
             showSnack(
+              devExam: devExam,
               context: context,
               title: devExam.intl.of(context).fmt('message.invalidFormz'),
               color: devExam.theme.accentTestPurple,
@@ -325,9 +325,18 @@ class _RegisterButton extends DevExamStatelessWidget {
       titleSize: 20,
       fontWeight: FontWeight.w700,
       tappedTitleColor: Colors.white,
-      titleColor: devExam.theme.darkTestPurple,
-      spashColor: devExam.theme.darkTestPurple,
-      borderColor: devExam.theme.darkTestPurple,
+      titleColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.accentTestPurple
+          : devExam.theme.darkTestPurple,
+      spashColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.accentTestPurple
+          : devExam.theme.darkTestPurple,
+      borderColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.accentTestPurple
+          : devExam.theme.darkTestPurple,
       borderRadius: BorderRadius.circular(30),
     );
   }
@@ -337,7 +346,13 @@ class _RegisterButton extends DevExamStatelessWidget {
       height: 55,
       width: MediaQuery.of(context).size.width - 80,
       decoration: BoxDecoration(
-        border: Border.all(width: 2.2, color: devExam.theme.darkTestPurple),
+        border: Border.all(
+          width: 2.2,
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? devExam.theme.accentTestPurple
+              : devExam.theme.darkTestPurple,
+        ),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Center(

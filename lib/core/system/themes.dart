@@ -35,7 +35,8 @@ class Themes extends CustomColors {
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.black),
         inputDecorationTheme: InputDecorationTheme(
-          hintStyle: TextStyle(color: Colors.black, fontSize: 18),
+          hintStyle:
+              TextStyle(color: Colors.black.withOpacity(.7), fontSize: 18),
           labelStyle: TextStyle(color: Colors.black),
           helperStyle: TextStyle(color: Colors.black, fontSize: 18),
           focusedBorder: UnderlineInputBorder(
@@ -73,7 +74,10 @@ class Themes extends CustomColors {
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.white),
         inputDecorationTheme: InputDecorationTheme(
-          hintStyle: TextStyle(color: Colors.white, fontSize: 18),
+          hintStyle: TextStyle(
+            color: Colors.white.withOpacity(.7),
+            fontSize: 18,
+          ),
           labelStyle: TextStyle(color: Colors.white),
           helperStyle: TextStyle(color: Colors.white, fontSize: 18),
           focusedBorder: UnderlineInputBorder(
@@ -104,6 +108,7 @@ class Themes extends CustomColors {
       headline3: _whiteText(),
       headline4: _whiteText(),
       headline5: _whiteText(),
+      headline6: _whiteText(),
     );
   }
 
@@ -114,6 +119,7 @@ class Themes extends CustomColors {
       headline3: _blackText(),
       headline4: _blackText(),
       headline5: _blackText(),
+      headline6: _blackText(),
     );
   }
 

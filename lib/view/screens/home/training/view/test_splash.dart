@@ -174,6 +174,8 @@ class _TestSplashState extends DevExamState<TestSplash> {
           onTap: () {
             if (_showNoInternet) {
               showSnack(
+                              devExam: devExam,
+
                 context: context,
                 title: devExam.intl.of(context).fmt('attention.noConnection'),
                 color: devExam.theme.errorBg,

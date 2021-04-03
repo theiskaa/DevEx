@@ -111,6 +111,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
           onTap: () {
             if (_showNoInternet) {
               showSnack(
+                devExam: devExam,
                 isFloating: true,
                 context: context,
                 title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -132,6 +133,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
           onTap: () {
             if (_showNoInternet) {
               showSnack(
+                devExam: devExam,
                 isFloating: true,
                 context: context,
                 title: devExam.intl.of(context).fmt('attention.noConnection'),
@@ -247,6 +249,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
             );
             if (result == true) {
               showSnack(
+                devExam: devExam,
                 isFloating: true,
                 context: context,
                 title: devExam.intl.of(context).fmt('changeUsername.success'),
@@ -255,6 +258,7 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
               newUsernameController.clear();
             } else {
               showSnack(
+                devExam: devExam,
                 sec: 6,
                 isFloating: true,
                 context: context,
