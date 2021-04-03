@@ -19,39 +19,39 @@ To get more about **DevEx** check [this overview video](https://youtu.be/etSj5Jv
 
 #### Authentication
 
-**Light Theme:**
+##### Light Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/auth.png" width="700">
 
-**Dark Theme:**
+##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/auth-dark.png" width="700">
 
 #### Home & Profile
 
-**Light Theme:**
+##### Light Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/profile.png" width="700">
 
-**Dark Theme:**
+##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/profile-dark.png" width="700">
 
 
 #### Exam 
-**Light Theme:**
+##### Light Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/exam.png" width="700">
 
-**Dark Theme:**
+##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/exam-png" width="700">
 
 #### Testing (learning) 
-**Light Theme:**
+##### Light Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test.png" width="600">
 
-**Dark Theme:**
+##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/test-dark.png" width="600">
 
 #### Settings
-**Light Theme:**
+##### Light Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings.png" width="700">
 
-**Dark Theme:**
+##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings.png" width="700">
 
