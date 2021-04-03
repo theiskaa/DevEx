@@ -53,5 +53,5 @@ To get more about **DevEx** check [this overview video](https://youtu.be/etSj5Jv
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings.png" width="700">
 
 ##### Dark Theme:
-<img src="https://github.com/theiskaa/DevEx/blob/feature/dark-theme/assets/overview/settings.png" width="700">
+<img src="https://github.com/theiskaa/DevEx/blob/feature/dark-theme/assets/overview/settings-dark.png" width="700">
 
