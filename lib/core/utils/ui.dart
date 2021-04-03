@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../view/widgets/test-exam/circular_countdown_timer.dart';
 import '../system/devexam.dart';
@@ -14,7 +16,7 @@ Widget menuButton(String item, IconData icon) {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Expanded(child: Text(item)),
-        Icon(icon, color: Colors.black),
+        Icon(icon),
       ],
     ),
   );
@@ -60,11 +62,12 @@ IconData getValidIcon(Object item, BuildContext context, DevExam devExam) {
 }
 
 /// Custom divider.
-Container divider(BuildContext context, {double width}) {
-  return Container(
-    height: .3,
-    width: width ?? MediaQuery.of(context).size.width,
-    color: Colors.black,
+Widget divider() {
+  return Divider(
+    height: 5,
+    thickness: 1,
+    indent: 50,
+    endIndent: 50,
   );
 }
 
@@ -75,9 +78,18 @@ void showSnack({
   Color color,
   bool isFloating = false,
   int sec,
+  @required DevExam devExam,
 }) async {
   final snack = SnackBar(
-    content: Text(title),
+    content: Text(
+      title,
+      style: TextStyle(
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : Colors.white,
+      ),
+    ),
     duration: Duration(seconds: (sec != null) ? sec : 3),
     margin: isFloating ? EdgeInsets.all(8) : null,
     behavior: isFloating ? SnackBarBehavior.floating : SnackBarBehavior.fixed,
@@ -140,7 +152,11 @@ Future<void> showActerSnack({
           timer,
           Padding(
             padding: const EdgeInsets.only(top: 10),
-            child: Text("$title...", textAlign: TextAlign.center),
+            child: Text(
+              "$title...",
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Colors.white),
+            ),
           ),
         ],
       ),

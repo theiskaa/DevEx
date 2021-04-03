@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../../core/utils/ui.dart';
 import '../../../../widgets/components/widgets.dart';
@@ -30,7 +32,10 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
       appBar: buildAppBar(context),
       body: buildBody(),
     );
@@ -46,7 +51,7 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
             SizedBox(height: 80),
             buildDes(),
             SizedBox(height: 30),
-            divider(context),
+            divider(),
             SizedBox(height: 30),
             buildAnswers(),
             SizedBox(height: 30),
@@ -63,7 +68,6 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
         Text(
           "${devExam.intl.of(context).fmt('test.answer')}: ",
           style: TextStyle(
-            color: Colors.black,
             fontSize: 28,
             fontWeight: FontWeight.w800,
           ),
@@ -77,7 +81,6 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
                   "${data[1][i.toString()]["answerByLetter"].toString().toUpperCase()}: ",
               style: TextStyle(
                 fontSize: 25,
-                color: Colors.black,
                 fontWeight: FontWeight.w800,
               ),
               children: [
@@ -85,7 +88,6 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
                   text: data[1][i.toString()]["answer"].toString(),
                   style: TextStyle(
                     fontSize: 23,
-                    color: Colors.black,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -104,7 +106,6 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
         Text(
           "${devExam.intl.of(context).fmt('test.des')}: ",
           style: TextStyle(
-            color: Colors.black,
             fontSize: 30,
             fontWeight: FontWeight.w800,
           ),
@@ -129,12 +130,14 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
       leading: IconButton(
         icon: Icon(
           Icons.clear,
-          color: Colors.black,
         ),
         onPressed: () => Navigator.pop(context),
       ),
       elevation: 0,
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
     );
   }
 }

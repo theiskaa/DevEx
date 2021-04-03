@@ -1,3 +1,4 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
@@ -65,7 +66,6 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: langFAB(context),
-      backgroundColor: Colors.white,
       appBar: appbar(context),
       body: BlocListener<ResetpasswordCubit, ResetpasswordState>(
         listener: buildBlocListener,
@@ -101,6 +101,7 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
     if (state.status != AuthStatus.successful &&
         state.formzStatus.isSubmissionFailure) {
       showSnack(
+        devExam: devExam,
         context: context,
         title: "$errorMessage",
         color: devExam.theme.darkGreenblue,
@@ -108,6 +109,7 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
     }
     if (state.status == AuthStatus.successful) {
       showSnack(
+        devExam: devExam,
         sec: 6,
         context: context,
         title: devExam.intl.of(context).fmt('message.resetPasswordSuccess'),
@@ -165,7 +167,6 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
     return Text(
       "Dev Ex",
       style: TextStyle(
-        color: Colors.black,
         fontWeight: FontWeight.w900,
         fontSize: 50,
       ),
@@ -178,10 +179,7 @@ class _ResetPasswordScreenState extends DevExamState<ResetPasswordScreen> {
       backgroundColor: Colors.transparent,
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(
-          Icons.arrow_back_ios,
-          color: Colors.black,
-        ),
+        child: Icon(Icons.arrow_back_ios),
         onTap: () => Navigator.pop(context),
       ),
     );
@@ -233,6 +231,7 @@ class _SendEmailButton extends DevExamStatelessWidget {
       onTap: () {
         if (showNoInternet) {
           showSnack(
+            devExam: devExam,
             context: context,
             title: devExam.intl.of(context).fmt('attention.noConnection'),
             color: Colors.red[700],
@@ -245,6 +244,7 @@ class _SendEmailButton extends DevExamStatelessWidget {
             context.read<ResetpasswordCubit>().sendResetPasswordMail();
           } else {
             showSnack(
+              devExam: devExam,
               context: context,
               title: devExam.intl.of(context).fmt('message.invalidFormz'),
               color: Colors.redAccent[700],
@@ -257,9 +257,12 @@ class _SendEmailButton extends DevExamStatelessWidget {
       titleSize: 18,
       fontWeight: FontWeight.w700,
       tappedTitleColor: Colors.white,
-      titleColor: devExam.theme.darkGreenblue,
+      titleColor: devExam.theme.accentGreenblue,
       spashColor: devExam.theme.accentGreenblue,
-      borderColor: devExam.theme.darkGreenblue,
+      borderColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.accentGreenblue
+          : devExam.theme.darkGreenblue,
       borderRadius: BorderRadius.circular(30),
     );
   }
@@ -269,7 +272,13 @@ class _SendEmailButton extends DevExamStatelessWidget {
       height: 55,
       width: MediaQuery.of(context).size.width - 40,
       decoration: BoxDecoration(
-        border: Border.all(width: 2, color: devExam.theme.darkGreenblue),
+        border: Border.all(
+          width: 2,
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? devExam.theme.accentGreenblue
+              : devExam.theme.darkGreenblue,
+        ),
         borderRadius: BorderRadius.circular(30),
       ),
       child: Center(

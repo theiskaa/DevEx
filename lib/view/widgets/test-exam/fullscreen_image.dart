@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 import 'package:photo_view/photo_view.dart';
 
@@ -15,7 +17,10 @@ class FullscreenImage extends DevExamStatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
       appBar: appBar(context),
       body: Container(
         width: double.infinity,
@@ -33,13 +38,13 @@ class FullscreenImage extends DevExamStatelessWidget {
   AppBar appBar(BuildContext context) {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.white.withOpacity(.9),
+      backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? devExam.theme.dark.scaffoldBackgroundColor.withOpacity(.9)
+          : Colors.white.withOpacity(.9),
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(
-          Icons.close_fullscreen,
-          color: Colors.black,
-        ),
+        child: Icon(Icons.close_fullscreen),
         onTap: () => Navigator.pop(context),
       ),
     );

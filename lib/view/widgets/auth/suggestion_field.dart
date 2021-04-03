@@ -403,6 +403,7 @@ class SuggestionFieldState extends DevExamState<SuggestionField> {
 
   Widget buildSuggestionBox(BuildContext context) {
     return Material(
+      color: Colors.transparent,
       child: Container(
         padding: EdgeInsets.all(12),
         decoration: _getRightBoxDecoration(),
@@ -459,15 +460,17 @@ class SuggestionFieldState extends DevExamState<SuggestionField> {
   Widget suggestionField() => CompositedTransformTarget(
         link: _layerLink,
         child: TextField(
-          keyboardType: widget.fieldType,
-          focusNode: _node,
-          onChanged: widget.onChanged,
-          controller: widget.textController,
-          maxLines: (widget.maxLines != null) ? widget.maxLines : 1,
-          decoration: (widget.fieldDecoration != null)
-              ? widget.fieldDecoration
-              : buildInputDecoration(),
-        ),
+            keyboardType: widget.fieldType,
+            focusNode: _node,
+            onChanged: widget.onChanged,
+            controller: widget.textController,
+            maxLines: (widget.maxLines != null) ? widget.maxLines : 1,
+            decoration: (widget.fieldDecoration != null)
+                ? widget.fieldDecoration
+                : InputDecoration(
+                    errorText: widget.errorText,
+                    hintText: widget.hint,
+                  )),
       );
 
   double _getRightMaxHeight() {
@@ -515,33 +518,33 @@ class SuggestionFieldState extends DevExamState<SuggestionField> {
     }
   }
 
-  InputDecoration buildInputDecoration() {
-    return InputDecoration(
-      errorText: widget.errorText,
-      hintText: widget.hint,
-      errorStyle: TextStyle(color: Colors.red),
-      hintStyle: TextStyle(
-        color: Colors.black.withOpacity(.8),
-        fontSize: 18,
-      ),
-      focusedBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: devExam.theme.darkExamBlue),
-      ),
-      enabledBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: Colors.black),
-      ),
-      errorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: Colors.red),
-      ),
-      focusedErrorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(
-          width: 2,
-          color: Colors.red,
-        ),
-      ),
-      enabled: true,
-    );
-  }
+  // InputDecoration buildInputDecoration() {
+  //   return InputDecoration(
+  //     errorText: widget.errorText,
+  //     hintText: widget.hint,
+  //     errorStyle: TextStyle(color: Colors.red),
+  //     hintStyle: TextStyle(
+  //       color: Colors.black.withOpacity(.8),
+  //       fontSize: 18,
+  //     ),
+  //     focusedBorder: UnderlineInputBorder(
+  //       borderSide: BorderSide(width: 2, color: devExam.theme.darkExamBlue),
+  //     ),
+  //     enabledBorder: UnderlineInputBorder(
+  //       borderSide: BorderSide(width: 2, color: Colors.black),
+  //     ),
+  //     errorBorder: UnderlineInputBorder(
+  //       borderSide: BorderSide(width: 2, color: Colors.red),
+  //     ),
+  //     focusedErrorBorder: UnderlineInputBorder(
+  //       borderSide: BorderSide(
+  //         width: 2,
+  //         color: Colors.red,
+  //       ),
+  //     ),
+  //     enabled: true,
+  //   );
+  // }
 
   Decoration _getRightBoxDecoration() {
     if (widget.suggestionBoxDecoration != null) {

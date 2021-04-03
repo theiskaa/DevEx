@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 import '../../../core/utils/perceptive.dart';
@@ -37,8 +39,8 @@ class ExamHistoryCard extends DevExamStatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size != null ? size : MediaQuery.of(context).size.width - 30,
-      decoration: buildDecoration(),
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      decoration: buildDecoration(context),
+      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       child: buildButtonBody(context),
     );
   }
@@ -57,22 +59,25 @@ class ExamHistoryCard extends DevExamStatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     buildReviewButton(context),
-                    buildDateTitel(),
+                    buildDateTitel(context),
                   ],
                 )
-              : buildDateTitel(),
+              : buildDateTitel(context),
         ],
       ),
     );
   }
 
-  Container buildDateTitel() {
+  Container buildDateTitel(BuildContext context) {
     return Container(
       alignment: Alignment.centerRight,
       child: Text(
         "$date",
         style: TextStyle(
-          color: Color(0xFF220052),
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? Colors.white
+              : devExam.theme.darkTestPurple,
           fontSize: 11.0.fP,
           fontWeight: FontWeight.w700,
         ),
@@ -146,15 +151,21 @@ class ExamHistoryCard extends DevExamStatelessWidget {
           text: TextSpan(
             text: "$title: ",
             style: TextStyle(
-              color: Colors.black.withOpacity(.5),
+              color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? Colors.white.withOpacity(.7)
+                  : Colors.black.withOpacity(.7),
               fontSize: isRussian(context) ? 14.0 : 16,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontWeight.w400,
             ),
             children: [
               TextSpan(
                 text: "$item",
                 style: TextStyle(
-                  color: Colors.black,
+                  color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                          devExam.theme.dark
+                      ? Colors.white
+                      : Colors.black,
                   fontWeight: FontWeight.w800,
                 ),
               )
@@ -163,13 +174,19 @@ class ExamHistoryCard extends DevExamStatelessWidget {
         ),
       );
 
-  BoxDecoration buildDecoration() => BoxDecoration(
-        color: Colors.white,
+  BoxDecoration buildDecoration(BuildContext context) => BoxDecoration(
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Color(0xFF070707)
+            : Colors.white,
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
             spreadRadius: .3,
-            color: Colors.black.withOpacity(.5),
+            color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                    devExam.theme.dark
+                ? Colors.white.withOpacity(.1)
+                : Colors.black.withOpacity(.5),
             blurRadius: 15,
             offset: Offset(0, 8),
           ),

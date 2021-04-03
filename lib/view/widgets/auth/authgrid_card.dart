@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 import '../components/widgets.dart';
@@ -34,7 +36,7 @@ class AuthGridCard extends DevExamStatelessWidget {
 
   Container buildDefaultContainer(BuildContext context) {
     return Container(
-      decoration: buildBoxDecoration(),
+      decoration: buildBoxDecoration(context),
       padding: EdgeInsets.all(16),
       height: height,
       width: MediaQuery.of(context).size.width - 30,
@@ -43,7 +45,9 @@ class AuthGridCard extends DevExamStatelessWidget {
           children: [
             buildFieldsPlace(),
             (spacer != null) ? spacer : Spacer(),
-            (titleOfSeccondTextButton == null) ? Container() : textButton(),
+            (titleOfSeccondTextButton == null)
+                ? Container()
+                : textButton(context),
           ],
         ),
       ),
@@ -53,7 +57,7 @@ class AuthGridCard extends DevExamStatelessWidget {
   AnimatedContainer buildAnimatedContainer(BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 300),
-      decoration: buildBoxDecoration(),
+      decoration: buildBoxDecoration(context),
       padding: EdgeInsets.all(16),
       height: height,
       width: MediaQuery.of(context).size.width - 30,
@@ -62,7 +66,9 @@ class AuthGridCard extends DevExamStatelessWidget {
           children: [
             buildFieldsPlace(),
             (spacer != null) ? spacer : Spacer(),
-            (titleOfSeccondTextButton == null) ? Container() : textButton(),
+            (titleOfSeccondTextButton == null)
+                ? Container()
+                : textButton(context),
           ],
         ),
       ),
@@ -74,11 +80,15 @@ class AuthGridCard extends DevExamStatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
       );
 
-  Widget textButton() {
+  Widget textButton(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(10),
       alignment: Alignment.bottomRight,
       child: FlutterTextButton(
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : null,
         wOpacity: true,
         opacityValue: .5,
         defaultSize: 16,
@@ -89,9 +99,12 @@ class AuthGridCard extends DevExamStatelessWidget {
     );
   }
 
-  BoxDecoration buildBoxDecoration() {
+  BoxDecoration buildBoxDecoration(BuildContext context) {
     return BoxDecoration(
-      color: Colors.white,
+      color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+              devExam.theme.dark
+          ? Colors.black
+          : Colors.white,
       border: Border.all(
         width: 0.1,
         color: darkColor,
@@ -101,7 +114,10 @@ class AuthGridCard extends DevExamStatelessWidget {
         BoxShadow(
           offset: Offset(0, 15),
           blurRadius: 15,
-          color: darkColor,
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? darkColor.withOpacity(.5)
+              : darkColor,
         ),
       ],
     );

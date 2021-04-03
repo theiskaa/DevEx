@@ -1,3 +1,4 @@
+import 'package:meta/meta.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 ///Box keys which were in localDb.
@@ -5,6 +6,7 @@ class LocalDbKeys {
   LocalDbKeys._();
   static const String suggestionListKey = "suggestionsList";
   static const String languageCode = 'languageCode';
+  static const String darkTheme = "isDarkThemeEnabled";
 }
 
 /// Custom service class for controlle local database.
@@ -57,4 +59,11 @@ class LocalDbService {
         _preferences.getStringList(LocalDbKeys.suggestionListKey);
     return list;
   }
+
+  /// Change and save Dark theme boolean.
+  Future<bool> setTheme({@required bool isDark}) async =>
+      await _preferences.setBool(LocalDbKeys.darkTheme, isDark);
+
+  /// Get current theme by bool, (when theme is dark bool would be `true`).
+  Future<bool> getTheme() async => _preferences.getBool(LocalDbKeys.darkTheme);
 }

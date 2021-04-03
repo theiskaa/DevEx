@@ -1,3 +1,4 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -92,7 +93,6 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: langFAB(),
-      backgroundColor: Colors.white,
       body: BlocListener<LoginCubit, LoginState>(
         listener: (context, state) {
           final errorMessage = AuthExceptionHandler.generateExceptionMessage(
@@ -103,6 +103,7 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
           if (state.status != AuthStatus.successful &&
               state.formzStatus.isSubmissionFailure) {
             showSnack(
+              devExam: devExam,
               context: context,
               title: "$errorMessage",
               color: devExam.theme.darkExamBlue,
@@ -182,7 +183,10 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
         defaultSize: 17,
         pressedSize: 16,
         opacityValue: .5,
-        color: Colors.black,
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : Colors.black,
         title: devExam.intl.of(context).fmt('auth.forgotPassword'),
         onTap: () => Navigator.push(
           context,
@@ -198,7 +202,6 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
     return Text(
       "Dev Ex",
       style: TextStyle(
-        color: Colors.black,
         fontWeight: FontWeight.w900,
         fontSize: 50,
       ),
@@ -261,8 +264,16 @@ class _EmailField extends DevExamStatelessWidget {
           errorText: state.email.invalid
               ? devExam.intl.of(context).fmt('account.create.invalidForm')
               : null,
-          suggestionBoxDecoration: buildSuggestionBoxDecoration(),
-          suggestionItemStyle: buildSuggestionItemStyle(),
+          suggestionBoxDecoration:
+              BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? buildSuggestionBoxDecorationDark()
+                  : buildSuggestionBoxDecorationLight(),
+          suggestionItemStyle:
+              BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                      devExam.theme.dark
+                  ? buildSuggestionItemStyleDark()
+                  : buildSuggestionItemStyleLight(),
           onTap: () {
             context.read<LoginCubit>().emailChanged(emailTextController.text);
           },
@@ -277,7 +288,7 @@ class _EmailField extends DevExamStatelessWidget {
     );
   }
 
-  BoxDecoration buildSuggestionBoxDecoration() {
+  BoxDecoration buildSuggestionBoxDecorationLight() {
     return BoxDecoration(
       color: Colors.white,
       borderRadius: BorderRadius.circular(10),
@@ -293,13 +304,40 @@ class _EmailField extends DevExamStatelessWidget {
     );
   }
 
-  SuggestionItemStyle buildSuggestionItemStyle() {
+  BoxDecoration buildSuggestionBoxDecorationDark() {
+    return BoxDecoration(
+      color: devExam.theme.dark.scaffoldBackgroundColor,
+      borderRadius: BorderRadius.circular(10),
+      border: Border.all(color: devExam.theme.darkExamBlue, width: 0.5),
+      boxShadow: [
+        BoxShadow(
+          spreadRadius: 10,
+          offset: Offset(0, 5),
+          color: devExam.theme.darkExamBlue.withOpacity(.3),
+          blurRadius: 10,
+        )
+      ],
+    );
+  }
+
+  SuggestionItemStyle buildSuggestionItemStyleLight() {
     return SuggestionItemStyle(
       backgroundColor: Colors.grey[100],
       icon: Icons.clear,
       iconColor: Colors.red,
       iconSize: 20,
       titleStyle: TextStyle(color: Colors.black),
+      borderRadius: const BorderRadius.all(Radius.circular(5)),
+    );
+  }
+
+  SuggestionItemStyle buildSuggestionItemStyleDark() {
+    return SuggestionItemStyle(
+      backgroundColor: Colors.black,
+      icon: Icons.clear,
+      iconColor: Colors.red,
+      iconSize: 20,
+      titleStyle: TextStyle(color: Colors.white),
       borderRadius: const BorderRadius.all(Radius.circular(5)),
     );
   }
@@ -363,6 +401,7 @@ class _LoginButton extends DevExamStatelessWidget {
       onTap: () async {
         if (showNoInternet) {
           showSnack(
+            devExam: devExam,
             context: context,
             title: devExam.intl.of(context).fmt('attention.noConnection'),
             color: devExam.theme.errorBg,
@@ -379,6 +418,7 @@ class _LoginButton extends DevExamStatelessWidget {
             context.read<LoginCubit>().loginWEP(suggestionList);
           } else {
             showSnack(
+              devExam: devExam,
               context: context,
               title: devExam.intl.of(context).fmt('message.invalidFormz'),
               color: devExam.theme.accentExamBlue,

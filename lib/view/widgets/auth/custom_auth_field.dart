@@ -34,44 +34,13 @@ class CustomAuthField extends DevExamStatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      style: TextStyle(color: Colors.black, fontSize: 18),
-      cursorColor: darkColor,
+      decoration: InputDecoration(hintText: hint, errorText: errorText),
       obscureText: (obscureText != null) ? obscureText : false,
-      decoration: buildInputDecoration(),
       validator: validator,
       onChanged: onChanged,
       controller: controller,
       keyboardType: textInputType,
       inputFormatters: formatters,
-    );
-  }
-
-  InputDecoration buildInputDecoration() {
-    return InputDecoration(
-      errorText: errorText,
-      hintText: hint,
-      errorStyle: TextStyle(color: Colors.red),
-      hintStyle: TextStyle(
-        color: Colors.black.withOpacity(.8),
-        fontSize: 18,
-      ),
-      suffixIcon: sufixIcon,
-      focusedBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: darkColor),
-      ),
-      enabledBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: Colors.black),
-      ),
-      errorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(width: 2, color: Colors.red),
-      ),
-      focusedErrorBorder: UnderlineInputBorder(
-        borderSide: BorderSide(
-          width: 2,
-          color: Colors.red,
-        ),
-      ),
-      enabled: true,
     );
   }
 }

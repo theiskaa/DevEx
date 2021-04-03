@@ -48,9 +48,9 @@ class ProfileItemCard extends DevExamStatelessWidget {
       style: TextStyle(
         color: minVal == true
             ? snapshot.data.docs.length != 10
-                ? Colors.black
+                ? null
                 : Colors.red[700]
-            : Colors.black,
+            : null,
         fontSize: 18,
         fontWeight: FontWeight.bold,
       ),
@@ -62,7 +62,6 @@ class ProfileItemCard extends DevExamStatelessWidget {
         child: Text(
           "0",
           style: TextStyle(
-            color: Colors.black,
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
@@ -73,7 +72,6 @@ class ProfileItemCard extends DevExamStatelessWidget {
         type,
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: Colors.black.withOpacity(.8),
           fontSize: 11,
           fontWeight: FontWeight.bold,
         ),

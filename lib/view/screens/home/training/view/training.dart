@@ -1,5 +1,7 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 
 import '../../../../../core/services/user_service.dart';
@@ -162,7 +164,6 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
     //
     return WillPopScope(
       child: Scaffold(
-        backgroundColor: Colors.white,
         appBar: buildAppBar(context),
         body: buildSingleChildScrollView(),
         floatingActionButtonLocation:
@@ -208,36 +209,45 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
   }
 
   Widget buildImageContainer() {
-    return OpacityButton(
-      opacityValue: .5,
-      onTap: () {
-        if (data[1][currentQuestionIndex.toString()]["img"] !=
-            "assets/img/none.png") {
-          Navigator.of(context).push(
-            PageRouteBuilder(
-              opaque: false,
-              pageBuilder: (
-                BuildContext context,
-                _,
-                __,
-              ) =>
-                  FullscreenImage(
-                image: data[1][currentQuestionIndex.toString()]["img"],
+    if (data[1][currentQuestionIndex.toString()]["img"] ==
+            "assets/img/none.png" ||
+        data[1][currentQuestionIndex.toString()]["img"] == " ") {
+      return SizedBox(height: 0, width: 0);
+    } else {
+      return OpacityButton(
+        opacityValue: .5,
+        onTap: () {
+          if (data[1][currentQuestionIndex.toString()]["img"] !=
+              "assets/img/none.png") {
+            Navigator.of(context).push(
+              PageRouteBuilder(
+                opaque: false,
+                pageBuilder: (
+                  BuildContext context,
+                  _,
+                  __,
+                ) =>
+                    FullscreenImage(
+                  image: data[1][currentQuestionIndex.toString()]["img"],
+                ),
               ),
-            ),
-          );
-        }
-      },
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: Container(
-          child: ClipRRect(
-            child: Image.asset(data[1][currentQuestionIndex.toString()]["img"]),
-            borderRadius: BorderRadius.circular(30),
-          ),
+            );
+          }
+        },
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16),
+          child: (data[1][currentQuestionIndex.toString()]["img"] != null)
+              ? Container(
+                  child: ClipRRect(
+                    child: Image.asset(
+                        data[1][currentQuestionIndex.toString()]["img"]),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                )
+              : SizedBox.shrink(),
         ),
-      ),
-    );
+      );
+    }
   }
 
   Column buildAnswerButtons() {
@@ -303,32 +313,28 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
   }
 
   double getSizeOfAppBarTitle(BuildContext context) {
-    if (devExam.intl.of(context).fmt('lang') == "az") {
+    if (devExam.intl.of(context).fmt('lang') == "en") {
       return 20;
     } else if (devExam.intl.of(context).fmt('lang') == "ru") {
       return 18;
     } else {
-      return null;
+      return 18;
     }
   }
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       elevation: 0,
       title: Text(
         "$currentQuestionIndex/$allQuestionsLenght",
         style: TextStyle(
-          color: Colors.black,
           fontSize: getSizeOfAppBarTitle(context),
         ),
       ),
       leading: OpacityButton(
           opacityValue: .3,
-          child: Icon(
-            Icons.close,
-            color: Colors.black,
-          ),
+          child: Icon(Icons.close),
           onTap: () {
             showDialog(
               context: context,
@@ -339,17 +345,20 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
         questionIsSaved
             ? Icon(
                 Icons.save_alt_rounded,
-                color: Colors.black.withOpacity(.5),
+                color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                        devExam.theme.dark
+                    ? Colors.white.withOpacity(.5)
+                    : Colors.black.withOpacity(.5),
               )
             : OpacityButton(
                 opacityValue: .3,
                 child: Icon(
                   Icons.save_alt_rounded,
-                  color: Colors.black,
                 ),
                 onTap: () {
                   if (widget.isAbleToSaveQ == false) {
                     showSnack(
+                      devExam: devExam,
                       context: context,
                       sec: 6,
                       title: devExam.intl
@@ -360,6 +369,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                   } else {
                     if (_showNoInternet) {
                       showSnack(
+                        devExam: devExam,
                         context: context,
                         title: devExam.intl
                             .of(context)
@@ -390,7 +400,6 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
           opacityValue: .3,
           child: Icon(
             Icons.description,
-            color: Colors.black,
           ),
           onTap: () => Navigator.of(context).push(
             PageRouteBuilder(
@@ -414,10 +423,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
   AlertDialog buildAlertDialog() {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
-        ),
+        borderRadius: BorderRadius.circular(20),
       ),
       title: Text(
         "${devExam.intl.of(context).fmt('test.wannaPassTest')}",
@@ -426,7 +432,10 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
           ? Text(
               "${devExam.intl.of(context).fmt('test.saved..')} ${savedQuestionList[0].length} ${devExam.intl.of(context).fmt('..test.questions')}",
               style: TextStyle(
-                color: Colors.black.withOpacity(.7),
+                color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                        devExam.theme.dark
+                    ? Colors.white.withOpacity(.9)
+                    : Colors.black.withOpacity(.7),
               ),
             )
           : SizedBox(height: 0),
@@ -482,6 +491,7 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                   } else {
                     Navigator.pop(context);
                     showSnack(
+                      devExam: devExam,
                       context: context,
                       title:
                           "Couldn't created new custom category please check your internet connection, and try later.",
@@ -491,7 +501,13 @@ class _TrainingScreenState extends DevExamState<TrainingScreen> {
                 },
                 child: Text(
                   "${devExam.intl.of(context).fmt('test.act.createBack')}",
-                  style: TextStyle(color: devExam.theme.darkTestPurple),
+                  style: TextStyle(
+                    color:
+                        BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                                devExam.theme.dark
+                            ? Colors.white
+                            : devExam.theme.darkTestPurple,
+                  ),
                 ),
               )
             : SizedBox(height: 0),
