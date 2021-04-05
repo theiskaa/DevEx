@@ -26,7 +26,7 @@
   "authStatus.currentPasswordIsIncorrect": "The current password is incorrect",
   "authStatus.weakPassword": "Weak password",
 
-  "auth.signIn": "Sing In",
+  "auth.signIn": "Sign In",
   "auth.signUp": "Sign Up",
   "auth.forgotPassword": "Forgot password?",
   "auth.sendPasswordResetMail": "Send password reset email",

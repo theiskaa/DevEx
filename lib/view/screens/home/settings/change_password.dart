@@ -99,8 +99,7 @@ class _ChangePasswordViewState extends DevExamState<ChangePasswordView> {
           if (state.status != AuthStatus.successful &&
               state.formzStatus.isSubmissionFailure) {
             showSnack(
-                            devExam: devExam,
-
+              devExam: devExam,
               context: context,
               title: "$errorMessage",
               color: devExam.theme.darkExamBlue,
@@ -246,8 +245,7 @@ class __ChangePasswordButtonState extends DevExamState<_ChangePasswordButton> {
       onTap: () async {
         if (widget.showNoInternet) {
           showSnack(
-                          devExam: devExam,
-
+            devExam: devExam,
             context: context,
             title: devExam.intl.of(context).fmt('attention.noConnection'),
             color: Colors.red[700],
@@ -255,8 +253,7 @@ class __ChangePasswordButtonState extends DevExamState<_ChangePasswordButton> {
         } else {
           if (widget.currentPassword == widget.newPassword) {
             showSnack(
-                            devExam: devExam,
-
+              devExam: devExam,
               context: context,
               title: devExam.intl.of(context).fmt('authStatus.samePasswords'),
               color: Colors.red[700],
@@ -277,8 +274,7 @@ class __ChangePasswordButtonState extends DevExamState<_ChangePasswordButton> {
                     );
               } else {
                 showSnack(
-                                devExam: devExam,
-
+                  devExam: devExam,
                   context: context,
                   title: devExam.intl
                       .of(context)
@@ -288,8 +284,7 @@ class __ChangePasswordButtonState extends DevExamState<_ChangePasswordButton> {
               }
             } else {
               showSnack(
-                              devExam: devExam,
-
+                devExam: devExam,
                 context: context,
                 title: devExam.intl.of(context).fmt('message.invalidFormz'),
                 color: devExam.theme.errorBg,

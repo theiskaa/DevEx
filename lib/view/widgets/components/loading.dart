@@ -1,4 +1,6 @@
+import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -11,14 +13,17 @@ class Loading extends DevExamStatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(context),
-      body: buildLoading(),
+      body: buildLoading(context),
     );
   }
 
-  Center buildLoading() {
+  Center buildLoading(BuildContext context) {
     return Center(
       child: SpinKitSquareCircle(
-        color: Colors.black,
+        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                devExam.theme.dark
+            ? Colors.white
+            : Colors.black,
         size: 70,
       ),
     );
@@ -27,10 +32,16 @@ class Loading extends DevExamStatelessWidget {
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
       elevation: 0,
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.transparent,
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(Icons.arrow_back_ios, color: Colors.black),
+        child: Icon(
+          Icons.arrow_back_ios,
+          color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                  devExam.theme.dark
+              ? Colors.white
+              : Colors.black,
+        ),
         onTap: () => Navigator.pop(context),
       ),
     );

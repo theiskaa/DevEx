@@ -27,7 +27,7 @@ class FireAuthService {
   }
 
   /// Get user by `currentUser` property
-  User getCurrentUser() {
+  User get currentUser {
     User user = firebaseAuth.currentUser;
     return user;
   }

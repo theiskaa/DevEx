@@ -267,19 +267,19 @@ class _EmailField extends DevExamStatelessWidget {
           suggestionBoxDecoration:
               BlocProvider.of<ThemeBloc>(context).state.themeData ==
                       devExam.theme.dark
-                  ? buildSuggestionBoxDecorationDark()
-                  : buildSuggestionBoxDecorationLight(),
+                  ? buildSuggestionBoxDecoration(
+                      devExam.theme.dark.scaffoldBackgroundColor,
+                    )
+                  : buildSuggestionBoxDecoration(Colors.white),
           suggestionItemStyle:
               BlocProvider.of<ThemeBloc>(context).state.themeData ==
                       devExam.theme.dark
-                  ? buildSuggestionItemStyleDark()
-                  : buildSuggestionItemStyleLight(),
+                  ? buildSuggestionItemStyle(Colors.black, Colors.white)
+                  : buildSuggestionItemStyle(Colors.grey[100], Colors.black),
           onTap: () {
             context.read<LoginCubit>().emailChanged(emailTextController.text);
           },
-          onIconTap: () async {
-            await localDbService.saveSuggestionList(suggestionList);
-          },
+          onIconTap: () => localDbService.saveSuggestionList(suggestionList),
           onChanged: (val) {
             context.read<LoginCubit>().emailChanged(val);
           },
@@ -288,9 +288,9 @@ class _EmailField extends DevExamStatelessWidget {
     );
   }
 
-  BoxDecoration buildSuggestionBoxDecorationLight() {
+  BoxDecoration buildSuggestionBoxDecoration(Color color) {
     return BoxDecoration(
-      color: Colors.white,
+      color: color,
       borderRadius: BorderRadius.circular(10),
       border: Border.all(color: devExam.theme.darkExamBlue, width: 0.5),
       boxShadow: [
@@ -304,40 +304,13 @@ class _EmailField extends DevExamStatelessWidget {
     );
   }
 
-  BoxDecoration buildSuggestionBoxDecorationDark() {
-    return BoxDecoration(
-      color: devExam.theme.dark.scaffoldBackgroundColor,
-      borderRadius: BorderRadius.circular(10),
-      border: Border.all(color: devExam.theme.darkExamBlue, width: 0.5),
-      boxShadow: [
-        BoxShadow(
-          spreadRadius: 10,
-          offset: Offset(0, 5),
-          color: devExam.theme.darkExamBlue.withOpacity(.3),
-          blurRadius: 10,
-        )
-      ],
-    );
-  }
-
-  SuggestionItemStyle buildSuggestionItemStyleLight() {
+  SuggestionItemStyle buildSuggestionItemStyle(Color color, Color titleColor) {
     return SuggestionItemStyle(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: color,
       icon: Icons.clear,
       iconColor: Colors.red,
       iconSize: 20,
-      titleStyle: TextStyle(color: Colors.black),
-      borderRadius: const BorderRadius.all(Radius.circular(5)),
-    );
-  }
-
-  SuggestionItemStyle buildSuggestionItemStyleDark() {
-    return SuggestionItemStyle(
-      backgroundColor: Colors.black,
-      icon: Icons.clear,
-      iconColor: Colors.red,
-      iconSize: 20,
-      titleStyle: TextStyle(color: Colors.white),
+      titleStyle: TextStyle(color: titleColor),
       borderRadius: const BorderRadius.all(Radius.circular(5)),
     );
   }

@@ -28,7 +28,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
       try {
         theme = await switchTheme(true, theme);
       } catch (e) {
-        Log.d("Couldn't changed theme to Dark");
+       print("Couldn't changed theme to Dark");
       }
     }
 
@@ -38,7 +38,7 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
       try {
         theme = await switchTheme(false, theme);
       } catch (e) {
-        Log.d("Couldn't changed theme to Light");
+        print("Couldn't changed theme to Light");
       }
     }
     yield theme;
@@ -58,14 +58,14 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
   Future<ThemeState> decideTheme(ThemeState theme) async {
     var db = await LocalDbService.instance;
     bool isDark = await db.getTheme();
-    Log.d("================ ===$isDark=== ================");
 
     if (isDark == false) {
       theme = ThemeState(themeData: devExam.theme.light);
     } else if (isDark == true) {
       theme = ThemeState(themeData: devExam.theme.dark);
+    } else {
+      theme = ThemeState(themeData: devExam.theme.light);
     }
     return theme;
   }
-  
 }

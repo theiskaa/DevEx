@@ -17,7 +17,7 @@ class ExamHistory {
         assert(person != null);
 
   ExamHistory.fromJson(Map<String, dynamic> json) {
-    correctAnswersCount = json['assert(date != null);'];
+    correctAnswersCount = json['correctAnswersCount'];
     incorrectAnswersCount = json['incorrectAnswersCount'];
     date = json['date'];
     person = json['personID'];

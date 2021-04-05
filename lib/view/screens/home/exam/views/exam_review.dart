@@ -263,9 +263,7 @@ class _ExamReviewState extends DevExamState<ExamReview> {
       ),
       leading: OpacityButton(
         opacityValue: .3,
-        child: Icon(
-          Icons.close,
-        ),
+        child: Icon(Icons.close),
         onTap: () => showDialog(
           context: context,
           builder: (context) => buildAlertDialog(),

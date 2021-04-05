@@ -52,9 +52,7 @@ class ExamInfo extends DevExamStatelessWidget {
     return Text(
       info,
       textAlign: TextAlign.center,
-      style: TextStyle(
-        fontSize: 23,
-      ),
+      style: TextStyle(fontSize: 23),
     );
   }
 

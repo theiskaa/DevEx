@@ -4,60 +4,41 @@ import 'package:flutter/material.dart';
 
 import '../components/widgets.dart';
 
-/// Create a Circular Countdown Timer.
 class CircularCountDownTimer extends DevExamStatefulWidget {
-  /// Key for Countdown Timer.
   final Key key;
 
-  /// Filling Color for Countdown Widget.
   final Color fillColor;
 
-  /// Ring Color for Countdown Widget.
   final Color color;
 
-  /// Background Color for Countdown Widget.
   final Color backgroundColor;
 
-  /// This Callback will execute when the Countdown Ends.
   final VoidCallback onComplete;
 
-  /// This Callback will execute when the Countdown Starts.
   final VoidCallback onStart;
 
-  /// Countdown duration in Seconds.
   final int duration;
 
-  /// Width of the Countdown Widget.
   final double width;
 
-  /// Height of the Countdown Widget.
   final double height;
 
-  /// Border Thickness of the Countdown Ring.
   final double strokeWidth;
 
-  /// Begin and end contours with a flat edge and no extension.
   final StrokeCap strokeCap;
 
-  /// Text Style for Countdown Text.
   final TextStyle textStyle;
 
-  /// Format for the Countdown Text.
   final String textFormat;
 
-  /// Handles Countdown Timer (true for Reverse Countdown (max to 0), false for Forward Countdown (0 to max)).
   final bool isReverse;
 
-  /// Handles Animation Direction (true for Reverse Animation, false for Forward Animation).
   final bool isReverseAnimation;
 
-  /// Handles visibility of the Countdown Text.
   final bool isTimerTextShown;
 
-  /// Controls (i.e Start, Pause, Resume, Restart) the Countdown Timer.
   final CountDownController controller;
 
-  /// Handles the timer start.
   final bool autoStart;
 
   CircularCountDownTimer(
@@ -134,19 +115,13 @@ class CircularCountDownTimerState extends DevExamState<CircularCountDownTimer>
   }
 
   String _getTime(Duration duration) {
-    // For HH:mm:ss format
     if (widget.textFormat == CountdownTextFormat.HH_MM_SS) {
       return '${duration.inHours.toString().padLeft(2, '0')}:${(duration.inMinutes % 60).toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
-    }
-    // For mm:ss format
-    else if (widget.textFormat == CountdownTextFormat.MM_SS) {
+    } else if (widget.textFormat == CountdownTextFormat.MM_SS) {
       return '${(duration.inMinutes % 60).toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
-    }
-    // For ss format
-    else if (widget.textFormat == CountdownTextFormat.SS) {
+    } else if (widget.textFormat == CountdownTextFormat.SS) {
       return '${(duration.inSeconds)}';
     } else {
-      // Default format
       return _defaultFormat(duration);
     }
   }
@@ -191,13 +166,9 @@ class CircularCountDownTimerState extends DevExamState<CircularCountDownTimer>
           _onComplete();
           break;
         case AnimationStatus.completed:
-
-          /// [AnimationController]'s value is manually set to [1.0] that's why [AnimationStatus.completed] is invoked here this animation is [isReverse]
-          /// Only call the [_onComplete] block when the animation is not reversed.
           if (!widget.isReverse) _onComplete();
           break;
         default:
-        // Do nothing
       }
     });
 
@@ -259,12 +230,10 @@ class CircularCountDownTimerState extends DevExamState<CircularCountDownTimer>
   }
 }
 
-/// Controls (i.e Start, Pause, Resume, Restart) the Countdown Timer.
 class CountDownController {
   CircularCountDownTimerState _state;
   bool _isReverse;
 
-  /// This Method Starts the Countdown Timer
   void start() {
     if (_isReverse) {
       _state._controller?.reverse(from: 1);
@@ -273,12 +242,10 @@ class CountDownController {
     }
   }
 
-  /// This Method Pauses the Countdown Timer
   void pause() {
     _state._controller?.stop(canceled: false);
   }
 
-  /// This Method Resumes the Countdown Timer
   void resume() {
     if (_isReverse) {
       _state._controller?.reverse(from: _state._controller.value);
@@ -286,9 +253,6 @@ class CountDownController {
       _state._controller?.forward(from: _state._controller.value);
     }
   }
-
-  /// This Method Restarts the Countdown Timer,
-  /// Here optional int parameter **duration** is the updated duration for countdown timer
 
   void restart({int duration}) {
     _state._controller.duration =
@@ -299,9 +263,6 @@ class CountDownController {
       _state._controller?.forward(from: 0);
     }
   }
-
-  /// This Method returns the **Current Time** of Countdown Timer i.e
-  /// Time Used in terms of **Forward Countdown** and Time Left in terms of **Reverse Countdown**
 
   String getTime() {
     return _state

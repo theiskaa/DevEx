@@ -128,9 +128,7 @@ class _TheCorrectAnswerState extends DevExamState<TheCorrectAnswer> {
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
       leading: IconButton(
-        icon: Icon(
-          Icons.clear,
-        ),
+        icon: Icon(Icons.clear),
         onPressed: () => Navigator.pop(context),
       ),
       elevation: 0,

@@ -90,7 +90,9 @@ class _MyAppState extends DevExamState<MyApp> {
   }
 
   PerceptiveWidget materialApp(
-      LocalizationState localizationState, ThemeState themeState) {
+    LocalizationState localizationState,
+    ThemeState themeState,
+  ) {
     return PerceptiveWidget(
       child: MaterialApp(
         theme: themeState.themeData,

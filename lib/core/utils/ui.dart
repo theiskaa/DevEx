@@ -83,12 +83,7 @@ void showSnack({
   final snack = SnackBar(
     content: Text(
       title,
-      style: TextStyle(
-        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
-                devExam.theme.dark
-            ? Colors.white
-            : Colors.white,
-      ),
+      style: TextStyle(color: Colors.white),
     ),
     duration: Duration(seconds: (sec != null) ? sec : 3),
     margin: isFloating ? EdgeInsets.all(8) : null,
