@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/blocs/design/designprefs_bloc.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/view/widgets/test-exam/question_search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -53,28 +54,24 @@ class TestSplash extends DevExamStatefulWidget {
 class _TestSplashState extends DevExamState<TestSplash> {
   var data;
   _TestSplashState({this.data});
-
+  final _questionSearchFieldController = TextEditingController();
   final _connection = ConnectivityObserver();
   bool _showNoInternet = false;
 
   List<dynamic> allQuestions;
-
   Stream<QuerySnapshot> customCategorysStream;
-
   String lenghtOfSavedQuestions;
+
   @override
   void initState() {
     super.initState();
+    BlocProvider.of<DesignprefsBloc>(context).add(DecideDesignPrefs());
     customCategorysStream = usersRef
         .doc(widget.userID)
         .collection('savedQuestions')
         .orderBy("date", descending: true)
         .snapshots();
     allQuestions = data[1].keys.toList();
-
-    BlocProvider.of<DesignprefsBloc>(context).add(DecideDesignPrefs());
-    print(
-        BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled);
     _connection.offlineAction = showError;
     _connection.onlineAction = hideError;
     _connection.connectionTest();
@@ -85,6 +82,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
     if (_connection.timerHandler != null) {
       _connection.timerHandler.cancel();
     }
+    _questionSearchFieldController.dispose();
     super.dispose();
   }
 
@@ -151,6 +149,11 @@ class _TestSplashState extends DevExamState<TestSplash> {
         BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled ==
                 true
             ? searchQuestionDropDown()
+            : SizedBox.shrink(),
+        SizedBox(height: 10),
+        BlocProvider.of<DesignprefsBloc>(context).state.isFieldSearchEnabled ==
+                true
+            ? searchQuestionField()
             : SizedBox.shrink(),
         customCategoriesCard(),
         SizedBox(height: 15),
@@ -264,16 +267,40 @@ class _TestSplashState extends DevExamState<TestSplash> {
     );
   }
 
-  AppBar buildAppBar(BuildContext context) {
-    return AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      leading: OpacityButton(
-        opacityValue: .3,
-        child: Icon(Icons.arrow_back_ios),
-        onTap: () => Navigator.pop(context),
+  Widget searchQuestionField() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 53),
+      child: QuestionSearchField(
+        onSubmitted: getRightIdAndNavigate,
+        controller: _questionSearchFieldController,
+        questionsLength: "max/${allQuestions.length}",
       ),
     );
+  }
+
+  void getRightIdAndNavigate() {
+    if (_questionSearchFieldController.text != null) {
+      var id;
+      int val = int.parse(_questionSearchFieldController.text);
+      if (val == 0) {
+        id = 1;
+      } else if (val >= allQuestions.length) {
+        id = allQuestions.length;
+      } else {
+        id = val;
+      }
+
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (context) => GetJsonForTraining(
+            id: devExam.intl.of(context).fmt('lang'),
+            questionIndex: id,
+            userID: widget.userID,
+            isAbleToSaveQ: isAbleToSaveQuestion(),
+          ),
+        ),
+      );
+    }
   }
 
   Column categories() {
@@ -298,6 +325,18 @@ class _TestSplashState extends DevExamState<TestSplash> {
               )
             : SizedBox(height: 0),
       ],
+    );
+  }
+
+  AppBar buildAppBar(BuildContext context) {
+    return AppBar(
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      leading: OpacityButton(
+        opacityValue: .3,
+        child: Icon(Icons.arrow_back_ios),
+        onTap: () => Navigator.pop(context),
+      ),
     );
   }
 }
