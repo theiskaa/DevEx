@@ -48,6 +48,9 @@
   "settings.langRUS": "Pусский",
   "settings.designPrefs": "Design preferences",
 
+  "designPrefs.searchQuestionByScroll": "Search question by id with drop down list",
+  "designPrefs.searchQuestionByField": "Search Question with field by question id",
+
   "changeUsername.title": "Change username",
   "changeUsername.success": "Username has been changed succesfully",
   "changeUsername.error": "We faced with some problems when trying to change password, please try again.",
@@ -81,6 +84,7 @@
   "timestap.weekLater": " weeks ago",
 
   "category.searchByIndex": "Seach question by index id",
+  "category.searchByTypeID": "Enter the question id",
   "category.customs": "Custom categories",
   "category.1": "General",
   "test.info.title": "Get ready for exam with traning there",
@@ -104,6 +108,6 @@
   "examResult.title": "Exam History",
   "examResult.correctAnswers": "Correct answers",
   "examResult.incorrectAnswers": "Incorrect answers",
-  "examResult.reviewIncorrectAnswers": "Review the wrong answers", 
+  "examResult.reviewIncorrectAnswers": "Review the wrong answers",
   "examResult.langType": "Exam language"
 }

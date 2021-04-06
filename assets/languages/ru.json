@@ -48,6 +48,9 @@
   "settings.langRUS": "Pусский",
   "settings.designPrefs": "Выбор дизайна",
 
+  "designPrefs.searchQuestionByScroll": "Поиск вопроса по идентификатору с выпадающим списком",
+  "designPrefs.searchQuestionByField": "Поиск вопроса с полем по идентификатору вопроса",
+
   "changeUsername.title": "Измените ваше имя пользователя",
   "changeUsername.success": "Ваше имя пользователя было успешно изменено",
   "changeUsername.error": "У нас возникла проблема с изменением вашего имени пользователя. Повторите попытку позже.",
@@ -81,6 +84,7 @@
   "timestap.weekLater": " Недели назад",
 
   "category.searchByIndex": "Искать вопрос по индексу",
+  "category.searchByTypeID": "Bведите идентификатор вопроса",
   "category.customs": "Особые категории",
   "category.1": "Общие",
   "test.info.title": "Подготовьтесь к экзамену с помощью теста",

@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
+import 'package:devexam/view/screens/home/settings/design_preferences.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
 import 'package:devexam/view/widgets/settings/setting_tile.dart';
 import 'package:flutter/cupertino.dart';
@@ -158,7 +159,12 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
           iconCardcolor: Color(0xff2896FF),
           icon: Icons.design_services_rounded,
           title: devExam.intl.of(context).fmt('settings.designPrefs'),
-          onTap: () {},
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => DesignPreferences(),
+            ),
+          ),
         ),
       ],
     );

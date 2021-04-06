@@ -1,10 +1,9 @@
 import 'package:bloc/bloc.dart';
+import 'package:devexam/core/services/fire_auth_service.dart';
+import 'package:devexam/core/utils/fire_exception_hander.dart';
+import 'package:devexam/core/utils/validators.dart';
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
-
-import '../../services/fire_auth_service.dart';
-import '../../utils/fire_exception_hander.dart';
-import '../../utils/validators.dart';
 
 part 'register_state.dart';
 

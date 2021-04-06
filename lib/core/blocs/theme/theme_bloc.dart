@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:devexam/core/services/local_db_service.dart';
 import 'package:devexam/core/system/devexam.dart';
-import 'package:devexam/core/system/log.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 

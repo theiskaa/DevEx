@@ -6,14 +6,22 @@ import '../components/widgets.dart';
 
 class SearchQuestionDropDown extends DevExamStatelessWidget {
   final Widget child;
-  SearchQuestionDropDown({Key key, @required this.child}) : super(key: key);
+  final double radius;
+  final double horizontalPadding;
+
+  SearchQuestionDropDown({
+    Key key,
+    @required this.child,
+    this.radius = 20,
+    this.horizontalPadding = 40,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) =>
       DecoratedBox(decoration: buildDecoration(context), child: buildChild());
 
   Padding buildChild() =>
-      Padding(padding: EdgeInsets.symmetric(horizontal: 40), child: child);
+      Padding(padding: EdgeInsets.symmetric(horizontal: horizontalPadding), child: child);
 
   ShapeDecoration buildDecoration(BuildContext context) {
     return ShapeDecoration(
@@ -27,7 +35,7 @@ class SearchQuestionDropDown extends DevExamStatelessWidget {
               ? devExam.theme.accentTestPurple
               : devExam.theme.darkTestPurple,
         ),
-        borderRadius: BorderRadius.all(Radius.circular(20)),
+        borderRadius: BorderRadius.all(Radius.circular(radius)),
       ),
     );
   }
