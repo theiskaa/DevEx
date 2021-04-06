@@ -1,3 +1,5 @@
+import 'package:devexam/core/blocs/authentication/auth/auth_bloc.dart';
+import 'package:devexam/core/blocs/authentication/login/login_cubit.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -6,9 +8,7 @@ import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 
-import '../../../core/blocs/auth/auth_bloc.dart';
 import '../../../core/blocs/localization/localization_bloc.dart';
-import '../../../core/blocs/login/login_cubit.dart';
 import '../../../core/models/user.dart';
 import '../../../core/services/fire_auth_service.dart';
 import '../../../core/services/local_db_service.dart';

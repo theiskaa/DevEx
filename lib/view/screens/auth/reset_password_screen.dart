@@ -1,3 +1,4 @@
+import 'package:devexam/core/blocs/authentication/reset-password/resetpassword_cubit.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -6,7 +7,6 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 
 import '../../../core/blocs/localization/localization_bloc.dart';
-import '../../../core/blocs/reset-password/resetpassword_cubit.dart';
 import '../../../core/services/user_service.dart';
 import '../../../core/system/intl.dart';
 import '../../../core/utils/connectivity.dart';

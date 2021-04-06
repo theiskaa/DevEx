@@ -1,10 +1,11 @@
+import 'package:devexam/core/blocs/design/designprefs_bloc.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'core/blocs/auth/auth_bloc.dart';
+import 'core/blocs/authentication/auth/auth_bloc.dart';
 import 'core/blocs/bloc_observer.dart';
 import 'core/blocs/localization/localization_bloc.dart';
 import 'core/services/fire_auth_service.dart';
@@ -69,6 +70,10 @@ class _MyAppState extends DevExamState<MyApp> {
         BlocProvider<ThemeBloc>(
           create: (context) => ThemeBloc(devExam)..add(DecideTheme()),
         ),
+        BlocProvider<DesignprefsBloc>(
+          create: (context) =>
+              DesignprefsBloc(devExam)..add(DecideDesignPrefs()),
+        ),
       ],
       child: appHead(),
     );
@@ -81,7 +86,11 @@ class _MyAppState extends DevExamState<MyApp> {
         builder: (context, localizationState) {
           return BlocBuilder<ThemeBloc, ThemeState>(
             builder: (context, themeState) {
-              return materialApp(localizationState, themeState);
+              return BlocBuilder<DesignprefsBloc, DesignprefsState>(
+                builder: (context, state) {
+                  return materialApp(localizationState, themeState);
+                },
+              );
             },
           );
         },

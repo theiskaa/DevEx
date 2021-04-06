@@ -1,10 +1,11 @@
+import 'package:devexam/core/blocs/authentication/auth/auth_bloc.dart';
+import 'package:devexam/core/blocs/authentication/reset-password/resetpassword_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
-import 'package:devexam/core/blocs/auth/auth_bloc.dart';
-import 'package:devexam/core/blocs/reset-password/resetpassword_cubit.dart';
+
 import 'package:devexam/core/models/user.dart';
 import 'package:devexam/core/services/fire_auth_service.dart';
 import 'package:devexam/core/services/user_service.dart';

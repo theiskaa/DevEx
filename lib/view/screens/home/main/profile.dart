@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:math';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/blocs/authentication/auth/auth_bloc.dart';
+import 'package:devexam/core/blocs/authentication/reset-password/resetpassword_cubit.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
 import 'package:devexam/view/screens/home/settings/setting_screen.dart';
@@ -13,9 +15,7 @@ import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 
-import '../../../../core/blocs/auth/auth_bloc.dart';
 import '../../../../core/blocs/localization/localization_bloc.dart';
-import '../../../../core/blocs/reset-password/resetpassword_cubit.dart';
 import '../../../../core/models/user.dart';
 import '../../../../core/services/fire_auth_service.dart';
 import '../../../../core/services/user_service.dart';

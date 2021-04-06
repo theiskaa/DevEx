@@ -7,9 +7,8 @@ class LocalDbKeys {
   static const String suggestionListKey = "suggestionsList";
   static const String languageCode = 'languageCode';
   static const String darkTheme = "isDarkThemeEnabled";
-  static const String scrollAndSearchQuestion =
-      "isScrollAndSearchQuestionEnabled";
-  static const String typeAndSearchQuestion = "istypeAndSearchQuestionEnabled";
+  static const String scrollSearchEnabled = "isScrollAndSearchQuestionEnabled";
+  static const String fieldSearchEnabled = "isFieldSearchQuestionEnabled";
 }
 
 /// Custom service class for controlle local database.

@@ -1,5 +1,5 @@
+import 'package:devexam/core/blocs/design/designprefs_bloc.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
-import 'package:devexam/core/services/local_db_service.dart';
 import 'package:devexam/core/utils/ui.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
 import 'package:devexam/view/widgets/settings/design_preferences_tile.dart';
@@ -31,9 +31,25 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
 
   @override
   void initState() {
-    _scrollSearchIndex = true;
-    _fieldSearchIndex = false;
+    decidePrefs();
     super.initState();
+  }
+
+  void decidePrefs() {
+    if (BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled !=
+        null) {
+      _scrollSearchIndex =
+          BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled;
+    } else {
+      _scrollSearchIndex = true;
+    }
+    if (BlocProvider.of<DesignprefsBloc>(context).state.isFieldSearchEnabled !=
+        null) {
+      _fieldSearchIndex =
+          BlocProvider.of<DesignprefsBloc>(context).state.isFieldSearchEnabled;
+    } else {
+      _scrollSearchIndex = false;
+    }
   }
 
   @override
@@ -66,7 +82,12 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
             : devExam.theme.darkTestPurple,
         value: _scrollSearchIndex,
         onChanged: (value) {
-          setState(() => _scrollSearchIndex = !_scrollSearchIndex);
+          setState(() => _scrollSearchIndex = value);
+          if (_scrollSearchIndex) {
+            BlocProvider.of<DesignprefsBloc>(context).add(DisbleScrollSearch());
+          } else if (_scrollSearchIndex == false) {
+            BlocProvider.of<DesignprefsBloc>(context).add(EnableScrollSearch());
+          }
         },
       ),
     );
@@ -83,7 +104,13 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
             : devExam.theme.darkTestPurple,
         value: _fieldSearchIndex,
         onChanged: (value) {
-          setState(() => _fieldSearchIndex = !_fieldSearchIndex);
+          setState(() => _fieldSearchIndex = value);
+          if (_fieldSearchIndex) {
+            BlocProvider.of<DesignprefsBloc>(context).add(DisbleFieldSearch());
+          } else if (_fieldSearchIndex == false) {
+            BlocProvider.of<DesignprefsBloc>(context).add(EnableFieldSearch());
+          }
+          decidePrefs();
         },
       ),
     );

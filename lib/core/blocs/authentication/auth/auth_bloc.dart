@@ -1,11 +1,10 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
+import 'package:devexam/core/models/user.dart';
+import 'package:devexam/core/services/fire_auth_service.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
-
-import '../../models/user.dart';
-import '../../services/fire_auth_service.dart';
 
 part 'auth_event.dart';
 part 'auth_state.dart';
