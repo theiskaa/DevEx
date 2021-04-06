@@ -7,6 +7,9 @@ class LocalDbKeys {
   static const String suggestionListKey = "suggestionsList";
   static const String languageCode = 'languageCode';
   static const String darkTheme = "isDarkThemeEnabled";
+  static const String scrollAndSearchQuestion =
+      "isScrollAndSearchQuestionEnabled";
+  static const String typeAndSearchQuestion = "istypeAndSearchQuestionEnabled";
 }
 
 /// Custom service class for controlle local database.
@@ -66,4 +69,11 @@ class LocalDbService {
 
   /// Get current theme by bool, (when theme is dark bool would be `true`).
   Future<bool> getTheme() async => _preferences.getBool(LocalDbKeys.darkTheme);
+
+  // Set value as custom LocalDbKey.
+  Future<bool> setValue(String key, bool value) async =>
+      await _preferences.setBool(key, value);
+
+  // Get value as custom localDbKey.
+  Future<bool> getValue(String key) async => _preferences.getBool(key);
 }
