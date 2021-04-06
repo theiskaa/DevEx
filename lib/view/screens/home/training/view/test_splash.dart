@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/core/blocs/design/designprefs_bloc.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -70,6 +71,10 @@ class _TestSplashState extends DevExamState<TestSplash> {
         .orderBy("date", descending: true)
         .snapshots();
     allQuestions = data[1].keys.toList();
+
+    BlocProvider.of<DesignprefsBloc>(context).add(DecideDesignPrefs());
+    print(
+        BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled);
     _connection.offlineAction = showError;
     _connection.onlineAction = hideError;
     _connection.connectionTest();
@@ -143,7 +148,10 @@ class _TestSplashState extends DevExamState<TestSplash> {
   Column buildCategories(BuildContext context) {
     return Column(
       children: [
-        searchQuestionDropDown(),
+        BlocProvider.of<DesignprefsBloc>(context).state.isScrollSearchEnabled ==
+                true
+            ? searchQuestionDropDown()
+            : SizedBox.shrink(),
         customCategoriesCard(),
         SizedBox(height: 15),
         divider(),

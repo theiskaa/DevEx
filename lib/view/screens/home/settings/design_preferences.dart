@@ -48,7 +48,7 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
       _fieldSearchIndex =
           BlocProvider.of<DesignprefsBloc>(context).state.isFieldSearchEnabled;
     } else {
-      _scrollSearchIndex = false;
+      _fieldSearchIndex = false;
     }
   }
 
@@ -84,9 +84,9 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
         onChanged: (value) {
           setState(() => _scrollSearchIndex = value);
           if (_scrollSearchIndex) {
-            BlocProvider.of<DesignprefsBloc>(context).add(DisbleScrollSearch());
-          } else if (_scrollSearchIndex == false) {
             BlocProvider.of<DesignprefsBloc>(context).add(EnableScrollSearch());
+          } else if (_scrollSearchIndex == false) {
+            BlocProvider.of<DesignprefsBloc>(context).add(DisbleScrollSearch());
           }
         },
       ),
@@ -106,11 +106,10 @@ class _DesignPreferencesState extends DevExamState<DesignPreferences> {
         onChanged: (value) {
           setState(() => _fieldSearchIndex = value);
           if (_fieldSearchIndex) {
-            BlocProvider.of<DesignprefsBloc>(context).add(DisbleFieldSearch());
-          } else if (_fieldSearchIndex == false) {
             BlocProvider.of<DesignprefsBloc>(context).add(EnableFieldSearch());
+          } else if (_fieldSearchIndex == false) {
+            BlocProvider.of<DesignprefsBloc>(context).add(DisbleFieldSearch());
           }
-          decidePrefs();
         },
       ),
     );
