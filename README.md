@@ -56,3 +56,6 @@ To get more about **DevEx** check [this overview video](https://youtu.be/etSj5Jv
 ##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings-dark.png" width="700">
 
+#### Design Preferences 
+
+<img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/design-preferences.png" width="700">
