@@ -1,8 +1,8 @@
 import 'package:devexam/core/blocs/authentication/auth/auth_bloc.dart';
 import 'package:devexam/core/blocs/authentication/reset-password/resetpassword_cubit.dart';
+import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 

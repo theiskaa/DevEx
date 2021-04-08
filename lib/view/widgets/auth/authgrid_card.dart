@@ -1,7 +1,7 @@
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/view/widgets/components/flutter_text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_button/flutter_button.dart';
 
 import '../components/widgets.dart';
 
@@ -85,14 +85,14 @@ class AuthGridCard extends DevExamStatelessWidget {
       padding: EdgeInsets.all(10),
       alignment: Alignment.bottomRight,
       child: FlutterTextButton(
-        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+        titleColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
                 devExam.theme.dark
             ? Colors.white
             : null,
         wOpacity: true,
         opacityValue: .5,
         defaultSize: 16,
-        pressedSize: 15.5,
+        tappedSize: 15.5,
         title: titleOfSeccondTextButton,
         onTap: onTapForSCB,
       ),
