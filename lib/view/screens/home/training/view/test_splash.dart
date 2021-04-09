@@ -3,11 +3,11 @@ import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/blocs/design/designprefs_bloc.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:devexam/view/widgets/test-exam/question_search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_button/flutter_button.dart';
 
 import '../../../../../core/system/fire.dart';
 import '../../../../../core/utils/connectivity.dart';

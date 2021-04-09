@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_button/flutter_button.dart';
 
 import '../../screens/home/training/view/custom/custom_categories.dart';
 import '../components/widgets.dart';

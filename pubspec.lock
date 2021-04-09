@@ -230,13 +230,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.0"
-  flutter_button:
-    dependency: "direct main"
-    description:
-      name: flutter_button
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.4"
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -273,13 +266,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  font_awesome_flutter:
-    dependency: transitive
-    description:
-      name: font_awesome_flutter
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "8.12.0"
   formz:
     dependency: "direct main"
     description:

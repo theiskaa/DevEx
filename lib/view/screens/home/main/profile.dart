@@ -7,11 +7,12 @@ import 'package:devexam/core/blocs/authentication/reset-password/resetpassword_c
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
 import 'package:devexam/view/screens/home/settings/setting_screen.dart';
+import 'package:devexam/view/widgets/components/animated_custom_fab.dart';
+import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 
@@ -157,7 +158,7 @@ class _ProfileState extends DevExamState<Profile> {
   }
 
   Widget goToTopButton() {
-    return AnimatedCustomFAB(
+    return AnimatedFloatingActionButton(
       size: 35,
       backgroundColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
               devExam.theme.dark

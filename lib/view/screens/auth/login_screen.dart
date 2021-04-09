@@ -1,10 +1,11 @@
 import 'package:devexam/core/blocs/authentication/auth/auth_bloc.dart';
 import 'package:devexam/core/blocs/authentication/login/login_cubit.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/view/widgets/components/animated_custom_fab.dart';
+import 'package:devexam/view/widgets/components/flutter_text_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_button/flutter_button.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:formz/formz.dart';
 
@@ -178,12 +179,12 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
     return Container(
       alignment: Alignment.topRight,
       child: FlutterTextButton(
-        textAlign: TextAlign.right,
+        titleAlign: TextAlign.right,
         wOpacity: true,
         defaultSize: 17,
-        pressedSize: 16,
+        tappedSize: 16,
         opacityValue: .5,
-        color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+        titleColor: BlocProvider.of<ThemeBloc>(context).state.themeData ==
                 devExam.theme.dark
             ? Colors.white
             : Colors.black,
@@ -218,8 +219,8 @@ class _LoginScreenState extends DevExamState<LoginScreen> {
     }
   }
 
-  AnimatedCustomFAB langFAB() {
-    return AnimatedCustomFAB(
+  Widget langFAB() {
+    return AnimatedFloatingActionButton(
       backgroundColor: Colors.transparent,
       child: Center(
         child: Text(
