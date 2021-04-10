@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
+import 'package:devexam/view/screens/home/settings/bug_report.dart';
 import 'package:devexam/view/screens/home/settings/design_preferences.dart';
 import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
@@ -155,18 +156,38 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
         customDivider,
         buildDarkThemeTile(context),
         customDivider,
-        SettingTile(
-          iconCardcolor: Color(0xff2896FF),
-          icon: Icons.design_services_rounded,
-          title: devExam.intl.of(context).fmt('settings.designPrefs'),
-          onTap: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => DesignPreferences(),
-            ),
+        buildDesignPrefsTile(context),
+        customDivider,
+        buildBugReportTile(context),
+      ],
+    );
+  }
+
+  SettingTile buildBugReportTile(BuildContext context) {
+    return SettingTile(
+        iconCardcolor: Color(0xFF64455F),
+        icon: Icons.bug_report_outlined,
+        title: devExam.intl.of(context).fmt('settings.bugReport'),
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => BugReport(),
           ),
         ),
-      ],
+      );
+  }
+
+  SettingTile buildDesignPrefsTile(BuildContext context) {
+    return SettingTile(
+      iconCardcolor: Color(0xff2896FF),
+      icon: Icons.design_services_rounded,
+      title: devExam.intl.of(context).fmt('settings.designPrefs'),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => DesignPreferences(),
+        ),
+      ),
     );
   }
 

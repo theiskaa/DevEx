@@ -25,6 +25,7 @@
   "authStatus.samePasswords": "The new password must be different from the old password.",
   "authStatus.currentPasswordIsIncorrect": "The current password is incorrect",
   "authStatus.weakPassword": "Weak password",
+  "authStatus.emptyForm": "Field must not be empty",
 
   "auth.signIn": "Sign In",
   "auth.signUp": "Sign Up",
@@ -47,9 +48,13 @@
   "settings.langENG": "English",
   "settings.langRUS": "Pусский",
   "settings.designPrefs": "Design preferences",
+  "settings.bugReport": "Bug Report", 
 
   "designPrefs.searchQuestionByScroll": "Search question by id with drop down list",
   "designPrefs.searchQuestionByField": "Search Question with field by question id",
+
+  "bugReport.issueTitle":"Issue title",
+  "bugReport.issueDesTitle": "Enter issue description here",
 
   "changeUsername.title": "Change username",
   "changeUsername.success": "Username has been changed succesfully",

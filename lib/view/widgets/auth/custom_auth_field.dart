@@ -15,6 +15,8 @@ class CustomAuthField extends DevExamStatelessWidget {
   final TextInputType textInputType;
   final String errorText;
   final List<TextInputFormatter> formatters;
+  final int maxLines;
+  final InputDecoration decoration;
 
   CustomAuthField({
     Key key,
@@ -29,14 +31,19 @@ class CustomAuthField extends DevExamStatelessWidget {
     this.textInputType,
     this.errorText,
     this.formatters,
+    this.maxLines = 1,
+    this.decoration,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      decoration: InputDecoration(hintText: hint, errorText: errorText),
+      decoration: (decoration != null)
+          ? decoration
+          : InputDecoration(hintText: hint, errorText: errorText),
       obscureText: (obscureText != null) ? obscureText : false,
       validator: validator,
+      maxLines: maxLines,
       onChanged: onChanged,
       controller: controller,
       keyboardType: textInputType,

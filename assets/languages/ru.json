@@ -25,6 +25,7 @@
   "authStatus.samePasswords": "Новый пароль должен отличаться от старого.",
   "authStatus.oldPasswordIsIncorrect": "Текущий пароль неверен",
   "authStatus.weakPassword": "Слабый пароль",
+  "authStatus.emptyForm": "Поле не должно быть пустым",
 
   "auth.signIn": "Войти",
   "auth.signUp": "Зарегистрироваться",
@@ -47,9 +48,13 @@
   "settings.langENG": "English",
   "settings.langRUS": "Pусский",
   "settings.designPrefs": "Выбор дизайна",
+  "settings.bugReport": "Отчет об ошибке",
 
   "designPrefs.searchQuestionByScroll": "Поиск вопроса по идентификатору с выпадающим списком",
   "designPrefs.searchQuestionByField": "Поиск вопроса с полем по идентификатору вопроса",
+
+  "bugReport.issueTitle": "Название выпуска",
+  "bugReport.issueDesTitle": "Bведите описание проблемы здесь",
 
   "changeUsername.title": "Измените ваше имя пользователя",
   "changeUsername.success": "Ваше имя пользователя было успешно изменено",
