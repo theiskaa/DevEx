@@ -14,6 +14,7 @@ enum AuthStatus {
   tooManyRequests,
   weakPassword,
   undefined,
+  bugReportedSuccessfully,
 
   cantSaveSuggestion
 }
@@ -88,6 +89,10 @@ class AuthExceptionHandler {
         break;
       case AuthStatus.cantSaveSuggestion:
         errorMessage = "Can't save suggestion";
+        break;
+      case AuthStatus.bugReportedSuccessfully:
+        errorMessage =
+            devExam.intl.of(context).fmt('authStatus.bugReportedSuccessfully');
         break;
       default:
         errorMessage = devExam.intl.of(context).fmt('authStatus.undefined');

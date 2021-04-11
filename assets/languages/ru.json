@@ -26,6 +26,7 @@
   "authStatus.oldPasswordIsIncorrect": "Текущий пароль неверен",
   "authStatus.weakPassword": "Слабый пароль",
   "authStatus.emptyForm": "Поле не должно быть пустым",
+  "authStatus.bugReportedSuccessfully": "Электронное письмо с отчетом об ошибке было успешно отправлено. Спасибо, что сообщили об ошибке, мы исправим ее в ближайшее время.",
 
   "auth.signIn": "Войти",
   "auth.signUp": "Зарегистрироваться",

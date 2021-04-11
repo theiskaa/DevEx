@@ -1,5 +1,9 @@
+import 'dart:io';
+
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/core/services/user_service.dart';
 import 'package:devexam/core/utils/connectivity.dart';
+import 'package:devexam/core/utils/fire_exception_hander.dart';
 import 'package:devexam/core/utils/ui.dart';
 import 'package:devexam/view/widgets/auth/custom_auth_field.dart';
 import 'package:devexam/view/widgets/components/animated_custom_fab.dart';
@@ -9,12 +13,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:devexam/core/models/user.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-class BugReporterS {
-  BugReporterS._();
-  static const Email = "bug.reporter.sp@gmail.com";
-  static const Password = "devexamyhq";
-}
+import 'package:url_launcher/url_launcher.dart';
 
 class BugReport extends DevExamStatefulWidget {
   final String userID;
@@ -33,8 +32,12 @@ class BugReport extends DevExamStatefulWidget {
 }
 
 class BugReportState extends DevExamState<BugReport> {
+  static const BugReportEmail = "bug.reporter.sp@gmail.com";
+
   final _connection = ConnectivityObserver();
   bool _showNoInternet = false;
+
+  final _userService = UserServices();
 
   final _formKey = GlobalKey<FormState>();
   final _titleController = TextEditingController();
@@ -64,6 +67,66 @@ class BugReportState extends DevExamState<BugReport> {
     super.dispose();
   }
 
+  void _sendMail() async {
+    if (!_showNoInternet) {
+      if (_formKey.currentState.validate()) {
+        AuthStatus authStatus = await _userService.sendBugReportMail(
+          title: _titleController.text,
+          body: _desController.text,
+          recipient: BugReportEmail,
+        );
+        final errorMessage =
+            await AuthExceptionHandler.generateExceptionMessage(
+          authStatus,
+          context,
+          devExam,
+        );
+
+        // To escape from this issue - https://github.com/sidlatau/flutter_email_sender/issues/65
+        if (Platform.isIOS && authStatus == AuthStatus.undefined) {
+          final _url = Uri(
+            scheme: 'mailto',
+            path: '$BugReportEmail',
+            queryParameters: {
+              'subject': _titleController.text,
+              'body': _desController.text,
+            },
+          ).toString();
+
+          if (await canLaunch(_url)) {
+            await launch(_url);
+          } else {
+            authStatus = AuthStatus.undefined;
+          }
+        }
+
+        showSnack(
+          sec: (authStatus == AuthStatus.bugReportedSuccessfully) ? 6 : 3,
+          devExam: devExam,
+          context: context,
+          title: "$errorMessage",
+          color: (authStatus == AuthStatus.bugReportedSuccessfully)
+              ? Color(0xFF58114D)
+              : devExam.theme.errorBg,
+        );
+      } else {
+        showSnack(
+          context: context,
+          color: devExam.theme.errorBg,
+          devExam: devExam,
+          title: devExam.intl.of(context).fmt('message.invalidFormz'),
+        );
+      }
+    } else {
+      showSnack(
+        devExam: devExam,
+        isFloating: true,
+        context: context,
+        title: devExam.intl.of(context).fmt('attention.noConnection'),
+        color: devExam.theme.errorBg,
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -101,33 +164,17 @@ class BugReportState extends DevExamState<BugReport> {
               devExam.theme.dark
           ? Colors.white
           : Colors.black,
-      onTap: () {
-        if (_formKey.currentState.validate()) {
-        } else {
-          showSnack(
-            context: context,
-            color: devExam.theme.errorBg,
-            devExam: devExam,
-            title: devExam.intl.of(context).fmt('message.invalidFormz'),
-          );
-        }
-      },
+      onTap: () => _sendMail(),
     );
   }
 
   CustomAuthField _descriptionField(BuildContext context) {
     return CustomAuthField(
-      maxLines: 9999,
+      maxLines: 1000,
       decoration: _buildCustomFieldDecoration(
         context,
         devExam.intl.of(context).fmt("bugReport.issueDesTitle"),
       ),
-      validator: (val) {
-        if (val.isEmpty) {
-          return devExam.intl.of(context).fmt("authStatus.emptyForm");
-        }
-        return null;
-      },
       controller: _desController,
     );
   }
@@ -157,18 +204,24 @@ class BugReportState extends DevExamState<BugReport> {
       enabledBorder: InputBorder.none,
       errorBorder: InputBorder.none,
       disabledBorder: InputBorder.none,
+      focusedErrorBorder: InputBorder.none,
     );
   }
-}
 
-AppBar buildAppBar(BuildContext context) {
-  return AppBar(
-    elevation: 0,
-    backgroundColor: Colors.transparent,
-    leading: OpacityButton(
-      opacityValue: .3,
-      child: Icon(Icons.arrow_back_ios),
-      onTap: () => Navigator.pop(context),
-    ),
-  );
+  AppBar buildAppBar(BuildContext context) {
+    return AppBar(
+      elevation: 0,
+      centerTitle: false,
+      title: Text(
+        devExam.intl.of(context).fmt('settings.bugReport'),
+        style: TextStyle(fontSize: 18),
+      ),
+      backgroundColor: Colors.transparent,
+      leading: OpacityButton(
+        opacityValue: .3,
+        child: Icon(Icons.arrow_back_ios),
+        onTap: () => Navigator.pop(context),
+      ),
+    );
+  }
 }

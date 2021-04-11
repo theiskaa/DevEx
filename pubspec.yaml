@@ -58,6 +58,10 @@ dependencies:
   # Console logger.
   logger: ^1.0.0
 
+  # For Bug report.
+  flutter_email_sender: ^5.0.0
+  url_launcher: ^6.0.3
+
 
 dev_dependencies:
   flutter_test:
