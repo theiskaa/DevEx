@@ -300,13 +300,10 @@ class BugReportState extends DevExamState<BugReport> {
   Widget buildAttachmentsListDialog(BuildContext context) {
     return StatefulBuilder(
       builder: (context, setState) => AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15),
-          side: BorderSide(color: devExam.theme.darkTestPurple),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
         title: Text(devExam.intl.of(context).fmt("bugReport.attachedPhotos")),
         content: Container(
-          height: 50,
+          height: 80,
           child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: attachementListWidget(setState, context),
@@ -314,10 +311,10 @@ class BugReportState extends DevExamState<BugReport> {
         ),
         actions: [
           TextButton(
+            style: alertButtonsStyle(Colors.red),
             onPressed: () => Navigator.pop(context),
             child: Text(
-              devExam.intl.of(context).fmt('act.goBack').toLowerCase(),
-              style: TextStyle(color: Colors.blue),
+              devExam.intl.of(context).fmt('act.goBack'),
             ),
           ),
         ],
@@ -328,23 +325,24 @@ class BugReportState extends DevExamState<BugReport> {
   Row attachementListWidget(StateSetter setState, BuildContext context) {
     return Row(
       children: <Widget>[
-        for (var i = 1; i < _attachmentsList.length + 1; i++)
+        for (var i = 0; i < _attachmentsList.length; i++)
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
             child: Row(
               children: <Widget>[
-                Text(
-                  i.toString(),
-                  softWrap: false,
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                  overflow: TextOverflow.fade,
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Image.file(
+                    File(_attachmentsList[i]),
+                    height: 80,
+                  ),
                 ),
-                SizedBox(width: 2),
+                SizedBox(width: 8),
                 OpacityButton(
                   opacityValue: .3,
-                  child: Icon(Icons.remove_circle),
+                  child: Icon(Icons.remove_circle, color: Colors.red[500]),
                   onTap: () {
-                    setState(() => _attachmentsList.removeAt(i - 1));
+                    setState(() => _attachmentsList.removeAt(i));
                     _rebuildPage();
                     if (_attachmentsList.isEmpty) {
                       Navigator.pop(context);
