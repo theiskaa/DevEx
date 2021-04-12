@@ -83,11 +83,11 @@ class UserServices {
   }
 
   // Send bug report email.
-
   Future<AuthStatus> sendBugReportMail({
     @required String title,
     @required String body,
     @required String recipient,
+    @required List<String> attachments,
     bool isHTML = false,
   }) async {
     AuthStatus status;
@@ -96,8 +96,7 @@ class UserServices {
       body: body,
       subject: title,
       recipients: [recipient],
-      //TODO: Attachment paths
-      // attachmentPaths: ,
+      attachmentPaths: attachments,
       isHTML: isHTML,
     );
     try {
@@ -110,7 +109,22 @@ class UserServices {
     return status;
   }
 
-  /// pick, crop and upload picture to firebase stortage.
+  // Add attachment to bug report mail.
+  Future<void> addAttachment(
+    List<String> attachmentList, {
+    void Function() customSetState,
+  }) async {
+    final _picker = ImagePicker();
+    PickedFile pickedImage =
+        await _picker.getImage(source: ImageSource.gallery);
+
+    if (pickedImage != null) {
+      attachmentList.add(pickedImage.path);
+      customSetState.call();
+    }
+  }
+
+  /// Pick, crop and upload picture to firebase stortage.
   uploadProfilePicture(String uid, {final Function onError}) async {
     final _picker = ImagePicker();
     final _storage = FirebaseStorage.instance;

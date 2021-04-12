@@ -49,13 +49,15 @@
   "settings.langENG": "English",
   "settings.langRUS": "Pусский",
   "settings.designPrefs": "Design preferences",
-  "settings.bugReport": "Bug Report", 
+  "settings.bugReport": "Bug Report",
 
   "designPrefs.searchQuestionByScroll": "Search question by id with drop down list",
   "designPrefs.searchQuestionByField": "Search Question with field by question id",
 
-  "bugReport.issueTitle":"Issue title",
+  "bugReport.issueTitle": "Issue title",
   "bugReport.issueDesTitle": "Enter issue description here",
+  "bugReport.attachedPhotos": "Attached photos",
+  "bugReport.emptyAttachmentList": "You haven't attached yet any photo",
 
   "changeUsername.title": "Change username",
   "changeUsername.success": "Username has been changed succesfully",

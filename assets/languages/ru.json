@@ -56,6 +56,8 @@
 
   "bugReport.issueTitle": "Название выпуска",
   "bugReport.issueDesTitle": "Bведите описание проблемы здесь",
+  "bugReport.attachedPhotos": "Прикрепленные фото",
+  "bugReport.emptyAttachmentList": "Вы еще не прикрепили фото",
 
   "changeUsername.title": "Измените ваше имя пользователя",
   "changeUsername.success": "Ваше имя пользователя было успешно изменено",
