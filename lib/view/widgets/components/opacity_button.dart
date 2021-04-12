@@ -31,6 +31,8 @@ class OpacityButton extends StatefulWidget {
   /// that's means opacity value will decrease to one, ie zero
   final VoidCallback onTap;
 
+  final bool enableOnLongPress;
+  //
   /// Called when a long press gesture with a primary button has been recognized.
   ///
   /// Triggered when a pointer has remained in contact with the screen at the
@@ -38,7 +40,7 @@ class OpacityButton extends StatefulWidget {
   ///
   /// When this happens, the opacity value will decrease to the value you define
   /// or the to the default value.
-  //* final VoidCallback onLongPress;
+  final VoidCallback onLongPress;
 
   /// Whether the semantic information of the children is always included.
   ///
@@ -54,7 +56,8 @@ class OpacityButton extends StatefulWidget {
     @required this.child,
     this.opacityValue = .5,
     this.onTap,
-    //* this.onLongPress,
+    this.enableOnLongPress = false,
+    this.onLongPress,
     this.alwaysIncludeSemantics,
   }) : super(key: key);
 
@@ -89,17 +92,19 @@ class _OpacityButtonState extends State<OpacityButton> {
         }
       },
 
-      // // When Long Press Start set [_isTapped] to true.
-      // onLongPressStart: (_) =>
-      //     (widget.onLongPress != null) ? _setToTrue() : null,
+      // When Long Press Start set [_isTapped] to true.
+      onLongPressStart: (_) => _setToTrue(),
 
-      // // When Long press end, set [_isTapped] to false & call [onLongPress] function.
-      // onLongPressEnd: (_) {
-      //   if (widget.onLongPress != null) {
-      //     _setToFalse();
-      //     return widget.onLongPress();
-      //   }
-      // },
+      // When Long press end, set [_isTapped] to false & call [onLongPress] function.
+      onLongPressEnd: (_) {
+        if (widget.enableOnLongPress) {
+          _setToFalse();
+          return widget.onLongPress();
+        } else {
+          _setToFalse();
+          return widget.onTap();
+        }
+      },
 
       child: _buttonBody(),
     );

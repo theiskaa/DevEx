@@ -39,7 +39,7 @@ class SettingTile extends DevExamStatelessWidget {
         color: BlocProvider.of<ThemeBloc>(context).state.themeData ==
                 devExam.theme.dark
             ? Colors.grey[800].withOpacity(.3)
-            : Colors.grey[100].withOpacity(.3),
+            : Colors.grey[200].withOpacity(.3),
         borderRadius: BorderRadius.circular(10),
       ),
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 5),

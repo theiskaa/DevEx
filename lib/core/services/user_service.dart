@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
@@ -69,9 +70,9 @@ class UserServices {
   Future<AuthStatus> sendPasswordResetMail(String email) async {
     AuthStatus authStatus;
     try {
-      await firebaseAuth
-          .sendPasswordResetEmail(email: email)
-          .then((_) => authStatus = AuthStatus.successful);
+      await firebaseAuth.sendPasswordResetEmail(email: email).then(
+            (_) => authStatus = AuthStatus.successful,
+          );
     } catch (e) {
       print(e.toString());
       authStatus = AuthExceptionHandler.handleFireAuthException(e);
@@ -81,7 +82,49 @@ class UserServices {
     return authStatus;
   }
 
-  /// pick, crop and upload picture to firebase stortage.
+  // Send bug report email.
+  Future<AuthStatus> sendBugReportMail({
+    @required String title,
+    @required String body,
+    @required String recipient,
+    @required List<String> attachments,
+    bool isHTML = false,
+  }) async {
+    AuthStatus status;
+
+    final Email email = Email(
+      body: body,
+      subject: title,
+      recipients: [recipient],
+      attachmentPaths: attachments,
+      isHTML: isHTML,
+    );
+    try {
+      await FlutterEmailSender.send(email);
+      status = AuthStatus.bugReportedSuccessfully;
+    } catch (e) {
+      status = AuthStatus.undefined;
+    }
+
+    return status;
+  }
+
+  // Add attachment to bug report mail.
+  Future<void> addAttachment(
+    List<String> attachmentList, {
+    void Function() customSetState,
+  }) async {
+    final _picker = ImagePicker();
+    PickedFile pickedImage =
+        await _picker.getImage(source: ImageSource.gallery);
+
+    if (pickedImage != null) {
+      attachmentList.add(pickedImage.path);
+      customSetState.call();
+    }
+  }
+
+  /// Pick, crop and upload picture to firebase stortage.
   uploadProfilePicture(String uid, {final Function onError}) async {
     final _picker = ImagePicker();
     final _storage = FirebaseStorage.instance;

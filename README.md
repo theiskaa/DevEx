@@ -11,6 +11,8 @@ It's a online exam and learning platform, for developers.
 - *Showing wrong and right answers by changing button colors*, *Explanation and answer screen to look when you are in testing page.*
 - *Exam with 15 minute cutdown timer*, *and when complete exam, it's otomaticly will save incorrect password as list. and it would be diplayed in down profile as* **Exam History.**
 - *Dark theme support*
+- *Design Preferences (app customization)*
+- *Bug report page (with adding attachments)*
 
 The project is still in development progress so it's just demo, everyone who want to contribute this project, can reach me by [**Instagram**](https://www.instagram.com/theiskaa/) or [**Twitter**](https://twitter.com/theiskaa).
 
@@ -56,6 +58,5 @@ To get more about **DevEx** check [this overview video](https://youtu.be/etSj5Jv
 ##### Dark Theme:
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/settings-dark.png" width="700">
 
-#### Design Preferences 
-
+#### Design Preferences
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/design-preferences.png" width="700">

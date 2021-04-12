@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:devexam/core/utils/validators.dart';
+import 'package:devexam/view/screens/home/settings/bug_report.dart';
 import 'package:devexam/view/screens/home/settings/design_preferences.dart';
 import 'package:devexam/view/widgets/components/opacity_button.dart';
 import 'package:devexam/view/widgets/components/widgets.dart';
@@ -103,70 +104,96 @@ class _SettingsScreenState extends DevExamState<SettingsScreen> {
   Column buildSettingTiles(BuildContext context) {
     return Column(
       children: [
-        SettingTile(
-          icon: Icons.person,
-          iconCardcolor: Color(0xffFF5551),
-          title: devExam.intl.of(context).fmt('more.changeUsername'),
-          onTap: () {
-            if (_showNoInternet) {
-              showSnack(
-                devExam: devExam,
-                isFloating: true,
-                context: context,
-                title: devExam.intl.of(context).fmt('attention.noConnection'),
-                color: devExam.theme.errorBg,
-              );
-            } else {
-              showDialog(
-                context: context,
-                builder: (context) => customAlertDialogOfChangeUsername(),
-              );
-            }
-          },
-        ),
+        buildcChangeUsernameTile(context),
         customDivider,
-        SettingTile(
-          icon: Icons.lock_outline_rounded,
-          iconCardcolor: Color(0xff2D56A1),
-          title: devExam.intl.of(context).fmt('settings.changePassword'),
-          onTap: () {
-            if (_showNoInternet) {
-              showSnack(
-                devExam: devExam,
-                isFloating: true,
-                context: context,
-                title: devExam.intl.of(context).fmt('attention.noConnection'),
-                color: devExam.theme.errorBg,
-              );
-            } else {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ChangePassword(),
-                ),
-              );
-            }
-          },
-        ),
-        SizedBox(height: 15),
-        miniDivider,
-        SizedBox(height: 15),
+        buildChangePasswordTile(context),
+        customDivider,
         buildLanguageTile(context),
         customDivider,
         buildDarkThemeTile(context),
         customDivider,
-        SettingTile(
-          iconCardcolor: Color(0xff2896FF),
-          icon: Icons.design_services_rounded,
-          title: devExam.intl.of(context).fmt('settings.designPrefs'),
-          onTap: () => Navigator.push(
+        buildDesignPrefsTile(context),
+        customDivider,
+        buildBugReportTile(context),
+      ],
+    );
+  }
+
+  SettingTile buildcChangeUsernameTile(BuildContext context) {
+    return SettingTile(
+      icon: Icons.person,
+      iconCardcolor: Color(0xffFF5551),
+      title: devExam.intl.of(context).fmt('more.changeUsername'),
+      onTap: () {
+        if (_showNoInternet) {
+          showSnack(
+            devExam: devExam,
+            isFloating: true,
+            context: context,
+            title: devExam.intl.of(context).fmt('attention.noConnection'),
+            color: devExam.theme.errorBg,
+          );
+        } else {
+          showDialog(
+            context: context,
+            builder: (context) => customAlertDialogOfChangeUsername(),
+          );
+        }
+      },
+    );
+  }
+
+  SettingTile buildChangePasswordTile(BuildContext context) {
+    return SettingTile(
+      icon: Icons.lock_outline_rounded,
+      iconCardcolor: Color(0xff2D56A1),
+      title: devExam.intl.of(context).fmt('settings.changePassword'),
+      onTap: () {
+        if (_showNoInternet) {
+          showSnack(
+            devExam: devExam,
+            isFloating: true,
+            context: context,
+            title: devExam.intl.of(context).fmt('attention.noConnection'),
+            color: devExam.theme.errorBg,
+          );
+        } else {
+          Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => DesignPreferences(),
+              builder: (context) => ChangePassword(),
             ),
-          ),
+          );
+        }
+      },
+    );
+  }
+
+  SettingTile buildBugReportTile(BuildContext context) {
+    return SettingTile(
+      iconCardcolor: Color(0xFF58114D),
+      icon: Icons.bug_report_outlined,
+      title: devExam.intl.of(context).fmt('settings.bugReport'),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => BugReport(),
         ),
-      ],
+      ),
+    );
+  }
+
+  SettingTile buildDesignPrefsTile(BuildContext context) {
+    return SettingTile(
+      iconCardcolor: Color(0xff2896FF),
+      icon: Icons.design_services_rounded,
+      title: devExam.intl.of(context).fmt('settings.designPrefs'),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => DesignPreferences(),
+        ),
+      ),
     );
   }
 
