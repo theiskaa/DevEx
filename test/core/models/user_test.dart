@@ -39,7 +39,7 @@ void main() {
     );
   });
 
-  group('UserModel', () {
+  group('[UserModel]', () {
     test('converts from json correctly', () {
       final userModelFromJson = UserModel.fromJson(userModelJson);
 
@@ -57,7 +57,7 @@ void main() {
     });
   });
 
-  group('CurrentUserModel', () {
+  group('[CurrentUserModel]', () {
     test('converts from json correctly', () {
       final modelFromJson = CurrentUserModel.fromJson(currentUserModelJson);
 

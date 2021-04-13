@@ -21,7 +21,7 @@ void main() {
     );
   });
 
-  group('ExamHistory', () {
+  group('[ExamHistory]', () {
     test('converts from json correctly', () {
       final examHistoryJsonFromJson = ExamHistory.fromJson(examHistoryJson);
 

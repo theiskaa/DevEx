@@ -16,7 +16,7 @@ void main() {
     connectivityObserver.networkHandler = mockedNetworkHandler;
   });
 
-  group("ConnectivityObserver", () {
+  group("[ConnectivityObserver]", () {
     test("connectionTest goes online", () async {
       // Mocks ping request to return online status
       when(mockedNetworkHandler.pingIP()).thenAnswer(
@@ -50,7 +50,7 @@ void main() {
     });
   });
 
-  group("NetworkHandler", () {
+  group("[NetworkHandler]", () {
     test("pingIp throws an exception", () async {
       // It's impossible to connect 255.255.255.255 broadcast address with TCP.
       NetworkHandler networkHandler = NetworkHandler(

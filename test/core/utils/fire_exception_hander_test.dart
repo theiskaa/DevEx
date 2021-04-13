@@ -29,7 +29,7 @@ main() {
     mockContext = MockBuildContext();
   });
 
-  group("AuthExceptionHandler", () {
+  group("[AuthExceptionHandler]", () {
     // Get generated exception message.
     String _generatedExceptionMessage(AuthStatus status) =>
         AuthExceptionHandler.generateExceptionMessage(
