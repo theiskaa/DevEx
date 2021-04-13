@@ -28,10 +28,10 @@ class Themes extends CustomColors {
         primaryColor: Colors.white,
         accentColor: Colors.white,
         buttonColor: Colors.black,
-        textTheme: _lightTextTheme(),
+        textTheme: lightTextTheme(),
         iconTheme: IconThemeData(color: Colors.black),
         appBarTheme: AppBarTheme(
-          textTheme: _lightTextTheme(),
+          textTheme: lightTextTheme(),
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.black),
         inputDecorationTheme: InputDecorationTheme(
@@ -65,12 +65,12 @@ class Themes extends CustomColors {
         scaffoldBackgroundColor: Color(0xff0A0A0A),
         brightness: Brightness.dark,
         buttonColor: Colors.white,
-        textTheme: _darkTextTheme(),
+        textTheme: darkTextTheme(),
         primaryColor: Colors.grey[900],
         accentColor: Colors.grey[900],
         iconTheme: IconThemeData(color: Colors.white),
         appBarTheme: AppBarTheme(
-          textTheme: _darkTextTheme(),
+          textTheme: darkTextTheme(),
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.white),
         inputDecorationTheme: InputDecorationTheme(
@@ -101,7 +101,7 @@ class Themes extends CustomColors {
         ),
       );
 
-  TextTheme _darkTextTheme() {
+  TextTheme darkTextTheme() {
     return TextTheme(
       headline1: _whiteText(),
       headline2: _whiteText(),
@@ -112,7 +112,7 @@ class Themes extends CustomColors {
     );
   }
 
-  TextTheme _lightTextTheme() {
+  TextTheme lightTextTheme() {
     return TextTheme(
       headline1: _blackText(),
       headline2: _blackText(),

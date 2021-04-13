@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../system/devexam.dart';
@@ -19,12 +20,15 @@ enum AuthStatus {
   cantSaveSuggestion
 }
 
+extension AuthStatusExt on AuthStatus {
+  String get toStr => describeEnum(this);
+}
+
 class AuthExceptionHandler {
   /// method for detect/handle firebase auth exception.
-  static handleFireAuthException(e) {
-    print(e.code);
+  static handleFireAuthException(e, {bool testMode = false}) {
     var status;
-    switch (e.code) {
+    switch (testMode ? e : e.code) {
       case "invalid-email":
         status = AuthStatus.invalidEmail;
         break;
@@ -57,45 +61,65 @@ class AuthExceptionHandler {
 
   /// Generate a message by listening exception.
   static generateExceptionMessage(
-      exceptionCode, BuildContext context, DevExam devExam) {
+      exceptionCode, BuildContext context, DevExam devExam,
+      {bool testMode = false}) {
     String errorMessage;
     switch (exceptionCode) {
       case AuthStatus.invalidEmail:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.invalidEmail');
+        errorMessage = testMode
+            ? 'invalidEmail'
+            : devExam.intl.of(context).fmt('authStatus.invalidEmail');
         break;
       case AuthStatus.wrongPassword:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.wrongPassword');
+        errorMessage = testMode
+            ? 'wrongPassword'
+            : devExam.intl.of(context).fmt('authStatus.wrongPassword');
         break;
       case AuthStatus.userNotFound:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.userNotFound');
+        errorMessage = testMode
+            ? 'userNotFound'
+            : devExam.intl.of(context).fmt('authStatus.userNotFound');
         break;
       case AuthStatus.userDisabled:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.userDisabled');
+        errorMessage = testMode
+            ? 'userDisabled'
+            : devExam.intl.of(context).fmt('authStatus.userDisabled');
         break;
       case AuthStatus.tooManyRequests:
-        errorMessage =
-            devExam.intl.of(context).fmt('authStatus.tooManyRequests');
+        errorMessage = testMode
+            ? 'tooManyRequests'
+            : devExam.intl.of(context).fmt('authStatus.tooManyRequests');
         break;
       case AuthStatus.operationNotAllowed:
-        errorMessage =
-            devExam.intl.of(context).fmt('authStatus.operationNotAllowed');
+        errorMessage = testMode
+            ? 'operationNotAllowed'
+            : devExam.intl.of(context).fmt('authStatus.operationNotAllowed');
         break;
       case AuthStatus.emailAlreadyExists:
-        errorMessage =
-            devExam.intl.of(context).fmt('authStatus.emailAlreadyExists');
+        errorMessage = testMode
+            ? 'emailAlreadyExists'
+            : devExam.intl.of(context).fmt('authStatus.emailAlreadyExists');
         break;
       case AuthStatus.weakPassword:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.weakPassword');
+        errorMessage = testMode
+            ? 'weakPassword'
+            : devExam.intl.of(context).fmt('authStatus.weakPassword');
         break;
       case AuthStatus.cantSaveSuggestion:
-        errorMessage = "Can't save suggestion";
+        errorMessage =
+            testMode ? 'cantSaveSuggestion' : "Can't save suggestion";
         break;
       case AuthStatus.bugReportedSuccessfully:
-        errorMessage =
-            devExam.intl.of(context).fmt('authStatus.bugReportedSuccessfully');
+        errorMessage = testMode
+            ? 'bugReportedSuccessfully'
+            : devExam.intl
+                .of(context)
+                .fmt('authStatus.bugReportedSuccessfully');
         break;
       default:
-        errorMessage = devExam.intl.of(context).fmt('authStatus.undefined');
+        errorMessage = testMode
+            ? 'undefined'
+            : devExam.intl.of(context).fmt('authStatus.undefined');
     }
 
     return errorMessage;

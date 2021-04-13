@@ -1,12 +1,13 @@
+import 'package:devexam/core/system/devexam.dart';
 import 'package:flutter/material.dart';
 
-class ExamHistory {
-  String correctAnswersCount;
-  String incorrectAnswersCount;
-  String date;
-  String person;
+class ExamHistory implements DevExModel {
+  final String correctAnswersCount;
+  final String incorrectAnswersCount;
+  final String date;
+  final String person;
 
-  ExamHistory(
+  const ExamHistory(
       {@required this.correctAnswersCount,
       @required this.incorrectAnswersCount,
       @required this.date,
@@ -16,12 +17,11 @@ class ExamHistory {
         assert(date != null),
         assert(person != null);
 
-  ExamHistory.fromJson(Map<String, dynamic> json) {
-    correctAnswersCount = json['correctAnswersCount'];
-    incorrectAnswersCount = json['incorrectAnswersCount'];
-    date = json['date'];
-    person = json['personID'];
-  }
+  ExamHistory.fromJson(Map<String, dynamic> json)
+      : correctAnswersCount = json['correctAnswersCount'],
+        incorrectAnswersCount = json['incorrectAnswersCount'],
+        date = json['date'],
+        person = json['personId'];
 
   Map<String, dynamic> toJson() {
     final data = Map<String, dynamic>();

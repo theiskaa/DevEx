@@ -62,6 +62,9 @@ dependencies:
   flutter_email_sender: ^5.0.0
   url_launcher: ^6.0.3
 
+  # For unit testing
+  mockito: ^5.0.4
+
 
 dev_dependencies:
   flutter_test:

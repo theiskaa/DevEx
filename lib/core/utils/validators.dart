@@ -67,16 +67,17 @@ class ConfirmedPassword
   }
 }
 
-
 String validateNewUsername({
   String newUsername,
   DevExam devExam,
   BuildContext context,
+  bool forTest = false,
 }) {
-  RegExp regExp =
-      RegExp(r'^(?=[a-zA-Z0-9._]{2,10}$)(?!.*[_.]{2})[^_.].*[^_.]$');
+  RegExp regExp = RegExp(r'^(?=[a-zA-Z0-9._]{2,8}$)(?!.*[_.]{2})[^_.].*[^_.]$');
   if (!regExp.hasMatch(newUsername)) {
-    return devExam.intl.of(context).fmt('account.create.invalidForm');
+    return forTest
+        ? "invalid"
+        : devExam.intl.of(context).fmt('account.create.invalidForm');
   } else {
     return null;
   }
