@@ -1,6 +1,7 @@
 pre-push:
   parallel: true
   commands:
+    # TODO: uncomment [flutter test] command 
     # tests:
     #   run: flutter test
 

@@ -1,6 +1,4 @@
-import 'package:devexam/core/blocs/theme/theme_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../view/widgets/test-exam/circular_countdown_timer.dart';
 import '../system/devexam.dart';
