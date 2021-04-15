@@ -120,7 +120,7 @@ class UserServices {
 
     if (pickedImage != null) {
       attachmentList.add(pickedImage.path);
-      customSetState.call();
+      customSetState ?? customSetState.call();
     }
   }
 
