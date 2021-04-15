@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:firebase_auth_platform_interface/src/method_channel/method_channel_firebase_auth.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'package:mockito/mockito.dart';
@@ -44,8 +43,6 @@ void main() {
   };
   MockUserPlatform mockUserPlatform;
   MockUserCredentialPlatform mockUserCredPlatform;
-  MockConfirmationResultPlatform mockConfirmationResultPlatform;
-  MockRecaptchaVerifier mockVerifier;
   AdditionalUserInfo mockAdditionalUserInfo;
   EmailAuthCredential mockCredential;
 
@@ -73,7 +70,6 @@ void main() {
       user = kMockUser;
 
       mockUserPlatform = MockUserPlatform(mockAuthPlatform, user);
-      mockConfirmationResultPlatform = MockConfirmationResultPlatform();
       mockAdditionalUserInfo = AdditionalUserInfo(
         isNewUser: false,
         username: 'flutterUser',
@@ -90,7 +86,6 @@ void main() {
         mockCredential,
         mockUserPlatform,
       );
-      mockVerifier = MockRecaptchaVerifier();
 
       when(mockAuthPlatform.signInAnonymously())
           .thenAnswer((_) async => mockUserCredPlatform);
@@ -120,38 +115,11 @@ void main() {
       when(mockAuthPlatform.getRedirectResult())
           .thenAnswer((_) async => mockUserCredPlatform);
 
-      when(mockAuthPlatform.signInWithCustomToken(any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
       when(mockAuthPlatform.signInWithEmailAndPassword(any, any))
           .thenAnswer((_) async => mockUserCredPlatform);
 
-      when(mockAuthPlatform.signInWithEmailLink(any, any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.signInWithPhoneNumber(any, any))
-          .thenAnswer((_) async => mockConfirmationResultPlatform);
-
-      when(mockVerifier.delegate).thenReturn(mockVerifier.mockDelegate);
-
-      when(mockAuthPlatform.signInWithPopup(any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.signInWithRedirect(any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.authStateChanges()).thenAnswer((_) =>
-          Stream<UserPlatform>.fromIterable(<UserPlatform>[mockUserPlatform]));
-
-      when(mockAuthPlatform.idTokenChanges()).thenAnswer((_) =>
-          Stream<UserPlatform>.fromIterable(<UserPlatform>[mockUserPlatform]));
-
       when(mockAuthPlatform.userChanges()).thenAnswer((_) =>
           Stream<UserPlatform>.fromIterable(<UserPlatform>[mockUserPlatform]));
-
-      MethodChannelFirebaseAuth.channel.setMockMethodCallHandler((call) async {
-        return <String, dynamic>{'user': user};
-      });
     });
 
     tearDown(() => testCount++);
@@ -186,21 +154,20 @@ void main() {
       });
     });
 
-    group('fetchSignInMethodsForEmail()', () {
+    group('signInWithEmailAndPassword()', () {
       test('should call delegate method', () async {
-        when(mockAuthPlatform.fetchSignInMethodsForEmail(any))
-            .thenAnswer((i) async => []);
+        when(mockAuthPlatform.signInWithEmailAndPassword(any, any))
+            .thenAnswer((i) async => EmptyUserCredentialPlatform());
 
-        await auth.fetchSignInMethodsForEmail(kMockEmail);
-        verify(mockAuthPlatform.fetchSignInMethodsForEmail(kMockEmail));
-      });
-    });
+        await auth.signInWithEmailAndPassword(
+          email: kMockEmail,
+          password: kMockPassword,
+        );
 
-    group('authStateChanges()', () {
-      test('should stream changes', () async {
-        final StreamQueue<User> changes =
-            StreamQueue<User>(auth.authStateChanges());
-        expect(await changes.next, isA<User>());
+        verify(mockAuthPlatform.signInWithEmailAndPassword(
+          kMockEmail,
+          kMockPassword,
+        ));
       });
     });
 
@@ -208,16 +175,6 @@ void main() {
       test('should stream changes', () async {
         final StreamQueue<User> changes = StreamQueue<User>(auth.userChanges());
         expect(await changes.next, isA<User>());
-      });
-    });
-
-    group('sendPasswordResetEmail()', () {
-      test('should call delegate method', () async {
-        when(mockAuthPlatform.sendPasswordResetEmail(any))
-            .thenAnswer((i) async {});
-
-        await auth.sendPasswordResetEmail(email: kMockEmail);
-        verify(mockAuthPlatform.sendPasswordResetEmail(kMockEmail));
       });
     });
 
@@ -235,15 +192,6 @@ void main() {
 class MockFirebaseAuth extends Mock
     with MockPlatformInterfaceMixin
     implements TestFirebaseAuthPlatform {
-  @override
-  Stream<UserPlatform> userChanges() {
-    return super.noSuchMethod(
-      Invocation.method(#userChanges, []),
-      returnValue: const Stream<UserPlatform>.empty(),
-      returnValueForMissingStub: const Stream<UserPlatform>.empty(),
-    );
-  }
-
   @override
   Stream<UserPlatform> authStateChanges() {
     return super.noSuchMethod(
@@ -275,22 +223,6 @@ class MockFirebaseAuth extends Mock
   }
 
   @override
-  Future<ConfirmationResultPlatform> signInWithPhoneNumber(
-    String phoneNumber,
-    RecaptchaVerifierFactoryPlatform applicationVerifier,
-  ) {
-    return super.noSuchMethod(
-      Invocation.method(
-        #signInWithPhoneNumber,
-        [phoneNumber, applicationVerifier],
-      ),
-      returnValue: neverEndingFuture<ConfirmationResultPlatform>(),
-      returnValueForMissingStub:
-          neverEndingFuture<ConfirmationResultPlatform>(),
-    );
-  }
-
-  @override
   Future<UserCredentialPlatform> signInWithEmailAndPassword(
     String email,
     String password,
@@ -303,77 +235,11 @@ class MockFirebaseAuth extends Mock
   }
 
   @override
-  Future<void> confirmPasswordReset(String code, String newPassword) {
-    return super.noSuchMethod(
-      Invocation.method(#confirmPasswordReset, [code, newPassword]),
-      returnValue: neverEndingFuture<void>(),
-      returnValueForMissingStub: neverEndingFuture<void>(),
-    );
-  }
-
-  @override
-  Future<List<String>> fetchSignInMethodsForEmail(String email) {
-    return super.noSuchMethod(
-      Invocation.method(#checkActionCode, [email]),
-      returnValue: neverEndingFuture<List<String>>(),
-      returnValueForMissingStub: neverEndingFuture<List<String>>(),
-    );
-  }
-
-  @override
-  Future<void> sendPasswordResetEmail(
-    String email, [
-    ActionCodeSettings actionCodeSettings,
-  ]) {
-    return super.noSuchMethod(
-      Invocation.method(#sendPasswordResetEmail, [email, actionCodeSettings]),
-      returnValue: neverEndingFuture<void>(),
-      returnValueForMissingStub: neverEndingFuture<void>(),
-    );
-  }
-
-  @override
   Future<void> signOut() {
     return super.noSuchMethod(
       Invocation.method(#signOut, [signOut]),
       returnValue: neverEndingFuture<void>(),
       returnValueForMissingStub: neverEndingFuture<void>(),
-    );
-  }
-
-  @override
-  Future<String> verifyPasswordResetCode(String code) {
-    return super.noSuchMethod(
-      Invocation.method(#verifyPasswordResetCode, [code]),
-      returnValue: neverEndingFuture<String>(),
-      returnValueForMissingStub: neverEndingFuture<String>(),
-    );
-  }
-
-  @override
-  Future<void> verifyPhoneNumber({
-    String phoneNumber,
-    Object verificationCompleted,
-    Object verificationFailed,
-    Object codeSent,
-    Object codeAutoRetrievalTimeout,
-    Duration timeout = const Duration(seconds: 30),
-    int forceResendingToken,
-    String autoRetrievedSmsCodeForTesting,
-  }) {
-    return super.noSuchMethod(
-      Invocation.method(#verifyPhoneNumber, [], {
-        #phoneNumber: phoneNumber,
-        #verificationCompleted: verificationCompleted,
-        #verificationFailed: verificationFailed,
-        #codeSent: codeSent,
-        #codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
-        #timeout: timeout,
-        #forceResendingToken: forceResendingToken,
-        #autoRetrievedSmsCodeForTesting: autoRetrievedSmsCodeForTesting,
-      }),
-      returnValue: neverEndingFuture<String>(),
-      returnValueForMissingStub: neverEndingFuture<String>(),
     );
   }
 }
