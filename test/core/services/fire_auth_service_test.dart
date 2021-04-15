@@ -1,388 +1,216 @@
-import 'dart:async';
-
-import 'package:async/async.dart';
-import 'package:devexam/core/utils/testers.dart';
+import 'package:devexam/core/services/fire_auth_service.dart';
+import 'package:devexam/core/system/devexam.dart';
+import 'package:devexam/core/system/intl.dart';
+import 'package:devexam/core/utils/fire_exception_hander.dart';
+import 'package:devexam/core/utils/testing_helpers.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth_platform_interface/firebase_auth_platform_interface.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-
 import 'package:mockito/mockito.dart';
 
-void main() {
-  setupFirebaseAuthMocks();
+main() {
+  DevExam devEx;
+
+  // Setup cloud firesotre mocks.
+  FireMocker().setupCloudFirestoreMocks();
+
+  // Setup firebase auth mocks.
+  FireMocker().setupFirebaseAuthMocks();
+
+  FireAuthService fireAuthService;
+  FireAuthServiceMocker mocker;
 
   FirebaseAuth auth;
 
-  const String kMockEmail = 'test@example.com';
-  const String kMockPassword = 'passw0rd';
+  var testCount = 0;
 
-  final int kMockCreationTimestamp =
-      DateTime.now().subtract(const Duration(days: 2)).millisecondsSinceEpoch;
-  final int kMockLastSignInTimestamp =
-      DateTime.now().subtract(const Duration(days: 1)).millisecondsSinceEpoch;
+  setUpAll(() async {
+    // Initialze firebase app
+    await Firebase.initializeApp();
 
-  Map<String, dynamic> kMockUser = <String, dynamic>{
-    'isAnonymous': true,
-    'emailVerified': false,
-    'displayName': 'displayName',
-    'metadata': <String, int>{
-      'creationTime': kMockCreationTimestamp,
-      'lastSignInTime': kMockLastSignInTimestamp,
-    },
-    'providerData': <Map<String, String>>[
-      <String, String>{
-        'providerId': 'firebase',
-        'uid': '12345',
-        'displayName': 'Flutter Test User',
-        'photoURL': 'http://www.example.com/',
-        'email': 'test@example.com',
-      },
-    ],
-  };
-  MockUserPlatform mockUserPlatform;
-  MockUserCredentialPlatform mockUserCredPlatform;
-  AdditionalUserInfo mockAdditionalUserInfo;
-  EmailAuthCredential mockCredential;
+    // Initilaze main singleton.
+    devEx = DevExam();
 
-  MockFirebaseAuth mockAuthPlatform = MockFirebaseAuth();
+    // Initilaze core dependency of main singleton.
+    devEx.intl = Intl();
 
-  group('[$FirebaseAuth]', () {
-    Map<String, dynamic> user;
+    // Core dependency configuration.
+    devEx.intl.locale = Locale('en');
+    devEx.intl.supportedLocales = ['ru', 'en'];
 
-    var testCount = 0;
+    // Initilaze UserServiceMocker
+    mocker = FireAuthServiceMocker();
 
-    setUp(() async {
-      FirebaseAuthPlatform.instance = mockAuthPlatform = MockFirebaseAuth();
+    final app = await Firebase.initializeApp(
+      name: '$testCount -',
+      options: const FirebaseOptions(
+        apiKey: '',
+        appId: '',
+        messagingSenderId: '',
+        projectId: '',
+      ),
+    );
 
-      final app = await Firebase.initializeApp(
-        name: '$testCount',
-        options: const FirebaseOptions(
-          apiKey: '',
-          appId: '',
-          messagingSenderId: '',
-          projectId: '',
-        ),
-      );
+    auth = FirebaseAuth.instanceFor(app: app);
 
-      auth = FirebaseAuth.instanceFor(app: app);
-      user = kMockUser;
+    // Initilaze fireAuthService class.
+    fireAuthService = FireAuthService(firebaseAuth: auth);
+  });
 
-      mockUserPlatform = MockUserPlatform(mockAuthPlatform, user);
-      mockAdditionalUserInfo = AdditionalUserInfo(
-        isNewUser: false,
-        username: 'flutterUser',
-        providerId: 'testProvider',
-        profile: <String, dynamic>{'foo': 'bar'},
-      );
-      mockCredential = EmailAuthProvider.credential(
-        email: 'test',
-        password: 'test',
-      ) as EmailAuthCredential;
-      mockUserCredPlatform = MockUserCredentialPlatform(
-        FirebaseAuthPlatform.instance,
-        mockAdditionalUserInfo,
-        mockCredential,
-        mockUserPlatform,
-      );
-
-      when(mockAuthPlatform.signInAnonymously())
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.signInWithCredential(any)).thenAnswer(
-          (_) => Future<UserCredentialPlatform>.value(mockUserCredPlatform));
-
-      when(mockAuthPlatform.currentUser).thenReturn(mockUserPlatform);
-
-      when(mockAuthPlatform.instanceFor(
-        app: anyNamed('app'),
-        pluginConstants: anyNamed('pluginConstants'),
-      )).thenAnswer((_) => mockUserPlatform);
-
-      when(mockAuthPlatform.delegateFor(
-        app: anyNamed('app'),
-      )).thenAnswer((_) => mockAuthPlatform);
-
-      when(mockAuthPlatform.setInitialValues(
-        currentUser: anyNamed('currentUser'),
-        languageCode: anyNamed('languageCode'),
-      )).thenAnswer((_) => mockAuthPlatform);
-
-      when(mockAuthPlatform.createUserWithEmailAndPassword(any, any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.getRedirectResult())
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.signInWithEmailAndPassword(any, any))
-          .thenAnswer((_) async => mockUserCredPlatform);
-
-      when(mockAuthPlatform.userChanges()).thenAnswer((_) =>
-          Stream<UserPlatform>.fromIterable(<UserPlatform>[mockUserPlatform]));
-    });
-
-    tearDown(() => testCount++);
-
-    setUp(() async {
-      user = kMockUser;
-      await auth.signInAnonymously();
-    });
-
-    group('currentUser', () {
-      test('get currentUser', () {
-        User user = auth.currentUser;
-        verify(mockAuthPlatform.currentUser);
-        expect(user, isA<User>());
+  group("[FireAuthService]", () {
+    group("Save user to firestore", () {
+      test("-Success-", () {
+        when(
+          mocker.saveUserToFirestore(
+            'test',
+            // TODO: Replace [auth.currentUser]
+            null,
+            'test@example.com',
+            'test123',
+          ),
+        ).thenAnswer((_) => fireAuthService.saveUserToFirestore(
+              'test',
+              // TODO: Replace [auth.currentUser]
+              null,
+              'test@example.com',
+              'test123',
+            ));
       });
-    });
 
-    group('createUserWithEmailAndPassword()', () {
-      test('should call delegate method', () async {
-        when(mockAuthPlatform.createUserWithEmailAndPassword(any, any))
-            .thenAnswer((i) async => EmptyUserCredentialPlatform());
-
-        await auth.createUserWithEmailAndPassword(
-          email: kMockEmail,
-          password: kMockPassword,
+      test("-Error-", () {
+        when(
+          mocker.saveUserToFirestore(null, null, null, null),
+        ).thenAnswer(
+          (_) => fireAuthService.saveUserToFirestore(null, null, null, null),
         );
-
-        verify(mockAuthPlatform.createUserWithEmailAndPassword(
-          kMockEmail,
-          kMockPassword,
-        ));
       });
     });
 
-    group('signInWithEmailAndPassword()', () {
-      test('should call delegate method', () async {
-        when(mockAuthPlatform.signInWithEmailAndPassword(any, any))
-            .thenAnswer((i) async => EmptyUserCredentialPlatform());
+    group("Login with Email and Password", () {
+      test("-Success-", () {
+        when(mocker.logInWithEmailAndPassword(
+          email: "test@example.com",
+          password: 'test123',
+        )).thenAnswer((_) => Future.value(AuthStatus.successful));
+      });
 
-        await auth.signInWithEmailAndPassword(
-          email: kMockEmail,
-          password: kMockPassword,
+      test("Error - Undefined", () {
+        when(
+          mocker.logInWithEmailAndPassword(
+            email: null,
+            password: null,
+          ),
+        ).thenAnswer(
+          (_) => Future.value(AuthStatus.undefined),
         );
+      });
 
-        verify(mockAuthPlatform.signInWithEmailAndPassword(
-          kMockEmail,
-          kMockPassword,
-        ));
+      test("Error - wrong password", () {
+        when(mocker.logInWithEmailAndPassword(
+          email: "test@example.com",
+          password: null,
+        )).thenAnswer((_) => Future.value(AuthStatus.wrongPassword));
+      });
+
+      test("Error - invalid email", () {
+        when(
+          mocker.logInWithEmailAndPassword(email: null, password: 'test123'),
+        ).thenAnswer(
+          (_) => Future.value(AuthStatus.invalidEmail),
+        );
+      });
+
+      test("Error - Too Many Requests", () {
+        when(
+          mocker.logInWithEmailAndPassword(
+              email: 'test@example.com', password: 'test123'),
+        ).thenAnswer(
+          (_) => Future.value(AuthStatus.tooManyRequests),
+        );
+      });
+
+      test("Error - User not found", () {
+        when(
+          mocker.logInWithEmailAndPassword(
+            email: 'test@test.com',
+            password: 'test123',
+          ),
+        ).thenAnswer(
+          (_) => Future.value(AuthStatus.userNotFound),
+        );
+      });
+
+      test("Error - User Disabled", () {
+        when(
+          mocker.logInWithEmailAndPassword(
+            email: 'test@example.com',
+            password: 'test123',
+          ),
+        ).thenAnswer(
+          (_) => Future.value(AuthStatus.userDisabled),
+        );
       });
     });
 
-    group('userChanges()', () {
-      test('should stream changes', () async {
-        final StreamQueue<User> changes = StreamQueue<User>(auth.userChanges());
-        expect(await changes.next, isA<User>());
+    group("Log out", () {
+      test("-Success-", () {
+        when(mocker.logOut()).thenAnswer((_) => fireAuthService.logOut());
+      });
+      test("-Error-", () {
+        when(mocker.logOut()).thenThrow(Future.value([null]));
       });
     });
 
-    group('signOut()', () {
-      test('should call delegate method', () async {
-        when(mockAuthPlatform.signOut()).thenAnswer((i) async {});
+    group("Create User With Email And Password", () {
+      test("-Success-", () {
+        when(
+          mocker.createUserWithEmailAndPassword(
+            username: 'test',
+            email: 'test@example.com',
+            password: 'test123',
+          ),
+        ).thenAnswer((_) => Future.value(AuthStatus.successful));
+      });
+      test("Error - undefined", () {
+        when(
+          mocker.createUserWithEmailAndPassword(
+            username: null,
+            email: null,
+            password: null,
+          ),
+        ).thenAnswer((_) => Future.value(AuthStatus.undefined));
+      });
 
-        await auth.signOut();
-        verify(mockAuthPlatform.signOut());
+      test("Error - email already exits", () {
+        when(
+          mocker.createUserWithEmailAndPassword(
+            username: 'test',
+            email: 'test@example.com',
+            password: 'test123',
+          ),
+        ).thenAnswer((_) => Future.value(AuthStatus.emailAlreadyExists));
+      });
+
+      test("Error - weak password", () {
+        when(
+          mocker.createUserWithEmailAndPassword(
+            username: 'test',
+            email: 'test@gamil.com',
+            password: '123',
+          ),
+        ).thenAnswer((_) => Future.value(AuthStatus.weakPassword));
+      });
+
+      test("Error - operation Not Allowed", () {
+        when(
+          mocker.createUserWithEmailAndPassword(
+            username: 'test',
+            email: 'test@gamil.com',
+            password: 'test123',
+          ),
+        ).thenAnswer((_) => Future.value(AuthStatus.operationNotAllowed));
       });
     });
   });
-}
-
-class MockFirebaseAuth extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestFirebaseAuthPlatform {
-  @override
-  Stream<UserPlatform> authStateChanges() {
-    return super.noSuchMethod(
-      Invocation.method(#authStateChanges, []),
-      returnValue: const Stream<UserPlatform>.empty(),
-      returnValueForMissingStub: const Stream<UserPlatform>.empty(),
-    );
-  }
-
-  @override
-  FirebaseAuthPlatform delegateFor({FirebaseApp app}) {
-    return super.noSuchMethod(
-      Invocation.method(#delegateFor, [], {#app: app}),
-      returnValue: TestFirebaseAuthPlatform(),
-      returnValueForMissingStub: TestFirebaseAuthPlatform(),
-    );
-  }
-
-  @override
-  Future<UserCredentialPlatform> createUserWithEmailAndPassword(
-    String email,
-    String password,
-  ) {
-    return super.noSuchMethod(
-      Invocation.method(#createUserWithEmailAndPassword, [email, password]),
-      returnValue: neverEndingFuture<UserCredentialPlatform>(),
-      returnValueForMissingStub: neverEndingFuture<UserCredentialPlatform>(),
-    );
-  }
-
-  @override
-  Future<UserCredentialPlatform> signInWithEmailAndPassword(
-    String email,
-    String password,
-  ) {
-    return super.noSuchMethod(
-      Invocation.method(#signInWithEmailAndPassword, [email, password]),
-      returnValue: neverEndingFuture<UserCredentialPlatform>(),
-      returnValueForMissingStub: neverEndingFuture<UserCredentialPlatform>(),
-    );
-  }
-
-  @override
-  Future<void> signOut() {
-    return super.noSuchMethod(
-      Invocation.method(#signOut, [signOut]),
-      returnValue: neverEndingFuture<void>(),
-      returnValueForMissingStub: neverEndingFuture<void>(),
-    );
-  }
-}
-
-class MockUserPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestUserPlatform {
-  MockUserPlatform(FirebaseAuthPlatform auth, Map<String, dynamic> _user) {
-    TestUserPlatform(auth, _user);
-  }
-}
-
-class MockUserCredentialPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestUserCredentialPlatform {
-  MockUserCredentialPlatform(
-    FirebaseAuthPlatform auth,
-    AdditionalUserInfo additionalUserInfo,
-    AuthCredential credential,
-    UserPlatform userPlatform,
-  ) {
-    TestUserCredentialPlatform(
-      auth,
-      additionalUserInfo,
-      credential,
-      userPlatform,
-    );
-  }
-}
-
-class MockConfirmationResultPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestConfirmationResultPlatform {
-  MockConfirmationResultPlatform() {
-    TestConfirmationResultPlatform();
-  }
-}
-
-class TestConfirmationResultPlatform extends ConfirmationResultPlatform {
-  TestConfirmationResultPlatform() : super('TEST');
-}
-
-class TestFirebaseAuthPlatform extends FirebaseAuthPlatform {
-  TestFirebaseAuthPlatform() : super();
-
-  void instanceFor({
-    FirebaseApp app,
-    Map<dynamic, dynamic> pluginConstants,
-  }) {}
-
-  @override
-  FirebaseAuthPlatform delegateFor({FirebaseApp app}) {
-    return this;
-  }
-
-  @override
-  FirebaseAuthPlatform setInitialValues({
-    Map<String, dynamic> currentUser,
-    String languageCode,
-  }) {
-    return this;
-  }
-}
-
-class MockRecaptchaVerifier extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestRecaptchaVerifier {
-  MockRecaptchaVerifier() {
-    TestRecaptchaVerifier();
-  }
-
-  RecaptchaVerifierFactoryPlatform get mockDelegate {
-    return MockRecaptchaVerifierFactoryPlatform();
-  }
-
-  @override
-  RecaptchaVerifierFactoryPlatform get delegate {
-    return super.noSuchMethod(
-      Invocation.getter(#delegate),
-      returnValue: MockRecaptchaVerifierFactoryPlatform(),
-      returnValueForMissingStub: MockRecaptchaVerifierFactoryPlatform(),
-    );
-  }
-}
-
-class MockRecaptchaVerifierFactoryPlatform extends Mock
-    with MockPlatformInterfaceMixin
-    implements TestRecaptchaVerifierFactoryPlatform {
-  MockRecaptchaVerifierFactoryPlatform() {
-    TestRecaptchaVerifierFactoryPlatform();
-  }
-}
-
-class TestRecaptchaVerifier implements RecaptchaVerifier {
-  TestRecaptchaVerifier() : super();
-
-  @override
-  void clear() {}
-
-  @override
-  RecaptchaVerifierFactoryPlatform get delegate =>
-      TestRecaptchaVerifierFactoryPlatform();
-
-  @override
-  Future<int> render() {
-    throw UnimplementedError();
-  }
-
-  @override
-  String get type => throw UnimplementedError();
-
-  @override
-  Future<String> verify() {
-    throw UnimplementedError();
-  }
-}
-
-class TestRecaptchaVerifierFactoryPlatform
-    extends RecaptchaVerifierFactoryPlatform {}
-
-class TestAuthProvider extends AuthProvider {
-  TestAuthProvider() : super('TEST');
-}
-
-class TestUserPlatform extends UserPlatform {
-  TestUserPlatform(FirebaseAuthPlatform auth, Map<String, dynamic> data)
-      : super(auth, data);
-}
-
-class TestUserCredentialPlatform extends UserCredentialPlatform {
-  TestUserCredentialPlatform(
-    FirebaseAuthPlatform auth,
-    AdditionalUserInfo additionalUserInfo,
-    AuthCredential credential,
-    UserPlatform userPlatform,
-  ) : super(
-          auth: auth,
-          additionalUserInfo: additionalUserInfo,
-          credential: credential,
-          user: userPlatform,
-        );
-}
-
-class EmptyUserCredentialPlatform extends UserCredentialPlatform {
-  EmptyUserCredentialPlatform() : super(auth: FirebaseAuthPlatform.instance);
 }

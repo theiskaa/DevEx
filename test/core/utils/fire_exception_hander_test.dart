@@ -3,12 +3,9 @@ import 'dart:ui';
 import 'package:devexam/core/system/devexam.dart';
 import 'package:devexam/core/system/intl.dart';
 import 'package:devexam/core/utils/fire_exception_hander.dart';
+import 'package:devexam/core/utils/testing_helpers.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/mockito.dart';
-
-// Mock for BuildContext
-class MockBuildContext extends Mock implements BuildContext {}
 
 main() {
   DevExam devEx;
