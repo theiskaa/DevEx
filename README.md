@@ -1,5 +1,7 @@
 # Dev Ex 
 
+[![codecov](https://codecov.io/gh/theiskaa/DevEx/branch/develop/graph/badge.svg?token=I8S7S0WXEE)](https://codecov.io/gh/theiskaa/DevEx)
+
 ### About Dev Ex : 
 **(Dev Exam)** application have been developed with flutter + firebase backaend service.
 It's a online exam and learning platform for developers.
