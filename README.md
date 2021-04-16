@@ -1,9 +1,5 @@
 # Dev Ex 
 
-<!-- ![build-android](https://github.com/lomsa-dev/lomsa-app/workflows/build-android/badge.svg) -->
-<!-- ![build-ios](https://github.com/lomsa-dev/lomsa-app/workflows/build-ios/badge.svg) -->
-<!-- ![tests](https://github.com/theiskaa/DevEx/workflows/tests/badge.svg) -->
-<!-- ![doctor](https://github.com/lomsa-dev/lomsa-app/workflows/doctor/badge.svg) -->
 [![codecov](https://codecov.io/gh/theiskaa/DevEx/branch/develop/graph/badge.svg?token=I8S7S0WXEE)](https://codecov.io/gh/theiskaa/DevEx)
 
 ### About Dev Ex : 
