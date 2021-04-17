@@ -1,0 +1,29 @@
+name: tests
+
+# This workflow is triggered on pull requests and pushes to the repository.
+on:
+  pull_request:
+    branches: [beta, develop, master]
+  push:
+    branches: [beta, develop, master]
+
+jobs:
+  test:
+    name: Test the application
+
+    # This job will run on Ubuntu virtual machine.
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      # Setup the Flutter environment.
+      - uses: subosito/flutter-action@v1
+        with:
+          channel: "stable" # "alpha", "beta", "dev", default to: "stable"
+          #
+          # # You can also specify exact version of Flutter.
+          flutter-version: "2.0.1"
+
+      - name: Test the application
+        run: flutter test
