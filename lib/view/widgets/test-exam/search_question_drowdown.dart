@@ -20,8 +20,10 @@ class SearchQuestionDropDown extends DevExamStatelessWidget {
   Widget build(BuildContext context) =>
       DecoratedBox(decoration: buildDecoration(context), child: buildChild());
 
-  Padding buildChild() =>
-      Padding(padding: EdgeInsets.symmetric(horizontal: horizontalPadding), child: child);
+  Padding buildChild() => Padding(
+        padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+        child: child,
+      );
 
   ShapeDecoration buildDecoration(BuildContext context) {
     return ShapeDecoration(
