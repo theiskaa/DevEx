@@ -113,8 +113,6 @@ class _AnimatedFloatingActionButtonstate
   }
 }
 
-
-
 class CustomFAB extends StatelessWidget {
   final Function onTap;
   final Widget child;
