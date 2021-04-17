@@ -17,12 +17,12 @@ import '../../../../widgets/components/widgets.dart';
 import '../../../../widgets/test-exam/saved_categories_card.dart';
 import '../../../../widgets/test-exam/search_question_drowdown.dart';
 import '../../../../widgets/test-exam/test_categories_card.dart';
-import '../controller/getJsonForTraining.dart';
+import '../controller/generate_test_questions.dart';
 import 'custom/custom_categories.dart';
 
-class GenerateOfTestSplash extends DevExamStatelessWidget {
+class GenerateTestSplash extends DevExamStatelessWidget {
   final userID;
-  GenerateOfTestSplash({Key key, this.userID}) : super(key: key);
+  GenerateTestSplash({Key key, this.userID}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -254,7 +254,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
         onChanged: (value) {
           Navigator.of(context).pushReplacement(
             MaterialPageRoute(
-              builder: (context) => GetJsonForTraining(
+              builder: (context) => GenerateTestQuestions(
                 id: devExam.intl.of(context).fmt('lang'),
                 questionIndex: int.parse(value),
                 userID: widget.userID,
@@ -292,7 +292,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
 
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (context) => GetJsonForTraining(
+          builder: (context) => GenerateTestQuestions(
             id: devExam.intl.of(context).fmt('lang'),
             questionIndex: id,
             userID: widget.userID,
@@ -314,7 +314,7 @@ class _TestSplashState extends DevExamState<TestSplash> {
                 textColor: Colors.white,
                 onTap: () => Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => GetJsonForTraining(
+                    builder: (context) => GenerateTestQuestions(
                       id: devExam.intl.of(context).fmt('lang'),
                       questionIndex: 1,
                       userID: widget.userID,

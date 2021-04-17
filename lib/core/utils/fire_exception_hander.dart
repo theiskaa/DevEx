@@ -16,8 +16,6 @@ enum AuthStatus {
   weakPassword,
   undefined,
   bugReportedSuccessfully,
-
-  cantSaveSuggestion
 }
 
 extension AuthStatusExt on AuthStatus {
@@ -25,7 +23,7 @@ extension AuthStatusExt on AuthStatus {
 }
 
 class AuthExceptionHandler {
-  /// method for detect/handle firebase auth exception.
+  /// Method to detect/handle firebase auth exception.
   static handleFireAuthException(e, {bool testMode = false}) {
     var status;
     switch (testMode ? e : e.code) {
@@ -104,10 +102,6 @@ class AuthExceptionHandler {
         errorMessage = testMode
             ? 'weakPassword'
             : devExam.intl.of(context).fmt('authStatus.weakPassword');
-        break;
-      case AuthStatus.cantSaveSuggestion:
-        errorMessage =
-            testMode ? 'cantSaveSuggestion' : "Can't save suggestion";
         break;
       case AuthStatus.bugReportedSuccessfully:
         errorMessage = testMode

@@ -7,7 +7,7 @@ abstract class DesignprefsEvent extends Equatable {
   List<Object> get props => [];
 }
 
-// Switch events.
+// Switching events.
 class EnableScrollSearch extends DesignprefsEvent {}
 
 class EnableFieldSearch extends DesignprefsEvent {}
@@ -16,5 +16,5 @@ class DisbleScrollSearch extends DesignprefsEvent {}
 
 class DisbleFieldSearch extends DesignprefsEvent {}
 
-// Decide event.
+// Deciding event.
 class DecideDesignPrefs extends DesignprefsEvent {}

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'widgets.dart';
 
-class OpacityDoer extends DevExamStatelessWidget {
+class OpacityWidget extends DevExamStatelessWidget {
   final Widget child;
   final Duration duration;
 
-  OpacityDoer({
+  OpacityWidget({
     Key key,
     this.child,
     this.duration,

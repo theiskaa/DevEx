@@ -6,13 +6,13 @@ import '../../../../widgets/components/loading.dart';
 import '../../../../widgets/components/widgets.dart';
 import '../view/training.dart';
 
-class GetJsonForTraining extends DevExamStatelessWidget {
+class GenerateTestQuestions extends DevExamStatelessWidget {
   final String id;
   final int questionIndex;
   final userID;
   final bool isAbleToSaveQ;
 
-  GetJsonForTraining({
+  GenerateTestQuestions({
     Key key,
     this.id,
     this.questionIndex,

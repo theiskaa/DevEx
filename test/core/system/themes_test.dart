@@ -31,6 +31,20 @@ void main() {
 
       expect(customColors.errorBg, Color.fromRGBO(185, 73, 61, 1));
     });
+
+    test('has expected default property values of allColors list', () {
+      expect(
+        customColors.allColors,
+        [
+          customColors.accentExamBlue,
+          customColors.darkExamBlue,
+          customColors.accentTestPurple,
+          customColors.darkTestPurple,
+          customColors.accentGreenblue,
+          customColors.darkGreenblue,
+        ],
+      );
+    });
   });
 
   group('[Themes]', () {

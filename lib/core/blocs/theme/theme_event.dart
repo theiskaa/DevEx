@@ -7,15 +7,8 @@ abstract class ThemeEvent extends Equatable {
   List<Object> get props => [];
 }
 
-
 class DecideTheme extends ThemeEvent {}
 
-class LightTheme extends ThemeEvent {
-  @override
-  String toString() => 'Light Theme';
-}
+class LightTheme extends ThemeEvent {}
 
-class DarkTheme extends ThemeEvent {
-  @override
-  String toString() => 'Dark Theme';
-}
+class DarkTheme extends ThemeEvent {}

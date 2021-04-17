@@ -101,7 +101,7 @@ void showSnack({
   return showSnack;
 }
 
-/// For display complex/timer/acter snackbar by simple way.
+/// For display complex timer snackbar.
 Future<void> showActerSnack({
   BuildContext context,
   String title,

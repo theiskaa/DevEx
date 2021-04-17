@@ -2,7 +2,7 @@ import 'dart:developer' as developer;
 import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 
-/// logger for application
+/// Logger for application.
 class Log {
   @visibleForTesting
   static final Logger log = Logger(
@@ -26,25 +26,25 @@ class Log {
 
   static String level;
 
-  /// log a message at level verbose
+  /// Log a message at level verbose.
   static Function get v => logNoStack.v;
 
-  /// log a message at level debug
+  /// Log a message at level debug.
   static Function get d => logNoStack.d;
 
-  /// log a message at level info
+  /// Log a message at level info.
   static Function get i => logNoStack.i;
 
-  /// log a message at level warning with stacktrace
+  /// Log a message at level warning with stacktrace.
   static Function get w => log.w;
 
-  /// log a message at level error with stacktrace
+  /// Log a message at level error with stacktrace.
   static Function get e => log.e;
 
-  /// log a message at level critical with stacktrace
+  /// Log a message at level critical with stacktrace.
   static Function get c => log.wtf;
 
-  // get log level [Level] by string
+  // Get log level [Level] by string.
   @visibleForTesting
   static Level getLevel() {
     switch (level) {

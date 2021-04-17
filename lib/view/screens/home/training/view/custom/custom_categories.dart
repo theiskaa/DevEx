@@ -6,7 +6,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import '../../../../../../core/services/user_service.dart';
 import '../../../../../../core/system/fire.dart';
 import '../../../../../../core/utils/connectivity.dart';
-import '../../../../../widgets/components/opacity.dart';
+import '../../../../../widgets/components/opacity_widget.dart';
 import '../../../../../widgets/components/widgets.dart';
 import '../../../../../widgets/test-exam/custom_categories_card.dart';
 import 'custom_category_test.dart';
@@ -234,7 +234,7 @@ class _CustomTestCategoriesState extends DevExamState<CustomTestCategories> {
   Container indicatorOfsavedQuestionsList() {
     return Container(
       child: Center(
-        child: OpacityDoer(
+        child: OpacityWidget(
           duration: Duration(milliseconds: 100),
           child: SpinKitFadingCircle(
             color: Colors.white,

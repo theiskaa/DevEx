@@ -4,7 +4,7 @@ import 'package:devexam/core/system/log.dart';
 class SimpleBlocObserver extends BlocObserver {
   @override
   void onEvent(Bloc bloc, Object event) {
-    Log.d(" onEvent $event ");
+    Log.d("[ onEvent $event ]");
     super.onEvent(bloc, event);
   }
 

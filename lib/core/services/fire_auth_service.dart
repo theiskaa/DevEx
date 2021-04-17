@@ -11,7 +11,7 @@ import '../models/user.dart';
 import '../system/fire.dart';
 import '../utils/fire_exception_hander.dart';
 
-/// Custom service class for controlle authentication methods.
+/// Custom service class for use firebase authentication.
 class FireAuthService {
   FireAuthService({
     firebase_auth.FirebaseAuth firebaseAuth,
@@ -26,13 +26,11 @@ class FireAuthService {
     });
   }
 
-  /// Get user by `currentUser` property
   User get currentUser {
     User user = firebaseAuth.currentUser;
     return user;
   }
 
-  /// Sign Up.
   Future<AuthStatus> createUserWithEmailAndPassword({
     @required String username,
     @required String email,
@@ -40,6 +38,7 @@ class FireAuthService {
   }) async {
     assert(username != null && email != null && password != null);
     AuthStatus authStatus;
+
     try {
       var result = await _firebaseAuth.createUserWithEmailAndPassword(
         email: email,
@@ -55,7 +54,6 @@ class FireAuthService {
     return authStatus;
   }
 
-  /// Sign In.
   Future<AuthStatus> logInWithEmailAndPassword({
     @required String email,
     @required String password,
@@ -67,11 +65,12 @@ class FireAuthService {
         email: email,
         password: password,
       );
+
       if (result.user != null) {
-        authStatus = AuthStatus.successful;
-        usersRef.doc(result.user.uid).update({
+        await usersRef.doc(result.user.uid).update({
           'password': password,
         });
+        authStatus = AuthStatus.successful;
       }
     } catch (e) {
       authStatus = AuthExceptionHandler.handleFireAuthException(e);

@@ -505,46 +505,8 @@ class SuggestionFieldState extends DevExamState<SuggestionField> {
       } else {
         return size * 3.toDouble();
       }
-
-      /*
-      if (_matchers.length == 1) {
-        return size;
-      } else if (_matchers.length == 2) {
-        return size * _matchers.length.roundToDouble();
-      } else {
-        return size * 3.toDouble();
-      }
-      */
     }
   }
-
-  // InputDecoration buildInputDecoration() {
-  //   return InputDecoration(
-  //     errorText: widget.errorText,
-  //     hintText: widget.hint,
-  //     errorStyle: TextStyle(color: Colors.red),
-  //     hintStyle: TextStyle(
-  //       color: Colors.black.withOpacity(.8),
-  //       fontSize: 18,
-  //     ),
-  //     focusedBorder: UnderlineInputBorder(
-  //       borderSide: BorderSide(width: 2, color: devExam.theme.darkExamBlue),
-  //     ),
-  //     enabledBorder: UnderlineInputBorder(
-  //       borderSide: BorderSide(width: 2, color: Colors.black),
-  //     ),
-  //     errorBorder: UnderlineInputBorder(
-  //       borderSide: BorderSide(width: 2, color: Colors.red),
-  //     ),
-  //     focusedErrorBorder: UnderlineInputBorder(
-  //       borderSide: BorderSide(
-  //         width: 2,
-  //         color: Colors.red,
-  //       ),
-  //     ),
-  //     enabled: true,
-  //   );
-  // }
 
   Decoration _getRightBoxDecoration() {
     if (widget.suggestionBoxDecoration != null) {

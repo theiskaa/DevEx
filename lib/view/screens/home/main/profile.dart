@@ -27,7 +27,7 @@ import '../../../../core/utils/fire_exception_hander.dart';
 import '../../../../core/utils/perceptive.dart';
 import '../../../../core/utils/ui.dart';
 import '../../../widgets/auth/custom_auth_field.dart';
-import '../../../widgets/components/opacity.dart';
+import '../../../widgets/components/opacity_widget.dart';
 import '../../../widgets/components/widgets.dart';
 import '../../../widgets/home/change_username_dialog.dart';
 import '../../../widgets/home/exam_history_card.dart';
@@ -409,7 +409,7 @@ class _ProfileState extends DevExamState<Profile> {
           children: snapshot.data.docs.map((doc) {
             return Padding(
               padding: const EdgeInsets.all(10),
-              child: OpacityDoer(
+              child: OpacityWidget(
                 duration: Duration(milliseconds: 250),
                 child: ExamHistoryCard(
                   langType: doc['lang'],
@@ -432,7 +432,7 @@ class _ProfileState extends DevExamState<Profile> {
     return Container(
       padding: EdgeInsets.only(top: 150),
       child: Center(
-        child: OpacityDoer(
+        child: OpacityWidget(
           duration: Duration(milliseconds: 100),
           child: SpinKitFadingCircle(
             color: indicatorColors[indicatorColorIndex],
