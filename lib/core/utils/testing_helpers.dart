@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:devexam/core/services/fire_auth_service.dart';
 import 'package:devexam/core/services/user_service.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -18,6 +19,17 @@ class UserServiceMocker extends Mock implements UserServices {}
 /// Mocker for [FireAuthService] class.
 class FireAuthServiceMocker extends Mock implements FireAuthService {}
 
+// Mockers for Cloud Firestore.
+class MockFirestore extends Mock implements FirebaseFirestore {}
+
+// ignore: must_be_immutable
+class MockCollectionReference extends Mock implements CollectionReference {}
+
+class MockDocumentReference extends Mock implements DocumentReference {}
+
+class MockDocumentSnapshot extends Mock implements DocumentSnapshot {}
+
+/// Custom class for setup auth and firestore mocks.
 class FireMocker {
   /// Setup the auth mocks.
   void setupFirebaseAuthMocks([Callback customHandlers]) {

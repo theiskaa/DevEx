@@ -106,7 +106,7 @@ class _CustomAuthButtonState extends DevExamState<CustomAuthButton>
       decoration: buildButtonDecoraiton(),
       child: Center(
         child: Text(
-          (widget.title != null) ? widget.title : "Animated Hover Button",
+          widget.title,
           style: TextStyle(
             fontSize: widget.titleSize,
             color: _textColorAnimation.value,

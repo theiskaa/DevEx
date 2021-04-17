@@ -33,8 +33,8 @@ class _HomeState extends DevExamState<Home> {
           shrinkWrap: true,
           children: [
             SizedBox(height: 10),
-            buildHomeItem1(context),
-            buildHomeItem2(context),
+            testCard(context),
+            examCard(context),
             SizedBox(height: 10),
           ],
         ),
@@ -42,7 +42,7 @@ class _HomeState extends DevExamState<Home> {
     );
   }
 
-  Widget buildHomeItem1(BuildContext context) {
+  Widget testCard(BuildContext context) {
     return HomeCard(
       tag: 'assets/custom/test.png',
       img: 'assets/custom/test.png',
@@ -61,13 +61,13 @@ class _HomeState extends DevExamState<Home> {
         PageRouteBuilder(
           opaque: false,
           pageBuilder: (BuildContext context, _, __) =>
-              GenerateOfTestSplash(userID: widget.userID),
+              GenerateTestSplash(userID: widget.userID),
         ),
       ),
     );
   }
 
-  Widget buildHomeItem2(BuildContext context) {
+  Widget examCard(BuildContext context) {
     return HomeCard(
       tag: 'assets/custom/exam.png',
       img: 'assets/custom/exam.png',

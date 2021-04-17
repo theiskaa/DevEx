@@ -12,12 +12,12 @@ class Username extends FormzInput<String, UsernameValidationError> {
   const Username.pure() : super.pure('');
   const Username.dirty([String value = '']) : super.dirty(value);
 
-  static final _passwordRegExp =
-      RegExp(r'^(?=[a-zA-Z0-9._]{2,10}$)(?!.*[_.]{2})[^_.].*[^_.]$');
+  static final _usernameRegExp =
+      RegExp(r'^(?=[a-zA-Z0-9._]{2,8}$)(?!.*[_.]{2})[^_.].*[^_.]$');
 
   @override
   UsernameValidationError validator(String value) {
-    return _passwordRegExp.hasMatch(value)
+    return _usernameRegExp.hasMatch(value)
         ? null
         : UsernameValidationError.invalid;
   }
@@ -41,8 +41,7 @@ class Password extends FormzInput<String, PasswordValidationError> {
   const Password.pure() : super.pure('');
   const Password.dirty([String value = '']) : super.dirty(value);
 
-  static final _passwordRegExp =
-      RegExp(r'^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$');
+  static final _passwordRegExp = RegExp(r'^.{4,}$');
 
   @override
   PasswordValidationError validator(String value) {

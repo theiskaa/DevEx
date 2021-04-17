@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// Colors which were used frequently in app design.
 class CustomColors {
   final accentExamBlue = Color(0xff2865CE);
   final darkExamBlue = Color(0xff1437C2);
@@ -7,9 +8,9 @@ class CustomColors {
   final darkTestPurple = Color(0xff3C1571);
   final accentGreenblue = Color(0xff017296);
   final darkGreenblue = Color(0xFF004155);
-
   final errorBg = Color.fromRGBO(185, 73, 61, 1);
 
+  /// All custom colors into one list.
   List<Color> get allColors => [
         accentExamBlue,
         darkExamBlue,
@@ -34,24 +35,7 @@ class Themes extends CustomColors {
           textTheme: lightTextTheme(),
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.black),
-        inputDecorationTheme: InputDecorationTheme(
-          hintStyle:
-              TextStyle(color: Colors.black.withOpacity(.7), fontSize: 18),
-          labelStyle: TextStyle(color: Colors.black),
-          helperStyle: TextStyle(color: Colors.black, fontSize: 18),
-          focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.black),
-          ),
-          enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.black),
-          ),
-          errorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.red),
-          ),
-          focusedErrorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.red),
-          ),
-        ),
+        inputDecorationTheme: inputDecorationTheme(Colors.black),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedItemColor: super.accentGreenblue,
           unselectedItemColor: Colors.grey,
@@ -73,26 +57,7 @@ class Themes extends CustomColors {
           textTheme: darkTextTheme(),
         ),
         textSelectionTheme: TextSelectionThemeData(cursorColor: Colors.white),
-        inputDecorationTheme: InputDecorationTheme(
-          hintStyle: TextStyle(
-            color: Colors.white.withOpacity(.7),
-            fontSize: 18,
-          ),
-          labelStyle: TextStyle(color: Colors.white),
-          helperStyle: TextStyle(color: Colors.white, fontSize: 18),
-          focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.white),
-          ),
-          enabledBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.white),
-          ),
-          errorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.red),
-          ),
-          focusedErrorBorder: UnderlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.red),
-          ),
-        ),
+        inputDecorationTheme: inputDecorationTheme(Colors.white),
         backgroundColor: Colors.black,
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           backgroundColor: Colors.black,
@@ -100,6 +65,26 @@ class Themes extends CustomColors {
           unselectedItemColor: Colors.white.withOpacity(.5),
         ),
       );
+
+  InputDecorationTheme inputDecorationTheme(Color mainColor) {
+    return InputDecorationTheme(
+      hintStyle: TextStyle(color: mainColor.withOpacity(.7), fontSize: 18),
+      labelStyle: TextStyle(color: mainColor),
+      helperStyle: TextStyle(color: mainColor, fontSize: 18),
+      focusedBorder: UnderlineInputBorder(
+        borderSide: BorderSide(width: 2, color: mainColor),
+      ),
+      enabledBorder: UnderlineInputBorder(
+        borderSide: BorderSide(width: 2, color: mainColor),
+      ),
+      errorBorder: UnderlineInputBorder(
+        borderSide: BorderSide(width: 2, color: Colors.red),
+      ),
+      focusedErrorBorder: UnderlineInputBorder(
+        borderSide: BorderSide(width: 2, color: Colors.red),
+      ),
+    );
+  }
 
   TextTheme darkTextTheme() {
     return TextTheme(

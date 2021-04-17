@@ -60,16 +60,16 @@ main() {
 
   group("[FireAuthService]", () {
     group("Save user to firestore", () {
-      test("-Success-", () {
+      test("-Success-", () async {
         when(
-          mocker.saveUserToFirestore(
+          await mocker.saveUserToFirestore(
             'test',
             // TODO: Replace [auth.currentUser]
             null,
             'test@example.com',
             'test123',
           ),
-        ).thenAnswer((_) => fireAuthService.saveUserToFirestore(
+        ).thenAnswer((_) async => await fireAuthService.saveUserToFirestore(
               'test',
               // TODO: Replace [auth.currentUser]
               null,
@@ -78,21 +78,31 @@ main() {
             ));
       });
 
-      test("-Error-", () {
+      test("-Error-", () async {
         when(
-          mocker.saveUserToFirestore(null, null, null, null),
+          await mocker.saveUserToFirestore(null, null, null, null),
         ).thenAnswer(
-          (_) => fireAuthService.saveUserToFirestore(null, null, null, null),
+          (_) async =>
+              await fireAuthService.saveUserToFirestore(null, null, null, null),
         );
       });
     });
 
     group("Login with Email and Password", () {
-      test("-Success-", () {
-        when(mocker.logInWithEmailAndPassword(
+      test("-Success-", () async {
+        when(await mocker.logInWithEmailAndPassword(
           email: "test@example.com",
           password: 'test123',
-        )).thenAnswer((_) => Future.value(AuthStatus.successful));
+        ))
+            .thenAnswer((_) => AuthStatus.successful);
+      });
+
+      test("-Success-", () async {
+        when(await mocker.logInWithEmailAndPassword(
+          email: "test@example.com",
+          password: 'test123',
+        ))
+            .thenAnswer((_) => AuthStatus.successful);
       });
 
       test("Error - Undefined", () {
@@ -106,110 +116,105 @@ main() {
         );
       });
 
-      test("Error - wrong password", () {
-        when(mocker.logInWithEmailAndPassword(
+      test("Error - wrong password", () async {
+        when(await mocker.logInWithEmailAndPassword(
           email: "test@example.com",
           password: null,
-        )).thenAnswer((_) => Future.value(AuthStatus.wrongPassword));
+        ))
+            .thenAnswer((_) => AuthStatus.wrongPassword);
       });
 
-      test("Error - invalid email", () {
+      test("Error - invalid email", () async {
         when(
-          mocker.logInWithEmailAndPassword(email: null, password: 'test123'),
-        ).thenAnswer(
-          (_) => Future.value(AuthStatus.invalidEmail),
-        );
+          await mocker.logInWithEmailAndPassword(
+              email: null, password: 'test123'),
+        ).thenAnswer((_) => AuthStatus.invalidEmail);
       });
 
-      test("Error - Too Many Requests", () {
+      test("Error - Too Many Requests", () async {
         when(
-          mocker.logInWithEmailAndPassword(
+          await mocker.logInWithEmailAndPassword(
               email: 'test@example.com', password: 'test123'),
-        ).thenAnswer(
-          (_) => Future.value(AuthStatus.tooManyRequests),
-        );
+        ).thenAnswer((_) => AuthStatus.tooManyRequests);
       });
 
-      test("Error - User not found", () {
+      test("Error - User not found", () async {
         when(
-          mocker.logInWithEmailAndPassword(
+          await mocker.logInWithEmailAndPassword(
             email: 'test@test.com',
             password: 'test123',
           ),
-        ).thenAnswer(
-          (_) => Future.value(AuthStatus.userNotFound),
-        );
+        ).thenAnswer((_) => AuthStatus.userNotFound);
       });
 
-      test("Error - User Disabled", () {
+      test("Error - User Disabled", () async {
         when(
-          mocker.logInWithEmailAndPassword(
+          await mocker.logInWithEmailAndPassword(
             email: 'test@example.com',
             password: 'test123',
           ),
-        ).thenAnswer(
-          (_) => Future.value(AuthStatus.userDisabled),
-        );
+        ).thenAnswer((_) => AuthStatus.userDisabled);
       });
     });
 
     group("Log out", () {
-      test("-Success-", () {
-        when(mocker.logOut()).thenAnswer((_) => fireAuthService.logOut());
+      test("-Success-", () async {
+        when(await mocker.logOut())
+            .thenAnswer((_) async => await fireAuthService.logOut());
       });
-      test("-Error-", () {
-        when(mocker.logOut()).thenThrow(Future.value([null]));
+      test("-Error-", () async {
+        when(await mocker.logOut()).thenThrow(Future.value([null]));
       });
     });
 
     group("Create User With Email And Password", () {
-      test("-Success-", () {
+      test("-Success-", () async {
         when(
-          mocker.createUserWithEmailAndPassword(
+          await mocker.createUserWithEmailAndPassword(
             username: 'test',
             email: 'test@example.com',
             password: 'test123',
           ),
-        ).thenAnswer((_) => Future.value(AuthStatus.successful));
+        ).thenAnswer((_) => AuthStatus.successful);
       });
-      test("Error - undefined", () {
+      test("Error - undefined", () async {
         when(
-          mocker.createUserWithEmailAndPassword(
+          await mocker.createUserWithEmailAndPassword(
             username: null,
             email: null,
             password: null,
           ),
-        ).thenAnswer((_) => Future.value(AuthStatus.undefined));
+        ).thenAnswer((_) => AuthStatus.undefined);
       });
 
-      test("Error - email already exits", () {
+      test("Error - email already exits", () async {
         when(
-          mocker.createUserWithEmailAndPassword(
+          await mocker.createUserWithEmailAndPassword(
             username: 'test',
             email: 'test@example.com',
             password: 'test123',
           ),
-        ).thenAnswer((_) => Future.value(AuthStatus.emailAlreadyExists));
+        ).thenAnswer((_) => AuthStatus.emailAlreadyExists);
       });
 
-      test("Error - weak password", () {
+      test("Error - weak password", () async {
         when(
-          mocker.createUserWithEmailAndPassword(
+          await mocker.createUserWithEmailAndPassword(
             username: 'test',
             email: 'test@gamil.com',
             password: '123',
           ),
-        ).thenAnswer((_) => Future.value(AuthStatus.weakPassword));
+        ).thenAnswer((_) => AuthStatus.weakPassword);
       });
 
-      test("Error - operation Not Allowed", () {
+      test("Error - operation Not Allowed", () async {
         when(
-          mocker.createUserWithEmailAndPassword(
+          await mocker.createUserWithEmailAndPassword(
             username: 'test',
             email: 'test@gamil.com',
             password: 'test123',
           ),
-        ).thenAnswer((_) => Future.value(AuthStatus.operationNotAllowed));
+        ).thenAnswer((_) => AuthStatus.operationNotAllowed);
       });
     });
   });

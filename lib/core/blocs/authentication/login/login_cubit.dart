@@ -6,7 +6,6 @@ import 'package:devexam/core/utils/validators.dart';
 import 'package:equatable/equatable.dart';
 import 'package:formz/formz.dart';
 
-
 part 'login_state.dart';
 
 enum SuggestionActStatus { Success, Erro, Undefined }
@@ -43,11 +42,15 @@ class LoginCubit extends Cubit<LoginState> {
       status: AuthStatus.loading,
       formzStatus: FormzStatus.submissionInProgress,
     ));
+
     var result = await fireAuthService.logInWithEmailAndPassword(
       email: state.email.value,
       password: state.password.value,
     );
-    // Save suggestion to local database.
+
+    // Check the [result] and if it success then should run this:
+    // Check diference between [dbList] and [suggestions],
+    // If they aren't similar save [suggestions] to local database.
     if (result == AuthStatus.successful) {
       final localDbService = await LocalDbService.instance;
       List<String> dbList = await localDbService.getDbList();
@@ -55,7 +58,7 @@ class LoginCubit extends Cubit<LoginState> {
         return await localDbService.saveSuggestionList(suggestions);
       }
     }
-    print(result);
+
     emit(state.copyWith(
       status: result,
       formzStatus: result == AuthStatus.successful

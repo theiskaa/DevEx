@@ -19,8 +19,13 @@ main() {
   FireMocker().setupFirebaseAuthMocks();
 
   UserServices userServices;
+
   UserServiceMocker mocker;
   MockBuildContext mockContext;
+  MockFirestore mockFirestore;
+  MockDocumentSnapshot mockDocumentSnapshot;
+  MockCollectionReference mockCollectionReference;
+  MockDocumentReference mockDocumentReference;
 
   const String userID = "Iafoiuh13afsjk2535";
 
@@ -46,18 +51,36 @@ main() {
 
     // Initilaze MockBuildContext
     mockContext = MockBuildContext();
+
+    // Initilaze Firestore mockers
+    mockFirestore = MockFirestore();
+    mockCollectionReference = MockCollectionReference();
+    mockDocumentReference = MockDocumentReference();
+    mockDocumentSnapshot = MockDocumentSnapshot();
   });
 
   group("[UserServices]", () {
     group("ChangeUsername", () {
-      test("-Success-", () {
+      test("-Success-", () async {
         when(mocker.changeUsername(userID, 'New username'))
             .thenAnswer((_) => Future.value(true));
+
+        when(mockFirestore.collection(any)).thenReturn(mockCollectionReference);
+        when(mockCollectionReference.doc(any))
+            .thenReturn(mockDocumentReference);
+        when(mockDocumentReference.update({'username': "New username"}))
+            .thenAnswer((_) async => mockDocumentSnapshot);
       });
 
       test("-Error-", () {
-        when(mocker.changeUsername(null, 'New username'))
+        when(mocker.changeUsername(null, null))
             .thenAnswer((_) => Future.value(false));
+
+        when(mockFirestore.collection(any)).thenReturn(mockCollectionReference);
+        when(mockCollectionReference.doc(any))
+            .thenReturn(mockDocumentReference);
+        when(mockDocumentReference.update({null: null}))
+            .thenAnswer((_) async => null);
       });
     });
 

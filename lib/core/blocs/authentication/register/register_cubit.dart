@@ -85,12 +85,13 @@ class RegisterCubit extends Cubit<RegisterState> {
       status: AuthStatus.loading,
       formzStatus: FormzStatus.submissionInProgress,
     ));
+
     var result = await _fireAuthService.createUserWithEmailAndPassword(
       username: state.username.value,
       email: state.email.value,
       password: state.password.value,
     );
-    print(result);
+
     emit(state.copyWith(
       status: result,
       formzStatus: result == AuthStatus.successful

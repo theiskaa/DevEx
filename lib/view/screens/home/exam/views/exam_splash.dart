@@ -1,4 +1,5 @@
 import 'package:devexam/core/blocs/theme/theme_bloc.dart';
+import 'package:devexam/view/screens/home/exam/service/generate_exam_questions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -6,7 +7,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/utils/connectivity.dart';
 import '../../../../widgets/components/widgets.dart';
 import '../../../../widgets/test-exam/exam_splash_button.dart';
-import '../controller/getJsonForExam.dart';
 
 class ExamSplash extends DevExamStatefulWidget {
   final userID;
@@ -123,7 +123,7 @@ class _ExamSplashState extends DevExamState<ExamSplash> {
           disabled: false,
           onPress: () => Navigator.of(context).pushReplacement(
             MaterialPageRoute(
-              builder: (context) => GetJsonForExam(
+              builder: (context) => GenerateExamQuestions(
                 userID: widget.userID,
               ),
             ),

@@ -67,5 +67,3 @@ class LocalizationBloc extends Bloc<LocalizationEvent, LocalizationState> {
     yield LocalizationState(locale);
   }
 }
-
-// rX5<5Ab%U@AU+%-u

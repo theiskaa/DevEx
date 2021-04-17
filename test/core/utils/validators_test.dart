@@ -26,8 +26,8 @@ main() {
     });
 
     group("Password", () {
-      test("Invalid password", () {
-        final _pasasword = Password.dirty("test");
+      test("Invalid password (required min 4 chars)", () {
+        final _pasasword = Password.dirty("te");
         expect(_pasasword.invalid, true);
       });
       test("Valid password", () {

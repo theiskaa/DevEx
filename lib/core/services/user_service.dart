@@ -175,7 +175,7 @@ class UserServices {
   }
 
   /// Save Exam's `correctAnswersCount`, `incorrectAnswersCount` and `incorrectAnswersList`.
-  /// for show this values into exam history list (profile).
+  /// to show this values into exam history list (profile).
   Future<bool> saveExamHistory({
     String correctAnswersCount,
     String incorrectAnswersCount,
@@ -191,7 +191,7 @@ class UserServices {
         'incorrectAnswersList': incorrectAnswersList,
         'date': Timestamp.now(),
         'personID': personID,
-        'lang': "${devExam.intl.of(context).fmt('test.custom.category.lang')}",
+        'lang': devExam.intl.of(context).fmt('test.custom.category.lang'),
         'platform': Platform.isIOS ? "IOS" : "Android",
       });
       return true;
@@ -253,7 +253,10 @@ class UserServices {
 
   /// Convert given [Timestamp] to String.
   String readTimestamp(
-      Timestamp timestamp, BuildContext context, DevExam devExam) {
+    Timestamp timestamp,
+    BuildContext context,
+    DevExam devExam,
+  ) {
     var now = DateTime.now();
     var format = DateFormat('HH:mm a');
     var date =

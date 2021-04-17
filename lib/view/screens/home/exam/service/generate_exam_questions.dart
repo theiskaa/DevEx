@@ -8,15 +8,15 @@ import '../../../../widgets/components/loading.dart';
 import '../../../../widgets/components/widgets.dart';
 import '../views/exam.dart';
 
-class GetJsonForExam extends DevExamStatefulWidget {
+class GenerateExamQuestions extends DevExamStatefulWidget {
   final userID;
-  GetJsonForExam({Key key, @required this.userID}) : super(key: key);
+  GenerateExamQuestions({Key key, @required this.userID}) : super(key: key);
 
   @override
-  _GetJsonForExamState createState() => _GetJsonForExamState();
+  _GenerateExamQuestionsState createState() => _GenerateExamQuestionsState();
 }
 
-class _GetJsonForExamState extends DevExamState<GetJsonForExam> {
+class _GenerateExamQuestionsState extends DevExamState<GenerateExamQuestions> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -61,7 +61,7 @@ class _GetJsonForExamState extends DevExamState<GetJsonForExam> {
                   data[1] == null) {
                 return Loading();
               } else {
-              Log.d("$cuttedData");
+                Log.d("$cuttedData");
                 return ExamScreen(
                   userID: widget.userID,
                   data: cuttedData,

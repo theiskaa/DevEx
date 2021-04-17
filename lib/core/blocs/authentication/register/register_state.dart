@@ -18,14 +18,8 @@ class RegisterState extends Equatable {
   });
 
   @override
-  List<Object> get props => [
-        username,
-        email,
-        password,
-        confirmedPassword,
-        formzStatus,
-        status,
-      ];
+  List<Object> get props =>
+      [username, email, password, confirmedPassword, formzStatus, status];
 
   RegisterState copyWith({
     Username username,

@@ -44,32 +44,18 @@ extension DoublePerceptive on double {
   double get fP => PercentGenerator.fontSizePercent(this);
 }
 
-/*
-extension IntPerceptive on int {
-  // Get height percent of the screen to int.
-  double get hP => PercentGenerator.heightPercentToInt(this).round();
-
-  // Get width percent of the screen to int.
-  double get wP => PercentGenerator.heightPercentToInt(this).round();
-
-  /// Get fontSize percent of the screen, by listening [width] to int.
-  double get fP => PercentGenerator.heightPercentToInt(this).round();
-}
-*/
 class PercentGenerator {
   static Orientation _orientation;
   static Device _device;
   static var _height;
   static var _width;
 
-  /// get `orientation` to use in other cases.
   static get orientation => _orientation;
 
-  /// get `device` to use in other cases. for get type of clinet device.
   static get device => _device;
 
   void init(Orientation orientation, BoxConstraints boxConstraints) {
-    // set orientation by default.
+    // Set orientation by default.
     _orientation = orientation;
 
     if (orientation != Orientation.portrait) {
@@ -82,7 +68,7 @@ class PercentGenerator {
       _width = boxConstraints.maxWidth;
     }
 
-    /// Detect type of Device. by listening width of screen & setting [Device] enum.
+    /// Detect & Set type of Device. by listening width of screen.
     if (_width < 950) {
       _device = Device.Web;
     } else if (_width < 600) {
@@ -92,39 +78,18 @@ class PercentGenerator {
     }
   }
 
-  //* Set value by listening screen's `height` and get percent of screen.
+  // Set value by listening screen's `height` and get percent of screen.
   static heightPercent(var v) {
     return _height * v / 100;
   }
 
-  //* Set value by listening screen's width and get percent of screen.
+  // Set value by listening screen's width and get percent of screen.
   static widthPercent(var v) {
     return _width * v / 100;
   }
 
-  //* Set value by listening screen's width and get percent of fontSize.
+  // Set value by listening screen's width and get percent of fontSize.
   static fontSizePercent(var v) {
     return _width / 100 * (v / 3);
   }
-
-  //* Set value by listening screen's `height` and get percent of screen.
-  /*
-  static heightPercentToInt(int v) {
-    return (_height * v ~/ 100).toInt();
-  }
-  */
-
-  //* Set value by listening screen's width and get percent of screen.
-  /*
-  static widthPercentToInt(int v) {
-    return (_width * v ~/ 100).round();
-  }
-  */
-
-  //* Set value by listening screen's width and get percent of fontSize.
-  /*
-  static fontSizePercentToInt(int v) {
-    return (_width ~/ 100 * (v ~/ 3)).toInt();
-  }
-  */
 }

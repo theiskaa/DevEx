@@ -9,6 +9,7 @@ part 'resetpassword_state.dart';
 
 class ResetpasswordCubit extends Cubit<ResetpasswordState> {
   final UserServices userServices;
+
   ResetpasswordCubit(this.userServices)
       : assert(userServices != null),
         super(ResetpasswordState());
@@ -42,11 +43,12 @@ class ResetpasswordCubit extends Cubit<ResetpasswordState> {
       status: AuthStatus.loading,
       formzStatus: FormzStatus.submissionInProgress,
     ));
+
     var result = await userServices.changePassword(
       uid: uid,
       newPassword: newPassword,
     );
-    print(result);
+
     emit(state.copyWith(
       status: result,
       formzStatus: result == AuthStatus.successful
@@ -61,8 +63,9 @@ class ResetpasswordCubit extends Cubit<ResetpasswordState> {
       status: AuthStatus.loading,
       formzStatus: FormzStatus.submissionInProgress,
     ));
+
     var result = await userServices.sendPasswordResetMail(state.email.value);
-    print(result);
+
     emit(state.copyWith(
       status: result,
       formzStatus: result == AuthStatus.successful

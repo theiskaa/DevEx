@@ -23,22 +23,12 @@ class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
     }
     if (event is DarkTheme) {
       theme = ThemeState(themeData: devExam.theme.dark);
-
-      try {
-        theme = await switchTheme(true, theme);
-      } catch (e) {
-       print("Couldn't changed theme to Dark");
-      }
+      theme = await switchTheme(true, theme);
     }
 
     if (event is LightTheme) {
       theme = ThemeState(themeData: devExam.theme.light);
-
-      try {
-        theme = await switchTheme(false, theme);
-      } catch (e) {
-        print("Couldn't changed theme to Light");
-      }
+      theme = await switchTheme(false, theme);
     }
     yield theme;
   }

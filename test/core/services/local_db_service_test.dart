@@ -3,6 +3,19 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 main() {
+  group("[LocalDbKeys]", () {
+    test("has expected default property values", () {
+      expect(LocalDbKeys.darkTheme, "isDarkThemeEnabled");
+      expect(LocalDbKeys.fieldSearchEnabled, "isFieldSearchQuestionEnabled");
+      expect(LocalDbKeys.languageCode, "languageCode");
+      expect(
+        LocalDbKeys.scrollSearchEnabled,
+        "isScrollAndSearchQuestionEnabled",
+      );
+      expect(LocalDbKeys.suggestionListKey, "suggestionsList");
+    });
+  });
+
   group('[LocalDbService]', () {
     SharedPreferences.setMockInitialValues({
       LocalDbKeys.darkTheme: false,
