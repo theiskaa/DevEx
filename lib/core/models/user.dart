@@ -13,8 +13,7 @@ class UserModel extends Equatable implements DevExModel {
     @required this.id,
     @required this.username,
     @required this.photo,
-  })  : assert(email != null),
-        assert(id != null);
+  });
 
   static const empty =
       UserModel(email: '', id: '', username: null, photo: null);

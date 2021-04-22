@@ -11,11 +11,7 @@ class ExamHistory implements DevExModel {
       {@required this.correctAnswersCount,
       @required this.incorrectAnswersCount,
       @required this.date,
-      @required this.person})
-      : assert(correctAnswersCount != null),
-        assert(incorrectAnswersCount != null),
-        assert(date != null),
-        assert(person != null);
+      @required this.person});
 
   ExamHistory.fromJson(Map<String, dynamic> json)
       : correctAnswersCount = json['correctAnswersCount'],
