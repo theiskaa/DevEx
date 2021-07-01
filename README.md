@@ -17,8 +17,6 @@ It's a online exam and learning platform for developers.
 - *Bug report page (with adding attachments)*
 
 ## App Overivew:
-DevEx is too big app, so photos isn't enough to understand what does do this application. however I putted some photos about screens.
-To get more about **DevEx** check *[this overview video](https://youtu.be/etSj5JvR9GE).*
 
 #### Authentication
 
