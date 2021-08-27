@@ -1,4 +1,5 @@
-# Dev Ex 
+# Dev Ex - [ARCHIVED]
+**Archived because of spagetti code :D**
 
 [![codecov](https://codecov.io/gh/theiskaa/DevEx/branch/develop/graph/badge.svg?token=I8S7S0WXEE)](https://codecov.io/gh/theiskaa/DevEx)
 
@@ -61,9 +62,3 @@ It's a online exam and learning platform for developers.
 
 #### Bug report
 <img src="https://github.com/theiskaa/DevEx/blob/develop/assets/overview/bug-report.png" width="700">
-
-## Contributions
-***Feel free to contribute to this project.***
-
-**If you find a bug or want a feature, but don't know how to fix/implement it, please fill an *[issue](https://github.com/theiskaa/DevEx/issues)*.** <br/>
-**If you fixed a bug or implemented a new feature, please send a *[pull request](https://github.com/theiskaa/DevEx/pulls)*.**
